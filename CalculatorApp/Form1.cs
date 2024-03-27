@@ -32,9 +32,9 @@ namespace CalculatorApp
 
         }
 
-        public static int Divide(int a, int b)
+        public static int Count(int a, int b)
         {
-            return a % b;
+            return a + b;
         }
     }
 }
