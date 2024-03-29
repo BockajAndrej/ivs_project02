@@ -31,10 +31,5 @@ namespace CalculatorApp
         {
 
         }
-
-        public static int Count(int a, int b)
-        {
-            return a + b;
-        }
     }
 }
