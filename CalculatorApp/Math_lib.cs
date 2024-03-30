@@ -10,9 +10,17 @@ namespace CalculatorApp
     {
         public NegativeFactorialException(string message) : base(message) { }
     }
+    public class NonNaturalExponentException : Exception
+    {
+        public NonNaturalExponentException(string message) : base(message) { }
+    }
+    public class NegativeRootException : Exception
+    {
+        public NegativeRootException(string message) : base(message) { }
+    }
     public class Math_lib
     {
-        public decimal Count(decimal v1, decimal v2)
+        public decimal Add(decimal v1, decimal v2)
         {
             //checked add time for calcula
             checked // overflow check, throws overflowexception
@@ -63,6 +71,11 @@ namespace CalculatorApp
                 }
                 return result;
             }
+        }
+
+        public decimal Exponentiation(decimal v1, decimal v2)
+        {
+            throw new NotImplementedException();
         }
     }
 }
