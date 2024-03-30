@@ -52,6 +52,14 @@ namespace UnitTestCalculator
             Assert.AreEqual(-4.391534390658096112641567186m, root.Division(input1[0], input1[3]), delta: 0.00000000000000000000000001m);
             Assert.ThrowsException<DivideByZeroException>(() => root.Division(5m, 0m));
         }
+        public void Test_Modulo()
+        {
+            Assert.AreEqual(0m, root.Modulo(input1[0], input1[0]), delta: 0m);
+            Assert.AreEqual(0.8765432109m, root.Modulo(input1[0], 2), delta: 0.0000000001m);
+            Assert.AreEqual(-4.3727222038m, root.Modulo(input1[2], input1[0]), delta: 0.0000000001m);
+            Assert.AreNotEqual(3.8495m, root.Modulo(input1[2], input1[4]), delta: 0.0000000001m);
+            Assert.ThrowsException<DivideByZeroException>(() => root.Modulo(5m, 0m));
+        }
         [TestMethod]
         public void Test_Faktorial()
         {
