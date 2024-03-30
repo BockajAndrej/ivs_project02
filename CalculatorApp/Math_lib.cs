@@ -52,6 +52,14 @@ namespace CalculatorApp
             else throw new DivideByZeroException("Cannot divide by zero");
         }
 
+        public decimal Modulo(decimal v1,decimal v2)
+        {
+            if (v2 != 0)
+            {
+                return v1 % v2;
+            }
+            else throw new DivideByZeroException("Cannot divide by zero");
+        }
         public decimal Faktorial(decimal v1)
         {
             if (v1 == 0)
