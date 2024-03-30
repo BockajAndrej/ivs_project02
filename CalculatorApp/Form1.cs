@@ -76,7 +76,7 @@ namespace CalculatorApp
             switch (currentOperator)
             {
                 case "+":
-                    result = mathLib.Count(num1, num2);
+                    result = mathLib.Add(num1, num2);
                     break;
                 case "-":
                     result = mathLib.Substraction(num1, num2);
