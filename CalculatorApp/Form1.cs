@@ -63,15 +63,12 @@ namespace CalculatorApp
             Button button = (Button)sender;
             textBox1.Text += button.Text;
             currentOperator = button.Text;
-            //newNumberMode = true;  // Ready to start entering the next number
         }
         private void Result_Click(object sender, EventArgs e)
         {
             decimal num1, num2, result;
             decimal.TryParse(firstNumber, out num1);
             decimal.TryParse(secondNumber, out num2);
-            Debug.WriteLine("first num is {0}", num1);
-            Debug.WriteLine("second num is {0}", num2);
 
             switch (currentOperator)
             {
@@ -102,13 +99,67 @@ namespace CalculatorApp
 
             textBox1.Text = result.ToString();
             firstNumber = result.ToString();
-            newNumberMode = true;
+            currentOperator = string.Empty;
+            secondNumber = string.Empty;
+            newNumberMode = false;
         }
 
         private void Factorial_Click(object sender, EventArgs e)
         {
+          
+        }
+
+        private void toPowerOf2_Click(object sender, EventArgs e)
+        {
+            decimal num1, num2;
+            string BeforeSecNumber;
+
+            if (currentOperator == "")
+            {
+                decimal.TryParse(firstNumber, out num1);
+                num1 = mathLib.Exponentiation(num1, 2);
+                textBox1.Text = num1.ToString();
+
+                firstNumber = num1.ToString();
+            }
+            else
+            {
+                decimal.TryParse(firstNumber, out num1);
+                decimal.TryParse(secondNumber, out num2);
+
+                BeforeSecNumber = firstNumber + currentOperator;
+                num2 = mathLib.Exponentiation(num2, 2);
+                textBox1.Text =  BeforeSecNumber+num2.ToString();
+
+                firstNumber = num1.ToString();
+                secondNumber = num2.ToString();
+            }
+            
+        }
+
+        private void toPowerOfX_Click(object sender, EventArgs e)
+        {
 
         }
+
+        private void SquareRoot_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
+        private void Clear_Click(object sender, EventArgs e) // button "C"
+        {
+            Clear_all();
+        }
+
+
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -153,16 +204,6 @@ namespace CalculatorApp
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Clear_Click(object sender, EventArgs e)
-        {
-            Clear_all();
-        }
-
-        
+       
     }
 }

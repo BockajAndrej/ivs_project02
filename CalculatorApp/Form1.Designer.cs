@@ -272,6 +272,7 @@
             this.toPowerOf2.TabIndex = 20;
             this.toPowerOf2.Text = "n²";
             this.toPowerOf2.UseVisualStyleBackColor = true;
+            this.toPowerOf2.Click += new System.EventHandler(this.toPowerOf2_Click);
             // 
             // SquareRoot
             // 
@@ -284,6 +285,7 @@
             this.SquareRoot.TabIndex = 21;
             this.SquareRoot.Text = "√ ";
             this.SquareRoot.UseVisualStyleBackColor = true;
+            this.SquareRoot.Click += new System.EventHandler(this.SquareRoot_Click);
             // 
             // toPowerOfX
             // 
@@ -296,6 +298,7 @@
             this.toPowerOfX.TabIndex = 22;
             this.toPowerOfX.Text = "nˣ";
             this.toPowerOfX.UseVisualStyleBackColor = true;
+            this.toPowerOfX.Click += new System.EventHandler(this.toPowerOfX_Click);
             // 
             // button14
             // 
