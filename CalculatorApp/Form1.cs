@@ -18,59 +18,73 @@ namespace CalculatorApp
         {
             InitializeComponent();
         }
-        
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
 
-        private string firstNumber = "";
-        private string secondNumber = "";
-        private string currentOperator = "";
+        private string firstNumber_str = "";
+        private string secondNumber_str = "";
+        private string currentOperator_str = "";
         private bool newNumberMode = true; // Flag to signal if we're starting a new number
+
+        private bool isEnteringExponent = false;
+        private string exponent = ""; // Store the exponent digits
 
         private void Clear_all()
         {
             textBox1.Text = string.Empty;
             newNumberMode = true;
-            firstNumber = string.Empty;
-            secondNumber = string.Empty;
-            currentOperator = string.Empty;
+            firstNumber_str = string.Empty;
+            secondNumber_str = string.Empty;
+            currentOperator_str = string.Empty;
 
         }
         private void numberButton_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender; // Get the button that was clicked
             string number = button.Text;
-            if (newNumberMode)
+            if (isEnteringExponent)
+            {
+                textBox1.Text += number;
+                exponent += number;
+            }
+            else if (newNumberMode)
             {
                 textBox1.Text = number;
-                firstNumber = number;
+                firstNumber_str = number;
                 newNumberMode = false;
             }
             else //continuing the same number
             {
                 textBox1.Text += number;
                 // Append digits instead of overwriting
-                if (currentOperator == "")
-                    firstNumber += number;
+                if (currentOperator_str == "")
+                    firstNumber_str += number;
                 else
-                    secondNumber += number;
+                    secondNumber_str += number;
             }
         }
         private void operatorButton_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
             textBox1.Text += button.Text;
-            currentOperator = button.Text;
+            currentOperator_str = button.Text;
+
+            if (isEnteringExponent)
+            {
+                performExponentiation();
+            }
+
         }
         private void Result_Click(object sender, EventArgs e)
         {
-            decimal num1, num2, result;
-            decimal.TryParse(firstNumber, out num1);
-            decimal.TryParse(secondNumber, out num2);
+            decimal num1, num2, result = 0;
+            decimal.TryParse(firstNumber_str, out num1);
+            decimal.TryParse(secondNumber_str, out num2);
 
-            switch (currentOperator)
+            switch (currentOperator_str)
             {
                 case "+":
                     result = mathLib.Add(num1, num2);
@@ -88,25 +102,53 @@ namespace CalculatorApp
                     result = mathLib.Modulo(num1, num2);
                     break;
 
+            }
 
-                default:
-                    result = 0;
+            if (isEnteringExponent)
+            {
+                performExponentiation();
+            }
+            else
+            {
 
-                    break;
+                textBox1.Text = result.ToString();
+                firstNumber_str = result.ToString();
+                currentOperator_str = string.Empty;
+                secondNumber_str = string.Empty;
+                newNumberMode = false;
+            }
+        }
 
+        private void performExponentiation()
+        {
+            decimal num1, num2, exponentNum;
+            if (!decimal.TryParse(firstNumber_str, out num1) || 
+                !decimal.TryParse(exponent, out exponentNum) || 
+                !decimal.TryParse(secondNumber_str,out num2))
+            {
+                throw new FormatException();
+            }
+            decimal result = 0;
+            if (secondNumber_str == "")
+            {
+                result = mathLib.Exponentiation(num1, exponentNum);
+                firstNumber_str = result.ToString();
+                textBox1.Text = firstNumber_str;
+            }
+            else
+            {
+                result = mathLib.Exponentiation(num2, exponentNum);
+                secondNumber_str = result.ToString();
 
             }
 
-            textBox1.Text = result.ToString();
-            firstNumber = result.ToString();
-            currentOperator = string.Empty;
-            secondNumber = string.Empty;
-            newNumberMode = false;
+            exponent = "";
+            isEnteringExponent = false;
         }
 
         private void Factorial_Click(object sender, EventArgs e)
         {
-          
+
         }
 
         private void toPowerOf2_Click(object sender, EventArgs e)
@@ -114,31 +156,33 @@ namespace CalculatorApp
             decimal num1, num2;
             string BeforeSecNumber;
 
-            if (currentOperator == "")
+            if (currentOperator_str == "")
             {
-                decimal.TryParse(firstNumber, out num1);
+                decimal.TryParse(firstNumber_str, out num1);
                 num1 = mathLib.Exponentiation(num1, 2);
                 textBox1.Text = num1.ToString();
 
-                firstNumber = num1.ToString();
+                firstNumber_str = num1.ToString();
             }
             else
             {
-                decimal.TryParse(firstNumber, out num1);
-                decimal.TryParse(secondNumber, out num2);
+                decimal.TryParse(firstNumber_str, out num1);
+                decimal.TryParse(secondNumber_str, out num2);
 
-                BeforeSecNumber = firstNumber + currentOperator;
+                BeforeSecNumber = firstNumber_str + currentOperator_str;
                 num2 = mathLib.Exponentiation(num2, 2);
-                textBox1.Text =  BeforeSecNumber+num2.ToString();
+                textBox1.Text = BeforeSecNumber + num2.ToString();
 
-                firstNumber = num1.ToString();
-                secondNumber = num2.ToString();
+                firstNumber_str = num1.ToString();
+                secondNumber_str = num2.ToString();
             }
-            
+
         }
 
         private void toPowerOfX_Click(object sender, EventArgs e)
         {
+            textBox1.Text += "^";
+            isEnteringExponent = true;
 
         }
 
@@ -147,7 +191,7 @@ namespace CalculatorApp
 
         }
 
-        
+
         private void Clear_Click(object sender, EventArgs e) // button "C"
         {
             Clear_all();
@@ -204,6 +248,6 @@ namespace CalculatorApp
 
         }
 
-       
+
     }
 }
