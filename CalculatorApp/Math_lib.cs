@@ -75,15 +75,50 @@ namespace CalculatorApp
                 decimal result = 1;
                 for (decimal i = 2; i <= v1; i++)
                 {
-                    result *= i;
+                    result = Multiplication(result, i);
                 }
                 return result;
             }
         }
-
-        public decimal Exponentiation(decimal v1, decimal v2)
+        public decimal Exponentiation(decimal _base,decimal _exponent)
         {
-            throw new NotImplementedException();
+            if (_exponent % 1 != 0) //can be only whole number without decimal point, cant change func parameter
+            {
+                throw new NotImplementedException("Decimal point is not supported");
+            }
+            else if (_exponent == 0)
+            {
+                return 1;
+            }
+            else
+            {
+                decimal result = _base;
+                for (int i = 1; i < _exponent; i++)
+                {
+                    result = Multiplication(result, _base);
+                }
+                return result;
+            }
+
+        }
+        public decimal Abs(decimal v1)
+        {
+            return v1 < 0 ? -v1 : v1;
+        }
+        public decimal SquareRoot(decimal v1)
+        {
+            if (v1 < 0)
+            {
+                throw new NotImplementedException();
+            }
+            decimal guess = v1 / 2;
+            decimal tolerance = 0.0001m;
+
+            while (Abs(Multiplication(guess,guess) - 1) > tolerance)
+            {
+                guess = (guess + v1 / guess) / 2;
+            }
+            return guess;
         }
     }
 }
