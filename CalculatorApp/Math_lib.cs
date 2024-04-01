@@ -84,7 +84,7 @@ namespace CalculatorApp
         {
             if (_exponent % 1 != 0) //can be only whole number without decimal point, cant change func parameter
             {
-                throw new NotImplementedException("Decimal point is not supported");
+                throw new NonNaturalExponentException("Decimal point is not supported");
             }
             else if (_exponent == 0)
             {

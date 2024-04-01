@@ -76,10 +76,12 @@ namespace UnitTestCalculator
         public void Test_EXP()
         {
             Assert.ThrowsException<NonNaturalExponentException>(() => root.Exponentiation(input1[0], input1[0]));
-            Assert.AreEqual(-26.249809469786277793308764626359m, root.Exponentiation(input1[0], input1[1]), delta: 0.00000000000000000000000001m);
-            Assert.AreNotEqual(-26.249809469786277763308764626359m, root.Exponentiation(input1[0], input1[1]), delta: 0.00000000000000000000000001m);
+            Assert.AreEqual(1m, root.Exponentiation(input1[0], input1[1]), delta: 0m);
+            Assert.AreNotEqual(-1m, root.Exponentiation(input1[0], input1[1]), delta: 0.00000000000000000000000001m);
+            Assert.AreEqual(18087.496766182577993629018063720913m, root.Exponentiation(input1[0], input1[4]), delta: 0.00000000000000000000000001m);
+            Assert.AreEqual(-3530.3306948268318326739591958m, root.Exponentiation(input1[0], 5), delta: 0.00000000000000000000000001m);
             Assert.AreEqual(1061520150601m, root.Exponentiation(input1[5], input1[4]), delta: 0.00000000000000000000000001m);
-            Assert.ThrowsException<OverflowException>(() => root.Exponentiation(input1[5], input1[4]));
+            Assert.ThrowsException<OverflowException>(() => root.Exponentiation(input1[4], input1[5]));
         }
         [TestMethod]
         public void Test_SQRT()
