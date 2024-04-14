@@ -47,7 +47,7 @@ namespace UnitTestCalculator
         public void Test_Division()
         {
             Assert.ThrowsException<DivideByZeroException>(() => root.Division(5m, 0m));
-            Assert.ThrowsException<OverflowException>(() => root.Multiplication(79228162514264337593543950334m, 0.1m));
+            Assert.ThrowsException<OverflowException>(() => root.Division(79228162514264337593543950334m, 0.1m));
             Assert.AreEqual(1m, root.Division(input1[0], input1[0]), delta: 0.00000000000000000000000001m);
             Assert.AreEqual(-0.058320841770313002708213042966m, root.Division(input1[0], input1[2]), delta: 0.00000000000000000000000001m);
             Assert.AreNotEqual(-0.058320841770313002708313052966m, root.Division(input1[0], input1[2]), delta: 0.00000000000000000000000001m);
@@ -67,7 +67,7 @@ namespace UnitTestCalculator
             //accuracy to 10 decimal places
             Assert.ThrowsException<NegativeFactorialException>(() => root.Faktorial(input1[0]));
             Assert.ThrowsException<OverflowException>(() => root.Faktorial(input1[5]));
-            Assert.ThrowsException<OverflowException>(() => root.Faktorial(20));
+            Assert.ThrowsException<OverflowException>(() => root.Faktorial(28));
             Assert.AreEqual(1m, root.Faktorial(input1[1]), delta: 0.0000000001m);
             Assert.AreNotEqual(0m, root.Faktorial(input1[1]), delta: 0.0000000001m);
             //Assert.AreEqual(1.08233922257m, root.Faktorial(input1[3]), delta: 0.0000000001m);
