@@ -110,9 +110,9 @@ namespace CalculatorApp
             }
             else
             {
-
-                textBox1.Text = result.ToString();
-                firstNumber_str = result.ToString();
+                string formattedResult = mathLib.FormatDecimal(result, 3);
+                textBox1.Text = formattedResult;
+                firstNumber_str = formattedResult;
                 currentOperator_str = string.Empty;
                 secondNumber_str = string.Empty;
                 newNumberMode = false;
@@ -148,7 +148,29 @@ namespace CalculatorApp
 
         private void Factorial_Click(object sender, EventArgs e)
         {
+            decimal num1, num2;
+            string BeforeSecNumber;
 
+            if (currentOperator_str == "")
+            {
+                decimal.TryParse(firstNumber_str, out num1);
+                num1 = mathLib.Faktorial(num1);
+                textBox1.Text = num1.ToString();
+
+                firstNumber_str = num1.ToString();
+            }
+            else
+            {
+                decimal.TryParse(firstNumber_str, out num1);
+                decimal.TryParse(secondNumber_str, out num2);
+
+                BeforeSecNumber = firstNumber_str + currentOperator_str;
+                num2 = mathLib.Faktorial(num2);
+                textBox1.Text = BeforeSecNumber + num2.ToString();
+
+                firstNumber_str = num1.ToString();
+                secondNumber_str = num2.ToString();
+            }
         }
 
         private void toPowerOf2_Click(object sender, EventArgs e)
@@ -188,7 +210,31 @@ namespace CalculatorApp
 
         private void SquareRoot_Click(object sender, EventArgs e)
         {
+            decimal num1, num2;
+            string BeforeSecNumber;
 
+            if (currentOperator_str == "")
+            {
+                decimal.TryParse(firstNumber_str, out num1);
+                num1 = mathLib.SquareRoot(num1);
+                string formattedResult = mathLib.FormatDecimal(num1, 3);
+                textBox1.Text = formattedResult;
+
+                firstNumber_str = num1.ToString();
+            }
+            else
+            {
+                decimal.TryParse(firstNumber_str, out num1);
+                decimal.TryParse(secondNumber_str, out num2);
+
+                BeforeSecNumber = firstNumber_str + currentOperator_str;
+                num2 = mathLib.SquareRoot(num2);
+                string formattedResult = mathLib.FormatDecimal(num2, 3);
+                textBox1.Text = BeforeSecNumber + formattedResult;
+
+                firstNumber_str = num1.ToString();
+                secondNumber_str = num2.ToString();
+            }
         }
 
 
