@@ -85,15 +85,31 @@ namespace UnitTestCalculator
         }
         [TestMethod]
         public void Test_SQRT()
-        {
-            Assert.ThrowsException<NegativeRootException>(() => root.Exponentiation(input1[0], input1[4]));
-            Assert.ThrowsException<NegativeRootException>(() => root.Exponentiation(input1[4], input1[0]));
-            Assert.ThrowsException<NegativeRootException>(() => root.Exponentiation(input1[0], input1[1]));
-            Assert.AreEqual(-1.723935551553132419949721178881m, root.Exponentiation(input1[0], 3), delta: 0.00000000000000000000000001m);
-            Assert.AreNotEqual(-1.723935551554132419949721178881m, root.Exponentiation(input1[0], 3), delta: 0.00000000000000000000000001m);
-            Assert.AreEqual(2.1580105439510335m, root.Exponentiation(input1[5], input1[4]), delta: 0.00000000000000000000000001m);
-            Assert.AreEqual(1m, root.Exponentiation(1, 5), delta: 0m);
-            Assert.AreEqual(0m, root.Exponentiation(0, 4), delta: 0m);
+        {   
+            //Tests for sqrt with 2 param.
+            //Assert.ThrowsException<NegativeRootException>(() => root.Exponentiation(input1[0], input1[4]));
+            //Assert.ThrowsException<NegativeRootException>(() => root.Exponentiation(input1[4], input1[0]));
+            //Assert.ThrowsException<NegativeRootException>(() => root.Exponentiation(input1[0], input1[1]));
+            //Assert.AreEqual(-1.723935551553132419949721178881m, root.Exponentiation(input1[0], 3), delta: 0.00000000000000000000000001m);
+            //Assert.AreNotEqual(-1.723935551554132419949721178881m, root.Exponentiation(input1[0], 3), delta: 0.00000000000000000000000001m);
+            //Assert.AreEqual(2.1580105439510335m, root.Exponentiation(input1[5], input1[4]), delta: 0.00000000000000000000000001m);
+            //Assert.AreEqual(1m, root.Exponentiation(1, 5), delta: 0m);
+            //Assert.AreEqual(0m, root.Exponentiation(0, 4), delta: 0m);
+
+            //Tests for sqrt with 1 param.
+            Assert.ThrowsException<NegativeRootException>(() => root.SquareRoot(input1[0]));
+            Assert.ThrowsException<NegativeRootException>(() => root.SquareRoot(-5));
+            Assert.AreEqual(0m, root.SquareRoot(0m), delta: 0m);
+            Assert.AreEqual(1m, root.SquareRoot(1m), delta: 0m);
+            Assert.AreEqual(2, root.SquareRoot(4), delta: 0.0000000000000001m);
+            Assert.AreEqual(4, root.SquareRoot(16), delta: 0.0000000000000001m);
+            Assert.AreEqual(8, root.SquareRoot(64), delta: 0.0000000000000001m);
+            Assert.AreEqual(3.8729833462074168852m, root.SquareRoot(15), delta: 0.0000000000000001m);
+            Assert.AreEqual(31.622776601683793319m, root.SquareRoot(1000), delta: 0.0000000000000001m);
+            Assert.AreEqual(0.7071067811865475244m, root.SquareRoot(0.5m), delta: 0.0000000000000001m);
+            Assert.AreEqual(4.5825756949558400065m, root.SquareRoot(21), delta: 0.0000000000000001m);
+            Assert.AreEqual(0.3162277660168379331m, root.SquareRoot(0.1m), delta: 0.0000000000000001m);
+            Assert.AreEqual(223.60679774997896964m, root.SquareRoot(50000), delta: 0.0000000000000001m);
         }
     }
 }
