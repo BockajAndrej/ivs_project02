@@ -107,14 +107,16 @@ namespace CalculatorApp
         }
         public decimal SquareRoot(decimal v1)
         {
+            if (v1 == 0) return 0;
+            if (v1 == 1) return 1;
             if (v1 < 0)
             {
-                throw new NotImplementedException();
+                throw new NegativeRootException("Cannot find even-n root of a negative number");
             }
-            decimal guess = v1 / 2;
-            decimal tolerance = 0.0001m;
+            decimal guess = v1;
+            decimal tolerance = 0.000000000000000000001m;
 
-            while (Abs(Multiplication(guess,guess) - 1) > tolerance)
+            while (Abs(guess * guess - v1) > tolerance)
             {
                 guess = (guess + v1 / guess) / 2;
             }
