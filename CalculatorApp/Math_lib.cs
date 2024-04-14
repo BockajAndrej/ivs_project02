@@ -122,5 +122,17 @@ namespace CalculatorApp
             }
             return guess;
         }
+        public string FormatDecimal(decimal number, int decimalPlaces)
+        {
+            // Convert decimal number with 0 in decimal places number without them
+            if (number % 1 == 0)
+            {
+                return ((int)number).ToString();
+            }
+            else
+            {
+                return number.ToString($"N{decimalPlaces}"); //number of decimal places otherwise
+            }
+        }
     }
 }
