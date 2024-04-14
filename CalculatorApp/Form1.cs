@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Drawing2D;
 
 namespace CalculatorApp
 {
@@ -17,13 +18,35 @@ namespace CalculatorApp
         public Calculator()
         {
             InitializeComponent();
+            this.Paint += new PaintEventHandler(Form1_Paint); // Attach the handler
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
+        private void Form1_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics graphics = e.Graphics; 
 
+            int width = this.Width;
+            int height = this.Height;
+
+            // Create the rectangle using the form's dimensions
+            Rectangle gradient_rectangle = new Rectangle(0, 0, width, height);
+
+            Brush brush = new LinearGradientBrush(gradient_rectangle, Color.FromArgb(36,8,61), Color.FromArgb(92,26,116), 45f);
+            graphics.FillRectangle(brush, gradient_rectangle);
+        }
+
+
+
+
+        //UI
+        private bool isDarkMode = false;
+
+
+        //Buttons
         private string firstNumber_str = "";
         private string secondNumber_str = "";
         private string currentOperator_str = "";
