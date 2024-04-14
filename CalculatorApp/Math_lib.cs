@@ -45,14 +45,17 @@ namespace CalculatorApp
 
         public decimal Division(decimal v1, decimal v2)
         {
-            if(v2 != 0)
+            checked
             {
-                return v1 / v2;
+                if (v2 != 0)
+                {
+                    return v1 / v2;
+                }
+                else throw new DivideByZeroException("Cannot divide by zero");
             }
-            else throw new DivideByZeroException("Cannot divide by zero");
         }
 
-        public decimal Modulo(decimal v1,decimal v2)
+        public decimal Modulo(decimal v1, decimal v2)
         {
             if (v2 != 0)
             {
@@ -62,25 +65,31 @@ namespace CalculatorApp
         }
         public decimal Faktorial(decimal v1)
         {
-            if (v1 == 0)
+            checked
             {
-                return 1;
-            }
-            else if (v1 < 0)
-            {
-                throw new NegativeFactorialException("Factorial is not defined for negative numbers");
-            }
-            else // v1 is positive
-            {
-                decimal result = 1;
-                for (decimal i = 2; i <= v1; i++)
+                if (v1 == 0)
                 {
-                    result = Multiplication(result, i);
+                    return 1;
                 }
-                return result;
+                else if (v1 < 0)
+                {
+                    throw new NegativeFactorialException("Factorial is not defined for negative numbers");
+                }
+                else // v1 is positive
+                {
+
+                    decimal result = 1;
+                    for (decimal i = 2; i <= v1; i++)
+                    {
+                        result = Multiplication(result, i);
+                    }
+                    return result;
+
+
+                }
             }
         }
-        public decimal Exponentiation(decimal _base,decimal _exponent)
+        public decimal Exponentiation(decimal _base, decimal _exponent)
         {
             if (_exponent % 1 != 0) //can be only whole number without decimal point, cant change func parameter
             {
