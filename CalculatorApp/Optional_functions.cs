@@ -122,7 +122,167 @@ namespace CalculatorApp
         /// sec, min, hour, days, weeks, months, years
         public decimal Time(decimal v1, string v2, string v3)
         {
-            throw new NotImplementedException();
+            if (Math.Abs(v1) > Decimal.MaxValue)
+            {
+                throw new OverflowException("Input value is too large to handle");
+            }
+            if (v1 < 0)
+            {
+                throw new NegativeNumberException("Input value is negative.");
+            }
+            switch (v2)
+            {
+                case "sec":
+                    switch (v3)
+                    {
+                        case "sec":
+                            return v1;
+                        case "min":
+                            return (v1 / 60);
+                        case "hour":
+                            return (v1 / 3600);
+                        case "days":
+                            return (v1 / 86400);
+                        case "weeks":
+                            return (v1 / 604800);
+                        case "months":
+                            return (v1 / (decimal)2629743.83);
+                        case "years":
+                            return (v1 / 31556926);
+                        default:
+                            break;
+                    }
+                    break;
+                case "min":
+                    switch (v3)
+                    {
+                        case "sec":
+                            return (v1 * 60);
+                        case "min":
+                            return v1;
+                        case "hour":
+                            return (v1 / 60);
+                        case "days":
+                            return (v1 / 1440);
+                        case "weeks":
+                            return (v1 / 10080);
+                        case "months":
+                            return (v1 / (decimal)43829.0639);
+                        case "years":
+                            return (v1 / (decimal)525948.766);
+                        default:
+                            break;
+                    }
+                    break;
+                case "hour":
+                    switch (v3)
+                    {
+                        case "sec":
+                            return (v1 * 3600);
+                        case "min":
+                            return (v1 * 60);
+                        case "hour":
+                            return v1;
+                        case "days":
+                            return (v1 / 24);
+                        case "weeks":
+                            return (v1 / 168);
+                        case "months":
+                            return (v1 / (decimal)730.484398);
+                        case "years":
+                            return (v1 / (decimal)8765.81277);
+                        default:
+                            break;
+                    }
+                    break;
+                case "days":
+                    switch (v3)
+                    {
+                        case "sec":
+                            return (v1 * 86400);
+                        case "min":
+                            return (v1 * 1440);
+                        case "hour":
+                            return (v1 * 24);
+                        case "days":
+                            return v1;
+                        case "weeks":
+                            return (v1 / 7);
+                        case "months":
+                            return (v1 / (decimal)30.4368499);
+                        case "years":
+                            return (v1 / (decimal)365.242199);
+                        default:
+                            break;
+                    }
+                    break;
+                case "weeks":
+                    switch (v3)
+                    {
+                        case "sec":
+                            return (v1 * 604800);
+                        case "min":
+                            return (v1 * 10080);
+                        case "hour":
+                            return (v1 * 168);
+                        case "days":
+                            return (v1 * 7);
+                        case "weeks":
+                            return v1;
+                        case "months":
+                            return (v1 / (decimal)4.34812141);
+                        case "years":
+                            return (v1 / (decimal)52.177457);
+                        default:
+                            break;
+                    }
+                    break;
+                case "months":
+                    switch (v3)
+                    {
+                        case "sec":
+                            return (v1 * (decimal)2629743.83);
+                        case "min":
+                            return (v1 * 438290639);
+                        case "hour":
+                            return (v1 * (decimal)730.484398);
+                        case "days":
+                            return (v1 * (decimal)30.4368499);
+                        case "weeks":
+                            return (v1 * (decimal)4.34812141);
+                        case "months":
+                            return v1;
+                        case "years":
+                            return (v1 / 12);
+                        default:
+                            break;
+                    }
+                    break;
+                case "years":
+                    switch (v3)
+                    {
+                        case "sec":
+                            return (v1 * 31556926);
+                        case "min":
+                            return (v1 * (decimal)525948.766);
+                        case "hour":
+                            return (v1 * (decimal)8765.81277);
+                        case "days":
+                            return (v1 * (decimal)365.242199);
+                        case "weeks":
+                            return (v1 * (decimal)52.177457);
+                        case "months":
+                            return (v1 * 12);
+                        case "years":
+                            return v1;
+                        default:
+                            break;
+                    }
+                    break;
+                default:
+                    break;
+            }
+            throw new UndefinedUnitException("Undefined unit exception.");
         }
         /// <summary>
         /// A function to calculate weight

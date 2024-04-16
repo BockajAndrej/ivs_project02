@@ -93,23 +93,23 @@ namespace UnitTestCalculator
             Assert.ThrowsException<UndefinedUnitException>(() => root.Time(1m, "day", "yeer"));
 
             /// From hour
-            Assert.AreEqual(444444.1m, root.Time(123.4567m, "hour", "sec"), delta: 0);
+            Assert.AreEqual(444444.12m, root.Time(123.4567m, "hour", "sec"), delta: 0);
             Assert.AreEqual(7407.402m, root.Time(123.4567m, "hour", "min"), delta: 0);
-            Assert.AreEqual(1234.567m, root.Time(123.4567m, "hour", "hour"), delta: 0);
-            Assert.AreEqual(5.144029m, root.Time(123.4567m, "hour", "days"), delta: 0);
-            Assert.AreEqual(0.734861m, root.Time(123.4567m, "hour", "weeks"), delta: 0);
-            Assert.AreEqual(0.169003m, root.Time(123.4567m, "hour", "months"), delta: 0);
-            Assert.AreEqual(0.014084m, root.Time(123.4567m, "hour", "years"), delta: 0);
+            Assert.AreEqual(123.4567m, root.Time(123.4567m, "hour", "hour"), delta: 0);
+            Assert.AreEqual(5.1440291666666666666666666667m, root.Time(123.4567m, "hour", "days"), delta: 0);
+            Assert.AreEqual(0.7348613095238095238095238095m, root.Time(123.4567m, "hour", "weeks"), delta: 0);
+            Assert.AreEqual(0.1690066212748872426978241909m, root.Time(123.4567m, "hour", "months"), delta: 0);
+            Assert.AreEqual(0.0140838851158807034387525482m, root.Time(123.4567m, "hour", "years"), delta: 0);
             /// To days
-            Assert.AreEqual(1.14301225m, root.Time(98756.2586m, "sec", "days"), delta: 0);
-            Assert.AreEqual(68.5807351m, root.Time(98756.2586m, "min", "days"), delta: 0);
-            Assert.AreEqual(4114.84411m, root.Time(98756.2586m, "hour", "days"), delta: 0);
+            Assert.AreEqual(1.1430122523148148148148148148m, root.Time(98756.2586m, "sec", "days"), delta: 0);
+            Assert.AreEqual(68.580735138888888888888888889m, root.Time(98756.2586m, "min", "days"), delta: 0);
+            Assert.AreEqual(4114.8441083333333333333333333m, root.Time(98756.2586m, "hour", "days"), delta: 0);
             Assert.AreEqual(98756.2586m, root.Time(98756.2586m, "days", "days"), delta: 0);
-            Assert.AreEqual(691293.81m, root.Time(98756.2586m, "weeks", "days"), delta: 0);
-            Assert.AreEqual(135.1899502m, root.Time(98756.2586m, "months", "days"), delta: 0);
-            Assert.AreEqual(36070723.5m, root.Time(98756.2586m, "year", "days"), delta: 0);
+            Assert.AreEqual(691293.8102m, root.Time(98756.2586m, "weeks", "days"), delta: 0);
+            Assert.AreEqual(3005829.41969378414m, root.Time(98756.2586m, "months", "days"), delta: 0);
+            Assert.AreEqual(36069953.0560766614m, root.Time(98756.2586m, "years", "days"), delta: 0);
             ///Zero 
-            Assert.AreEqual(0m, root.Time(0m, "hour", "day"), delta: 0);
+            Assert.AreEqual(0m, root.Time(0m, "hour", "days"), delta: 0);
         }
         /// <summary>
         /// Testing Temp() function for temperature conversions
