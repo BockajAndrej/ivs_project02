@@ -31,7 +31,32 @@ namespace CalculatorApp
         /// degrees(deg), rad
         public decimal Degrees(decimal v1, string v2, string v3)
         {
-            throw new NotImplementedException();
+            if (Math.Abs(v1) > Decimal.MaxValue)
+            {
+                throw new OverflowException("Input value is too large to handle");
+            }
+            switch (v2)
+            {
+                case "deg":
+                    switch (v3)
+                    {
+                        case "deg":
+                            return v1;
+                        case "rad":
+                            return (v1 / (decimal)57.2957795);
+                    }
+                    break;
+                case "rad":
+                    switch (v3)
+                    {
+                        case "deg":
+                            return (v1 * (decimal)57.2957795);
+                        case "rad":
+                            return v1;
+                    }
+                    break;
+            }
+            throw new UndefinedUnitException("Undefined unit exception.");
         }
         /// <summary>
         /// A function to calculate density
@@ -70,7 +95,186 @@ namespace CalculatorApp
         /// mm, cm, dm, m, km, miles, inch, yard
         public decimal Length(decimal v1, string v2, string v3)
         {
-            throw new NotImplementedException();
+            if (Math.Abs(v1) > Decimal.MaxValue)
+            {
+                throw new OverflowException("Input value is too large to handle");
+            }
+            if (v1 < 0)
+            {
+                throw new NegativeNumberException("Input value is negative.");
+            }
+            switch (v2)
+            {
+                case "mm":
+                    switch (v3)
+                    {
+                        case "mm":
+                            return v1;
+                        case "cm":
+                            return (v1 / 10);
+                        case "dm":
+                            return (v1 / 100);
+                        case "m":
+                            return (v1 / 1000);
+                        case "km":
+                            return (v1 / 1000000);
+                        case "miles":
+                            return (v1 / 1609344);
+                        case "inch":
+                            return (v1 / (decimal)25.4);
+                        case "yard":
+                            return (v1 / (decimal)914.4);
+                    }
+                    break;
+                case "cm":
+                    switch (v3)
+                    {
+                        case "mm":
+                            return (v1 * 10);
+                        case "cm":
+                            return v1;
+                        case "dm":
+                            return (v1 / 10);
+                        case "m":
+                            return (v1 / 100);
+                        case "km":
+                            return (v1 / 100000);
+                        case "miles":
+                            return (v1 / (decimal)160934.4);
+                        case "inch":
+                            return (v1 / (decimal)2.54);
+                        case "yard":
+                            return (v1 / (decimal)91.44);
+                    }
+                    break;
+                case "dm":
+                    switch (v3)
+                    {
+                        case "mm":
+                            return (v1 * 100);
+                        case "cm":
+                            return (v1 * 10);
+                        case "dm":
+                            return v1;
+                        case "m":
+                            return (v1 / 10);
+                        case "km":
+                            return (v1 / 10000);
+                        case "miles":
+                            return (v1 / (decimal)16093.44);
+                        case "inch":
+                            return (v1 / (decimal)0.254);
+                        case "yard":
+                            return (v1 / (decimal)9.144);
+                    }
+                    break;
+                case "m":
+                    switch (v3)
+                    {
+                        case "mm":
+                            return (v1 * 1000);
+                        case "cm":
+                            return (v1 * 100);
+                        case "dm":
+                            return (v1 * 10);
+                        case "m":
+                            return v1;
+                        case "km":
+                            return (v1 / 1000);
+                        case "miles":
+                            return (v1 / (decimal)1609.344);
+                        case "inch":
+                            return (v1 / (decimal)0.0254);
+                        case "yard":
+                            return (v1 / (decimal)0.9144);
+                    }
+                    break;
+                case "km":
+                    switch (v3)
+                    {
+                        case "mm":
+                            return (v1 * 1000000);
+                        case "cm":
+                            return (v1 * 100000);
+                        case "dm":
+                            return (v1 * 10000);
+                        case "m":
+                            return (v1 * 1000);
+                        case "km":
+                            return v1;
+                        case "miles":
+                            return (v1 / (decimal)1.609344);
+                        case "inch":
+                            return (v1 / (decimal)0.0000254);
+                        case "yard":
+                            return (v1 / (decimal)0.0009144);
+                    }
+                    break;
+                case "miles":
+                    switch (v3)
+                    {
+                        case "mm":
+                            return (v1 * 1609344);
+                        case "cm":
+                            return (v1 * (decimal)160934.4);
+                        case "dm":
+                            return (v1 * (decimal)16093.44);
+                        case "m":
+                            return (v1 * (decimal)1609.344);
+                        case "km":
+                            return (v1 * (decimal)1.609344);
+                        case "miles":
+                            return v1;
+                        case "inch":
+                            return (v1 * 63360);
+                        case "yard":
+                            return (v1 * 1760);
+                    }
+                    break;
+                case "inch":
+                    switch (v3)
+                    {
+                        case "mm":
+                            return (v1 * (decimal)25.4);
+                        case "cm":
+                            return (v1 * (decimal)2.54);
+                        case "dm":
+                            return (v1 * (decimal)0.254);
+                        case "m":
+                            return (v1 * (decimal)0.0254);
+                        case "km":
+                            return (v1 * (decimal)0.0000254);
+                        case "miles":
+                            return (v1 / 63360);
+                        case "inch":
+                            return v1;
+                        case "yard":
+                            return (v1 / 36);
+                    }
+                    break;
+                case "yard":
+                    switch (v3)
+                    {
+                        case "mm":
+                            return (v1 * (decimal)914.4);
+                        case "cm":
+                            return (v1 * (decimal)91.44);
+                        case "dm":
+                            return (v1 * (decimal)9.144);
+                        case "m":
+                            return (v1 * (decimal)0.9144);
+                        case "km":
+                            return (v1 * (decimal)0.0009144);
+                        case "miles":
+                            return (v1 / 1760);
+                        case "inch":
+                            return (v1 * 36);
+                        case "yard":
+                            return v1;
+                    }
+                    break;
+            }
+            throw new UndefinedUnitException("Undefined unit exception.");
         }
         /// <summary>
         /// A funtion to calculate performance
@@ -143,6 +347,8 @@ namespace CalculatorApp
                         case "K":
                             return v1;
                     }
+                    break;
+                default:
                     break;
             }
             throw new UndefinedUnitException("Undefined unit exception.");
