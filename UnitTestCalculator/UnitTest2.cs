@@ -28,21 +28,21 @@ namespace UnitTestCalculator
             Assert.AreEqual(123.4567m, root.Weight(123.4567m, "kg", "kg"), delta: 0);
             Assert.AreEqual(123456700m, root.Weight(123.4567m, "kg", "mg"), delta: 0);
             Assert.AreEqual(123456.7m, root.Weight(123.4567m, "kg", "g"), delta: 0);
-            Assert.AreEqual(272.1756557m, root.Weight(123.4567m, "kg", "lb"), delta: 0);
+            Assert.AreEqual(272.175433410554m, root.Weight(123.4567m, "kg", "lb"), delta: 0);
             Assert.AreEqual(0.1234567m, root.Weight(123.4567m, "kg", "t"), delta: 0);
             Assert.AreEqual(12345.67m, root.Weight(123.4567m, "kg", "dag"), delta: 0);
-            Assert.AreEqual(4354.81m, root.Weight(123.4567m, "kg", "oz"), delta: 0);
+            Assert.AreEqual(4354.80693209973m, root.Weight(123.4567m, "kg", "oz"), delta: 0);
             /// To mg
             Assert.AreEqual(4658.1345m, root.Weight(4658.1345m, "mg", "mg"), delta: 0);
             Assert.AreEqual(4658134500m, root.Weight(4658.1345m, "kg", "mg"), delta: 0);
             Assert.AreEqual(4658134.5m, root.Weight(4658.1345m, "g", "mg"), delta: 0);
-            Assert.AreEqual(2112894268m, root.Weight(4658.1345m, "lb", "mg"), delta: 0);
+            Assert.AreEqual(2112894267.633765m, root.Weight(4658.1345m, "lb", "mg"), delta: 0);
             Assert.AreEqual(4658134500000m, root.Weight(4658.1345m, "t", "mg"), delta: 0);
             Assert.AreEqual(46581345m, root.Weight(4658.1345m, "dag", "mg"), delta: 0);
-            Assert.AreEqual(132055784.01m, root.Weight(4658.1345m, "oz", "mg"), delta: 0);
+            Assert.AreEqual(132055891.61065695m, root.Weight(4658.1345m, "oz", "mg"), delta: 0);
             /// Negative
-            Assert.AreEqual(-0.0682587m, root.Weight(-68.25867m, "g", "kg"), delta: 0);
-            Assert.AreEqual(-30961.5866426m, root.Weight(-68.25867m, "lb", "g"), delta: 0);
+            Assert.AreEqual(-0.06825867m, root.Weight(-68.25867m, "g", "kg"), delta: 0);
+            Assert.AreEqual(-30961.6118983479m, root.Weight(-68.25867m, "lb", "g"), delta: 0);
             /// Zero
             Assert.AreEqual(0m, root.Weight(0m, "g", "kg"), delta: 0);
 
