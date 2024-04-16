@@ -51,11 +51,13 @@
             this.button14 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.customControl1 = new CalculatorApp.CustomControls.CustomControl();
+            this.Comma = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button3
             // 
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(227, 352);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
@@ -68,6 +70,7 @@
             // button4
             // 
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(85, 278);
             this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
@@ -80,6 +83,7 @@
             // button5
             // 
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(156, 278);
             this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
@@ -92,6 +96,7 @@
             // button6
             // 
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.Location = new System.Drawing.Point(227, 278);
             this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
@@ -104,6 +109,7 @@
             // button7
             // 
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.Location = new System.Drawing.Point(85, 204);
             this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
@@ -116,6 +122,7 @@
             // button8
             // 
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.Location = new System.Drawing.Point(156, 204);
             this.button8.Margin = new System.Windows.Forms.Padding(2);
             this.button8.Name = "button8";
@@ -128,6 +135,7 @@
             // button9
             // 
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.Location = new System.Drawing.Point(227, 204);
             this.button9.Margin = new System.Windows.Forms.Padding(2);
             this.button9.Name = "button9";
@@ -139,10 +147,11 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(85, 67);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(85, 50);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(333, 41);
+            this.textBox1.Size = new System.Drawing.Size(333, 58);
             this.textBox1.TabIndex = 9;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -150,6 +159,7 @@
             // button2
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(156, 352);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
@@ -241,6 +251,7 @@
             // 
             this.Result.Cursor = System.Windows.Forms.Cursors.Default;
             this.Result.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Result.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Result.Location = new System.Drawing.Point(298, 425);
             this.Result.Name = "Result";
             this.Result.Size = new System.Drawing.Size(50, 50);
@@ -304,6 +315,7 @@
             // button14
             // 
             this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button14.Location = new System.Drawing.Point(156, 425);
             this.button14.Margin = new System.Windows.Forms.Padding(2);
             this.button14.Name = "button14";
@@ -316,6 +328,7 @@
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(85, 352);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
@@ -339,12 +352,26 @@
             this.customControl1.TabIndex = 25;
             this.customControl1.UseVisualStyleBackColor = true;
             // 
+            // Comma
+            // 
+            this.Comma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Comma.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Comma.Location = new System.Drawing.Point(227, 425);
+            this.Comma.Margin = new System.Windows.Forms.Padding(2);
+            this.Comma.Name = "Comma";
+            this.Comma.Size = new System.Drawing.Size(50, 50);
+            this.Comma.TabIndex = 26;
+            this.Comma.Text = ",";
+            this.Comma.UseVisualStyleBackColor = true;
+            this.Comma.Click += new System.EventHandler(this.numberButton_Click);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(450, 536);
+            this.Controls.Add(this.Comma);
             this.Controls.Add(this.customControl1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button14);
@@ -401,6 +428,7 @@
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button1;
         private CustomControls.CustomControl customControl1;
+        private System.Windows.Forms.Button Comma;
     }
 }
 
