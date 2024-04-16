@@ -109,7 +109,43 @@ namespace CalculatorApp
         /// celsius(C), fahrenheit(F), kelvin(K)
         public decimal Temp(decimal v1, string v2, string v3)
         {
-            throw new NotImplementedException();
+            switch (v2)
+            {
+                case "C":
+                    switch (v3)
+                    {
+                        case "C":
+                            return v1;
+                        case "F":
+                            return (v1 * 9 / 5 + 32);
+                        case "K":
+                            return (v1 + (decimal)273.15);
+                    }
+                    break;
+                case "F":
+                    switch (v3)
+                    {
+                        case "C":
+                            return ((v1 - 32) * (5 / 9));
+                        case "F":
+                            return v1;
+                        case "K":
+                            return ((v1 - 32) * (5m / 9) + (decimal)273.15);
+                    }
+                    break;
+                case "K":
+                    switch (v3)
+                    {
+                        case "C":
+                            return (v1 - (decimal)273.15);
+                        case "F":
+                            return ((v1 - (decimal)273.15) * (decimal)1.8 + 32);
+                        case "K":
+                            return v1;
+                    }
+                    break;
+            }
+            throw new UndefinedUnitException("Undefined unit exception.");
         }
         /// <summary>
         /// A funtion to calculate time units

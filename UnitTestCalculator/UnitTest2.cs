@@ -124,15 +124,15 @@ namespace UnitTestCalculator
 
             /// From C
             Assert.AreEqual(123.4567m, root.Temp(123.4567m, "C", "C"), delta: 0);
-            Assert.AreEqual(254.2221m, root.Temp(123.4567m, "C", "F"), delta: 0);
+            Assert.AreEqual(254.22206m, root.Temp(123.4567m, "C", "F"), delta: 0);
             Assert.AreEqual(396.6067m, root.Temp(123.4567m, "C", "K"), delta: 0);
             /// To K
             Assert.AreEqual(4931.2845m, root.Temp(4658.1345m, "C", "K"), delta: 0);
-            Assert.AreEqual(2843.2247m, root.Temp(4658.1345m, "F", "K"), delta: 0);
+            Assert.AreEqual(2843.2247222222222222222222224m, root.Temp(4658.1345m, "F", "K"), delta: 0);
             Assert.AreEqual(4658.1345m, root.Temp(4658.1345m, "K", "K"), delta: 0);
             /// Negative
-            Assert.AreEqual(-90.86561m, root.Temp(-68.25867m, "C", "F"), delta: 0);
-            Assert.AreEqual(217.4507m, root.Temp(-68.25867m, "F", "K"), delta: 0);
+            Assert.AreEqual(-90.865606m, root.Temp(-68.25867m, "C", "F"), delta: 0);
+            Assert.AreEqual(217.45073888888888888888888888m, root.Temp(-68.25867m, "F", "K"), delta: 0);
             /// Zero
             Assert.AreEqual(32m, root.Temp(0m, "C", "F"), delta: 0);
         }
