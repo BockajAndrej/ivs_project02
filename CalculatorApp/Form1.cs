@@ -110,8 +110,29 @@ namespace CalculatorApp
         private void operatorButton_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
-            textBox1.Text += button.Text;
-            currentOperator_str = button.Text;
+            string newOperator = button.Text;
+
+            if (currentOperator_str == "")
+            {
+                textBox1.Text += newOperator;
+                currentOperator_str = newOperator;
+            }
+            else
+            {
+                // Find the last occurrence of the current operator
+                int lastOperatorIndex = textBox1.Text.LastIndexOf(currentOperator_str);
+
+                // Make sure it exists and is not before num
+                if (lastOperatorIndex > 0)
+                {
+                    // Replace with the new operator
+                    textBox1.Text = textBox1.Text.Remove(lastOperatorIndex, currentOperator_str.Length)
+                        .Insert(lastOperatorIndex, newOperator);
+                }
+
+                currentOperator_str = newOperator;
+            }
+
 
             if (isEnteringExponent)
             {
@@ -130,7 +151,10 @@ namespace CalculatorApp
             decimal num1 = 0.0M, num2 = 0.0M, result = 0.0M;
             decimal.TryParse(firstNumber_str, out num1);
             decimal.TryParse(secondNumber_str, out num2);
-
+            if (currentOperator_str == "") //added
+            {
+                decimal.TryParse(firstNumber_str, out result);
+            }
             switch (currentOperator_str)
             {
                 case "+":
@@ -150,7 +174,6 @@ namespace CalculatorApp
                     break;
 
             }
-
             string formattedResult = mathLib.FormatDecimal(result, 3);
             textBox1.Text = formattedResult;
             firstNumber_str = formattedResult;
@@ -219,9 +242,10 @@ namespace CalculatorApp
             {
                 decimal.TryParse(firstNumber_str, out num1);
                 num1 = mathLib.Exponentiation(num1, 2);
-                textBox1.Text = num1.ToString();
+              
+                firstNumber_str = mathLib.FormatDecimal(num1, 3).ToString();
+                textBox1.Text = firstNumber_str;
 
-                firstNumber_str = num1.ToString();
             }
             else
             {
@@ -230,10 +254,10 @@ namespace CalculatorApp
 
                 BeforeSecNumber = firstNumber_str + currentOperator_str;
                 num2 = mathLib.Exponentiation(num2, 2);
-                textBox1.Text = BeforeSecNumber + num2.ToString();
+                textBox1.Text = BeforeSecNumber + mathLib.FormatDecimal(num2,3).ToString();
 
                 firstNumber_str = num1.ToString();
-                secondNumber_str = num2.ToString();
+                secondNumber_str = mathLib.FormatDecimal(num2, 3).ToString();
             }
 
         }
