@@ -60,25 +60,25 @@ namespace UnitTestCalculator
             Assert.ThrowsException<UndefinedUnitException>(() => root.Length(1m, "km", "ms"));
 
             /// From dm
-            Assert.AreEqual(1234.567m, root.Weight(123.4567m, "cm", "mm"), delta: 0);
-            Assert.AreEqual(123.4567m, root.Weight(123.4567m, "cm", "cm"), delta: 0);
-            Assert.AreEqual(12.34567m, root.Weight(123.4567m, "cm", "dm"), delta: 0);
-            Assert.AreEqual(1.234567m, root.Weight(123.4567m, "cm", "m"), delta: 0);
-            Assert.AreEqual(0.001235m, root.Weight(123.4567m, "cm", "km"), delta: 0);
-            Assert.AreEqual(0.000767m, root.Weight(123.4567m, "cm", "miles"), delta: 0);
-            Assert.AreEqual(48.605m, root.Weight(123.4567m, "cm", "inch"), delta: 0);
-            Assert.AreEqual(1.350139m, root.Weight(123.4567m, "cm", "yard"), delta: 0);
+            Assert.AreEqual(1234.567m, root.Length(123.4567m, "cm", "mm"), delta: 0);
+            Assert.AreEqual(123.4567m, root.Length(123.4567m, "cm", "cm"), delta: 0);
+            Assert.AreEqual(12.34567m, root.Length(123.4567m, "cm", "dm"), delta: 0);
+            Assert.AreEqual(1.234567m, root.Length(123.4567m, "cm", "m"), delta: 0);
+            Assert.AreEqual(0.001234567m, root.Length(123.4567m, "cm", "km"), delta: 0);
+            Assert.AreEqual(0.0007671243686868686868686869m, root.Length(123.4567m, "cm", "miles"), delta: 0);
+            Assert.AreEqual(48.605m, root.Length(123.4567m, "cm", "inch"), delta: 0);
+            Assert.AreEqual(1.3501388888888888888888888889m, root.Length(123.4567m, "cm", "yard"), delta: 0);
             /// To km
-            Assert.AreEqual(123.4567m, root.Weight(98756.2586m, "mm", "km"), delta: 0);
-            Assert.AreEqual(0.09875626m, root.Weight(98756.2586m, "cm", "km"), delta: 0);
-            Assert.AreEqual(0.98756259m, root.Weight(98756.2586m, "dm", "km"), delta: 0);
-            Assert.AreEqual(98.7562586m, root.Weight(98756.2586m, "m", "km"), delta: 0);
-            Assert.AreEqual(98756.2586m, root.Weight(98756.2586m, "km", "km"), delta: 0);
-            Assert.AreEqual(158932.792m, root.Weight(98756.2586m, "miles", "km"), delta: 0);
-            Assert.AreEqual(2.50840897m, root.Weight(98756.2586m, "inch", "km"), delta: 0);
-            Assert.AreEqual(90.3027229m, root.Weight(98756.2586m, "yard", "km"), delta: 0);
+            Assert.AreEqual(0.0987562586m, root.Length(98756.2586m, "mm", "km"), delta: 0);
+            Assert.AreEqual(0.987562586m, root.Length(98756.2586m, "cm", "km"), delta: 0);
+            Assert.AreEqual(9.87562586m, root.Length(98756.2586m, "dm", "km"), delta: 0);
+            Assert.AreEqual(98.7562586m, root.Length(98756.2586m, "m", "km"), delta: 0);
+            Assert.AreEqual(98756.2586m, root.Length(98756.2586m, "km", "km"), delta: 0);
+            Assert.AreEqual(158932.7922403584m, root.Length(98756.2586m, "miles", "km"), delta: 0);
+            Assert.AreEqual(2.50840896844m, root.Length(98756.2586m, "inch", "km"), delta: 0);
+            Assert.AreEqual(90.30272286384m, root.Length(98756.2586m, "yard", "km"), delta: 0);
             /// Zero
-            Assert.AreEqual(0m, root.Weight(0m, "mm", "km"), delta: 0);
+            Assert.AreEqual(0m, root.Length(0m, "mm", "km"), delta: 0);
         }
         /// <summary>
         /// Testing Time() function for time conversions
@@ -143,20 +143,20 @@ namespace UnitTestCalculator
         public void Test_degrees() 
         {
             Assert.ThrowsException<OverflowException>(() => root.Degrees(79228162514264337593543950334m, "rad", "deg"));
-            Assert.ThrowsException<UndefinedUnitException>(() => root.Temp(1m, "rsd", "deg"));
-            Assert.ThrowsException<UndefinedUnitException>(() => root.Temp(1m, "del", "rad"));
+            Assert.ThrowsException<UndefinedUnitException>(() => root.Degrees(1m, "rsd", "deg"));
+            Assert.ThrowsException<UndefinedUnitException>(() => root.Degrees(1m, "del", "rad"));
 
             /// From deg
-            Assert.AreEqual(123.4567m, root.Temp(123.4567m, "deg", "deg"), delta: 0);
-            Assert.AreEqual(2.154726m, root.Temp(123.4567m, "deg", "rad"), delta: 0);
+            Assert.AreEqual(123.4567m, root.Degrees(123.4567m, "deg", "deg"), delta: 0);
+            Assert.AreEqual(2.154725899138871127497270545m, root.Degrees(123.4567m, "deg", "rad"), delta: 0);
             /// To rad
-            Assert.AreEqual(4658.1345m, root.Temp(4658.1345m, "rad", "rad"), delta: 0);
-            Assert.AreEqual(266891.45m, root.Temp(4658.1345m, "rad", "deg"), delta: 0);
+            Assert.AreEqual(4658.1345m, root.Degrees(4658.1345m, "rad", "rad"), delta: 0);
+            Assert.AreEqual(266891.44719334275m, root.Degrees(4658.1345m, "rad", "deg"), delta: 0);
             /// Negative
-            Assert.AreEqual(-1.191339m, root.Temp(-68.25867m, "deg", "rad"), delta: 0);
-            Assert.AreEqual(-3910.934m, root.Temp(-68.25867m, "rad", "deg"), delta: 0);
+            Assert.AreEqual(-1.1913385348042956636971838388m, root.Degrees(-68.25867m, "deg", "rad"), delta: 0);
+            Assert.AreEqual(-3910.933705283265m, root.Degrees(-68.25867m, "rad", "deg"), delta: 0);
             /// Zero
-            Assert.AreEqual(0m, root.Temp(0m, "deg", "rad"), delta: 0);
+            Assert.AreEqual(0m, root.Degrees(0m, "deg", "rad"), delta: 0);
         }
         /// <summary>
         /// Testing Density() function for density conversions
