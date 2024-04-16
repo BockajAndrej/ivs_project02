@@ -65,6 +65,35 @@ namespace CalculatorApp
             currentOperator_str = string.Empty;
 
         }
+        private void Delete_Click(object sender, EventArgs e)
+        {
+            if (!textBox1.Text.EndsWith("^") && isEnteringExponent) //Exponent mode deleting numbers
+            {
+                textBox1.Text = textBox1.Text.Substring(0, textBox1.Text.Length - 1);
+                exponent = exponent.Substring(0, exponent.Length - 1);
+            }
+            else if (textBox1.Text.EndsWith("^") && isEnteringExponent) //deleting exponent mode
+            {
+                isEnteringExponent = false;
+                exponent = "";
+                textBox1.Text = textBox1.Text.Substring(0, textBox1.Text.Length - 1);
+            }
+            else if (textBox1.Text.Length > 0 && "+-X÷%".Contains(textBox1.Text.Last()))
+            {
+                currentOperator_str = "";
+                textBox1.Text = textBox1.Text.Substring(0, textBox1.Text.Length - 1);
+            }
+            else if (secondNumber_str != "")
+            {
+                secondNumber_str = secondNumber_str.Substring(0, secondNumber_str.Length - 1);
+                textBox1.Text = textBox1.Text.Substring(0, textBox1.Text.Length - 1);
+            }
+            else if (firstNumber_str != "")
+            {
+                firstNumber_str = firstNumber_str.Substring(0, firstNumber_str.Length - 1);
+                textBox1.Text = textBox1.Text.Substring(0, textBox1.Text.Length - 1);
+            }
+        }
         private void numberButton_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender; // Get the button that was clicked
@@ -95,7 +124,7 @@ namespace CalculatorApp
                         secondNumber_str += number;
                         textBox1.Text += number;
                     }
-                    
+
                 }
                 else  // number
                 {
@@ -242,7 +271,7 @@ namespace CalculatorApp
             {
                 decimal.TryParse(firstNumber_str, out num1);
                 num1 = mathLib.Exponentiation(num1, 2);
-              
+
                 firstNumber_str = mathLib.FormatDecimal(num1, 3).ToString();
                 textBox1.Text = firstNumber_str;
 
@@ -254,7 +283,7 @@ namespace CalculatorApp
 
                 BeforeSecNumber = firstNumber_str + currentOperator_str;
                 num2 = mathLib.Exponentiation(num2, 2);
-                textBox1.Text = BeforeSecNumber + mathLib.FormatDecimal(num2,3).ToString();
+                textBox1.Text = BeforeSecNumber + mathLib.FormatDecimal(num2, 3).ToString();
 
                 firstNumber_str = num1.ToString();
                 secondNumber_str = mathLib.FormatDecimal(num2, 3).ToString();
@@ -264,9 +293,11 @@ namespace CalculatorApp
 
         private void toPowerOfX_Click(object sender, EventArgs e)
         {
-            textBox1.Text += "^";
-            isEnteringExponent = true;
-
+            if (textBox1.Text.Length > 0 && !"+-X÷%".Contains(textBox1.Text.Last()))
+            {
+                textBox1.Text += "^";
+                isEnteringExponent = true;
+            }
         }
 
         private void SquareRoot_Click(object sender, EventArgs e)
@@ -354,6 +385,9 @@ namespace CalculatorApp
 
         }
 
+        private void customControl1_CheckedChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 }

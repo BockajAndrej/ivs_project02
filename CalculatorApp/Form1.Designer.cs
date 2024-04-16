@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calculator));
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -50,8 +51,9 @@
             this.toPowerOfX = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.customControl1 = new CalculatorApp.CustomControls.CustomControl();
             this.Comma = new System.Windows.Forms.Button();
+            this.Delete = new System.Windows.Forms.Button();
+            this.customControl1 = new CalculatorApp.CustomControls.CustomControl();
             this.SuspendLayout();
             // 
             // button3
@@ -213,7 +215,7 @@
             this.Division.Cursor = System.Windows.Forms.Cursors.Default;
             this.Division.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Division.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Division.Location = new System.Drawing.Point(298, 136);
+            this.Division.Location = new System.Drawing.Point(227, 136);
             this.Division.Name = "Division";
             this.Division.Size = new System.Drawing.Size(50, 50);
             this.Division.TabIndex = 15;
@@ -226,7 +228,7 @@
             this.Modulo.Cursor = System.Windows.Forms.Cursors.Default;
             this.Modulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Modulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Modulo.Location = new System.Drawing.Point(227, 136);
+            this.Modulo.Location = new System.Drawing.Point(156, 138);
             this.Modulo.Name = "Modulo";
             this.Modulo.Size = new System.Drawing.Size(50, 50);
             this.Modulo.TabIndex = 16;
@@ -239,7 +241,7 @@
             this.Clear.Cursor = System.Windows.Forms.Cursors.Default;
             this.Clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Clear.Location = new System.Drawing.Point(156, 138);
+            this.Clear.Location = new System.Drawing.Point(85, 138);
             this.Clear.Name = "Clear";
             this.Clear.Size = new System.Drawing.Size(50, 50);
             this.Clear.TabIndex = 17;
@@ -338,20 +340,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.numberButton_Click);
             // 
-            // customControl1
-            // 
-            this.customControl1.AutoSize = true;
-            this.customControl1.Location = new System.Drawing.Point(90, 152);
-            this.customControl1.MinimumSize = new System.Drawing.Size(45, 22);
-            this.customControl1.Name = "customControl1";
-            this.customControl1.OffBackColor = System.Drawing.Color.Gray;
-            this.customControl1.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.customControl1.OnBackColor = System.Drawing.Color.MediumSlateBlue;
-            this.customControl1.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.customControl1.Size = new System.Drawing.Size(45, 22);
-            this.customControl1.TabIndex = 25;
-            this.customControl1.UseVisualStyleBackColor = true;
-            // 
             // Comma
             // 
             this.Comma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -365,12 +353,42 @@
             this.Comma.UseVisualStyleBackColor = true;
             this.Comma.Click += new System.EventHandler(this.numberButton_Click);
             // 
+            // Delete
+            // 
+            this.Delete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Delete.BackgroundImage")));
+            this.Delete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Delete.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Delete.Location = new System.Drawing.Point(298, 136);
+            this.Delete.Name = "Delete";
+            this.Delete.Size = new System.Drawing.Size(50, 50);
+            this.Delete.TabIndex = 27;
+            this.Delete.UseVisualStyleBackColor = true;
+            this.Delete.Click += new System.EventHandler(this.Delete_Click);
+            // 
+            // customControl1
+            // 
+            this.customControl1.AutoSize = true;
+            this.customControl1.Location = new System.Drawing.Point(373, 12);
+            this.customControl1.MinimumSize = new System.Drawing.Size(45, 22);
+            this.customControl1.Name = "customControl1";
+            this.customControl1.OffBackColor = System.Drawing.Color.Gray;
+            this.customControl1.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.customControl1.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.customControl1.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.customControl1.Size = new System.Drawing.Size(45, 22);
+            this.customControl1.TabIndex = 25;
+            this.customControl1.UseVisualStyleBackColor = true;
+            this.customControl1.CheckedChanged += new System.EventHandler(this.customControl1_CheckedChanged);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(450, 536);
+            this.Controls.Add(this.Delete);
             this.Controls.Add(this.Comma);
             this.Controls.Add(this.customControl1);
             this.Controls.Add(this.button1);
@@ -429,6 +447,7 @@
         private System.Windows.Forms.Button button1;
         private CustomControls.CustomControl customControl1;
         private System.Windows.Forms.Button Comma;
+        private System.Windows.Forms.Button Delete;
     }
 }
 
