@@ -45,14 +45,17 @@ namespace CalculatorApp
 
         public decimal Division(decimal v1, decimal v2)
         {
-            if(v2 != 0)
+            checked
             {
-                return v1 / v2;
+                if (v2 != 0)
+                {
+                    return v1 / v2;
+                }
+                else throw new DivideByZeroException("Cannot divide by zero");
             }
-            else throw new DivideByZeroException("Cannot divide by zero");
         }
 
-        public decimal Modulo(decimal v1,decimal v2)
+        public decimal Modulo(decimal v1, decimal v2)
         {
             if (v2 != 0)
             {
@@ -62,25 +65,31 @@ namespace CalculatorApp
         }
         public decimal Faktorial(decimal v1)
         {
-            if (v1 == 0)
+            checked
             {
-                return 1;
-            }
-            else if (v1 < 0)
-            {
-                throw new NegativeFactorialException("Factorial is not defined for negative numbers");
-            }
-            else // v1 is positive
-            {
-                decimal result = 1;
-                for (decimal i = 2; i <= v1; i++)
+                if (v1 == 0)
                 {
-                    result = Multiplication(result, i);
+                    return 1;
                 }
-                return result;
+                else if (v1 < 0)
+                {
+                    throw new NegativeFactorialException("Factorial is not defined for negative numbers");
+                }
+                else // v1 is positive
+                {
+
+                    decimal result = 1;
+                    for (decimal i = 2; i <= v1; i++)
+                    {
+                        result = Multiplication(result, i);
+                    }
+                    return result;
+
+
+                }
             }
         }
-        public decimal Exponentiation(decimal _base,decimal _exponent)
+        public decimal Exponentiation(decimal _base, decimal _exponent)
         {
             if (_exponent % 1 != 0) //can be only whole number without decimal point, cant change func parameter
             {
@@ -107,18 +116,33 @@ namespace CalculatorApp
         }
         public decimal SquareRoot(decimal v1)
         {
+            if (v1 == 0) return 0;
+            if (v1 == 1) return 1;
             if (v1 < 0)
             {
-                throw new NotImplementedException();
+                throw new NegativeRootException("Cannot find even-n root of a negative number");
             }
-            decimal guess = v1 / 2;
-            decimal tolerance = 0.0001m;
+            decimal guess = v1;
+            decimal tolerance = 0.000000000000000000001m;
 
-            while (Abs(Multiplication(guess,guess) - 1) > tolerance)
+            while (Abs(guess * guess - v1) > tolerance)
             {
                 guess = (guess + v1 / guess) / 2;
             }
             return guess;
+        }
+        public string FormatDecimal(decimal number, int decimalPlaces)
+        {
+            string formattedResult = number.ToString($"N{decimalPlaces}");
+
+            // Check if there are trailing zeros after the decimal point
+            if (formattedResult.Contains(","))
+            {
+                // Trim trailing zeros and the decimal point if all are zeros
+                formattedResult = formattedResult.TrimEnd('0').TrimEnd(',');
+            }
+
+            return formattedResult;
         }
     }
 }
