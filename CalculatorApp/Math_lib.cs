@@ -133,15 +133,16 @@ namespace CalculatorApp
         }
         public string FormatDecimal(decimal number, int decimalPlaces)
         {
-            // Convert decimal number with 0 in decimal places number without them
-            if (number % 1 == 0)
+            string formattedResult = number.ToString($"N{decimalPlaces}");
+
+            // Check if there are trailing zeros after the decimal point
+            if (formattedResult.Contains(","))
             {
-                return ((int)number).ToString();
+                // Trim trailing zeros and the decimal point if all are zeros
+                formattedResult = formattedResult.TrimEnd('0').TrimEnd(',');
             }
-            else
-            {
-                return number.ToString($"N{decimalPlaces}"); //number of decimal places otherwise
-            }
+
+            return formattedResult;
         }
     }
 }
