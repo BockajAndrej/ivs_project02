@@ -24,7 +24,7 @@ namespace CalculatorApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            this.ActiveControl = textBox1;
         }
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
@@ -40,7 +40,7 @@ namespace CalculatorApp
             graphics.FillRectangle(brush, gradient_rectangle);
         }
 
-
+        
 
 
         //UI
@@ -97,53 +97,116 @@ namespace CalculatorApp
         private void numberButton_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender; // Get the button that was clicked
-            string number = button.Text;
+            appendDigit(button.Text, false);
+        }
+
+        private void appendDigit(string digit, bool FromKeyBoard)
+        {
             if (isEnteringExponent)
             {
-                textBox1.Text += number;
-                exponent += number;
+                exponent += digit;
             }
             else if (newNumberMode)
             {
-                textBox1.Text = number;
-                firstNumber_str = number;
+                firstNumber_str = digit;
                 newNumberMode = false;
             }
             else //continuing the same number
             {
-                if (number == ",")
+                if (digit == ",")
                 {
                     // Prevent multiple commas in the same number
                     if (!firstNumber_str.Contains(",") && currentOperator_str == "")
                     {
-                        firstNumber_str += number;
-                        textBox1.Text += number;
+                        firstNumber_str += digit;
                     }
                     else if (!secondNumber_str.Contains(","))
                     {
-                        secondNumber_str += number;
-                        textBox1.Text += number;
+                        secondNumber_str += digit;
                     }
-
+                    Console.WriteLine("som tu ciarka");
                 }
-                else  // number
+                else
                 {
                     if (currentOperator_str == "")
-                        firstNumber_str += number;
+                        firstNumber_str += digit;
                     else
-                        secondNumber_str += number;
-                    textBox1.Text += number;
+                        secondNumber_str += digit;
                 }
+
+            }
+            if (!FromKeyBoard)
+            {
+                Console.WriteLine("som tu");
+                textBox1.Text += digit;
             }
         }
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) &&
+            (char.IsDigit(e.KeyChar) ||
+             e.KeyChar == ',' ||
+             e.KeyChar == '+' ||
+             e.KeyChar == '-' ||
+             e.KeyChar == '*' ||
+             e.KeyChar == '/' ||
+             e.KeyChar == '%' ||
+             (e.KeyChar == '^' && textBox1.Text.Length > 0 && !"+-X÷%".Contains(textBox1.Text.Last())) ||
+             e.KeyChar == '!' ||
+             e.KeyChar == ',' ||
+             e.KeyChar == (char)Keys.Back || 
+             e.KeyChar == (char)Keys.Enter)) 
+            {
+                if (char.IsDigit(e.KeyChar))
+                {
+                    appendDigit(e.KeyChar.ToString(), true);
+                }
+                else if (e.KeyChar == '+' || e.KeyChar == '-' ||
+                 e.KeyChar == '/' || e.KeyChar == '%' || e.KeyChar == '*')
+                {
+                    if (e.KeyChar == '*') e.KeyChar = (char)Keys.X;
+                    appendOperator(e.KeyChar.ToString(), true);  // Treat operators like digits
+                }
+                else if (e.KeyChar == '^')
+                {
+                    isEnteringExponent = true;
+                }
+                else if (e.KeyChar == '!')
+                {
+                    Factorial_Click(this,EventArgs.Empty);
+                }
+                else if (e.KeyChar == ',' || e.KeyChar == '.')
+                {
+                    if (e.KeyChar == '.') e.KeyChar = (char)42;
+                    appendDigit(e.KeyChar.ToString(), true);  // Allow decimal 
+                }
+                else if (e.KeyChar == (char)Keys.Back)  // Handle Backspace
+                {
+                    Delete_Click(this, EventArgs.Empty);
+                }
+                else if (e.KeyChar == (char)Keys.Enter)
+                {
+                    Result_Click(this, EventArgs.Empty);
+                }
+            }
+            else
+            {
+                e.Handled = true; // Prevent any other characters 
+            }
+        }
+
         private void operatorButton_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
-            string newOperator = button.Text;
+            appendOperator(button.Text, false);
+
+        }
+        private void appendOperator(string newOperator, bool FromKeyBoard)
+        {
 
             if (currentOperator_str == "")
             {
-                textBox1.Text += newOperator;
+                if (!FromKeyBoard) textBox1.Text += newOperator;
                 currentOperator_str = newOperator;
             }
             else
@@ -162,14 +225,13 @@ namespace CalculatorApp
                 currentOperator_str = newOperator;
             }
 
-
             if (isEnteringExponent)
             {
                 performExponentiation();
-                textBox1.Text += button.Text;
+                if (!FromKeyBoard) textBox1.Text += newOperator;
             }
-
         }
+
         private void Result_Click(object sender, EventArgs e)
         {
             if (isEnteringExponent)
@@ -203,6 +265,7 @@ namespace CalculatorApp
                     break;
 
             }
+
             string formattedResult = mathLib.FormatDecimal(result, 3);
             textBox1.Text = formattedResult;
             firstNumber_str = formattedResult;
