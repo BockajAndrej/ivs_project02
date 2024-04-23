@@ -15,19 +15,19 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_0A8A406B03964616854B5AF36C1DDDDE"
+        "MsmKey" = "8:_12B32D3B8ECABA1C3C617ED4422C5AF8"
+        "OwnerKey" = "8:_77D9E1C356484252A3D3823AA8FBE589"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_5345142827CF45E6A9D5E1B185EEE1FF"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_12B32D3B8ECABA1C3C617ED4422C5AF8"
-        "OwnerKey" = "8:_EF74E88DC74245DD949CF359CACE7053"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_EF74E88DC74245DD949CF359CACE7053"
+        "MsmKey" = "8:_77D9E1C356484252A3D3823AA8FBE589"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -40,7 +40,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_EF74E88DC74245DD949CF359CACE7053"
+        "OwnerKey" = "8:_77D9E1C356484252A3D3823AA8FBE589"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -106,26 +106,6 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0A8A406B03964616854B5AF36C1DDDDE"
-            {
-            "SourcePath" = "8:..\\..\\..\\..\\..\\..\\..\\Downloads\\calculator_macos_bigsur_icon_190313.ico"
-            "TargetName" = "8:calculator_macos_bigsur_icon_190313.ico"
-            "Tag" = "8:"
-            "Folder" = "8:_524D3C76F8854100942AC0C16CF65BD8"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_12B32D3B8ECABA1C3C617ED4422C5AF8"
             {
             "AssemblyRegister" = "3:1"
@@ -155,6 +135,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5345142827CF45E6A9D5E1B185EEE1FF"
+            {
+            "SourcePath" = "8:..\\CalculatorApp\\Images\\calculator_icon.ico"
+            "TargetName" = "8:calculator_icon.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_524D3C76F8854100942AC0C16CF65BD8"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
         }
@@ -334,7 +334,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_6403259C20B4467CB563D873C89F63A0"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_503CF75E1FDC49FB883EB9828C9D30DD"
             {
             "Name" = "8:Calculator"
             "Arguments" = "8:"
@@ -342,13 +342,13 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_EF74E88DC74245DD949CF359CACE7053"
+            "Target" = "8:_77D9E1C356484252A3D3823AA8FBE589"
             "Folder" = "8:_A6DE0B5FAEA1465AB240C25EC9A8ACE9"
             "WorkingFolder" = "8:_524D3C76F8854100942AC0C16CF65BD8"
-            "Icon" = "8:_0A8A406B03964616854B5AF36C1DDDDE"
+            "Icon" = "8:_5345142827CF45E6A9D5E1B185EEE1FF"
             "Feature" = "8:"
             }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_9BDC84EE18E1494F841D658B9479D114"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_7A2E6E284D93423A96E39980D6A24799"
             {
             "Name" = "8:Calculator"
             "Arguments" = "8:"
@@ -356,10 +356,10 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_EF74E88DC74245DD949CF359CACE7053"
+            "Target" = "8:_77D9E1C356484252A3D3823AA8FBE589"
             "Folder" = "8:_78B8E439C919474FA8FE9D0DD3503E73"
             "WorkingFolder" = "8:_524D3C76F8854100942AC0C16CF65BD8"
-            "Icon" = "8:_0A8A406B03964616854B5AF36C1DDDDE"
+            "Icon" = "8:_5345142827CF45E6A9D5E1B185EEE1FF"
             "Feature" = "8:"
             }
         }
@@ -761,7 +761,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_EF74E88DC74245DD949CF359CACE7053"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_77D9E1C356484252A3D3823AA8FBE589"
             {
             "SourcePath" = "8:..\\CalculatorApp\\obj\\Release\\CalculatorApp.exe"
             "TargetName" = "8:"
