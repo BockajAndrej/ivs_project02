@@ -15,8 +15,8 @@ namespace UnitTestCalculator
         Optional_functions root = new Optional_functions();
         /// <summary>
         /// Testing Weight() function for weight conversions 
-        /// </summary>
         /// mg, dag, g, kg, t, lb, oz
+        /// </summary>
         [TestMethod]
         public void Test_weight()
         {
@@ -49,8 +49,8 @@ namespace UnitTestCalculator
         }
         /// <summary>
         /// Testing Length() function for length conversions
-        /// </summary>
         /// mm, cm, dm, m, km, miles, inch, yard
+        /// </summary>
         [TestMethod]
         public void Test_length() 
         {
@@ -82,8 +82,9 @@ namespace UnitTestCalculator
         }
         /// <summary>
         /// Testing Time() function for time conversions
-        /// </summary>
         /// sec, min, hour, days, weeks, months, years
+        /// </summary>
+        /// 
         [TestMethod]
         public void Test_time() 
         {
@@ -113,8 +114,9 @@ namespace UnitTestCalculator
         }
         /// <summary>
         /// Testing Temp() function for temperature conversions
-        /// </summary>
         /// celsius(C), fahrenheit(F), kelvin(K)
+        /// </summary>
+        /// 
         [TestMethod]
         public void Test_temp() 
         {
@@ -138,6 +140,7 @@ namespace UnitTestCalculator
         }
         /// <summary>
         /// Testing Degrees() function for plane angle conversions
+        /// degrees(deg), rad
         /// </summary>
         [TestMethod]
         public void Test_degrees() 

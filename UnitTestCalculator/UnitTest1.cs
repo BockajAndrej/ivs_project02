@@ -5,6 +5,9 @@ using System.Security.Principal;
 
 namespace UnitTestCalculator
 {
+    /// <summary>
+    /// Tests for Optional_functions.cs class
+    /// </summary>
     [TestClass]
     public class UnitTest1
     {
