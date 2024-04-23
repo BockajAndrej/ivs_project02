@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calculator));
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -355,15 +354,15 @@
             // 
             // Delete
             // 
-            this.Delete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Delete.BackgroundImage")));
             this.Delete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Delete.Cursor = System.Windows.Forms.Cursors.Default;
             this.Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Delete.Location = new System.Drawing.Point(298, 136);
             this.Delete.Name = "Delete";
             this.Delete.Size = new System.Drawing.Size(50, 50);
             this.Delete.TabIndex = 27;
+            this.Delete.Text = "DEL";
             this.Delete.UseVisualStyleBackColor = true;
             this.Delete.Click += new System.EventHandler(this.Delete_Click);
             // 

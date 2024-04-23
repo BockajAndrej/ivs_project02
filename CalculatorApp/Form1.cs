@@ -25,27 +25,28 @@ namespace CalculatorApp
         private void Form1_Load(object sender, EventArgs e)
         {
             this.ActiveControl = textBox1;
+            textBox1.BorderStyle = BorderStyle.FixedSingle;
+
         }
+
+        private bool isDarkMode = false;
+        private Color darkModeStartColor = Color.FromArgb(20, 55, 73);
+        private Color darkModeEndColor = Color.FromArgb(37, 49, 61);
+        private Color lightModeStartColor = Color.White;
+        private Color lightModeEndColor = Color.LightGray; // Or your desired light mode color
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
             Graphics graphics = e.Graphics;
+            Rectangle gradient_rectangle = new Rectangle(0, 0, this.Width, this.Height);
 
-            int width = this.Width;
-            int height = this.Height;
-
-            // Create the rectangle using the form's dimensions
-            Rectangle gradient_rectangle = new Rectangle(0, 0, width, height);
-
-            Brush brush = new LinearGradientBrush(gradient_rectangle, Color.FromArgb(36, 8, 61), Color.FromArgb(92, 26, 116), 45f);
+            // Apply the appropriate colors based on the current mode
+            Brush brush = new LinearGradientBrush(gradient_rectangle,
+                                                  isDarkMode ? darkModeStartColor : lightModeStartColor,
+                                                  isDarkMode ? darkModeEndColor : lightModeEndColor,
+                                                  45f);
             graphics.FillRectangle(brush, gradient_rectangle);
         }
-
-        
-
-
-        //UI
-        private bool isDarkMode = false;
-
+    
 
         //Buttons
         private string firstNumber_str = "";
@@ -55,6 +56,35 @@ namespace CalculatorApp
 
         private bool isEnteringExponent = false;
         private string exponent = ""; // Store the exponent digits
+
+        private void customControl1_CheckedChanged(object sender, EventArgs e)
+        {
+            isDarkMode = customControl1.Checked;
+            foreach (Control control in this.Controls)
+            {
+                if (control is Button)
+                {
+                    Button button = (Button)control;
+                    button.ForeColor = isDarkMode ? Color.YellowGreen : Color.Black;
+                    button.BackColor = isDarkMode ? Color.FromArgb(35, 45, 54) : Color.Transparent;
+                }
+            }
+
+            if (customControl1.Checked) 
+            {
+                textBox1.BackColor = Color.FromArgb(20, 55, 73);
+                textBox1.ForeColor = Color.LimeGreen;
+            }
+            else
+            {
+                textBox1.BackColor = Color.White;
+                textBox1.ForeColor = Color.Black;
+            }
+            
+            this.Invalidate(); // Force the form to repaint
+
+        }
+
 
         private void Clear_all()
         {
@@ -448,9 +478,6 @@ namespace CalculatorApp
 
         }
 
-        private void customControl1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
