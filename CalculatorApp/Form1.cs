@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D;
 using System.Globalization;
+using CalculatorApp.Properties;
+
 
 namespace CalculatorApp
 {
@@ -26,6 +28,20 @@ namespace CalculatorApp
         {
             this.ActiveControl = textBox1;
             textBox1.BorderStyle = BorderStyle.FixedSingle;
+            listPanel.Add(Main_Calculator_panel); //index 0
+            listPanel.Add(Main_Setting_panel); //index 1
+            listPanel.Add(panel_Degrees); //index 2
+            listPanel.Add(panel_weight); //index 3
+            listPanel.Add(panel_Temperature); //index 4
+            listPanel.Add(panel_Length); //index 5
+            listPanel.Add(panel_time); //index 6
+
+
+            //listPanel.Add(Main_UnitConverter_panel);
+
+            ShowAndEnablePanel(indexOfCalculator);
+
+   
 
         }
 
@@ -84,8 +100,41 @@ namespace CalculatorApp
             this.Invalidate(); // Force the form to repaint
 
         }
+        
+        List<Panel> listPanel = new List<Panel>();
+        int indexOfCalculator = 0;
+        int indexOfSettings = 1;
+        int indexOfDegrees = 2;
+        int indexOfWeight = 3;
+        int indexOfTemperature = 4;
+        int indexOfLength = 5;
+        int indexOfTime = 6;
+        
+        private void btn_Calculator_Click(object sender, EventArgs e)
+        {
+            ShowAndEnablePanel(indexOfCalculator); //clean po kazdej zmene
+        }
 
+        private void btn_Settings_Click(object sender, EventArgs e)
+        {
+            ShowAndEnablePanel(indexOfSettings);
+        }
+        private void ShowAndEnablePanel(int indexToShow)
+        {
+            // Hide all panels 
+            foreach (Panel panel in listPanel)
+            {
+                panel.Visible = false;  // Set visible to false to completely hide
+                panel.Enabled = false;
+            }
 
+            // Show and enable the specific panel    
+            listPanel[indexToShow].BringToFront();
+            listPanel[indexToShow].Enabled = true;
+            listPanel[indexToShow].Visible = true; // Ensure visibility is set to true
+
+        }
+        
         private void Clear_all()
         {
             textBox1.Text = string.Empty;
@@ -154,7 +203,6 @@ namespace CalculatorApp
                     {
                         secondNumber_str += digit;
                     }
-                    Console.WriteLine("som tu ciarka");
                 }
                 else
                 {
@@ -167,7 +215,6 @@ namespace CalculatorApp
             }
             if (!FromKeyBoard)
             {
-                Console.WriteLine("som tu");
                 textBox1.Text += digit;
             }
         }
@@ -434,6 +481,140 @@ namespace CalculatorApp
         }
 
 
+        private bool isCollapsed;
+        Button button_toDropDown = new Button();
+        Panel panel_toDropDown = new Panel();
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (isCollapsed)
+            {
+                button_toDropDown.Image = Resources.Collapse;
+                panel_toDropDown.Height += 10;
+                if (panel_toDropDown.Size == panel_toDropDown.MaximumSize)
+                {
+                    timer1.Stop();
+                    isCollapsed = false;
+                }
+            }
+            else
+            {
+                button_toDropDown.Image = Resources.dropdoiwn2;
+                panel_toDropDown.Height -= 10;
+                if (panel_toDropDown.Size == panel_toDropDown.MinimumSize)
+                {
+                    timer1.Stop();
+                    isCollapsed = true;
+                }
+
+            }
+        }
+
+        private void Btn_UnitConverter_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+            button_toDropDown = (Button)sender;
+            panel_toDropDown = PanelDown_UnitConverter;
+
+        }
+        #region Degrees-Related Functions
+        private void btn_Degrees_Click(object sender, EventArgs e)
+        {
+            ShowAndEnablePanel(indexOfDegrees);
+        }
+        private void but_Degree_Input_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+            button_toDropDown = (Button)sender;
+            panel_toDropDown = IDegree_panel;
+        }
+
+        private void but_Degree_Output_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+            button_toDropDown = (Button)sender;
+            panel_toDropDown = ODegree_panel;
+        }
+        #endregion
+
+        #region Weight-Related Functions
+        private void btn_Weight_Click(object sender, EventArgs e)
+        {
+            ShowAndEnablePanel(indexOfWeight);
+        }
+        private void IWeightBtn_mm_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+            button_toDropDown = (Button)sender;
+            panel_toDropDown = IWeight_panel;
+        }
+        private void OWeightBtn_mm_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+            button_toDropDown = (Button)sender;
+            panel_toDropDown = OWeight_panel;
+        }
+        #endregion
+
+        #region Temperature-Related Functions
+        private void btn_Temperature_Click(object sender, EventArgs e)
+        {
+            ShowAndEnablePanel(indexOfTemperature);
+        }
+        private void ITemperatureBtn_C_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+            button_toDropDown = (Button)sender;
+            panel_toDropDown = ITemperature_panel;
+        }
+
+        private void OTemperatureBtn_C_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+            button_toDropDown = (Button)sender;
+            panel_toDropDown = OTemperature_panel;
+        }
+        #endregion
+
+        #region Length-Related Functions
+        private void btn_Length_Click(object sender, EventArgs e)
+        {
+            ShowAndEnablePanel(indexOfLength);
+        }
+        private void ILengthBtn_mm_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+            button_toDropDown = (Button)sender;
+            panel_toDropDown = ILength_panel;
+        }
+
+        private void OLengthBtn_mm_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+            button_toDropDown = (Button)sender;
+            panel_toDropDown = OLength_panel;
+        }
+        #endregion
+
+        #region Time-Related Functions
+        private void btn_Time_Click(object sender, EventArgs e)
+        {
+            ShowAndEnablePanel(indexOfTime);
+        }
+        private void ITimeBtn_sec_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+            button_toDropDown = (Button)sender;
+            panel_toDropDown = ITime_panel;
+        }
+
+        private void OTimeBtn_sec_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+            button_toDropDown = (Button)sender;
+            panel_toDropDown = OTime_panel;
+        }
+        #endregion
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -478,6 +659,26 @@ namespace CalculatorApp
 
         }
 
-        
+        private void UnitConverter_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Main_Calculator_panel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel_Temperature_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel_weight_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+       
     }
 }
