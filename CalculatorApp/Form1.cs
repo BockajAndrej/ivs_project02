@@ -69,7 +69,7 @@ namespace CalculatorApp
                                                   45f);
             graphics.FillRectangle(brush, gradient_rectangle);
         }
-    
+
 
         //Buttons
         private string firstNumber_str = "";
@@ -93,7 +93,7 @@ namespace CalculatorApp
                 }
             }
 
-            if (customControl1.Checked) 
+            if (customControl1.Checked)
             {
                 textBox1.BackColor = Color.FromArgb(20, 55, 73);
                 textBox1.ForeColor = Color.LimeGreen;
@@ -103,16 +103,16 @@ namespace CalculatorApp
                 textBox1.BackColor = Color.White;
                 textBox1.ForeColor = Color.Black;
             }
-            
+
             this.Invalidate(); // Force the form to repaint
 
         }
-        
+
         List<Panel> listPanel = new List<Panel>();
         int indexOfCalculator = 0;
         int indexOfSettings = 1;
         int indexOfDegrees = 2;
-        
+
         private void btn_Calculator_Click(object sender, EventArgs e)
         {
             ShowAndEnablePanel(indexOfCalculator); //clean po kazdej zmene
@@ -242,6 +242,97 @@ namespace CalculatorApp
                 textBox1.Text += digit;
             }
         }
+
+
+
+        #region Converter Buttons/Keyboard Input Logic
+
+        string ConvertNumber_str = string.Empty;
+        string curr_ConversionType = string.Empty;
+        Optional_functions opt_functions = new Optional_functions();
+        private void appendDigitConverter(string digit, bool FromKeyBoard)
+        {
+            if (digit == ",")
+            {
+                if (!ConvertNumber_str.Contains(","))
+                    ConvertNumber_str += digit;
+            }
+            else
+                ConvertNumber_str += digit;
+            UpdateInputTextBoxConverter(ConvertNumber_str);
+
+        }
+
+        private void numberButtonConverter_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender; // Get the button that was clicked
+            appendDigitConverter(button.Text, false);
+        }
+        
+        private void UpdateInputTextBoxConverter(string value)
+        {
+            textBox_Converter_Input.Text = value;
+            decimal.TryParse(value, out decimal result);
+            CalculateResultConvert(result, Input_LabelConvert.Text, Output_LabelConvert.Text);
+        }
+
+        private void UpdateOutoutTextBoxConverter(string value)
+        {
+            textBox_Converter_Output.Text = value;
+        }
+
+        private void DeleteConverter_Click(object sender, EventArgs e)
+        {
+            if (ConvertNumber_str.Length != 0)
+            {
+                ConvertNumber_str = ConvertNumber_str.Substring(0, ConvertNumber_str.Length - 1);
+                UpdateInputTextBoxConverter(ConvertNumber_str);
+                textBox_Converter_Output.Text = string.Empty;
+            }
+        }
+        private void ClearConverter_Text(object sender, EventArgs e)
+        {
+            ClearConverter_TextAll();
+        }
+        private void ClearConverter_TextAll()
+        {
+            ConvertNumber_str = string.Empty;
+            textBox_Converter_Input.Text = string.Empty;
+            textBox_Converter_Output.Text = string.Empty;
+        }
+
+        private void CalculateResultConvert(decimal value, string from, string to)
+        {
+            decimal result = decimal.Zero;
+
+            switch (curr_ConversionType)
+            {
+                case "Degree":
+                    result = opt_functions.Degrees(value, from, to);
+                    break;
+                case "Weight":
+                    result = opt_functions.Weight(value, from, to);
+                    break;
+                case "Temperature":
+                    result = opt_functions.Temp(value, from, to);
+                    break;
+                case "Time":
+                    result = opt_functions.Time(value, from, to);
+                    break;
+                case "Lenght":
+                    result = opt_functions.Length(value, from, to);
+                    break;
+                default:
+                    result = 0;
+                    break;
+            }
+            string formatedConverResult= mathLib.FormatDecimal(result, 5);
+            UpdateOutoutTextBoxConverter(formatedConverResult);
+
+        }
+        
+        #endregion
+
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) &&
@@ -255,8 +346,8 @@ namespace CalculatorApp
              (e.KeyChar == '^' && textBox1.Text.Length > 0 && !"+-X÷%".Contains(textBox1.Text.Last())) ||
              e.KeyChar == '!' ||
              e.KeyChar == ',' ||
-             e.KeyChar == (char)Keys.Back || 
-             e.KeyChar == (char)Keys.Enter)) 
+             e.KeyChar == (char)Keys.Back ||
+             e.KeyChar == (char)Keys.Enter))
             {
                 if (char.IsDigit(e.KeyChar))
                 {
@@ -274,7 +365,7 @@ namespace CalculatorApp
                 }
                 else if (e.KeyChar == '!')
                 {
-                    Factorial_Click(this,EventArgs.Empty);
+                    Factorial_Click(this, EventArgs.Empty);
                 }
                 else if (e.KeyChar == ',' || e.KeyChar == '.')
                 {
@@ -499,12 +590,6 @@ namespace CalculatorApp
             Clear_all();
         }
 
-        private void Comma_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
         private bool isCollapsed;
         Button button_toDropDown = new Button();
         Panel panel_toDropDown = new Panel();
@@ -542,26 +627,74 @@ namespace CalculatorApp
             {
                 ShowAndEnablePanel(indexOfDegrees);
             }
-            
+            PerformDegreeSetup();
         }
-        
+
+        private void PerformDegreeSetup()
+        {
+            ShowAndEnableInOutPanels("IDegree", "ODegree");
+            curr_ConversionType = "Degree";
+            Input_LabelConvert.Text = "deg";
+            Output_LabelConvert.Text = "deg";
+            ClearConverter_TextAll();
+
+        }
+
+        #region Input/Output text for Convert Textboxes
+        string InputUnit_str, OutputUnit_str;
+
+        private void UpdateAfterEachSelection()
+        {
+            if (textBox_Converter_Input.Text != string.Empty)
+            {
+                UpdateInputTextBoxConverter(textBox_Converter_Input.Text);
+            }
+        }
+
+        // reset values to default when chaning units
+        private void dropdownInputButton_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender; // Get the button that was clicked
+            InputUnit_str = button.Text;
+            Input_LabelConvert.Text = InputUnit_str;
+            UpdateAfterEachSelection();
+        }
+
+        private void dropdownOutPutButton_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender; // Get the button that was clicked
+            OutputUnit_str = button.Text;
+            Output_LabelConvert.Text = OutputUnit_str;
+            UpdateAfterEachSelection();
+        }
+
+        #endregion
+
         #region Degrees-Related Functions
         private void btn_Degrees_Click(object sender, EventArgs e)
         {
-            ShowAndEnableInOutPanels("IDegree","ODegree");
+            ShowAndEnableInOutPanels("IDegree", "ODegree");
+            curr_ConversionType = "Degree";
+            Input_LabelConvert.Text = "deg";
+            Output_LabelConvert.Text = "deg";
+            ClearConverter_TextAll();
         }
-        private void but_Degree_Input_Click(object sender, EventArgs e)
+        private void btn_Degree_Input_Click(object sender, EventArgs e)
         {
             timer1.Start();
             button_toDropDown = (Button)sender;
             panel_toDropDown = IDegree_panel;
+            Input_LabelConvert.Text = ((Button)sender).Text;
+            UpdateAfterEachSelection();
         }
 
-        private void but_Degree_Output_Click(object sender, EventArgs e)
+        private void btn_Degree_Output_Click(object sender, EventArgs e)
         {
             timer1.Start();
             button_toDropDown = (Button)sender;
             panel_toDropDown = ODegree_panel;
+            Output_LabelConvert.Text = ((Button)sender).Text;
+            UpdateAfterEachSelection();
         }
         #endregion
 
@@ -569,19 +702,26 @@ namespace CalculatorApp
         private void btn_Weight_Click(object sender, EventArgs e)
         {
             ShowAndEnableInOutPanels("IWeight", "OWeight");
-
+            curr_ConversionType = "Weight";
+            Input_LabelConvert.Text = "mg";
+            Output_LabelConvert.Text = "mg";
+            ClearConverter_TextAll();
         }
         private void IWeightBtn_mm_Click(object sender, EventArgs e)
         {
             timer1.Start();
             button_toDropDown = (Button)sender;
             panel_toDropDown = IWeight_panel;
+            Input_LabelConvert.Text = ((Button)sender).Text;
+            UpdateAfterEachSelection();
         }
         private void OWeightBtn_mm_Click(object sender, EventArgs e)
         {
             timer1.Start();
             button_toDropDown = (Button)sender;
             panel_toDropDown = OWeight_panel;
+            Output_LabelConvert.Text = ((Button)sender).Text;
+            UpdateAfterEachSelection();
         }
         #endregion
 
@@ -589,6 +729,10 @@ namespace CalculatorApp
         private void btn_Temperature_Click(object sender, EventArgs e)
         {
             ShowAndEnableInOutPanels("ITemperature", "OTemperature");
+            curr_ConversionType = "Temperature";
+            Input_LabelConvert.Text = "C";
+            Output_LabelConvert.Text = "C";
+            ClearConverter_TextAll();
 
         }
         private void ITemperatureBtn_C_Click(object sender, EventArgs e)
@@ -596,6 +740,8 @@ namespace CalculatorApp
             timer1.Start();
             button_toDropDown = (Button)sender;
             panel_toDropDown = ITemperature_panel;
+            Input_LabelConvert.Text = ((Button)sender).Text;
+            UpdateAfterEachSelection();
         }
 
         private void OTemperatureBtn_C_Click(object sender, EventArgs e)
@@ -603,20 +749,28 @@ namespace CalculatorApp
             timer1.Start();
             button_toDropDown = (Button)sender;
             panel_toDropDown = OTemperature_panel;
+            Output_LabelConvert.Text = ((Button)sender).Text;
+            UpdateAfterEachSelection();
         }
         #endregion
 
         #region Length-Related Functions
         private void btn_Length_Click(object sender, EventArgs e)
         {
-    
+
             ShowAndEnableInOutPanels("ILength", "OLength");
+            curr_ConversionType = "Length";
+            Input_LabelConvert.Text = "mm";
+            Output_LabelConvert.Text = "mm";
+            ClearConverter_TextAll();
         }
         private void ILengthBtn_mm_Click(object sender, EventArgs e)
         {
             timer1.Start();
             button_toDropDown = (Button)sender;
             panel_toDropDown = ILength_panel;
+            Input_LabelConvert.Text = ((Button)sender).Text;
+            UpdateAfterEachSelection();
         }
 
         private void OLengthBtn_mm_Click(object sender, EventArgs e)
@@ -624,6 +778,8 @@ namespace CalculatorApp
             timer1.Start();
             button_toDropDown = (Button)sender;
             panel_toDropDown = OLength_panel;
+            Output_LabelConvert.Text = ((Button)sender).Text;
+            UpdateAfterEachSelection();
         }
         #endregion
 
@@ -631,12 +787,18 @@ namespace CalculatorApp
         private void btn_Time_Click(object sender, EventArgs e)
         {
             ShowAndEnableInOutPanels("ITime", "OTime");
+            curr_ConversionType = "Time";
+            Input_LabelConvert.Text = "sec";
+            Output_LabelConvert.Text = "sec";
+            ClearConverter_TextAll();
         }
         private void ITimeBtn_sec_Click(object sender, EventArgs e)
         {
             timer1.Start();
             button_toDropDown = (Button)sender;
             panel_toDropDown = ITime_panel;
+            Input_LabelConvert.Text = ((Button)sender).Text;
+            UpdateAfterEachSelection();
         }
 
         private void OTimeBtn_sec_Click(object sender, EventArgs e)
@@ -644,71 +806,16 @@ namespace CalculatorApp
             timer1.Start();
             button_toDropDown = (Button)sender;
             panel_toDropDown = OTime_panel;
+            Output_LabelConvert.Text = ((Button)sender).Text;
+            UpdateAfterEachSelection();
         }
+
         #endregion
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void button7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void UnitConverter_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void Main_Calculator_panel_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void panel_Temperature_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel_weight_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

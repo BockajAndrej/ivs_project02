@@ -67,6 +67,8 @@
             this.btn_Calculator = new System.Windows.Forms.Button();
             this.btn_Settings = new System.Windows.Forms.Button();
             this.panel_Converter = new System.Windows.Forms.Panel();
+            this.Output_LabelConvert = new System.Windows.Forms.Label();
+            this.Input_LabelConvert = new System.Windows.Forms.Label();
             this.OLength_panel = new System.Windows.Forms.Panel();
             this.OLengthBtn_yard = new System.Windows.Forms.Button();
             this.OLengthBtn_inch = new System.Windows.Forms.Button();
@@ -131,16 +133,15 @@
             this.IDegree_panel = new System.Windows.Forms.Panel();
             this.button28 = new System.Windows.Forms.Button();
             this.but_Degree_Input = new System.Windows.Forms.Button();
-            this.output_Degrees_output = new System.Windows.Forms.TextBox();
-            this.textBox_Degrees_Input = new System.Windows.Forms.TextBox();
-            this.button10 = new System.Windows.Forms.Button();
+            this.textBox_Converter_Output = new System.Windows.Forms.TextBox();
+            this.textBox_Converter_Input = new System.Windows.Forms.TextBox();
+            this.ClearConverter = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
+            this.DeleteConverter = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
@@ -360,10 +361,10 @@
             // 
             this.Result.Cursor = System.Windows.Forms.Cursors.Default;
             this.Result.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Result.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Result.Location = new System.Drawing.Point(225, 349);
+            this.Result.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Result.Location = new System.Drawing.Point(154, 349);
             this.Result.Name = "Result";
-            this.Result.Size = new System.Drawing.Size(50, 50);
+            this.Result.Size = new System.Drawing.Size(191, 50);
             this.Result.TabIndex = 18;
             this.Result.Text = "=";
             this.Result.UseVisualStyleBackColor = true;
@@ -451,7 +452,7 @@
             // 
             this.Comma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Comma.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Comma.Location = new System.Drawing.Point(154, 349);
+            this.Comma.Location = new System.Drawing.Point(12, 348);
             this.Comma.Margin = new System.Windows.Forms.Padding(2);
             this.Comma.Name = "Comma";
             this.Comma.Size = new System.Drawing.Size(50, 50);
@@ -476,13 +477,14 @@
             // 
             // PanelDown_UnitConverter
             // 
+            this.PanelDown_UnitConverter.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.PanelDown_UnitConverter.Controls.Add(this.btn_Length);
             this.PanelDown_UnitConverter.Controls.Add(this.btn_Time);
             this.PanelDown_UnitConverter.Controls.Add(this.btn_Temperature);
             this.PanelDown_UnitConverter.Controls.Add(this.btn_Weight);
             this.PanelDown_UnitConverter.Controls.Add(this.btn_Degrees);
             this.PanelDown_UnitConverter.Controls.Add(this.Btn_UnitConverter);
-            this.PanelDown_UnitConverter.Location = new System.Drawing.Point(12, 96);
+            this.PanelDown_UnitConverter.Location = new System.Drawing.Point(9, 135);
             this.PanelDown_UnitConverter.MaximumSize = new System.Drawing.Size(110, 224);
             this.PanelDown_UnitConverter.MinimumSize = new System.Drawing.Size(110, 48);
             this.PanelDown_UnitConverter.Name = "PanelDown_UnitConverter";
@@ -604,7 +606,7 @@
             this.Main_Calculator_panel.Controls.Add(this.Result);
             this.Main_Calculator_panel.Controls.Add(this.Division);
             this.Main_Calculator_panel.Controls.Add(this.Modulo);
-            this.Main_Calculator_panel.Location = new System.Drawing.Point(142, 87);
+            this.Main_Calculator_panel.Location = new System.Drawing.Point(133, 12);
             this.Main_Calculator_panel.Name = "Main_Calculator_panel";
             this.Main_Calculator_panel.Size = new System.Drawing.Size(368, 418);
             this.Main_Calculator_panel.TabIndex = 31;
@@ -613,7 +615,7 @@
             // Main_Setting_panel
             // 
             this.Main_Setting_panel.Controls.Add(this.textBox4);
-            this.Main_Setting_panel.Location = new System.Drawing.Point(143, 87);
+            this.Main_Setting_panel.Location = new System.Drawing.Point(134, 12);
             this.Main_Setting_panel.Name = "Main_Setting_panel";
             this.Main_Setting_panel.Size = new System.Drawing.Size(370, 418);
             this.Main_Setting_panel.TabIndex = 33;
@@ -632,31 +634,35 @@
             // 
             // btn_Calculator
             // 
+            this.btn_Calculator.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btn_Calculator.FlatAppearance.BorderSize = 0;
             this.btn_Calculator.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Calculator.Location = new System.Drawing.Point(15, 19);
+            this.btn_Calculator.Location = new System.Drawing.Point(12, 72);
             this.btn_Calculator.Name = "btn_Calculator";
             this.btn_Calculator.Size = new System.Drawing.Size(107, 43);
             this.btn_Calculator.TabIndex = 36;
             this.btn_Calculator.Text = "Calculator";
-            this.btn_Calculator.UseVisualStyleBackColor = true;
+            this.btn_Calculator.UseVisualStyleBackColor = false;
             this.btn_Calculator.Click += new System.EventHandler(this.btn_Calculator_Click);
             // 
             // btn_Settings
             // 
+            this.btn_Settings.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btn_Settings.FlatAppearance.BorderSize = 0;
             this.btn_Settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Settings.Location = new System.Drawing.Point(145, 19);
+            this.btn_Settings.Location = new System.Drawing.Point(12, 12);
             this.btn_Settings.Name = "btn_Settings";
             this.btn_Settings.Size = new System.Drawing.Size(107, 43);
             this.btn_Settings.TabIndex = 37;
             this.btn_Settings.Text = "Settings";
-            this.btn_Settings.UseVisualStyleBackColor = true;
+            this.btn_Settings.UseVisualStyleBackColor = false;
             this.btn_Settings.Click += new System.EventHandler(this.btn_Settings_Click);
             // 
             // panel_Converter
             // 
-            this.panel_Converter.BackColor = System.Drawing.Color.Silver;
+            this.panel_Converter.BackColor = System.Drawing.Color.DarkGray;
+            this.panel_Converter.Controls.Add(this.Output_LabelConvert);
+            this.panel_Converter.Controls.Add(this.Input_LabelConvert);
             this.panel_Converter.Controls.Add(this.OLength_panel);
             this.panel_Converter.Controls.Add(this.OWeight_panel);
             this.panel_Converter.Controls.Add(this.ILength_panel);
@@ -667,26 +673,46 @@
             this.panel_Converter.Controls.Add(this.ODegree_panel);
             this.panel_Converter.Controls.Add(this.ITemperature_panel);
             this.panel_Converter.Controls.Add(this.IDegree_panel);
-            this.panel_Converter.Controls.Add(this.output_Degrees_output);
-            this.panel_Converter.Controls.Add(this.textBox_Degrees_Input);
-            this.panel_Converter.Controls.Add(this.button10);
+            this.panel_Converter.Controls.Add(this.textBox_Converter_Output);
+            this.panel_Converter.Controls.Add(this.textBox_Converter_Input);
+            this.panel_Converter.Controls.Add(this.ClearConverter);
             this.panel_Converter.Controls.Add(this.button11);
-            this.panel_Converter.Controls.Add(this.button24);
             this.panel_Converter.Controls.Add(this.button12);
             this.panel_Converter.Controls.Add(this.button23);
             this.panel_Converter.Controls.Add(this.button13);
             this.panel_Converter.Controls.Add(this.button22);
-            this.panel_Converter.Controls.Add(this.button15);
+            this.panel_Converter.Controls.Add(this.DeleteConverter);
             this.panel_Converter.Controls.Add(this.button21);
             this.panel_Converter.Controls.Add(this.button16);
             this.panel_Converter.Controls.Add(this.button20);
             this.panel_Converter.Controls.Add(this.button17);
             this.panel_Converter.Controls.Add(this.button19);
             this.panel_Converter.Controls.Add(this.button18);
-            this.panel_Converter.Location = new System.Drawing.Point(519, 87);
+            this.panel_Converter.Location = new System.Drawing.Point(133, 12);
             this.panel_Converter.Name = "panel_Converter";
             this.panel_Converter.Size = new System.Drawing.Size(506, 406);
             this.panel_Converter.TabIndex = 38;
+            // 
+            // Output_LabelConvert
+            // 
+            this.Output_LabelConvert.AutoSize = true;
+            this.Output_LabelConvert.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Output_LabelConvert.Location = new System.Drawing.Point(320, 58);
+            this.Output_LabelConvert.Name = "Output_LabelConvert";
+            this.Output_LabelConvert.Size = new System.Drawing.Size(20, 20);
+            this.Output_LabelConvert.TabIndex = 45;
+            this.Output_LabelConvert.Text = "(:";
+            // 
+            // Input_LabelConvert
+            // 
+            this.Input_LabelConvert.AutoSize = true;
+            this.Input_LabelConvert.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Input_LabelConvert.Location = new System.Drawing.Point(171, 58);
+            this.Input_LabelConvert.Name = "Input_LabelConvert";
+            this.Input_LabelConvert.Size = new System.Drawing.Size(20, 20);
+            this.Input_LabelConvert.TabIndex = 44;
+            this.Input_LabelConvert.Text = ":)";
+            this.Input_LabelConvert.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // OLength_panel
             // 
@@ -698,7 +724,7 @@
             this.OLength_panel.Controls.Add(this.OLengthBtn_dm);
             this.OLength_panel.Controls.Add(this.OLengthBtn_cm);
             this.OLength_panel.Controls.Add(this.OLengthBtn_mm);
-            this.OLength_panel.Location = new System.Drawing.Point(417, 263);
+            this.OLength_panel.Location = new System.Drawing.Point(411, 270);
             this.OLength_panel.MaximumSize = new System.Drawing.Size(77, 288);
             this.OLength_panel.MinimumSize = new System.Drawing.Size(77, 42);
             this.OLength_panel.Name = "OLength_panel";
@@ -718,6 +744,7 @@
             this.OLengthBtn_yard.Text = "yard";
             this.OLengthBtn_yard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.OLengthBtn_yard.UseVisualStyleBackColor = false;
+            this.OLengthBtn_yard.Click += new System.EventHandler(this.btn_Degree_Output_Click);
             // 
             // OLengthBtn_inch
             // 
@@ -732,6 +759,7 @@
             this.OLengthBtn_inch.Text = "inch";
             this.OLengthBtn_inch.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.OLengthBtn_inch.UseVisualStyleBackColor = false;
+            this.OLengthBtn_inch.Click += new System.EventHandler(this.btn_Degree_Output_Click);
             // 
             // OLengthBtn_miles
             // 
@@ -746,6 +774,7 @@
             this.OLengthBtn_miles.Text = "miles";
             this.OLengthBtn_miles.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.OLengthBtn_miles.UseVisualStyleBackColor = false;
+            this.OLengthBtn_miles.Click += new System.EventHandler(this.btn_Degree_Output_Click);
             // 
             // OLengthBtn_km
             // 
@@ -760,6 +789,7 @@
             this.OLengthBtn_km.Text = "km";
             this.OLengthBtn_km.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.OLengthBtn_km.UseVisualStyleBackColor = false;
+            this.OLengthBtn_km.Click += new System.EventHandler(this.btn_Degree_Output_Click);
             // 
             // OLengthBtn_m
             // 
@@ -774,6 +804,7 @@
             this.OLengthBtn_m.Text = "m";
             this.OLengthBtn_m.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.OLengthBtn_m.UseVisualStyleBackColor = false;
+            this.OLengthBtn_m.Click += new System.EventHandler(this.btn_Degree_Output_Click);
             // 
             // OLengthBtn_dm
             // 
@@ -788,6 +819,7 @@
             this.OLengthBtn_dm.Text = "dm";
             this.OLengthBtn_dm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.OLengthBtn_dm.UseVisualStyleBackColor = false;
+            this.OLengthBtn_dm.Click += new System.EventHandler(this.btn_Degree_Output_Click);
             // 
             // OLengthBtn_cm
             // 
@@ -802,6 +834,7 @@
             this.OLengthBtn_cm.Text = "cm";
             this.OLengthBtn_cm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.OLengthBtn_cm.UseVisualStyleBackColor = false;
+            this.OLengthBtn_cm.Click += new System.EventHandler(this.btn_Degree_Output_Click);
             // 
             // OLengthBtn_mm
             // 
@@ -830,7 +863,7 @@
             this.OWeight_panel.Controls.Add(this.OWeightBtn_dag);
             this.OWeight_panel.Controls.Add(this.OWeightBtn_g);
             this.OWeight_panel.Controls.Add(this.OWeightBtn_mg);
-            this.OWeight_panel.Location = new System.Drawing.Point(419, 217);
+            this.OWeight_panel.Location = new System.Drawing.Point(411, 227);
             this.OWeight_panel.MaximumSize = new System.Drawing.Size(75, 252);
             this.OWeight_panel.MinimumSize = new System.Drawing.Size(75, 42);
             this.OWeight_panel.Name = "OWeight_panel";
@@ -850,6 +883,7 @@
             this.OWeightBtn_oz.Text = "oz";
             this.OWeightBtn_oz.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.OWeightBtn_oz.UseVisualStyleBackColor = false;
+            this.OWeightBtn_oz.Click += new System.EventHandler(this.btn_Degree_Output_Click);
             // 
             // OWeightBtn_lb
             // 
@@ -864,6 +898,7 @@
             this.OWeightBtn_lb.Text = "lb";
             this.OWeightBtn_lb.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.OWeightBtn_lb.UseVisualStyleBackColor = false;
+            this.OWeightBtn_lb.Click += new System.EventHandler(this.btn_Degree_Output_Click);
             // 
             // OWeightBtn_t
             // 
@@ -878,6 +913,7 @@
             this.OWeightBtn_t.Text = "t";
             this.OWeightBtn_t.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.OWeightBtn_t.UseVisualStyleBackColor = false;
+            this.OWeightBtn_t.Click += new System.EventHandler(this.btn_Degree_Output_Click);
             // 
             // OWeightBtn_kg
             // 
@@ -892,6 +928,7 @@
             this.OWeightBtn_kg.Text = "kg";
             this.OWeightBtn_kg.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.OWeightBtn_kg.UseVisualStyleBackColor = false;
+            this.OWeightBtn_kg.Click += new System.EventHandler(this.btn_Degree_Output_Click);
             // 
             // OWeightBtn_dag
             // 
@@ -906,6 +943,7 @@
             this.OWeightBtn_dag.Text = "dag";
             this.OWeightBtn_dag.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.OWeightBtn_dag.UseVisualStyleBackColor = false;
+            this.OWeightBtn_dag.Click += new System.EventHandler(this.btn_Degree_Output_Click);
             // 
             // OWeightBtn_g
             // 
@@ -920,6 +958,7 @@
             this.OWeightBtn_g.Text = "g";
             this.OWeightBtn_g.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.OWeightBtn_g.UseVisualStyleBackColor = false;
+            this.OWeightBtn_g.Click += new System.EventHandler(this.btn_Degree_Output_Click);
             // 
             // OWeightBtn_mg
             // 
@@ -949,7 +988,7 @@
             this.ILength_panel.Controls.Add(this.ILengthBtn_dm);
             this.ILength_panel.Controls.Add(this.ILengthBtn_cm);
             this.ILength_panel.Controls.Add(this.ILengthBtn_mm);
-            this.ILength_panel.Location = new System.Drawing.Point(21, 263);
+            this.ILength_panel.Location = new System.Drawing.Point(23, 281);
             this.ILength_panel.MaximumSize = new System.Drawing.Size(77, 288);
             this.ILength_panel.MinimumSize = new System.Drawing.Size(77, 42);
             this.ILength_panel.Name = "ILength_panel";
@@ -969,6 +1008,7 @@
             this.ILengthBtn_yard.Text = "yard";
             this.ILengthBtn_yard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ILengthBtn_yard.UseVisualStyleBackColor = false;
+            this.ILengthBtn_yard.Click += new System.EventHandler(this.dropdownInputButton_Click);
             // 
             // ILengthBtn_inch
             // 
@@ -983,6 +1023,7 @@
             this.ILengthBtn_inch.Text = "inch";
             this.ILengthBtn_inch.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ILengthBtn_inch.UseVisualStyleBackColor = false;
+            this.ILengthBtn_inch.Click += new System.EventHandler(this.dropdownInputButton_Click);
             // 
             // ILengthBtn_miles
             // 
@@ -997,6 +1038,7 @@
             this.ILengthBtn_miles.Text = "miles";
             this.ILengthBtn_miles.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ILengthBtn_miles.UseVisualStyleBackColor = false;
+            this.ILengthBtn_miles.Click += new System.EventHandler(this.dropdownInputButton_Click);
             // 
             // ILengthBtn_km
             // 
@@ -1011,6 +1053,7 @@
             this.ILengthBtn_km.Text = "km";
             this.ILengthBtn_km.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ILengthBtn_km.UseVisualStyleBackColor = false;
+            this.ILengthBtn_km.Click += new System.EventHandler(this.dropdownInputButton_Click);
             // 
             // ILengthBtn_m
             // 
@@ -1025,6 +1068,7 @@
             this.ILengthBtn_m.Text = "m";
             this.ILengthBtn_m.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ILengthBtn_m.UseVisualStyleBackColor = false;
+            this.ILengthBtn_m.Click += new System.EventHandler(this.dropdownInputButton_Click);
             // 
             // ILengthBtn_dm
             // 
@@ -1039,6 +1083,7 @@
             this.ILengthBtn_dm.Text = "dm";
             this.ILengthBtn_dm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ILengthBtn_dm.UseVisualStyleBackColor = false;
+            this.ILengthBtn_dm.Click += new System.EventHandler(this.dropdownInputButton_Click);
             // 
             // ILengthBtn_cm
             // 
@@ -1053,6 +1098,7 @@
             this.ILengthBtn_cm.Text = "cm";
             this.ILengthBtn_cm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ILengthBtn_cm.UseVisualStyleBackColor = false;
+            this.ILengthBtn_cm.Click += new System.EventHandler(this.dropdownInputButton_Click);
             // 
             // ILengthBtn_mm
             // 
@@ -1081,7 +1127,7 @@
             this.OTime_panel.Controls.Add(this.OTimeBtn_hour);
             this.OTime_panel.Controls.Add(this.OTimeBtn_min);
             this.OTime_panel.Controls.Add(this.OTimeBtn_sec);
-            this.OTime_panel.Location = new System.Drawing.Point(414, 169);
+            this.OTime_panel.Location = new System.Drawing.Point(408, 179);
             this.OTime_panel.MaximumSize = new System.Drawing.Size(80, 252);
             this.OTime_panel.MinimumSize = new System.Drawing.Size(80, 42);
             this.OTime_panel.Name = "OTime_panel";
@@ -1101,6 +1147,7 @@
             this.OTimeBtn_years.Text = "years";
             this.OTimeBtn_years.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.OTimeBtn_years.UseVisualStyleBackColor = false;
+            this.OTimeBtn_years.Click += new System.EventHandler(this.dropdownOutPutButton_Click);
             // 
             // OTimeBtn_months
             // 
@@ -1115,6 +1162,7 @@
             this.OTimeBtn_months.Text = "months";
             this.OTimeBtn_months.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.OTimeBtn_months.UseVisualStyleBackColor = false;
+            this.OTimeBtn_months.Click += new System.EventHandler(this.dropdownOutPutButton_Click);
             // 
             // OTimeBtn_weeks
             // 
@@ -1129,6 +1177,7 @@
             this.OTimeBtn_weeks.Text = "weeks";
             this.OTimeBtn_weeks.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.OTimeBtn_weeks.UseVisualStyleBackColor = false;
+            this.OTimeBtn_weeks.Click += new System.EventHandler(this.dropdownOutPutButton_Click);
             // 
             // OTimeBtn_days
             // 
@@ -1143,6 +1192,7 @@
             this.OTimeBtn_days.Text = "days";
             this.OTimeBtn_days.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.OTimeBtn_days.UseVisualStyleBackColor = false;
+            this.OTimeBtn_days.Click += new System.EventHandler(this.dropdownOutPutButton_Click);
             // 
             // OTimeBtn_hour
             // 
@@ -1157,6 +1207,7 @@
             this.OTimeBtn_hour.Text = "hour";
             this.OTimeBtn_hour.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.OTimeBtn_hour.UseVisualStyleBackColor = false;
+            this.OTimeBtn_hour.Click += new System.EventHandler(this.dropdownOutPutButton_Click);
             // 
             // OTimeBtn_min
             // 
@@ -1171,6 +1222,7 @@
             this.OTimeBtn_min.Text = "min";
             this.OTimeBtn_min.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.OTimeBtn_min.UseVisualStyleBackColor = false;
+            this.OTimeBtn_min.Click += new System.EventHandler(this.dropdownOutPutButton_Click);
             // 
             // OTimeBtn_sec
             // 
@@ -1199,7 +1251,7 @@
             this.IWeight_panel.Controls.Add(this.IWeightBtn_dag);
             this.IWeight_panel.Controls.Add(this.IWeightBtn_g);
             this.IWeight_panel.Controls.Add(this.IWeightBtn_mg);
-            this.IWeight_panel.Location = new System.Drawing.Point(21, 217);
+            this.IWeight_panel.Location = new System.Drawing.Point(23, 236);
             this.IWeight_panel.MaximumSize = new System.Drawing.Size(75, 252);
             this.IWeight_panel.MinimumSize = new System.Drawing.Size(75, 42);
             this.IWeight_panel.Name = "IWeight_panel";
@@ -1219,6 +1271,7 @@
             this.IWeightBtn_oz.Text = "oz";
             this.IWeightBtn_oz.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.IWeightBtn_oz.UseVisualStyleBackColor = false;
+            this.IWeightBtn_oz.Click += new System.EventHandler(this.dropdownInputButton_Click);
             // 
             // IWeightBtn_lb
             // 
@@ -1233,6 +1286,7 @@
             this.IWeightBtn_lb.Text = "lb";
             this.IWeightBtn_lb.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.IWeightBtn_lb.UseVisualStyleBackColor = false;
+            this.IWeightBtn_lb.Click += new System.EventHandler(this.dropdownInputButton_Click);
             // 
             // IWeightBtn_t
             // 
@@ -1247,6 +1301,7 @@
             this.IWeightBtn_t.Text = "t";
             this.IWeightBtn_t.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.IWeightBtn_t.UseVisualStyleBackColor = false;
+            this.IWeightBtn_t.Click += new System.EventHandler(this.dropdownInputButton_Click);
             // 
             // IWeightBtn_kg
             // 
@@ -1261,6 +1316,7 @@
             this.IWeightBtn_kg.Text = "kg";
             this.IWeightBtn_kg.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.IWeightBtn_kg.UseVisualStyleBackColor = false;
+            this.IWeightBtn_kg.Click += new System.EventHandler(this.dropdownInputButton_Click);
             // 
             // IWeightBtn_dag
             // 
@@ -1272,9 +1328,10 @@
             this.IWeightBtn_dag.Name = "IWeightBtn_dag";
             this.IWeightBtn_dag.Size = new System.Drawing.Size(75, 35);
             this.IWeightBtn_dag.TabIndex = 37;
-            this.IWeightBtn_dag.Text = "ag";
+            this.IWeightBtn_dag.Text = "dag";
             this.IWeightBtn_dag.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.IWeightBtn_dag.UseVisualStyleBackColor = false;
+            this.IWeightBtn_dag.Click += new System.EventHandler(this.dropdownInputButton_Click);
             // 
             // IWeightBtn_g
             // 
@@ -1289,6 +1346,7 @@
             this.IWeightBtn_g.Text = "g";
             this.IWeightBtn_g.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.IWeightBtn_g.UseVisualStyleBackColor = false;
+            this.IWeightBtn_g.Click += new System.EventHandler(this.dropdownInputButton_Click);
             // 
             // IWeightBtn_mg
             // 
@@ -1313,7 +1371,7 @@
             this.OTemperature_panel.Controls.Add(this.OTemperatureBtn_K);
             this.OTemperature_panel.Controls.Add(this.OTemperatureBtn_F);
             this.OTemperature_panel.Controls.Add(this.OTemperatureBtn_C);
-            this.OTemperature_panel.Location = new System.Drawing.Point(434, 113);
+            this.OTemperature_panel.Location = new System.Drawing.Point(415, 127);
             this.OTemperature_panel.MaximumSize = new System.Drawing.Size(60, 113);
             this.OTemperature_panel.MinimumSize = new System.Drawing.Size(60, 42);
             this.OTemperature_panel.Name = "OTemperature_panel";
@@ -1333,6 +1391,7 @@
             this.OTemperatureBtn_K.Text = "K";
             this.OTemperatureBtn_K.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.OTemperatureBtn_K.UseVisualStyleBackColor = false;
+            this.OTemperatureBtn_K.Click += new System.EventHandler(this.btn_Degree_Output_Click);
             // 
             // OTemperatureBtn_F
             // 
@@ -1347,6 +1406,7 @@
             this.OTemperatureBtn_F.Text = "F";
             this.OTemperatureBtn_F.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.OTemperatureBtn_F.UseVisualStyleBackColor = false;
+            this.OTemperatureBtn_F.Click += new System.EventHandler(this.btn_Degree_Output_Click);
             // 
             // OTemperatureBtn_C
             // 
@@ -1375,7 +1435,7 @@
             this.ITime_panel.Controls.Add(this.ITimeBtn_hour);
             this.ITime_panel.Controls.Add(this.ITimeBtn_min);
             this.ITime_panel.Controls.Add(this.ITimeBtn_sec);
-            this.ITime_panel.Location = new System.Drawing.Point(21, 167);
+            this.ITime_panel.Location = new System.Drawing.Point(23, 175);
             this.ITime_panel.MaximumSize = new System.Drawing.Size(80, 252);
             this.ITime_panel.MinimumSize = new System.Drawing.Size(80, 44);
             this.ITime_panel.Name = "ITime_panel";
@@ -1395,6 +1455,7 @@
             this.ITimeBtn_years.Text = "years";
             this.ITimeBtn_years.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ITimeBtn_years.UseVisualStyleBackColor = false;
+            this.ITimeBtn_years.Click += new System.EventHandler(this.dropdownInputButton_Click);
             // 
             // ITimeBtn_months
             // 
@@ -1409,6 +1470,7 @@
             this.ITimeBtn_months.Text = "months";
             this.ITimeBtn_months.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ITimeBtn_months.UseVisualStyleBackColor = false;
+            this.ITimeBtn_months.Click += new System.EventHandler(this.dropdownInputButton_Click);
             // 
             // ITimeBtn_weeks
             // 
@@ -1423,6 +1485,7 @@
             this.ITimeBtn_weeks.Text = "weeks";
             this.ITimeBtn_weeks.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ITimeBtn_weeks.UseVisualStyleBackColor = false;
+            this.ITimeBtn_weeks.Click += new System.EventHandler(this.dropdownInputButton_Click);
             // 
             // ITimeBtn_days
             // 
@@ -1437,6 +1500,7 @@
             this.ITimeBtn_days.Text = "days";
             this.ITimeBtn_days.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ITimeBtn_days.UseVisualStyleBackColor = false;
+            this.ITimeBtn_days.Click += new System.EventHandler(this.dropdownInputButton_Click);
             // 
             // ITimeBtn_hour
             // 
@@ -1451,6 +1515,7 @@
             this.ITimeBtn_hour.Text = "hour";
             this.ITimeBtn_hour.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ITimeBtn_hour.UseVisualStyleBackColor = false;
+            this.ITimeBtn_hour.Click += new System.EventHandler(this.dropdownInputButton_Click);
             // 
             // ITimeBtn_min
             // 
@@ -1465,6 +1530,7 @@
             this.ITimeBtn_min.Text = "min";
             this.ITimeBtn_min.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ITimeBtn_min.UseVisualStyleBackColor = false;
+            this.ITimeBtn_min.Click += new System.EventHandler(this.dropdownInputButton_Click);
             // 
             // ITimeBtn_sec
             // 
@@ -1508,6 +1574,7 @@
             this.button25.Text = "rad";
             this.button25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button25.UseVisualStyleBackColor = false;
+            this.button25.Click += new System.EventHandler(this.dropdownOutPutButton_Click);
             // 
             // but_Degree_Output
             // 
@@ -1525,14 +1592,14 @@
             this.but_Degree_Output.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.but_Degree_Output.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.but_Degree_Output.UseVisualStyleBackColor = false;
-            this.but_Degree_Output.Click += new System.EventHandler(this.but_Degree_Output_Click);
+            this.but_Degree_Output.Click += new System.EventHandler(this.btn_Degree_Output_Click);
             // 
             // ITemperature_panel
             // 
             this.ITemperature_panel.Controls.Add(this.ITemperatureBtn_K);
             this.ITemperature_panel.Controls.Add(this.ITemperatureBtn_F);
             this.ITemperature_panel.Controls.Add(this.ITemperatureBtn_C);
-            this.ITemperature_panel.Location = new System.Drawing.Point(21, 113);
+            this.ITemperature_panel.Location = new System.Drawing.Point(26, 127);
             this.ITemperature_panel.MaximumSize = new System.Drawing.Size(60, 113);
             this.ITemperature_panel.MinimumSize = new System.Drawing.Size(60, 42);
             this.ITemperature_panel.Name = "ITemperature_panel";
@@ -1552,6 +1619,7 @@
             this.ITemperatureBtn_K.Text = "K";
             this.ITemperatureBtn_K.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ITemperatureBtn_K.UseVisualStyleBackColor = false;
+            this.ITemperatureBtn_K.Click += new System.EventHandler(this.dropdownInputButton_Click);
             // 
             // ITemperatureBtn_F
             // 
@@ -1566,6 +1634,7 @@
             this.ITemperatureBtn_F.Text = "F";
             this.ITemperatureBtn_F.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ITemperatureBtn_F.UseVisualStyleBackColor = false;
+            this.ITemperatureBtn_F.Click += new System.EventHandler(this.dropdownInputButton_Click);
             // 
             // ITemperatureBtn_C
             // 
@@ -1587,9 +1656,10 @@
             // 
             // IDegree_panel
             // 
+            this.IDegree_panel.BackColor = System.Drawing.Color.Transparent;
             this.IDegree_panel.Controls.Add(this.button28);
             this.IDegree_panel.Controls.Add(this.but_Degree_Input);
-            this.IDegree_panel.Location = new System.Drawing.Point(21, 62);
+            this.IDegree_panel.Location = new System.Drawing.Point(26, 69);
             this.IDegree_panel.MaximumSize = new System.Drawing.Size(81, 76);
             this.IDegree_panel.MinimumSize = new System.Drawing.Size(81, 42);
             this.IDegree_panel.Name = "IDegree_panel";
@@ -1609,6 +1679,7 @@
             this.button28.Text = "rad";
             this.button28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button28.UseVisualStyleBackColor = false;
+            this.button28.Click += new System.EventHandler(this.dropdownInputButton_Click);
             // 
             // but_Degree_Input
             // 
@@ -1626,35 +1697,37 @@
             this.but_Degree_Input.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.but_Degree_Input.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.but_Degree_Input.UseVisualStyleBackColor = false;
-            this.but_Degree_Input.Click += new System.EventHandler(this.but_Degree_Input_Click);
+            this.but_Degree_Input.Click += new System.EventHandler(this.btn_Degree_Input_Click);
             // 
-            // output_Degrees_output
+            // textBox_Converter_Output
             // 
-            this.output_Degrees_output.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.output_Degrees_output.Location = new System.Drawing.Point(324, 19);
-            this.output_Degrees_output.Name = "output_Degrees_output";
-            this.output_Degrees_output.Size = new System.Drawing.Size(170, 36);
-            this.output_Degrees_output.TabIndex = 43;
+            this.textBox_Converter_Output.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_Converter_Output.Location = new System.Drawing.Point(324, 19);
+            this.textBox_Converter_Output.Name = "textBox_Converter_Output";
+            this.textBox_Converter_Output.Size = new System.Drawing.Size(170, 30);
+            this.textBox_Converter_Output.TabIndex = 43;
             // 
-            // textBox_Degrees_Input
+            // textBox_Converter_Input
             // 
-            this.textBox_Degrees_Input.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_Degrees_Input.Location = new System.Drawing.Point(21, 19);
-            this.textBox_Degrees_Input.Name = "textBox_Degrees_Input";
-            this.textBox_Degrees_Input.Size = new System.Drawing.Size(170, 36);
-            this.textBox_Degrees_Input.TabIndex = 42;
+            this.textBox_Converter_Input.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_Converter_Input.Location = new System.Drawing.Point(21, 19);
+            this.textBox_Converter_Input.Name = "textBox_Converter_Input";
+            this.textBox_Converter_Input.Size = new System.Drawing.Size(170, 30);
+            this.textBox_Converter_Input.TabIndex = 42;
+            this.textBox_Converter_Input.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // button10
+            // ClearConverter
             // 
-            this.button10.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(334, 193);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(50, 50);
-            this.button10.TabIndex = 36;
-            this.button10.Text = "C";
-            this.button10.UseVisualStyleBackColor = true;
+            this.ClearConverter.Cursor = System.Windows.Forms.Cursors.Default;
+            this.ClearConverter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ClearConverter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClearConverter.Location = new System.Drawing.Point(334, 193);
+            this.ClearConverter.Name = "ClearConverter";
+            this.ClearConverter.Size = new System.Drawing.Size(50, 125);
+            this.ClearConverter.TabIndex = 36;
+            this.ClearConverter.Text = "C";
+            this.ClearConverter.UseVisualStyleBackColor = true;
+            this.ClearConverter.Click += new System.EventHandler(this.ClearConverter_Text);
             // 
             // button11
             // 
@@ -1667,18 +1740,7 @@
             this.button11.TabIndex = 28;
             this.button11.Text = "3";
             this.button11.UseVisualStyleBackColor = true;
-            // 
-            // button24
-            // 
-            this.button24.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button24.Location = new System.Drawing.Point(334, 266);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(50, 50);
-            this.button24.TabIndex = 37;
-            this.button24.Text = "=";
-            this.button24.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.numberButtonConverter_Click);
             // 
             // button12
             // 
@@ -1691,6 +1753,7 @@
             this.button12.TabIndex = 29;
             this.button12.Text = "6";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.numberButtonConverter_Click);
             // 
             // button23
             // 
@@ -1703,6 +1766,7 @@
             this.button23.TabIndex = 35;
             this.button23.Text = "2";
             this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.numberButtonConverter_Click);
             // 
             // button13
             // 
@@ -1715,6 +1779,7 @@
             this.button13.TabIndex = 30;
             this.button13.Text = "5";
             this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.numberButtonConverter_Click);
             // 
             // button22
             // 
@@ -1723,23 +1788,25 @@
             this.button22.Location = new System.Drawing.Point(124, 340);
             this.button22.Margin = new System.Windows.Forms.Padding(2);
             this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(50, 50);
+            this.button22.Size = new System.Drawing.Size(192, 50);
             this.button22.TabIndex = 38;
             this.button22.Text = "0";
             this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.numberButtonConverter_Click);
             // 
-            // button15
+            // DeleteConverter
             // 
-            this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button15.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.Location = new System.Drawing.Point(334, 119);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(50, 50);
-            this.button15.TabIndex = 41;
-            this.button15.Text = "DEL";
-            this.button15.UseVisualStyleBackColor = true;
+            this.DeleteConverter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.DeleteConverter.Cursor = System.Windows.Forms.Cursors.Default;
+            this.DeleteConverter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DeleteConverter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeleteConverter.Location = new System.Drawing.Point(334, 119);
+            this.DeleteConverter.Name = "DeleteConverter";
+            this.DeleteConverter.Size = new System.Drawing.Size(50, 50);
+            this.DeleteConverter.TabIndex = 41;
+            this.DeleteConverter.Text = "DEL";
+            this.DeleteConverter.UseVisualStyleBackColor = true;
+            this.DeleteConverter.Click += new System.EventHandler(this.DeleteConverter_Click);
             // 
             // button21
             // 
@@ -1752,6 +1819,7 @@
             this.button21.TabIndex = 34;
             this.button21.Text = "7";
             this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.numberButtonConverter_Click);
             // 
             // button16
             // 
@@ -1764,6 +1832,7 @@
             this.button16.TabIndex = 31;
             this.button16.Text = "4";
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.numberButtonConverter_Click);
             // 
             // button20
             // 
@@ -1776,18 +1845,20 @@
             this.button20.TabIndex = 39;
             this.button20.Text = "1";
             this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.numberButtonConverter_Click);
             // 
             // button17
             // 
             this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.Location = new System.Drawing.Point(195, 340);
+            this.button17.Location = new System.Drawing.Point(334, 340);
             this.button17.Margin = new System.Windows.Forms.Padding(2);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(50, 50);
             this.button17.TabIndex = 40;
             this.button17.Text = ",";
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.numberButtonConverter_Click);
             // 
             // button19
             // 
@@ -1800,6 +1871,7 @@
             this.button19.TabIndex = 33;
             this.button19.Text = "8";
             this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.numberButtonConverter_Click);
             // 
             // button18
             // 
@@ -1812,11 +1884,12 @@
             this.button18.TabIndex = 32;
             this.button18.Text = "9";
             this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.numberButtonConverter_Click);
             // 
             // customControl1
             // 
             this.customControl1.AutoSize = true;
-            this.customControl1.Location = new System.Drawing.Point(272, 29);
+            this.customControl1.Location = new System.Drawing.Point(565, 107);
             this.customControl1.MinimumSize = new System.Drawing.Size(45, 22);
             this.customControl1.Name = "customControl1";
             this.customControl1.OffBackColor = System.Drawing.Color.Gray;
@@ -1833,13 +1906,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1821, 933);
+            this.ClientSize = new System.Drawing.Size(661, 453);
+            this.Controls.Add(this.Main_Calculator_panel);
             this.Controls.Add(this.panel_Converter);
             this.Controls.Add(this.btn_Settings);
             this.Controls.Add(this.btn_Calculator);
             this.Controls.Add(this.PanelDown_UnitConverter);
             this.Controls.Add(this.customControl1);
-            this.Controls.Add(this.Main_Calculator_panel);
             this.Controls.Add(this.Main_Setting_panel);
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -1907,16 +1980,15 @@
         private System.Windows.Forms.Button btn_Calculator;
         private System.Windows.Forms.Button btn_Settings;
         private System.Windows.Forms.Panel panel_Converter;
-        private System.Windows.Forms.TextBox output_Degrees_output;
-        private System.Windows.Forms.TextBox textBox_Degrees_Input;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.TextBox textBox_Converter_Output;
+        private System.Windows.Forms.TextBox textBox_Converter_Input;
+        private System.Windows.Forms.Button ClearConverter;
         private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button DeleteConverter;
         private System.Windows.Forms.Button button21;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button20;
@@ -1988,6 +2060,8 @@
         private System.Windows.Forms.Button OTimeBtn_min;
         private System.Windows.Forms.Button OTimeBtn_sec;
         private System.Windows.Forms.Panel ITemperature_panel;
+        private System.Windows.Forms.Label Output_LabelConvert;
+        private System.Windows.Forms.Label Input_LabelConvert;
     }
 }
 
