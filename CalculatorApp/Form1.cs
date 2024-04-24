@@ -678,7 +678,5 @@ namespace CalculatorApp
         {
 
         }
-
-       
     }
 }
