@@ -85,7 +85,6 @@ namespace CalculatorApp
 
         }
 
-
         private void Clear_all()
         {
             textBox1.Text = string.Empty;
@@ -154,7 +153,6 @@ namespace CalculatorApp
                     {
                         secondNumber_str += digit;
                     }
-                    Console.WriteLine("som tu ciarka");
                 }
                 else
                 {
@@ -167,7 +165,6 @@ namespace CalculatorApp
             }
             if (!FromKeyBoard)
             {
-                Console.WriteLine("som tu");
                 textBox1.Text += digit;
             }
         }
@@ -272,6 +269,9 @@ namespace CalculatorApp
             decimal num1 = 0.0M, num2 = 0.0M, result = 0.0M;
             decimal.TryParse(firstNumber_str, out num1);
             decimal.TryParse(secondNumber_str, out num2);
+            //Added variable where is stored pointer to exception
+            Exception ex = null;
+
             if (currentOperator_str == "") //added
             {
                 decimal.TryParse(firstNumber_str, out result);
@@ -279,26 +279,89 @@ namespace CalculatorApp
             switch (currentOperator_str)
             {
                 case "+":
-                    result = mathLib.Add(num1, num2);
+                    try
+                    { 
+                        result = mathLib.Add(num1, num2); 
+                    }
+                    catch (Exception lok_ex)
+                    {
+                        ex = lok_ex;
+                    }
                     break;
                 case "-":
-                    result = mathLib.Substraction(num1, num2);
+                    try
+                    {
+                        result = mathLib.Substraction(num1, num2);
+                    }
+                    catch (Exception lok_ex)
+                    {
+                        ex = lok_ex;
+                    }
                     break;
                 case "X":
-                    result = mathLib.Multiplication(num1, num2);
+                    try
+                    {
+                        result = mathLib.Multiplication(num1, num2);
+                    }
+                    catch (Exception lok_ex)
+                    {
+                        ex = lok_ex;
+                    }
                     break;
                 case "÷":
-                    result = mathLib.Division(num1, num2);
+                    try
+                    {
+                        result = mathLib.Division(num1, num2);
+                    }
+                    catch (Exception lok_ex)
+                    {
+                        ex = lok_ex;
+                    }
                     break;
                 case "%":
-                    result = mathLib.Modulo(num1, num2);
+                    try
+                    {
+                        result = mathLib.Modulo(num1, num2);
+                    }
+                    catch (Exception lok_ex)
+                    {
+                        ex = lok_ex;
+                    }
                     break;
 
             }
 
-            string formattedResult = mathLib.FormatDecimal(result, 3);
-            textBox1.Text = formattedResult;
-            firstNumber_str = formattedResult;
+            //Error print due to exception
+            if (ex != null) {
+                //lok_ex.Message
+                if (ex.GetType().Name == "OverflowException")
+                {
+                    textBox1.Text = "Error: overflow";
+                }
+                else if (ex.GetType().Name == "DivideByZeroException")
+                {
+                    textBox1.Text = "Error: Divide by zero";
+                }
+                else if (ex.GetType().Name == "NegativeFactorialException")
+                {
+                    textBox1.Text = "Error: Negative num";
+                }
+                else if (ex.GetType().Name == "NonNaturalExponentException")
+                {
+                    textBox1.Text = "Error: decimal num";
+                }
+                else if (ex.GetType().Name == "NegativeRootException")
+                {
+                    textBox1.Text = "Error: negative num";
+                }
+            }
+            else
+            {
+                string formattedResult = mathLib.FormatDecimal(result, 3);
+                textBox1.Text = formattedResult;
+                firstNumber_str = formattedResult;
+            }
+
             currentOperator_str = string.Empty;
             secondNumber_str = string.Empty;
             newNumberMode = false;
@@ -426,58 +489,6 @@ namespace CalculatorApp
         private void Clear_Click(object sender, EventArgs e) // button "C"
         {
             Clear_all();
-        }
-
-        private void Comma_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void button7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        
+        }    
     }
 }
