@@ -334,9 +334,10 @@ namespace CalculatorApp
             //Error print due to exception
             if (ex != null) {
                 //lok_ex.Message
+                Clear_all();
                 if (ex.GetType().Name == "OverflowException")
                 {
-                    textBox1.Text = "Error: overflow";
+                    textBox1.Text = "Error: Overflow";
                 }
                 else if (ex.GetType().Name == "DivideByZeroException")
                 {
@@ -348,11 +349,15 @@ namespace CalculatorApp
                 }
                 else if (ex.GetType().Name == "NonNaturalExponentException")
                 {
-                    textBox1.Text = "Error: decimal num";
+                    textBox1.Text = "Error: Decimal num";
                 }
                 else if (ex.GetType().Name == "NegativeRootException")
                 {
-                    textBox1.Text = "Error: negative num";
+                    textBox1.Text = "Error: Negative num";
+                }
+                else
+                {
+                    textBox1.Text = String.Format("Error: {0}", ex.Message);
                 }
             }
             else
@@ -374,34 +379,63 @@ namespace CalculatorApp
             decimal.TryParse(exponent, out exponentNum);
             decimal.TryParse(secondNumber_str, out num2);
             decimal result = 0;
+            Exception ex = null;
+
             if (secondNumber_str == "")
             {
-                result = mathLib.Exponentiation(num1, exponentNum);
+                try
+                {
+                    result = mathLib.Exponentiation(num1, exponentNum);
+                }
+                catch (Exception lok_ex)
+                {
+                    ex = lok_ex;
+                }
                 firstNumber_str = result.ToString();
                 textBox1.Text = firstNumber_str;
             }
             else
             {
-                result = mathLib.Exponentiation(num2, exponentNum);
+                try
+                {
+                    result = mathLib.Exponentiation(num2, exponentNum);
+                }
+                catch (Exception lok_ex)
+                {
+                    ex = lok_ex;
+                }
                 secondNumber_str = result.ToString();
 
             }
 
             exponent = "";
             isEnteringExponent = false;
+
+            if (ex != null)
+            {
+                Clear_all();
+                textBox1.Text = String.Format("Error: {0}", ex.Message);
+            }
         }
 
         private void Factorial_Click(object sender, EventArgs e)
         {
             decimal num1, num2;
             string BeforeSecNumber;
+            Exception ex = null;
 
             if (currentOperator_str == "")
             {
                 decimal.TryParse(firstNumber_str, out num1);
-                num1 = mathLib.Faktorial(num1);
+                try
+                {
+                    num1 = mathLib.Faktorial(num1);
+                }
+                catch (Exception lok_ex)
+                {
+                    ex = lok_ex;
+                }
                 textBox1.Text = num1.ToString();
-
                 firstNumber_str = num1.ToString();
             }
             else
@@ -410,11 +444,23 @@ namespace CalculatorApp
                 decimal.TryParse(secondNumber_str, out num2);
 
                 BeforeSecNumber = firstNumber_str + currentOperator_str;
-                num2 = mathLib.Faktorial(num2);
+                try
+                {
+                    num2 = mathLib.Faktorial(num2);
+                }
+                catch (Exception lok_ex)
+                {
+                    ex = lok_ex;
+                }
                 textBox1.Text = BeforeSecNumber + num2.ToString();
 
                 firstNumber_str = num1.ToString();
                 secondNumber_str = num2.ToString();
+            }
+            if (ex != null)
+            {
+                Clear_all();
+                textBox1.Text = String.Format("Error: {0}", ex.Message);
             }
         }
 
@@ -422,12 +468,19 @@ namespace CalculatorApp
         {
             decimal num1, num2;
             string BeforeSecNumber;
+            Exception ex = null;
 
             if (currentOperator_str == "")
             {
                 decimal.TryParse(firstNumber_str, out num1);
-                num1 = mathLib.Exponentiation(num1, 2);
-
+                try
+                {
+                    num1 = mathLib.Exponentiation(num1, 2);
+                }
+                catch (Exception lok_ex)
+                {
+                    ex = lok_ex;
+                }
                 firstNumber_str = mathLib.FormatDecimal(num1, 3).ToString();
                 textBox1.Text = firstNumber_str;
 
@@ -438,11 +491,23 @@ namespace CalculatorApp
                 decimal.TryParse(secondNumber_str, out num2);
 
                 BeforeSecNumber = firstNumber_str + currentOperator_str;
-                num2 = mathLib.Exponentiation(num2, 2);
+                try
+                {
+                    num2 = mathLib.Exponentiation(num2, 2);
+                }
+                catch (Exception lok_ex)
+                {
+                    ex = lok_ex;
+                }
                 textBox1.Text = BeforeSecNumber + mathLib.FormatDecimal(num2, 3).ToString();
 
                 firstNumber_str = num1.ToString();
                 secondNumber_str = mathLib.FormatDecimal(num2, 3).ToString();
+            }
+            if(ex != null)
+            {
+                Clear_all();
+                textBox1.Text = String.Format("Error: {0}", ex.Message);
             }
 
         }
@@ -460,11 +525,19 @@ namespace CalculatorApp
         {
             decimal num1, num2;
             string BeforeSecNumber;
+            Exception ex = null;
 
             if (currentOperator_str == "")
             {
                 decimal.TryParse(firstNumber_str, out num1);
-                num1 = mathLib.SquareRoot(num1);
+                try
+                {
+                    num1 = mathLib.SquareRoot(num1);
+                }
+                catch (Exception lok_ex)
+                {
+                    ex = lok_ex;
+                }
                 string formattedResult = mathLib.FormatDecimal(num1, 3);
                 textBox1.Text = formattedResult;
 
@@ -476,12 +549,25 @@ namespace CalculatorApp
                 decimal.TryParse(secondNumber_str, out num2);
 
                 BeforeSecNumber = firstNumber_str + currentOperator_str;
-                num2 = mathLib.SquareRoot(num2);
+                try
+                {
+                    num2 = mathLib.SquareRoot(num2);
+                }
+                catch (Exception lok_ex)
+                {
+                    ex= lok_ex;
+                }
                 string formattedResult = mathLib.FormatDecimal(num2, 3);
                 textBox1.Text = BeforeSecNumber + formattedResult;
 
                 firstNumber_str = num1.ToString();
                 secondNumber_str = num2.ToString();
+            }
+
+            if(ex != null)
+            {
+                Clear_all();
+                textBox1.Text = String.Format("Error: {0}", ex.Message);
             }
         }
 
