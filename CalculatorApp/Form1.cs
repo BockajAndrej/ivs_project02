@@ -30,20 +30,27 @@ namespace CalculatorApp
             textBox1.BorderStyle = BorderStyle.FixedSingle;
             listPanel.Add(Main_Calculator_panel); //index 0
             listPanel.Add(Main_Setting_panel); //index 1
-            listPanel.Add(panel_Degrees); //index 2
-            listPanel.Add(panel_weight); //index 3
-            listPanel.Add(panel_Temperature); //index 4
-            listPanel.Add(panel_Length); //index 5
-            listPanel.Add(panel_time); //index 6
-
-
-            //listPanel.Add(Main_UnitConverter_panel);
+            listPanel.Add(panel_Converter); //index 2
 
             ShowAndEnablePanel(indexOfCalculator);
 
-   
+            inputOutputPanels.Add("IDegree", IDegree_panel);
+            inputOutputPanels.Add("ODegree", ODegree_panel);
+
+            inputOutputPanels.Add("ITemperature", ITemperature_panel);
+            inputOutputPanels.Add("OTemperature", OTemperature_panel);
+
+            inputOutputPanels.Add("IWeight", IWeight_panel);
+            inputOutputPanels.Add("OWeight", OWeight_panel);
+
+            inputOutputPanels.Add("ITime", ITime_panel);
+            inputOutputPanels.Add("OTime", OTime_panel);
+
+            inputOutputPanels.Add("ILength", ILength_panel);
+            inputOutputPanels.Add("OLength", OLength_panel);
 
         }
+        Dictionary<string, Panel> inputOutputPanels = new Dictionary<string, Panel>();
 
         private bool isDarkMode = false;
         private Color darkModeStartColor = Color.FromArgb(20, 55, 73);
@@ -105,10 +112,6 @@ namespace CalculatorApp
         int indexOfCalculator = 0;
         int indexOfSettings = 1;
         int indexOfDegrees = 2;
-        int indexOfWeight = 3;
-        int indexOfTemperature = 4;
-        int indexOfLength = 5;
-        int indexOfTime = 6;
         
         private void btn_Calculator_Click(object sender, EventArgs e)
         {
@@ -134,7 +137,28 @@ namespace CalculatorApp
             listPanel[indexToShow].Visible = true; // Ensure visibility is set to true
 
         }
-        
+
+        private void ShowAndEnableInOutPanels(string key1, string key2)
+        {
+            // Hide all panels
+            foreach (var pair in inputOutputPanels)
+            {
+                pair.Value.Visible = false;
+                pair.Value.Enabled = false;
+            }
+
+            // Show and enable the specific panels (error handling suggested)
+            inputOutputPanels[key1].Visible = true;
+            inputOutputPanels[key1].Enabled = true;
+            inputOutputPanels[key2].Visible = true;
+            inputOutputPanels[key2].Enabled = true;
+
+            // (Optional) Bring panels to front
+            inputOutputPanels[key1].BringToFront();
+            inputOutputPanels[key2].BringToFront();
+        }
+
+
         private void Clear_all()
         {
             textBox1.Text = string.Empty;
@@ -514,12 +538,17 @@ namespace CalculatorApp
             timer1.Start();
             button_toDropDown = (Button)sender;
             panel_toDropDown = PanelDown_UnitConverter;
-
+            if (!listPanel[indexOfDegrees].Visible || !listPanel[indexOfDegrees].Enabled)
+            {
+                ShowAndEnablePanel(indexOfDegrees);
+            }
+            
         }
+        
         #region Degrees-Related Functions
         private void btn_Degrees_Click(object sender, EventArgs e)
         {
-            ShowAndEnablePanel(indexOfDegrees);
+            ShowAndEnableInOutPanels("IDegree","ODegree");
         }
         private void but_Degree_Input_Click(object sender, EventArgs e)
         {
@@ -539,7 +568,8 @@ namespace CalculatorApp
         #region Weight-Related Functions
         private void btn_Weight_Click(object sender, EventArgs e)
         {
-            ShowAndEnablePanel(indexOfWeight);
+            ShowAndEnableInOutPanels("IWeight", "OWeight");
+
         }
         private void IWeightBtn_mm_Click(object sender, EventArgs e)
         {
@@ -558,7 +588,8 @@ namespace CalculatorApp
         #region Temperature-Related Functions
         private void btn_Temperature_Click(object sender, EventArgs e)
         {
-            ShowAndEnablePanel(indexOfTemperature);
+            ShowAndEnableInOutPanels("ITemperature", "OTemperature");
+
         }
         private void ITemperatureBtn_C_Click(object sender, EventArgs e)
         {
@@ -578,7 +609,8 @@ namespace CalculatorApp
         #region Length-Related Functions
         private void btn_Length_Click(object sender, EventArgs e)
         {
-            ShowAndEnablePanel(indexOfLength);
+    
+            ShowAndEnableInOutPanels("ILength", "OLength");
         }
         private void ILengthBtn_mm_Click(object sender, EventArgs e)
         {
@@ -598,7 +630,7 @@ namespace CalculatorApp
         #region Time-Related Functions
         private void btn_Time_Click(object sender, EventArgs e)
         {
-            ShowAndEnablePanel(indexOfTime);
+            ShowAndEnableInOutPanels("ITime", "OTime");
         }
         private void ITimeBtn_sec_Click(object sender, EventArgs e)
         {
