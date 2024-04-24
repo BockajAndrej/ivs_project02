@@ -62,7 +62,6 @@
             this.Btn_UnitConverter = new System.Windows.Forms.Button();
             this.Main_Calculator_panel = new System.Windows.Forms.Panel();
             this.Main_Setting_panel = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.btn_Calculator = new System.Windows.Forms.Button();
             this.btn_Settings = new System.Windows.Forms.Button();
@@ -151,7 +150,6 @@
             this.customControl1 = new CalculatorApp.CustomControls.CustomControl();
             this.PanelDown_UnitConverter.SuspendLayout();
             this.Main_Calculator_panel.SuspendLayout();
-            this.Main_Setting_panel.SuspendLayout();
             this.panel_Converter.SuspendLayout();
             this.OLength_panel.SuspendLayout();
             this.OWeight_panel.SuspendLayout();
@@ -485,10 +483,10 @@
             this.PanelDown_UnitConverter.Controls.Add(this.btn_Degrees);
             this.PanelDown_UnitConverter.Controls.Add(this.Btn_UnitConverter);
             this.PanelDown_UnitConverter.Location = new System.Drawing.Point(9, 135);
-            this.PanelDown_UnitConverter.MaximumSize = new System.Drawing.Size(110, 224);
-            this.PanelDown_UnitConverter.MinimumSize = new System.Drawing.Size(110, 48);
+            this.PanelDown_UnitConverter.MaximumSize = new System.Drawing.Size(119, 224);
+            this.PanelDown_UnitConverter.MinimumSize = new System.Drawing.Size(119, 48);
             this.PanelDown_UnitConverter.Name = "PanelDown_UnitConverter";
-            this.PanelDown_UnitConverter.Size = new System.Drawing.Size(110, 48);
+            this.PanelDown_UnitConverter.Size = new System.Drawing.Size(119, 48);
             this.PanelDown_UnitConverter.TabIndex = 35;
             // 
             // btn_Length
@@ -499,7 +497,7 @@
             this.btn_Length.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Length.Location = new System.Drawing.Point(0, 188);
             this.btn_Length.Name = "btn_Length";
-            this.btn_Length.Size = new System.Drawing.Size(110, 35);
+            this.btn_Length.Size = new System.Drawing.Size(119, 35);
             this.btn_Length.TabIndex = 40;
             this.btn_Length.Text = "Length";
             this.btn_Length.UseVisualStyleBackColor = false;
@@ -513,7 +511,7 @@
             this.btn_Time.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Time.Location = new System.Drawing.Point(0, 153);
             this.btn_Time.Name = "btn_Time";
-            this.btn_Time.Size = new System.Drawing.Size(110, 35);
+            this.btn_Time.Size = new System.Drawing.Size(119, 35);
             this.btn_Time.TabIndex = 39;
             this.btn_Time.Text = "Time";
             this.btn_Time.UseVisualStyleBackColor = false;
@@ -527,7 +525,7 @@
             this.btn_Temperature.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Temperature.Location = new System.Drawing.Point(0, 118);
             this.btn_Temperature.Name = "btn_Temperature";
-            this.btn_Temperature.Size = new System.Drawing.Size(110, 35);
+            this.btn_Temperature.Size = new System.Drawing.Size(119, 35);
             this.btn_Temperature.TabIndex = 38;
             this.btn_Temperature.Text = "Temperature";
             this.btn_Temperature.UseVisualStyleBackColor = false;
@@ -541,7 +539,7 @@
             this.btn_Weight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Weight.Location = new System.Drawing.Point(0, 83);
             this.btn_Weight.Name = "btn_Weight";
-            this.btn_Weight.Size = new System.Drawing.Size(110, 35);
+            this.btn_Weight.Size = new System.Drawing.Size(119, 35);
             this.btn_Weight.TabIndex = 37;
             this.btn_Weight.Text = "Weight";
             this.btn_Weight.UseVisualStyleBackColor = false;
@@ -555,7 +553,7 @@
             this.btn_Degrees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Degrees.Location = new System.Drawing.Point(0, 48);
             this.btn_Degrees.Name = "btn_Degrees";
-            this.btn_Degrees.Size = new System.Drawing.Size(110, 35);
+            this.btn_Degrees.Size = new System.Drawing.Size(119, 35);
             this.btn_Degrees.TabIndex = 36;
             this.btn_Degrees.Text = "Degrees";
             this.btn_Degrees.UseVisualStyleBackColor = false;
@@ -571,7 +569,7 @@
             this.Btn_UnitConverter.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_UnitConverter.Location = new System.Drawing.Point(0, 0);
             this.Btn_UnitConverter.Name = "Btn_UnitConverter";
-            this.Btn_UnitConverter.Size = new System.Drawing.Size(110, 48);
+            this.Btn_UnitConverter.Size = new System.Drawing.Size(119, 48);
             this.Btn_UnitConverter.TabIndex = 35;
             this.Btn_UnitConverter.Text = "Converter";
             this.Btn_UnitConverter.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -606,7 +604,7 @@
             this.Main_Calculator_panel.Controls.Add(this.Result);
             this.Main_Calculator_panel.Controls.Add(this.Division);
             this.Main_Calculator_panel.Controls.Add(this.Modulo);
-            this.Main_Calculator_panel.Location = new System.Drawing.Point(133, 12);
+            this.Main_Calculator_panel.Location = new System.Drawing.Point(137, 12);
             this.Main_Calculator_panel.Name = "Main_Calculator_panel";
             this.Main_Calculator_panel.Size = new System.Drawing.Size(368, 418);
             this.Main_Calculator_panel.TabIndex = 31;
@@ -614,18 +612,10 @@
             // 
             // Main_Setting_panel
             // 
-            this.Main_Setting_panel.Controls.Add(this.textBox4);
-            this.Main_Setting_panel.Location = new System.Drawing.Point(134, 12);
+            this.Main_Setting_panel.Location = new System.Drawing.Point(138, 12);
             this.Main_Setting_panel.Name = "Main_Setting_panel";
             this.Main_Setting_panel.Size = new System.Drawing.Size(370, 418);
             this.Main_Setting_panel.TabIndex = 33;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(11, 10);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
-            this.textBox4.TabIndex = 0;
             // 
             // timer1
             // 
@@ -637,9 +627,9 @@
             this.btn_Calculator.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btn_Calculator.FlatAppearance.BorderSize = 0;
             this.btn_Calculator.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Calculator.Location = new System.Drawing.Point(12, 72);
+            this.btn_Calculator.Location = new System.Drawing.Point(9, 75);
             this.btn_Calculator.Name = "btn_Calculator";
-            this.btn_Calculator.Size = new System.Drawing.Size(107, 43);
+            this.btn_Calculator.Size = new System.Drawing.Size(119, 43);
             this.btn_Calculator.TabIndex = 36;
             this.btn_Calculator.Text = "Calculator";
             this.btn_Calculator.UseVisualStyleBackColor = false;
@@ -650,9 +640,9 @@
             this.btn_Settings.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btn_Settings.FlatAppearance.BorderSize = 0;
             this.btn_Settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Settings.Location = new System.Drawing.Point(12, 12);
+            this.btn_Settings.Location = new System.Drawing.Point(9, 15);
             this.btn_Settings.Name = "btn_Settings";
-            this.btn_Settings.Size = new System.Drawing.Size(107, 43);
+            this.btn_Settings.Size = new System.Drawing.Size(119, 43);
             this.btn_Settings.TabIndex = 37;
             this.btn_Settings.Text = "Settings";
             this.btn_Settings.UseVisualStyleBackColor = false;
@@ -688,7 +678,7 @@
             this.panel_Converter.Controls.Add(this.button17);
             this.panel_Converter.Controls.Add(this.button19);
             this.panel_Converter.Controls.Add(this.button18);
-            this.panel_Converter.Location = new System.Drawing.Point(133, 12);
+            this.panel_Converter.Location = new System.Drawing.Point(137, 12);
             this.panel_Converter.Name = "panel_Converter";
             this.panel_Converter.Size = new System.Drawing.Size(506, 406);
             this.panel_Converter.TabIndex = 38;
@@ -1704,6 +1694,7 @@
             this.textBox_Converter_Output.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_Converter_Output.Location = new System.Drawing.Point(324, 19);
             this.textBox_Converter_Output.Name = "textBox_Converter_Output";
+            this.textBox_Converter_Output.ReadOnly = true;
             this.textBox_Converter_Output.Size = new System.Drawing.Size(170, 30);
             this.textBox_Converter_Output.TabIndex = 43;
             // 
@@ -1889,7 +1880,7 @@
             // customControl1
             // 
             this.customControl1.AutoSize = true;
-            this.customControl1.Location = new System.Drawing.Point(565, 107);
+            this.customControl1.Location = new System.Drawing.Point(9, 407);
             this.customControl1.MinimumSize = new System.Drawing.Size(45, 22);
             this.customControl1.Name = "customControl1";
             this.customControl1.OffBackColor = System.Drawing.Color.Gray;
@@ -1906,13 +1897,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(661, 453);
-            this.Controls.Add(this.Main_Calculator_panel);
+            this.ClientSize = new System.Drawing.Size(662, 443);
             this.Controls.Add(this.panel_Converter);
             this.Controls.Add(this.btn_Settings);
             this.Controls.Add(this.btn_Calculator);
             this.Controls.Add(this.PanelDown_UnitConverter);
             this.Controls.Add(this.customControl1);
+            this.Controls.Add(this.Main_Calculator_panel);
             this.Controls.Add(this.Main_Setting_panel);
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -1922,8 +1913,6 @@
             this.PanelDown_UnitConverter.ResumeLayout(false);
             this.Main_Calculator_panel.ResumeLayout(false);
             this.Main_Calculator_panel.PerformLayout();
-            this.Main_Setting_panel.ResumeLayout(false);
-            this.Main_Setting_panel.PerformLayout();
             this.panel_Converter.ResumeLayout(false);
             this.panel_Converter.PerformLayout();
             this.OLength_panel.ResumeLayout(false);
@@ -1969,7 +1958,6 @@
         private System.Windows.Forms.Button Delete;
         private System.Windows.Forms.Panel Main_Calculator_panel;
         private System.Windows.Forms.Panel Main_Setting_panel;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button Btn_UnitConverter;
         private System.Windows.Forms.Panel PanelDown_UnitConverter;
         private System.Windows.Forms.Button btn_Time;

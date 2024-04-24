@@ -287,7 +287,6 @@ namespace CalculatorApp
             {
                 ConvertNumber_str = ConvertNumber_str.Substring(0, ConvertNumber_str.Length - 1);
                 UpdateInputTextBoxConverter(ConvertNumber_str);
-                textBox_Converter_Output.Text = string.Empty;
             }
         }
         private void ClearConverter_Text(object sender, EventArgs e)
