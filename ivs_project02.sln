@@ -9,6 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestCalculator", "UnitT
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Calculator_Setup", "Calculator_Setup\Calculator_Setup.vdproj", "{F6B74B38-8394-45EB-BCEF-28F945DFAE45}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plan", "Plan", "{4C8A7210-2742-4C9D-9285-019F79CC370B}"
+	ProjectSection(SolutionItems) = preProject
+		DIVISION OF TASKS.txt = DIVISION OF TASKS.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

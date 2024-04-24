@@ -18,33 +18,63 @@ namespace CalculatorApp
     {
         public NegativeRootException(string message) : base(message) { }
     }
+    /// <summary>
+    /// Implementation of the mathematical library
+    /// </summary>
     public class Math_lib
     {
+        /// <summary>
+        /// Counting two numbers
+        /// </summary>
+        /// <param name="v1"> - 1. number</param>
+        /// <param name="v2"> - 2. number</param>
+        /// <returns>Result of the operation</returns>
         public decimal Add(decimal v1, decimal v2)
         {
-            //checked add time for calcula
-            checked // overflow check, throws overflowexception
+            /// Overflow check, throws overflowexception
+            checked
             {
                 return v1 + v2;
             }
         }
+        /// <summary>
+        /// Substraction two numbers
+        /// </summary>
+        /// <param name="v1"> - 1. number</param>
+        /// <param name="v2"> - 2. number</param>
+        /// <returns>Result of the operation</returns>
         public decimal Substraction(decimal v1, decimal v2)
         {
-            checked // overflow check, throws overflowexception
+            /// Overflow check, throws overflowexception
+            checked
             {
                 return v1 - v2;
             }
         }
+        /// <summary>
+        /// Multiplication two numbers
+        /// </summary>
+        /// <param name="v1"> - 1. number</param>
+        /// <param name="v2"> - 2. number</param>
+        /// <returns>Result of the operation</returns>
         public decimal Multiplication(decimal v1, decimal v2)
         {
-            checked // overflow check, throws overflowexception
+            /// Overflow check, throws overflowexception
+            checked
             {
                 return v1 * v2;
             }
         }
-
+        /// <summary>
+        /// Division two numbers
+        /// </summary>
+        /// <param name="v1"> - 1. number</param>
+        /// <param name="v2"> - 2. number</param>
+        /// <returns>Result of the operation</returns>
+        /// <exception cref="DivideByZeroException"></exception>
         public decimal Division(decimal v1, decimal v2)
         {
+            /// Overflow check, throws overflowexception
             checked
             {
                 if (v2 != 0)
@@ -54,7 +84,13 @@ namespace CalculatorApp
                 else throw new DivideByZeroException("Cannot divide by zero");
             }
         }
-
+        /// <summary>
+        /// Remainder after division
+        /// </summary>
+        /// <param name="v1"> - 1. number</param>
+        /// <param name="v2"> - 2. number</param>
+        /// <returns>Result of the operation</returns>
+        /// <exception cref="DivideByZeroException"></exception>
         public decimal Modulo(decimal v1, decimal v2)
         {
             if (v2 != 0)
@@ -63,8 +99,16 @@ namespace CalculatorApp
             }
             else throw new DivideByZeroException("Cannot divide by zero");
         }
+        /// <summary>
+        /// Factorial calculation
+        /// </summary>
+        /// <param name="v1"> - just one number</param>
+        /// <returns>Result of the operation</returns>
+        /// <exception cref="NegativeFactorialException"></exception>
+        /// <exception cref="OverflowException"></exception>
         public decimal Faktorial(decimal v1)
         {
+            /// Overflow check, throws overflowexception
             checked
             {
                 if (v1 == 0)
@@ -89,6 +133,13 @@ namespace CalculatorApp
                 }
             }
         }
+        /// <summary>
+        /// Exponentiation of a number 
+        /// </summary>
+        /// <param name="_base"> - base number</param>
+        /// <param name="_exponent"> - exponent number</param>
+        /// <returns></returns>
+        /// <exception cref="NonNaturalExponentException"></exception>
         public decimal Exponentiation(decimal _base, decimal _exponent)
         {
             if (_exponent % 1 != 0) //can be only whole number without decimal point, cant change func parameter
@@ -114,6 +165,12 @@ namespace CalculatorApp
         {
             return v1 < 0 ? -v1 : v1;
         }
+        /// <summary>
+        /// Calculation of square roots
+        /// </summary>
+        /// <param name="v1"> - source number</param>
+        /// <returns>Result of the operation</returns>
+        /// <exception cref="NegativeRootException"></exception>
         public decimal SquareRoot(decimal v1)
         {
             if (v1 == 0) return 0;
@@ -131,6 +188,12 @@ namespace CalculatorApp
             }
             return guess;
         }
+        /// <summary>
+        /// Converting decimal number with periodical zeros on string  with specified numbers of digits agter the decimal point
+        /// </summary>
+        /// <param name="number"> - source number</param>
+        /// <param name="decimalPlaces"> - specifies the number of digits after the decimal point</param>
+        /// <returns>Converted decimal number to string</returns>
         public string FormatDecimal(decimal number, int decimalPlaces)
         {
             string formattedResult = number.ToString($"N{decimalPlaces}");

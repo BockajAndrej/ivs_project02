@@ -1,0 +1,117 @@
+5663 037108 - xbockaa00, xfiloja00, xtokusr00
+IVS - Projekt 2 - Tímovı projekt- Kalkulaèka
+
+Datum: 19.3.2018
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+TERMÍNY:
+19.3.   Setup GitHub, Trello
+24.3.   testy, makefile
+31.3.   povinné a nepovinné funkcie, základné aritmetické operácie
+7.4.    GUI, vzh¾ad, ovládanie, profiling
+14.4.   nápoveda, Install/Uninstall tool
+20.4.   finálny produkt, mockup, ladenie detailov
+21.4 	README, dokumentácia
+28.4.   problémy
+10.5.   inštalácia (zúèastní sa celı tím)
+od 7.5. obhajoby
+
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+ROZDELENIE ÚLOH:
+Správa úètu GitHub ---------------------------------------- xbockaa00
+- kontrola a oprava obsahu úloiska
+- správa prístupu do repozitára pre èlenov tímu (a uèite¾ov)
+
+správa plánovania ----------------------------------------- xfiloja00
+- správa a kontrola úloh na slube Trello
+
+Makefile -------------------------------------------------- xtokusr00
+- vytvorenie súboru makefile
+
+Testovanie ------------------------------------------------ xbockaa00
+- súbor testov vytvorenıch pred programovaním
+- testy sú vytvorené na základe dohodnutıch vlastností kalkulaèky
+
+Jednoduché aritmetické operácie --------------------------- xtokusr00
+- naprogramovanie základnıch aritmetickıch operácií +,-,*,/ do matematickej kninice
+- zdokumentovanie kódu
+
+Profiling--------------------------------------- xfiloja00, xtokusr00, xbockaa00
+- vytvori program na vıpoèet štandardnej odchılky na základe funkcií z
+matematickej kninice
+- identifikova, kde je potrebná ïalšia optimalizácia, a uvies vısledky
+
+Vzh¾ad (grafické rozhranie) kalkulaèky --------------------- xfiloja00
+- Vytvori základnı vzh¾ad kalkulaèky (vrátane tlaèidiel, zobrazenia),
+grafickı návrh
+
+Ovládacie prvky kalkulaèky (tlaèidlá, displej) ------------- xtokusr00
+- Programovanie jednotlivıch tlaèidiel a displeja kalkulaèky
+
+Priebená kontrola funkènosti ------------------------------ xbockaa00
+- kontrola funkènosti, vykonate¾nosti kódu a jeho èastí s
+pouitím testov a ladiaceho programu
+- v prípade zistenia chıb sa nefunkèná èas odovzdá spä zodpovednej strane
+èlenovi tímu na prepracovanie
+
+Dodriavanie termínov, kontrola priebenej práce ----------- xbockaa00
+- Kontrola, èi zodpovední èlenovia tímu plnia svoje úlohy naèas
+- pridávanie informácií a upozornení o blíiacich sa termínoch 
+pre zodpovedné osoby èlenov tímu
+
+Povinné funkcie -------------------------------------------- xfiloja00
+- Programovanie faktoriálu, mocninnıch operácií s prirodzenım exponentom,
+spoloènej odmocniny a logaritmu v matematickej kninici
+- zdokumentovanie kódu
+
+Nepovinné funkcie ------------------------------------------ xfiloja00
+- naprogramovanie dodatoènıch operácií do matematickej kninice
+- zatia¾ plánované: prevodník jednotiek pre hmotnos, dåku, èas, stupne teploty
+- dokumentácia kódu
+
+Algoritmus na prioritizáciu aritmetickıch vırazov ---------- xtokusr00
+- programovanie algoritmu na vyh¾adávanie operácií pod¾a priority
+(alebo násobenie/delenie má prednos)
+- zdokumentovanie kódu
+
+Nápoveda ---------------------------------------------------- xfiloja00
+- vytvorenie základnej spustite¾nej nápovedy v kalkulaèke s návodom na jej pouitie
+
+Manuál ------------------------------------------------------ xfiloja00
+- Vytvorenie kompletnej programovej a pouívate¾skej príruèky vrátane návodu na pouitie,
+ako nainštalova/odinštalova kalkulaèku
+
+Kontrola dokumentácie --------------------------------------- xtokusr00
+- Kontrola a oprava formátu, jazykovej správnosti, integrity dokumentácie.   
+
+Install/Uninstall tool -------------------------------------- xfiloja00, xbockaa00
+- Programovanie nástroja na inštaláciu/odinštaláciu kalkulaèky
+
+Prezentácia ------------------------------------------------- xbockaa00
+- Vytvorenie prezentácie na obhajobu tímovej úlohy
+- Kadı èlen tímu vytvorí vlastnú èas textu, ktorú bude prezentova,
+ale zodpovednı èlen tímu zostaví tieto texty do vhodnej ucelenej prezentácie.		
+
+
+Pozn.: Pri niektorıch úlohách (kde je napísanıch viac mien), je moná spoluúèas, v prípade, e by bola úloha obtianejšia, resp. èasovo nároèná.
+Pri predbenom splnení vlastnej èasti úlohy, je monos vypomôc ostatnım.
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+KOMUNIKAÈNİ KANÁL: Discord
+Na komunikáciu v tíme pouívame platformu Discord, ktorá slúi ako chat a fórum v jednom. Server je pod názvom Nádejní. Diskusné podkanály sú rozdelené pod¾a funkcie na èasti: general chat, frontend, backend, dokumenty, rozdelenie úloh a termíny. Kadı kanál má svojich správcov, ktorí dohliadajú na jeho obsah a aktualizujú ho pod¾a vıvoja projektu. Tím sa bude taktie pravidelne schádza osobne v školskej knihovni.
+
+Vedúci tímu: xbockaa(Andrej Boèkaj)
+Zastupuje tím v komunikácii s uèite¾mi, spravuje hlavnı komunikaènı kanál, dohliada na hladkı priebeh vıvoja projektu, spoluprácu a rovnomerne rozde¾uje úlohy medzi èlenov tímu.
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+SYSTÉM PRE SPRÁVU VERZIÍ A HOSTING: GitHub
++ Vyuèujúci budú ma prístup k úloisku GitHub,(tím 5663 037108)
+Repozitár sa zdie¾a prostredníctvom e-mailu: ivs.kontrola@gmail.com

@@ -1,0 +1,250 @@
+\doxysection{Calculator\+App.\+Math\+\_\+lib Class Reference}
+\hypertarget{class_calculator_app_1_1_math__lib}{}\label{class_calculator_app_1_1_math__lib}\index{CalculatorApp.Math\_lib@{CalculatorApp.Math\_lib}}
+
+
+Implementation of the mathematical library.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+decimal \mbox{\hyperlink{class_calculator_app_1_1_math__lib_a4fb8759885b4407b8302ff3c361eb99d}{Add}} (decimal v1, decimal v2)
+\begin{DoxyCompactList}\small\item\em Counting two numbers. \end{DoxyCompactList}\item 
+decimal \mbox{\hyperlink{class_calculator_app_1_1_math__lib_aa71c200ce3c21ee26ca509587fbfd382}{Substraction}} (decimal v1, decimal v2)
+\begin{DoxyCompactList}\small\item\em Substraction two numbers. \end{DoxyCompactList}\item 
+decimal \mbox{\hyperlink{class_calculator_app_1_1_math__lib_a95bb23671bc46acdeec43dce33a670ef}{Multiplication}} (decimal v1, decimal v2)
+\begin{DoxyCompactList}\small\item\em Multiplication two numbers. \end{DoxyCompactList}\item 
+decimal \mbox{\hyperlink{class_calculator_app_1_1_math__lib_a2ce8061dee2b15b39b13eac250f5e1e6}{Division}} (decimal v1, decimal v2)
+\begin{DoxyCompactList}\small\item\em Division two numbers. \end{DoxyCompactList}\item 
+decimal \mbox{\hyperlink{class_calculator_app_1_1_math__lib_afb066d510aec0b30bc4e56095e2dc164}{Modulo}} (decimal v1, decimal v2)
+\begin{DoxyCompactList}\small\item\em Remainder after division. \end{DoxyCompactList}\item 
+decimal \mbox{\hyperlink{class_calculator_app_1_1_math__lib_add6aced77724b05a894b1282936d6f44}{Faktorial}} (decimal v1)
+\begin{DoxyCompactList}\small\item\em Factorial calculation. \end{DoxyCompactList}\item 
+decimal \mbox{\hyperlink{class_calculator_app_1_1_math__lib_af4a31030138cf8788eec8953c65ca160}{Exponentiation}} (decimal \+\_\+base, decimal \+\_\+exponent)
+\begin{DoxyCompactList}\small\item\em Exponentiation of a number. \end{DoxyCompactList}\item 
+decimal \mbox{\hyperlink{class_calculator_app_1_1_math__lib_adc32c0b5ec99fda745ab726d3f44d562}{Abs}} (decimal v1)
+\item 
+decimal \mbox{\hyperlink{class_calculator_app_1_1_math__lib_a72e717da2d152ed6dfa65cb074a4b38f}{Square\+Root}} (decimal v1)
+\begin{DoxyCompactList}\small\item\em Calculation of square roots. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_calculator_app_1_1_math__lib_a4c7011b5b88e2dbaa77917804f1d5aff}{Format\+Decimal}} (decimal number, int decimal\+Places)
+\begin{DoxyCompactList}\small\item\em Converting decimal number with periodical zeros on string with specified numbers of digits agter the decimal point. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of the mathematical library. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_calculator_app_1_1_math__lib_adc32c0b5ec99fda745ab726d3f44d562}\label{class_calculator_app_1_1_math__lib_adc32c0b5ec99fda745ab726d3f44d562} 
+\index{CalculatorApp.Math\_lib@{CalculatorApp.Math\_lib}!Abs@{Abs}}
+\index{Abs@{Abs}!CalculatorApp.Math\_lib@{CalculatorApp.Math\_lib}}
+\doxysubsubsection{\texorpdfstring{Abs()}{Abs()}}
+{\footnotesize\ttfamily decimal Calculator\+App.\+Math\+\_\+lib.\+Abs (\begin{DoxyParamCaption}\item[{decimal}]{v1 }\end{DoxyParamCaption})}
+
+\Hypertarget{class_calculator_app_1_1_math__lib_a4fb8759885b4407b8302ff3c361eb99d}\label{class_calculator_app_1_1_math__lib_a4fb8759885b4407b8302ff3c361eb99d} 
+\index{CalculatorApp.Math\_lib@{CalculatorApp.Math\_lib}!Add@{Add}}
+\index{Add@{Add}!CalculatorApp.Math\_lib@{CalculatorApp.Math\_lib}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily decimal Calculator\+App.\+Math\+\_\+lib.\+Add (\begin{DoxyParamCaption}\item[{decimal}]{v1,  }\item[{decimal}]{v2 }\end{DoxyParamCaption})}
+
+
+
+Counting two numbers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & -\/ 1. number\\
+\hline
+{\em v2} & -\/ 2. number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation
+\end{DoxyReturn}
+Overflow check, throws overflowexception\Hypertarget{class_calculator_app_1_1_math__lib_a2ce8061dee2b15b39b13eac250f5e1e6}\label{class_calculator_app_1_1_math__lib_a2ce8061dee2b15b39b13eac250f5e1e6} 
+\index{CalculatorApp.Math\_lib@{CalculatorApp.Math\_lib}!Division@{Division}}
+\index{Division@{Division}!CalculatorApp.Math\_lib@{CalculatorApp.Math\_lib}}
+\doxysubsubsection{\texorpdfstring{Division()}{Division()}}
+{\footnotesize\ttfamily decimal Calculator\+App.\+Math\+\_\+lib.\+Division (\begin{DoxyParamCaption}\item[{decimal}]{v1,  }\item[{decimal}]{v2 }\end{DoxyParamCaption})}
+
+
+
+Division two numbers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & -\/ 1. number\\
+\hline
+{\em v2} & -\/ 2. number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Divide\+By\+Zero\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+Overflow check, throws overflowexception\Hypertarget{class_calculator_app_1_1_math__lib_af4a31030138cf8788eec8953c65ca160}\label{class_calculator_app_1_1_math__lib_af4a31030138cf8788eec8953c65ca160} 
+\index{CalculatorApp.Math\_lib@{CalculatorApp.Math\_lib}!Exponentiation@{Exponentiation}}
+\index{Exponentiation@{Exponentiation}!CalculatorApp.Math\_lib@{CalculatorApp.Math\_lib}}
+\doxysubsubsection{\texorpdfstring{Exponentiation()}{Exponentiation()}}
+{\footnotesize\ttfamily decimal Calculator\+App.\+Math\+\_\+lib.\+Exponentiation (\begin{DoxyParamCaption}\item[{decimal}]{\+\_\+base,  }\item[{decimal}]{\+\_\+exponent }\end{DoxyParamCaption})}
+
+
+
+Exponentiation of a number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+base} & -\/ base number\\
+\hline
+{\em \+\_\+exponent} & -\/ exponent number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Non\+Natural\+Exponent\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_calculator_app_1_1_math__lib_add6aced77724b05a894b1282936d6f44}\label{class_calculator_app_1_1_math__lib_add6aced77724b05a894b1282936d6f44} 
+\index{CalculatorApp.Math\_lib@{CalculatorApp.Math\_lib}!Faktorial@{Faktorial}}
+\index{Faktorial@{Faktorial}!CalculatorApp.Math\_lib@{CalculatorApp.Math\_lib}}
+\doxysubsubsection{\texorpdfstring{Faktorial()}{Faktorial()}}
+{\footnotesize\ttfamily decimal Calculator\+App.\+Math\+\_\+lib.\+Faktorial (\begin{DoxyParamCaption}\item[{decimal}]{v1 }\end{DoxyParamCaption})}
+
+
+
+Factorial calculation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & -\/ just one number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Negative\+Factorial\+Exception} & \\
+\hline
+{\em Overflow\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+Overflow check, throws overflowexception\Hypertarget{class_calculator_app_1_1_math__lib_a4c7011b5b88e2dbaa77917804f1d5aff}\label{class_calculator_app_1_1_math__lib_a4c7011b5b88e2dbaa77917804f1d5aff} 
+\index{CalculatorApp.Math\_lib@{CalculatorApp.Math\_lib}!FormatDecimal@{FormatDecimal}}
+\index{FormatDecimal@{FormatDecimal}!CalculatorApp.Math\_lib@{CalculatorApp.Math\_lib}}
+\doxysubsubsection{\texorpdfstring{FormatDecimal()}{FormatDecimal()}}
+{\footnotesize\ttfamily string Calculator\+App.\+Math\+\_\+lib.\+Format\+Decimal (\begin{DoxyParamCaption}\item[{decimal}]{number,  }\item[{int}]{decimal\+Places }\end{DoxyParamCaption})}
+
+
+
+Converting decimal number with periodical zeros on string with specified numbers of digits agter the decimal point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & -\/ source number\\
+\hline
+{\em decimal\+Places} & -\/ specifies the number of digits after the decimal point\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Converted decimal number to string
+\end{DoxyReturn}
+\Hypertarget{class_calculator_app_1_1_math__lib_afb066d510aec0b30bc4e56095e2dc164}\label{class_calculator_app_1_1_math__lib_afb066d510aec0b30bc4e56095e2dc164} 
+\index{CalculatorApp.Math\_lib@{CalculatorApp.Math\_lib}!Modulo@{Modulo}}
+\index{Modulo@{Modulo}!CalculatorApp.Math\_lib@{CalculatorApp.Math\_lib}}
+\doxysubsubsection{\texorpdfstring{Modulo()}{Modulo()}}
+{\footnotesize\ttfamily decimal Calculator\+App.\+Math\+\_\+lib.\+Modulo (\begin{DoxyParamCaption}\item[{decimal}]{v1,  }\item[{decimal}]{v2 }\end{DoxyParamCaption})}
+
+
+
+Remainder after division. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & -\/ 1. number\\
+\hline
+{\em v2} & -\/ 2. number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Divide\+By\+Zero\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_calculator_app_1_1_math__lib_a95bb23671bc46acdeec43dce33a670ef}\label{class_calculator_app_1_1_math__lib_a95bb23671bc46acdeec43dce33a670ef} 
+\index{CalculatorApp.Math\_lib@{CalculatorApp.Math\_lib}!Multiplication@{Multiplication}}
+\index{Multiplication@{Multiplication}!CalculatorApp.Math\_lib@{CalculatorApp.Math\_lib}}
+\doxysubsubsection{\texorpdfstring{Multiplication()}{Multiplication()}}
+{\footnotesize\ttfamily decimal Calculator\+App.\+Math\+\_\+lib.\+Multiplication (\begin{DoxyParamCaption}\item[{decimal}]{v1,  }\item[{decimal}]{v2 }\end{DoxyParamCaption})}
+
+
+
+Multiplication two numbers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & -\/ 1. number\\
+\hline
+{\em v2} & -\/ 2. number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation
+\end{DoxyReturn}
+Overflow check, throws overflowexception\Hypertarget{class_calculator_app_1_1_math__lib_a72e717da2d152ed6dfa65cb074a4b38f}\label{class_calculator_app_1_1_math__lib_a72e717da2d152ed6dfa65cb074a4b38f} 
+\index{CalculatorApp.Math\_lib@{CalculatorApp.Math\_lib}!SquareRoot@{SquareRoot}}
+\index{SquareRoot@{SquareRoot}!CalculatorApp.Math\_lib@{CalculatorApp.Math\_lib}}
+\doxysubsubsection{\texorpdfstring{SquareRoot()}{SquareRoot()}}
+{\footnotesize\ttfamily decimal Calculator\+App.\+Math\+\_\+lib.\+Square\+Root (\begin{DoxyParamCaption}\item[{decimal}]{v1 }\end{DoxyParamCaption})}
+
+
+
+Calculation of square roots. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & -\/ source number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Negative\+Root\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_calculator_app_1_1_math__lib_aa71c200ce3c21ee26ca509587fbfd382}\label{class_calculator_app_1_1_math__lib_aa71c200ce3c21ee26ca509587fbfd382} 
+\index{CalculatorApp.Math\_lib@{CalculatorApp.Math\_lib}!Substraction@{Substraction}}
+\index{Substraction@{Substraction}!CalculatorApp.Math\_lib@{CalculatorApp.Math\_lib}}
+\doxysubsubsection{\texorpdfstring{Substraction()}{Substraction()}}
+{\footnotesize\ttfamily decimal Calculator\+App.\+Math\+\_\+lib.\+Substraction (\begin{DoxyParamCaption}\item[{decimal}]{v1,  }\item[{decimal}]{v2 }\end{DoxyParamCaption})}
+
+
+
+Substraction two numbers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & -\/ 1. number\\
+\hline
+{\em v2} & -\/ 2. number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation
+\end{DoxyReturn}
+Overflow check, throws overflowexception
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/andrej.\+bockaj/\+One\+Drive -\/ MTS/\+Pracovná plocha/\+VUT FIT/2\+SL/\+IVS/ivs\+\_\+project02/\+Calculator\+App/\mbox{\hyperlink{_math__lib_8cs}{Math\+\_\+lib.\+cs}}\end{DoxyCompactItemize}
