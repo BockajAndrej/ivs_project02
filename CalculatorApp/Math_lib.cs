@@ -29,6 +29,7 @@ namespace CalculatorApp
         /// <param name="v1"> - 1. number</param>
         /// <param name="v2"> - 2. number</param>
         /// <returns>Result of the operation</returns>
+        /// <exception cref="OverflowException"></exception>
         public decimal Add(decimal v1, decimal v2)
         {
             /// Overflow check, throws overflowexception
@@ -43,6 +44,7 @@ namespace CalculatorApp
         /// <param name="v1"> - 1. number</param>
         /// <param name="v2"> - 2. number</param>
         /// <returns>Result of the operation</returns>
+        /// <exception cref="OverflowException"></exception>
         public decimal Substraction(decimal v1, decimal v2)
         {
             /// Overflow check, throws overflowexception
@@ -57,6 +59,7 @@ namespace CalculatorApp
         /// <param name="v1"> - 1. number</param>
         /// <param name="v2"> - 2. number</param>
         /// <returns>Result of the operation</returns>
+        /// <exception cref="OverflowException"></exception>
         public decimal Multiplication(decimal v1, decimal v2)
         {
             /// Overflow check, throws overflowexception
@@ -72,6 +75,7 @@ namespace CalculatorApp
         /// <param name="v2"> - 2. number</param>
         /// <returns>Result of the operation</returns>
         /// <exception cref="DivideByZeroException"></exception>
+        /// <exception cref="OverflowException"></exception>
         public decimal Division(decimal v1, decimal v2)
         {
             /// Overflow check, throws overflowexception
@@ -140,6 +144,7 @@ namespace CalculatorApp
         /// <param name="_exponent"> - exponent number</param>
         /// <returns></returns>
         /// <exception cref="NonNaturalExponentException"></exception>
+        /// <exception cref="OverflowException"></exception>
         public decimal Exponentiation(decimal _base, decimal _exponent)
         {
             if (_exponent % 1 != 0) //can be only whole number without decimal point, cant change func parameter

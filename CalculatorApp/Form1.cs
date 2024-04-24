@@ -13,6 +13,9 @@ using System.Globalization;
 
 namespace CalculatorApp
 {
+    /// <summary>
+    /// Backend class 
+    /// </summary>
     public partial class Calculator : Form
     {
         private Math_lib mathLib = new Math_lib();
@@ -46,7 +49,7 @@ namespace CalculatorApp
                                                   45f);
             graphics.FillRectangle(brush, gradient_rectangle);
         }
-    
+
 
         //Buttons
         private string firstNumber_str = "";
@@ -70,7 +73,7 @@ namespace CalculatorApp
                 }
             }
 
-            if (customControl1.Checked) 
+            if (customControl1.Checked)
             {
                 textBox1.BackColor = Color.FromArgb(20, 55, 73);
                 textBox1.ForeColor = Color.LimeGreen;
@@ -80,7 +83,7 @@ namespace CalculatorApp
                 textBox1.BackColor = Color.White;
                 textBox1.ForeColor = Color.Black;
             }
-            
+
             this.Invalidate(); // Force the form to repaint
 
         }
@@ -181,8 +184,8 @@ namespace CalculatorApp
              (e.KeyChar == '^' && textBox1.Text.Length > 0 && !"+-X÷%".Contains(textBox1.Text.Last())) ||
              e.KeyChar == '!' ||
              e.KeyChar == ',' ||
-             e.KeyChar == (char)Keys.Back || 
-             e.KeyChar == (char)Keys.Enter)) 
+             e.KeyChar == (char)Keys.Back ||
+             e.KeyChar == (char)Keys.Enter))
             {
                 if (char.IsDigit(e.KeyChar))
                 {
@@ -200,7 +203,7 @@ namespace CalculatorApp
                 }
                 else if (e.KeyChar == '!')
                 {
-                    Factorial_Click(this,EventArgs.Empty);
+                    Factorial_Click(this, EventArgs.Empty);
                 }
                 else if (e.KeyChar == ',' || e.KeyChar == '.')
                 {
@@ -280,8 +283,8 @@ namespace CalculatorApp
             {
                 case "+":
                     try
-                    { 
-                        result = mathLib.Add(num1, num2); 
+                    {
+                        result = mathLib.Add(num1, num2);
                     }
                     catch (Exception lok_ex)
                     {
@@ -332,7 +335,8 @@ namespace CalculatorApp
             }
 
             //Error print due to exception
-            if (ex != null) {
+            if (ex != null)
+            {
                 //lok_ex.Message
                 Clear_all();
                 if (ex.GetType().Name == "OverflowException")
@@ -504,7 +508,7 @@ namespace CalculatorApp
                 firstNumber_str = num1.ToString();
                 secondNumber_str = mathLib.FormatDecimal(num2, 3).ToString();
             }
-            if(ex != null)
+            if (ex != null)
             {
                 Clear_all();
                 textBox1.Text = String.Format("Error: {0}", ex.Message);
@@ -555,7 +559,7 @@ namespace CalculatorApp
                 }
                 catch (Exception lok_ex)
                 {
-                    ex= lok_ex;
+                    ex = lok_ex;
                 }
                 string formattedResult = mathLib.FormatDecimal(num2, 3);
                 textBox1.Text = BeforeSecNumber + formattedResult;
@@ -564,7 +568,7 @@ namespace CalculatorApp
                 secondNumber_str = num2.ToString();
             }
 
-            if(ex != null)
+            if (ex != null)
             {
                 Clear_all();
                 textBox1.Text = String.Format("Error: {0}", ex.Message);
@@ -575,6 +579,6 @@ namespace CalculatorApp
         private void Clear_Click(object sender, EventArgs e) // button "C"
         {
             Clear_all();
-        }    
+        }
     }
 }

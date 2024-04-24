@@ -16,8 +16,8 @@ namespace UnitTestCalculator
 
         /// <summary>
         /// Testing Add() function for Add arithmetics operation
-        /// <exception cref="OverflowException"></exception>
         /// </summary>
+        /// <exception cref="OverflowException"></exception>
         [TestMethod]
         public void Test_Count()
         {
@@ -30,8 +30,8 @@ namespace UnitTestCalculator
         }
         /// <summary>
         /// Testing Substraction() function for Substraction arithmetics operation
-        /// <exception cref="OverflowException"></exception>
         /// </summary>
+        /// <exception cref="OverflowException"></exception>
         [TestMethod]
         public void Test_Subtraction()
         {
@@ -44,8 +44,8 @@ namespace UnitTestCalculator
         }
         /// <summary>
         /// Testing Multiplication() function for Multiplication arithmetics operation
-        /// <exception cref="OverflowException"></exception>
         /// </summary>
+        /// <exception cref="OverflowException"></exception>
         [TestMethod]
         public void Test_Multiplication()
         {
@@ -58,9 +58,9 @@ namespace UnitTestCalculator
         }
         /// <summary>
         /// Testing Division() function for Division arithmetics operation
+        /// </summary>
         /// <exception cref="DivideByZeroException"></exception>
         /// <exception cref="OverflowException"></exception>
-        /// </summary>
         [TestMethod]
         public void Test_Division()
         {
@@ -73,8 +73,8 @@ namespace UnitTestCalculator
         }
         /// <summary>
         /// Testing Modulo() function for remainder after division
-        /// <exception cref="DivideByZeroException"></exception>
         /// </summary>
+        /// <exception cref="DivideByZeroException"></exception>
         [TestMethod]
         public void Test_Modulo()
         {
@@ -85,9 +85,9 @@ namespace UnitTestCalculator
         }
         /// <summary>
         /// Testing Faktorial() function for faktorial arithmetics operation
+        /// </summary>
         /// <exception cref="NegativeFactorialException"></exception>
         /// <exception cref="OverflowException"></exception>
-        /// </summary>
         [TestMethod]
         public void Test_Faktorial()
         {
@@ -103,9 +103,9 @@ namespace UnitTestCalculator
         }
         /// <summary>
         /// Testing Exponentiation() function for exponentiation arithmetics operation
+        /// </summary>
         /// <exception cref="NonNaturalExponentException"></exception>
         /// <exception cref="OverflowException"></exception>
-        /// </summary>
         [TestMethod]
         public void Test_EXP()
         {
@@ -119,8 +119,8 @@ namespace UnitTestCalculator
         }
         /// <summary>
         /// Testing SquareRoot() function for squareRoot arithmetics operation
-        /// <exception cref="NegativeRootException"></exception>
         /// </summary>
+        /// <exception cref="NegativeRootException"></exception>
         [TestMethod]
         public void Test_SQRT()
         {
