@@ -15,7 +15,7 @@ Inheritance diagram for Calculator\+App.\+Calculator\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_calculator_app_1_1_calculator_a2defddf671a06bb01d2ab76c803e4609}{Calculator}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Constructor for the Calculator class. Initializes UI components and attaches the Form1\+\_\+\+Paint event handler. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -25,113 +25,116 @@ override void \mbox{\hyperlink{class_calculator_app_1_1_calculator_a9e0f14189191
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_a2b3df3f6d1d935f118d29d4733825106}{Form1\+\_\+\+Load}} (object sender, Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the Load event for Form1. Sets initial focus, configures UI elements, and initializes internal data structures for managing panels and converter options. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_a09269dad78fc66b2c0292eb019507d17}{Form1\+\_\+\+Paint}} (object sender, Paint\+Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Applies a gradient background to the form based on the current mode (light or dark). \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_a371f3da09e7b7db799070bb23e84fc1d}{custom\+Control1\+\_\+\+Checked\+Changed}} (object sender, Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the Checked\+Changed event of the custom\+Control1 (presumably a dark mode toggle control). Updates the visual theme of the form and its controls accordingly. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_calculator_app_1_1_calculator_af262294286fc9aaac41cdd3927e4c8fb}{Apply\+Color\+Theme\+To\+Buttons}} (Control parent\+Control, bool \mbox{\hyperlink{class_calculator_app_1_1_calculator_ac75681b6e401b58b54a78ae49d5feb26}{is\+Dark\+Mode}})
+\begin{DoxyCompactList}\small\item\em Applies a dark or light mode color theme to a collection of Button controls within a specified parent container. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_ae0cc337ed4bdf3cd3903eaded0cfbb9d}{btn\+\_\+\+Calculator\+\_\+\+Click}} (object sender, Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the click event for the calculator button, showing the calculator panel and hiding others. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_a23bd34d42e4a04d907602eba88056633}{btn\+\_\+\+Settings\+\_\+\+Click}} (object sender, Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the click event for the settings button, showing the settings panel and hiding others. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_aa8ed5f37681d58a05059869b38a40605}{Show\+And\+Enable\+Panel}} (int index\+To\+Show)
-\item 
+\begin{DoxyCompactList}\small\item\em Hides all panels in the {\ttfamily list\+Panel} collection and then displays and enables the panel at the specified index. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_afa24e8597ba3c9d733483773a8dac933}{Show\+And\+Enable\+In\+Out\+Panels}} (string key1, string key2)
-\item 
+\begin{DoxyCompactList}\small\item\em Hides all panels in the input\+Output\+Panels collection and then selectively displays and enables two panels specified by their keys. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_a3a0e3d6bab126f836d359bff3bacff4c}{Clear\+\_\+all}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Clears the content of text\+Box1 and resets calculator-\/related internal variables. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_a63e0cdb14bd1bbeb218710073b7df466}{Delete\+\_\+\+Click}} (object sender, Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the click event for the \textquotesingle{}Delete\textquotesingle{} button. Implements logic for deleting characters based on calculator state (exponent mode, operators, numbers). \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_a4faa64fe40dc6c93ccacccf0d2228444}{number\+Button\+\_\+\+Click}} (object sender, Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the click event for all number buttons. Calls the append\+Digit function to add the clicked number\textquotesingle{}s digit to the calculator display. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_a3bff94d58a1b7cfa4770422d5f4b304b}{append\+Digit}} (string digit, bool From\+Key\+Board)
-\item 
+\begin{DoxyCompactList}\small\item\em Appends a digit to the calculator\textquotesingle{}s internal representation, handling cases for exponent entry, starting a new number, and continuing an existing number. Also manages comma placement. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_a5b8136e1021f79ba628a04c9fb41955d}{append\+Digit\+Converter}} (string digit, bool From\+Key\+Board)
-\item 
+\begin{DoxyCompactList}\small\item\em Appends a digit to the number being converted, handling comma (decimal separator) placement and updating the display. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_ac98f09e80ecce8f7065bb704a66e1ce3}{number\+Button\+Converter\+\_\+\+Click}} (object sender, Event\+Args e)
-\item 
-void \mbox{\hyperlink{class_calculator_app_1_1_calculator_a2802adc8d5dee0ed65981f653157d4cb}{Update\+Input\+Text\+Box\+Converter}} (string value)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the click event of a converter number button. Extracts the button\textquotesingle{}s text (digit) and calls {\ttfamily append\+Digit\+Converter} to process the input. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_calculator_app_1_1_calculator_a049132840448c6762f9cd15678be6000}{Update\+Input\+Text\+Box\+Converter}} (string value, bool from\+Keyboard)
+\begin{DoxyCompactList}\small\item\em Updates the input textbox of the converter, optionally parsing the value for calculations. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_a1aec7fa1e5cfd562c083f9c91216f4d9}{Update\+Outout\+Text\+Box\+Converter}} (string value)
-\item 
+\begin{DoxyCompactList}\small\item\em Updates the output textbox of the converter with the specified value. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_afd39293e6e5a9e9ce22b7e72e0c52e04}{Delete\+Converter\+\_\+\+Click}} (object sender, Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the click event for the converter\textquotesingle{}s \textquotesingle{}Delete\textquotesingle{} button. Removes the last character from the input and updates the display. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_aa49a89d08791fe71c1a7d764c84d1fb9}{Clear\+Converter\+\_\+\+Text}} (object sender, Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the click event for the converter\textquotesingle{}s \textquotesingle{}Clear\textquotesingle{} button. Resets the internal number representation and clears the input and output textboxes. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_a3aad5ce161267a669b998915f9008364}{Clear\+Converter\+\_\+\+Text\+All}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Clears all internal data related to the converter and empties its textboxes. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_aff488bc38fdb7f4fc3fc89660bdb2d1e}{Calculate\+Result\+Convert}} (decimal value, string from, string to)
-\item 
+\begin{DoxyCompactList}\small\item\em Calculates the conversion result based on the current conversion type, input value, and unit conversion options. Updates the output textbox with the formatted result. ~\newline
+ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_calculator_app_1_1_calculator_ae8e051f3b79d176b3a6aae7307231cd3}{text\+Box\+Converter\+\_\+\+Key\+Press}} (object sender, Key\+Press\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Handles the Key\+Press event for the converter\textquotesingle{}s input textbox. Allows only numbers, a comma (decimal separator), and the Backspace key for editing. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_ab11a7092ba037cae3683e4ac0ef30a38}{text\+Box1\+\_\+\+Key\+Press}} (object sender, Key\+Press\+Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the Key\+Press event for the main calculator textbox (text\+Box1). Allows numbers, basic operators, decimals, factorial, exponentiation, Backspace, and Enter for calculations. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_a671f32c6b78d9acb4bc91a98f1bb9b09}{operator\+Button\+\_\+\+Click}} (object sender, Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the click event for operator buttons. Handles the special case of a negative sign at the beginning of a number. Otherwise, delegates operator handling to the {\ttfamily append\+Operator} function. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_a5ca89b065c0052df0841cc4221670b29}{append\+Operator}} (string new\+Operator, bool From\+Key\+Board)
-\item 
+\begin{DoxyCompactList}\small\item\em Appends an operator to the calculator\textquotesingle{}s internal representation and updates the display. Handles cases of replacing existing operators and performing exponentiation if necessary. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_a414ecb2b7a682055defb652f66132078}{Result\+\_\+\+Click}} (object sender, Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the click event for the \textquotesingle{}Result\textquotesingle{} button. Performs calculations, handles potential exceptions, formats the result, and updates the calculator display. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_ab5c4efcb0bcea247a7246a62629a14ef}{perform\+Exponentiation}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Performs exponentiation calculations based on whether an exponent and an optional second number are present. Handles potential exceptions and updates calculator state. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_ad0e4d91dd84a39f94bc7ca7e35828e18}{Factorial\+\_\+\+Click}} (object sender, Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the click event of the \textquotesingle{}Factorial\textquotesingle{} button. Calculates the factorial of the current number (first or second) and updates the calculator display. Manages potential exceptions. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_a3d418a748d0b0e9fb60eb59fc6b1800c}{to\+Power\+Of2\+\_\+\+Click}} (object sender, Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the click event of the \textquotesingle{}Square\textquotesingle{} button (raises the current number to the power of 2). Updates the calculator display and handles potential exceptions. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_a7f46da505fedb5462ce79cc010148080}{to\+Power\+Of\+X\+\_\+\+Click}} (object sender, Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the click event for the \textquotesingle{}\texorpdfstring{$^\wedge$}{\string^}\textquotesingle{} (exponentiation) button. Prepares the calculator state for entering an exponent if the input field is not empty and doesn\textquotesingle{}t end with an operator. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_a00fbfa25e5f565a8ccd2cfb97eabb40e}{Square\+Root\+\_\+\+Click}} (object sender, Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the click event of the \textquotesingle{}Square Root\textquotesingle{} button. Calculates the square root of either the first or second number, updates the display, and manages potential exceptions. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_a846ae1b57432d89681c5c9fe1fd41f1f}{Clear\+\_\+\+Click}} (object sender, Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the click event for the \textquotesingle{}Clear\textquotesingle{} button (labeled "{}\+C"{}). Calls the Clear\+\_\+all function to reset the calculator. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_a1f5e0555c3f9c2ac478f88f6fdc71370}{timer1\+\_\+\+Tick}} (object sender, Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the timer tick event, responsible for smoothly expanding or collapsing a panel (animation). \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_a0dc2a917af65ec956a9369d4d7b7daf5}{Btn\+\_\+\+Unit\+Converter\+\_\+\+Click}} (object sender, Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the click event for the Unit Converter button. Manages the expansion of the panel and configuration of the degrees unit conversion. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_aac99bcba6dcdd7f5bc29bf5f42a59a73}{Perform\+Degree\+Setup}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Performs setup actions specifically for degree unit conversions. Ensures input/output panels are visible, sets the conversion type, labels, and clears textboxes. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_a1a5b1acd9d5dac896a953388db658974}{Update\+After\+Each\+Selection}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Updates the converter after a unit selection is made. Ensures that if the input textbox is not empty, the input value is recalculated based on the new units. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_a90cfae763f7795862df5e4a584f3fab1}{dropdown\+Input\+Button\+\_\+\+Click}} (object sender, Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the click event for an input unit dropdown button. Updates the input unit label and recalculates the input value based on the newly selected unit. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_acbf75b8b8f71e2f36f1736ef49178156}{dropdown\+Out\+Put\+Button\+\_\+\+Click}} (object sender, Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the click event for an output unit dropdown button. Updates the output unit label and recalculates the output value based on the newly selected unit. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_ae249cf9d1c13afc815b48f8a72ba1ef6}{btn\+\_\+\+Degrees\+\_\+\+Click}} (object sender, Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the click event for a \textquotesingle{}Degrees\textquotesingle{} button (unit conversion). Prepares the converter UI for degree-\/specific conversions. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_aa94024b18260df932f06597d8f699ed3}{btn\+\_\+\+Degree\+\_\+\+Input\+\_\+\+Click}} (object sender, Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the click event for a degree input unit selection button. Triggers panel expansion (dropdown), updates the input label, and recalculates for the new unit. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_a762071916c53a92c94a2502baa014739}{btn\+\_\+\+Degree\+\_\+\+Output\+\_\+\+Click}} (object sender, Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the click event for a degree output unit selection button. Triggers panel expansion (dropdown), updates the output label, and recalculates. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_ae1a0523f35961774ae7bbf87638482e4}{btn\+\_\+\+Weight\+\_\+\+Click}} (object sender, Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the click event for a \textquotesingle{}Weight\textquotesingle{} button (weight unit conversion). Prepares the converter UI for weight-\/specific conversions. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_a1550c7269e6b39e73c4a8edd88111e02}{IWeight\+Btn\+\_\+mm\+\_\+\+Click}} (object sender, Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the click event for a weight input unit selection button. Triggers panel expansion (dropdown), updates the input label, and recalculates for the new unit. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_a4f1c7563d0ac17e1894b77ef0bd4b183}{OWeight\+Btn\+\_\+mm\+\_\+\+Click}} (object sender, Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the click event for a weight output unit selection button. Triggers panel expansion (dropdown), updates the output label, and recalculates. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_a3ef2a183cb1bdb0ea65829aa857847e8}{btn\+\_\+\+Temperature\+\_\+\+Click}} (object sender, Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the click event for the \textquotesingle{}Temperature\textquotesingle{} button (temperature conversion). Prepares the UI for temperature-\/specific conversions. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_add75c73e66b7118f5ed3e62c53a43ac0}{ITemperature\+Btn\+\_\+\+C\+\_\+\+Click}} (object sender, Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the click event for a temperature input unit selection button. Triggers panel expansion (dropdown), updates the input label, and recalculates for the new unit. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_a4d5ac810c450a6eaf0652196d4ec3e7a}{OTemperature\+Btn\+\_\+\+C\+\_\+\+Click}} (object sender, Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the click event for a temperature output unit selection button. Triggers panel expansion (dropdown), updates the output label, and recalculates. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_ac599b9a3b4aab7989624e6d342f66c19}{btn\+\_\+\+Length\+\_\+\+Click}} (object sender, Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the click event for the \textquotesingle{}Length\textquotesingle{} button (length unit conversion). Prepares the UI for length-\/specific conversions. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_ac37d3d40980bf2d0f1cef7672a40d231}{ILength\+Btn\+\_\+mm\+\_\+\+Click}} (object sender, Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the click event for a length input unit selection button. Triggers panel expansion (dropdown), updates the input label, and recalculates for the new unit. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_a31d814d975eb79c50c81109f859d1b45}{OLength\+Btn\+\_\+mm\+\_\+\+Click}} (object sender, Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the click event for a length output unit selection button. Triggers panel expansion (dropdown), updates the output label, and recalculates. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_a16283242d953257b9fcd199cf4227812}{btn\+\_\+\+Time\+\_\+\+Click}} (object sender, Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the click event for the \textquotesingle{}Time\textquotesingle{} button (time conversion). Prepares the UI for time-\/specific conversions. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_ad557dd0ac182a1eadceb9d2d3d9cc143}{ITime\+Btn\+\_\+sec\+\_\+\+Click}} (object sender, Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the click event for an input time unit selection button (specifically for seconds). Triggers panel expansion (dropdown), updates the input label, and recalculates the input value for the new unit. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_a7a8078ae8f3d1edd936e8d090bf53518}{OTime\+Btn\+\_\+sec\+\_\+\+Click}} (object sender, Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the click event for an output time unit selection button (specifically for seconds). Triggers panel expansion (dropdown), updates the output label, and recalculates the output value for the new unit. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_aea14868d40e27c48fda320e59ca4af15}{Main\+\_\+\+Calculator\+\_\+panel\+\_\+\+Paint}} (object sender, Paint\+Event\+Args e)
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the Paint event for the Main\+\_\+\+Calculator\+\_\+panel. This function is responsible for custom drawing or rendering visual elements within the panel. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_ac83fde4d8296ef729eb5c43fb4a29c3f}{Initialize\+Component}} ()
 \begin{DoxyCompactList}\small\item\em Required method for Designer support -\/ do not modify the contents of this method with the code editor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
-\item 
-\mbox{\hyperlink{class_calculator_app_1_1_math__lib}{Math\+\_\+lib}} \mbox{\hyperlink{class_calculator_app_1_1_calculator_ac6f0d4ec314bd785bc8a7b76ba69ebda}{math\+Lib}} = new \mbox{\hyperlink{class_calculator_app_1_1_math__lib}{Math\+\_\+lib}}()
 \item 
 Dictionary$<$ string, Panel $>$ \mbox{\hyperlink{class_calculator_app_1_1_calculator_a49a56be6c40ebbfbc3c80a8fdd0b46e7}{input\+Output\+Panels}} = new Dictionary$<$string, Panel$>$()
 \item 
@@ -144,6 +147,22 @@ Color \mbox{\hyperlink{class_calculator_app_1_1_calculator_af901cb1261b3bbc9d75f
 Color \mbox{\hyperlink{class_calculator_app_1_1_calculator_ab0ff05a9ef85987d1dd94be331fe6d3e}{light\+Mode\+Start\+Color}} = Color.\+White
 \item 
 Color \mbox{\hyperlink{class_calculator_app_1_1_calculator_a29a02b6c058b239b90ddf89a48d76300}{light\+Mode\+End\+Color}} = Color.\+Light\+Gray
+\item 
+bool \mbox{\hyperlink{class_calculator_app_1_1_calculator_aaf1850d4cbb31fcb6774ab671c4d8963}{is\+Collapsed}}
+\item 
+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_a81275e5f083cfa4eea1986dcb7f18a14}{button\+\_\+to\+Drop\+Down}} = new Button()
+\item 
+Panel \mbox{\hyperlink{class_calculator_app_1_1_calculator_ad8dbaaa6d901e11345dbae4ddfcb9ee1}{panel\+\_\+to\+Drop\+Down}} = new Panel()
+\item 
+string \mbox{\hyperlink{class_calculator_app_1_1_calculator_a0d15fb1230dce0bcc1b5dd0dc7e8ef33}{Input\+Unit\+\_\+str}}
+\item 
+string \mbox{\hyperlink{class_calculator_app_1_1_calculator_a18c4d87821b17108f0ecb5aca0a8f5c5}{Output\+Unit\+\_\+str}}
+\item 
+string \mbox{\hyperlink{class_calculator_app_1_1_calculator_a7eca76487c16a22ca5685835523b5524}{Convert\+Number\+\_\+str}} = string.\+Empty
+\item 
+string \mbox{\hyperlink{class_calculator_app_1_1_calculator_a292327c4608641e46e9d6a74c7620bbc}{curr\+\_\+\+Conversion\+Type}} = string.\+Empty
+\item 
+\mbox{\hyperlink{class_calculator_app_1_1_optional__functions}{Optional\+\_\+functions}} \mbox{\hyperlink{class_calculator_app_1_1_calculator_aff166740c8633dc5c4196a456b721a6b}{opt\+\_\+functions}} = new \mbox{\hyperlink{class_calculator_app_1_1_optional__functions}{Optional\+\_\+functions}}()
 \item 
 string \mbox{\hyperlink{class_calculator_app_1_1_calculator_ab69f4cef82fba5261c82471b8c2fc35c}{first\+Number\+\_\+str}} = "{}"{}
 \item 
@@ -159,27 +178,13 @@ string \mbox{\hyperlink{class_calculator_app_1_1_calculator_a6b0590866ba607099c6
 \item 
 List$<$ Panel $>$ \mbox{\hyperlink{class_calculator_app_1_1_calculator_a8a50ceb614dd3b2fef548385876f6eb8}{list\+Panel}} = new List$<$Panel$>$()
 \item 
+\mbox{\hyperlink{class_calculator_app_1_1_math__lib}{Math\+\_\+lib}} \mbox{\hyperlink{class_calculator_app_1_1_calculator_ac6f0d4ec314bd785bc8a7b76ba69ebda}{math\+Lib}} = new \mbox{\hyperlink{class_calculator_app_1_1_math__lib}{Math\+\_\+lib}}()
+\item 
 int \mbox{\hyperlink{class_calculator_app_1_1_calculator_a80aef1d3168351a942c6799b9e45f59f}{index\+Of\+Calculator}} = 0
 \item 
 int \mbox{\hyperlink{class_calculator_app_1_1_calculator_a56e591fa50b64fa3b0ae6cf8402e60d6}{index\+Of\+Settings}} = 1
 \item 
 int \mbox{\hyperlink{class_calculator_app_1_1_calculator_a092a8e426ee48e28508d80cf30b35645}{index\+Of\+Degrees}} = 2
-\item 
-string \mbox{\hyperlink{class_calculator_app_1_1_calculator_a7eca76487c16a22ca5685835523b5524}{Convert\+Number\+\_\+str}} = string.\+Empty
-\item 
-string \mbox{\hyperlink{class_calculator_app_1_1_calculator_a292327c4608641e46e9d6a74c7620bbc}{curr\+\_\+\+Conversion\+Type}} = string.\+Empty
-\item 
-\mbox{\hyperlink{class_calculator_app_1_1_optional__functions}{Optional\+\_\+functions}} \mbox{\hyperlink{class_calculator_app_1_1_calculator_aff166740c8633dc5c4196a456b721a6b}{opt\+\_\+functions}} = new \mbox{\hyperlink{class_calculator_app_1_1_optional__functions}{Optional\+\_\+functions}}()
-\item 
-bool \mbox{\hyperlink{class_calculator_app_1_1_calculator_aaf1850d4cbb31fcb6774ab671c4d8963}{is\+Collapsed}}
-\item 
-Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_a81275e5f083cfa4eea1986dcb7f18a14}{button\+\_\+to\+Drop\+Down}} = new Button()
-\item 
-Panel \mbox{\hyperlink{class_calculator_app_1_1_calculator_ad8dbaaa6d901e11345dbae4ddfcb9ee1}{panel\+\_\+to\+Drop\+Down}} = new Panel()
-\item 
-string \mbox{\hyperlink{class_calculator_app_1_1_calculator_a0d15fb1230dce0bcc1b5dd0dc7e8ef33}{Input\+Unit\+\_\+str}}
-\item 
-string \mbox{\hyperlink{class_calculator_app_1_1_calculator_a18c4d87821b17108f0ecb5aca0a8f5c5}{Output\+Unit\+\_\+str}}
 \item 
 System.\+Component\+Model.\+IContainer \mbox{\hyperlink{class_calculator_app_1_1_calculator_a5a118ff1eb42c9eb00b45574b482fb16}{components}} = null
 \begin{DoxyCompactList}\small\item\em Required designer variable. \end{DoxyCompactList}\item 
@@ -201,27 +206,27 @@ System.\+Windows.\+Forms.\+Text\+Box \mbox{\hyperlink{class_calculator_app_1_1_c
 \item 
 System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_a034bcd9ae3dfe33d73b497c70ec50442}{button2}}
 \item 
-System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_ac8103e628fff4cb30d1e72756a40faa9}{Plus}}
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_afd4daf55a6771d92d9ce9981f9d10c9e}{op\+\_\+\+Plus}}
 \item 
-System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_afb8c1ac76c05d9336bbc39aadec1a7f5}{Substitution}}
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_a07d3a2ad1fb8e3cc9af3b8c18f6c6a4f}{op\+\_\+\+Substitution}}
 \item 
-System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_aa2133832fa08226b06aefca43ffb114d}{Multiplication}}
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_a6511f6879571764b1f0e0dd27773c527}{op\+\_\+\+Multiplication}}
 \item 
-System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_a1f17149572734eb3b0e53b1c4d5ac750}{Division}}
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_a2f313412946ca245a924f18a4ed52807}{op\+\_\+\+Division}}
 \item 
-System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_a6b82ef7bd049522f370331801e49a610}{Modulo}}
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_aab87d5dd2a3e2ffa28036d6426b779a0}{op\+\_\+\+Modulo}}
 \item 
-System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_a53b4e09a402b56dca731fc18ff784104}{Clear}}
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_abc4675b5a09025c03b4e19a55043e4c9}{del\+\_\+\+Clear}}
 \item 
-System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_a80168f73e197cb382341c456b53eca02}{Result}}
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_a1ff3eaf04197cab053cda044e6370979}{op\+\_\+\+Result}}
 \item 
-System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_a055dddf68741c5b32d49bde0a41628f9}{Factorial}}
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_a1ff0ddfbb1bcc5f7d18e8803d55798aa}{sp\+\_\+\+Factorial}}
 \item 
-System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_aed3bb0edc06ef4cc021bc5e5f0cd9f17}{to\+Power\+Of2}}
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_a9c04c89277abb7f76ef32a603da19479}{sp\+\_\+to\+Power\+Of2}}
 \item 
-System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_aa68a8dff53fba10886078f557d2316ea}{Square\+Root}}
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_adf77571f352e52b553e9dea6a7f3bbd5}{sp\+\_\+\+Square\+Root}}
 \item 
-System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_a05e2167cbd16036d85fa2c409023f7c0}{to\+Power\+OfX}}
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_a32d9c56b10093422e358ee94bd250afe}{sp\+\_\+to\+Power\+OfX}}
 \item 
 System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_a8eb3e0595d4e983d515a0cbbae9918fc}{button14}}
 \item 
@@ -229,9 +234,9 @@ System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calc
 \item 
 Custom\+Controls.\+Custom\+Control \mbox{\hyperlink{class_calculator_app_1_1_calculator_ae7e2bf9babc460626ebdfea7e5d65e9c}{custom\+Control1}}
 \item 
-System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_a658e09a256183168f696961df2ec013b}{Comma}}
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_aa5d7cddb4ff46991b008537899191b35}{button\+\_\+\+Comma}}
 \item 
-System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_aac4736f71ea29c290d2061c7af574220}{Delete}}
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_ab3991cea78cda1d6cc7dcd0fb95b57ae}{del\+\_\+\+Delete}}
 \item 
 System.\+Windows.\+Forms.\+Panel \mbox{\hyperlink{class_calculator_app_1_1_calculator_a11359021f4ccdeb7c0c238e70131a95d}{Main\+\_\+\+Calculator\+\_\+panel}}
 \item 
@@ -261,7 +266,7 @@ System.\+Windows.\+Forms.\+Text\+Box \mbox{\hyperlink{class_calculator_app_1_1_c
 \item 
 System.\+Windows.\+Forms.\+Text\+Box \mbox{\hyperlink{class_calculator_app_1_1_calculator_aeed60116f8853c37c1c0f3b690213018}{text\+Box\+\_\+\+Converter\+\_\+\+Input}}
 \item 
-System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_af96be79e230598a78defd5b85c22192d}{Clear\+Converter}}
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_ab23d9702a371188358daf0dc9b0e2214}{del\+\_\+\+Clear\+Converter}}
 \item 
 System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_af1a475b9834c6fea7ee58ce89f2793d1}{button11}}
 \item 
@@ -273,7 +278,7 @@ System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calc
 \item 
 System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_acc73ed9cd63ff76c01781eb9a9e8a9ac}{button22}}
 \item 
-System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_a86dd351f1ff4b7628f32755bfbc7ba72}{Delete\+Converter}}
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_ac9fb6a53a64d149ac9379f5aa9e1f42e}{del\+\_\+\+Delete\+Converter}}
 \item 
 System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_aeae9e53b2c54218e7d47114265a3f320}{button21}}
 \item 
@@ -281,7 +286,7 @@ System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calc
 \item 
 System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_a7b9a7958691ccaee4d77cc357d9d04f9}{button20}}
 \item 
-System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_a9cc517a4be4b4f0b3a9a12c05bef443f}{button17}}
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_a366f8f8f358a53ca58f417cc1fa58cef}{Comma\+Converter}}
 \item 
 System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_ae7eacd0e4a9161e20a7498cfeb167a4c}{button19}}
 \item 
@@ -435,6 +440,10 @@ Backend class.
 
 
 
+Constructor for the Calculator class. Initializes UI components and attaches the Form1\+\_\+\+Paint event handler. 
+
+
+
 \doxysubsection{Member Function Documentation}
 \Hypertarget{class_calculator_app_1_1_calculator_a3bff94d58a1b7cfa4770422d5f4b304b}\label{class_calculator_app_1_1_calculator_a3bff94d58a1b7cfa4770422d5f4b304b} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!appendDigit@{appendDigit}}
@@ -442,89 +451,267 @@ Backend class.
 \doxysubsubsection{\texorpdfstring{appendDigit()}{appendDigit()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+append\+Digit (\begin{DoxyParamCaption}\item[{string}]{digit,  }\item[{bool}]{From\+Key\+Board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Appends a digit to the calculator\textquotesingle{}s internal representation, handling cases for exponent entry, starting a new number, and continuing an existing number. Also manages comma placement. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em digit} & The digit to be appended (as a string).\\
+\hline
+{\em from\+Keyboard} & Indicates whether the digit input originates from the keyboard (true) or another source (false).\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_a5b8136e1021f79ba628a04c9fb41955d}\label{class_calculator_app_1_1_calculator_a5b8136e1021f79ba628a04c9fb41955d} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!appendDigitConverter@{appendDigitConverter}}
 \index{appendDigitConverter@{appendDigitConverter}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{appendDigitConverter()}{appendDigitConverter()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+append\+Digit\+Converter (\begin{DoxyParamCaption}\item[{string}]{digit,  }\item[{bool}]{From\+Key\+Board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Appends a digit to the number being converted, handling comma (decimal separator) placement and updating the display. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em digit} & The digit to be appended (as a string).\\
+\hline
+{\em from\+Keyboard} & Indicates whether the input originates from the keyboard (true) or another source (false).\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_a5ca89b065c0052df0841cc4221670b29}\label{class_calculator_app_1_1_calculator_a5ca89b065c0052df0841cc4221670b29} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!appendOperator@{appendOperator}}
 \index{appendOperator@{appendOperator}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{appendOperator()}{appendOperator()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+append\+Operator (\begin{DoxyParamCaption}\item[{string}]{new\+Operator,  }\item[{bool}]{From\+Key\+Board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Appends an operator to the calculator\textquotesingle{}s internal representation and updates the display. Handles cases of replacing existing operators and performing exponentiation if necessary. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Operator} & The new operator to be appended.\\
+\hline
+{\em from\+Keyboard} & Indicates whether the input originates from the keyboard (true) or another source (false).\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_calculator_app_1_1_calculator_af262294286fc9aaac41cdd3927e4c8fb}\label{class_calculator_app_1_1_calculator_af262294286fc9aaac41cdd3927e4c8fb} 
+\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!ApplyColorThemeToButtons@{ApplyColorThemeToButtons}}
+\index{ApplyColorThemeToButtons@{ApplyColorThemeToButtons}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
+\doxysubsubsection{\texorpdfstring{ApplyColorThemeToButtons()}{ApplyColorThemeToButtons()}}
+{\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+Apply\+Color\+Theme\+To\+Buttons (\begin{DoxyParamCaption}\item[{Control}]{parent\+Control,  }\item[{bool}]{is\+Dark\+Mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Applies a dark or light mode color theme to a collection of Button controls within a specified parent container. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent\+Control} & The container control whose child buttons will be updated.\\
+\hline
+{\em is\+Dark\+Mode} & True if dark mode is enabled, false for light mode.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_ae0cc337ed4bdf3cd3903eaded0cfbb9d}\label{class_calculator_app_1_1_calculator_ae0cc337ed4bdf3cd3903eaded0cfbb9d} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!btn\_Calculator\_Click@{btn\_Calculator\_Click}}
 \index{btn\_Calculator\_Click@{btn\_Calculator\_Click}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{btn\_Calculator\_Click()}{btn\_Calculator\_Click()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+btn\+\_\+\+Calculator\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the click event for the calculator button, showing the calculator panel and hiding others. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_aa94024b18260df932f06597d8f699ed3}\label{class_calculator_app_1_1_calculator_aa94024b18260df932f06597d8f699ed3} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!btn\_Degree\_Input\_Click@{btn\_Degree\_Input\_Click}}
 \index{btn\_Degree\_Input\_Click@{btn\_Degree\_Input\_Click}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{btn\_Degree\_Input\_Click()}{btn\_Degree\_Input\_Click()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+btn\+\_\+\+Degree\+\_\+\+Input\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the click event for a degree input unit selection button. Triggers panel expansion (dropdown), updates the input label, and recalculates for the new unit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The button object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_a762071916c53a92c94a2502baa014739}\label{class_calculator_app_1_1_calculator_a762071916c53a92c94a2502baa014739} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!btn\_Degree\_Output\_Click@{btn\_Degree\_Output\_Click}}
 \index{btn\_Degree\_Output\_Click@{btn\_Degree\_Output\_Click}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{btn\_Degree\_Output\_Click()}{btn\_Degree\_Output\_Click()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+btn\+\_\+\+Degree\+\_\+\+Output\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the click event for a degree output unit selection button. Triggers panel expansion (dropdown), updates the output label, and recalculates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The button object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_ae249cf9d1c13afc815b48f8a72ba1ef6}\label{class_calculator_app_1_1_calculator_ae249cf9d1c13afc815b48f8a72ba1ef6} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!btn\_Degrees\_Click@{btn\_Degrees\_Click}}
 \index{btn\_Degrees\_Click@{btn\_Degrees\_Click}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{btn\_Degrees\_Click()}{btn\_Degrees\_Click()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+btn\+\_\+\+Degrees\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the click event for a \textquotesingle{}Degrees\textquotesingle{} button (unit conversion). Prepares the converter UI for degree-\/specific conversions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The button object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_ac599b9a3b4aab7989624e6d342f66c19}\label{class_calculator_app_1_1_calculator_ac599b9a3b4aab7989624e6d342f66c19} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!btn\_Length\_Click@{btn\_Length\_Click}}
 \index{btn\_Length\_Click@{btn\_Length\_Click}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{btn\_Length\_Click()}{btn\_Length\_Click()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+btn\+\_\+\+Length\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the click event for the \textquotesingle{}Length\textquotesingle{} button (length unit conversion). Prepares the UI for length-\/specific conversions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The button object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_a23bd34d42e4a04d907602eba88056633}\label{class_calculator_app_1_1_calculator_a23bd34d42e4a04d907602eba88056633} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!btn\_Settings\_Click@{btn\_Settings\_Click}}
 \index{btn\_Settings\_Click@{btn\_Settings\_Click}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{btn\_Settings\_Click()}{btn\_Settings\_Click()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+btn\+\_\+\+Settings\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the click event for the settings button, showing the settings panel and hiding others. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_a3ef2a183cb1bdb0ea65829aa857847e8}\label{class_calculator_app_1_1_calculator_a3ef2a183cb1bdb0ea65829aa857847e8} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!btn\_Temperature\_Click@{btn\_Temperature\_Click}}
 \index{btn\_Temperature\_Click@{btn\_Temperature\_Click}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{btn\_Temperature\_Click()}{btn\_Temperature\_Click()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+btn\+\_\+\+Temperature\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the click event for the \textquotesingle{}Temperature\textquotesingle{} button (temperature conversion). Prepares the UI for temperature-\/specific conversions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The button object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_a16283242d953257b9fcd199cf4227812}\label{class_calculator_app_1_1_calculator_a16283242d953257b9fcd199cf4227812} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!btn\_Time\_Click@{btn\_Time\_Click}}
 \index{btn\_Time\_Click@{btn\_Time\_Click}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{btn\_Time\_Click()}{btn\_Time\_Click()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+btn\+\_\+\+Time\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the click event for the \textquotesingle{}Time\textquotesingle{} button (time conversion). Prepares the UI for time-\/specific conversions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The button object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_a0dc2a917af65ec956a9369d4d7b7daf5}\label{class_calculator_app_1_1_calculator_a0dc2a917af65ec956a9369d4d7b7daf5} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!Btn\_UnitConverter\_Click@{Btn\_UnitConverter\_Click}}
 \index{Btn\_UnitConverter\_Click@{Btn\_UnitConverter\_Click}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{Btn\_UnitConverter\_Click()}{Btn\_UnitConverter\_Click()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+Btn\+\_\+\+Unit\+Converter\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the click event for the Unit Converter button. Manages the expansion of the panel and configuration of the degrees unit conversion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_ae1a0523f35961774ae7bbf87638482e4}\label{class_calculator_app_1_1_calculator_ae1a0523f35961774ae7bbf87638482e4} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!btn\_Weight\_Click@{btn\_Weight\_Click}}
 \index{btn\_Weight\_Click@{btn\_Weight\_Click}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{btn\_Weight\_Click()}{btn\_Weight\_Click()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+btn\+\_\+\+Weight\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the click event for a \textquotesingle{}Weight\textquotesingle{} button (weight unit conversion). Prepares the converter UI for weight-\/specific conversions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The button object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_aff488bc38fdb7f4fc3fc89660bdb2d1e}\label{class_calculator_app_1_1_calculator_aff488bc38fdb7f4fc3fc89660bdb2d1e} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!CalculateResultConvert@{CalculateResultConvert}}
 \index{CalculateResultConvert@{CalculateResultConvert}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{CalculateResultConvert()}{CalculateResultConvert()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+Calculate\+Result\+Convert (\begin{DoxyParamCaption}\item[{decimal}]{value,  }\item[{string}]{from,  }\item[{string}]{to }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Calculates the conversion result based on the current conversion type, input value, and unit conversion options. Updates the output textbox with the formatted result. ~\newline
+ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The decimal value to be converted.\\
+\hline
+{\em from} & The original unit of the value.\\
+\hline
+{\em to} & The target unit for conversion.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_a3a0e3d6bab126f836d359bff3bacff4c}\label{class_calculator_app_1_1_calculator_a3a0e3d6bab126f836d359bff3bacff4c} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!Clear\_all@{Clear\_all}}
 \index{Clear\_all@{Clear\_all}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{Clear\_all()}{Clear\_all()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+Clear\+\_\+all (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Clears the content of text\+Box1 and resets calculator-\/related internal variables. 
 
 \Hypertarget{class_calculator_app_1_1_calculator_a846ae1b57432d89681c5c9fe1fd41f1f}\label{class_calculator_app_1_1_calculator_a846ae1b57432d89681c5c9fe1fd41f1f} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!Clear\_Click@{Clear\_Click}}
@@ -532,17 +719,43 @@ Backend class.
 \doxysubsubsection{\texorpdfstring{Clear\_Click()}{Clear\_Click()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+Clear\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the click event for the \textquotesingle{}Clear\textquotesingle{} button (labeled "{}\+C"{}). Calls the Clear\+\_\+all function to reset the calculator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_aa49a89d08791fe71c1a7d764c84d1fb9}\label{class_calculator_app_1_1_calculator_aa49a89d08791fe71c1a7d764c84d1fb9} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!ClearConverter\_Text@{ClearConverter\_Text}}
 \index{ClearConverter\_Text@{ClearConverter\_Text}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{ClearConverter\_Text()}{ClearConverter\_Text()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+Clear\+Converter\+\_\+\+Text (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the click event for the converter\textquotesingle{}s \textquotesingle{}Clear\textquotesingle{} button. Resets the internal number representation and clears the input and output textboxes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_a3aad5ce161267a669b998915f9008364}\label{class_calculator_app_1_1_calculator_a3aad5ce161267a669b998915f9008364} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!ClearConverter\_TextAll@{ClearConverter\_TextAll}}
 \index{ClearConverter\_TextAll@{ClearConverter\_TextAll}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{ClearConverter\_TextAll()}{ClearConverter\_TextAll()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+Clear\+Converter\+\_\+\+Text\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Clears all internal data related to the converter and empties its textboxes. 
 
 \Hypertarget{class_calculator_app_1_1_calculator_a371f3da09e7b7db799070bb23e84fc1d}\label{class_calculator_app_1_1_calculator_a371f3da09e7b7db799070bb23e84fc1d} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!customControl1\_CheckedChanged@{customControl1\_CheckedChanged}}
@@ -550,18 +763,51 @@ Backend class.
 \doxysubsubsection{\texorpdfstring{customControl1\_CheckedChanged()}{customControl1\_CheckedChanged()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+custom\+Control1\+\_\+\+Checked\+Changed (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the Checked\+Changed event of the custom\+Control1 (presumably a dark mode toggle control). Updates the visual theme of the form and its controls accordingly. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_a63e0cdb14bd1bbeb218710073b7df466}\label{class_calculator_app_1_1_calculator_a63e0cdb14bd1bbeb218710073b7df466} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!Delete\_Click@{Delete\_Click}}
 \index{Delete\_Click@{Delete\_Click}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{Delete\_Click()}{Delete\_Click()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+Delete\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the click event for the \textquotesingle{}Delete\textquotesingle{} button. Implements logic for deleting characters based on calculator state (exponent mode, operators, numbers). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_afd39293e6e5a9e9ce22b7e72e0c52e04}\label{class_calculator_app_1_1_calculator_afd39293e6e5a9e9ce22b7e72e0c52e04} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!DeleteConverter\_Click@{DeleteConverter\_Click}}
 \index{DeleteConverter\_Click@{DeleteConverter\_Click}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{DeleteConverter\_Click()}{DeleteConverter\_Click()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+Delete\+Converter\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the click event for the converter\textquotesingle{}s \textquotesingle{}Delete\textquotesingle{} button. Removes the last character from the input and updates the display. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_a9e0f141891910ff457c452aeb2b04674}\label{class_calculator_app_1_1_calculator_a9e0f141891910ff457c452aeb2b04674} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!Dispose@{Dispose}}
 \index{Dispose@{Dispose}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
@@ -583,36 +829,102 @@ Clean up any resources being used.
 \doxysubsubsection{\texorpdfstring{dropdownInputButton\_Click()}{dropdownInputButton\_Click()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+dropdown\+Input\+Button\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the click event for an input unit dropdown button. Updates the input unit label and recalculates the input value based on the newly selected unit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The button object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_acbf75b8b8f71e2f36f1736ef49178156}\label{class_calculator_app_1_1_calculator_acbf75b8b8f71e2f36f1736ef49178156} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!dropdownOutPutButton\_Click@{dropdownOutPutButton\_Click}}
 \index{dropdownOutPutButton\_Click@{dropdownOutPutButton\_Click}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{dropdownOutPutButton\_Click()}{dropdownOutPutButton\_Click()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+dropdown\+Out\+Put\+Button\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the click event for an output unit dropdown button. Updates the output unit label and recalculates the output value based on the newly selected unit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The button object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_ad0e4d91dd84a39f94bc7ca7e35828e18}\label{class_calculator_app_1_1_calculator_ad0e4d91dd84a39f94bc7ca7e35828e18} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!Factorial\_Click@{Factorial\_Click}}
 \index{Factorial\_Click@{Factorial\_Click}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{Factorial\_Click()}{Factorial\_Click()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+Factorial\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the click event of the \textquotesingle{}Factorial\textquotesingle{} button. Calculates the factorial of the current number (first or second) and updates the calculator display. Manages potential exceptions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_a2b3df3f6d1d935f118d29d4733825106}\label{class_calculator_app_1_1_calculator_a2b3df3f6d1d935f118d29d4733825106} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!Form1\_Load@{Form1\_Load}}
 \index{Form1\_Load@{Form1\_Load}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{Form1\_Load()}{Form1\_Load()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+Form1\+\_\+\+Load (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the Load event for Form1. Sets initial focus, configures UI elements, and initializes internal data structures for managing panels and converter options. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_a09269dad78fc66b2c0292eb019507d17}\label{class_calculator_app_1_1_calculator_a09269dad78fc66b2c0292eb019507d17} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!Form1\_Paint@{Form1\_Paint}}
 \index{Form1\_Paint@{Form1\_Paint}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{Form1\_Paint()}{Form1\_Paint()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+Form1\+\_\+\+Paint (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Paint\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Applies a gradient background to the form based on the current mode (light or dark). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The object that raised the Paint event.\\
+\hline
+{\em e} & The Paint\+Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_ac37d3d40980bf2d0f1cef7672a40d231}\label{class_calculator_app_1_1_calculator_ac37d3d40980bf2d0f1cef7672a40d231} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!ILengthBtn\_mm\_Click@{ILengthBtn\_mm\_Click}}
 \index{ILengthBtn\_mm\_Click@{ILengthBtn\_mm\_Click}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{ILengthBtn\_mm\_Click()}{ILengthBtn\_mm\_Click()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+ILength\+Btn\+\_\+mm\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the click event for a length input unit selection button. Triggers panel expansion (dropdown), updates the input label, and recalculates for the new unit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The button object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_ac83fde4d8296ef729eb5c43fb4a29c3f}\label{class_calculator_app_1_1_calculator_ac83fde4d8296ef729eb5c43fb4a29c3f} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!InitializeComponent@{InitializeComponent}}
 \index{InitializeComponent@{InitializeComponent}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
@@ -629,71 +941,196 @@ Required method for Designer support -\/ do not modify the contents of this meth
 \doxysubsubsection{\texorpdfstring{ITemperatureBtn\_C\_Click()}{ITemperatureBtn\_C\_Click()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+ITemperature\+Btn\+\_\+\+C\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the click event for a temperature input unit selection button. Triggers panel expansion (dropdown), updates the input label, and recalculates for the new unit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The button object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_ad557dd0ac182a1eadceb9d2d3d9cc143}\label{class_calculator_app_1_1_calculator_ad557dd0ac182a1eadceb9d2d3d9cc143} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!ITimeBtn\_sec\_Click@{ITimeBtn\_sec\_Click}}
 \index{ITimeBtn\_sec\_Click@{ITimeBtn\_sec\_Click}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{ITimeBtn\_sec\_Click()}{ITimeBtn\_sec\_Click()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+ITime\+Btn\+\_\+sec\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the click event for an input time unit selection button (specifically for seconds). Triggers panel expansion (dropdown), updates the input label, and recalculates the input value for the new unit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The button object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_a1550c7269e6b39e73c4a8edd88111e02}\label{class_calculator_app_1_1_calculator_a1550c7269e6b39e73c4a8edd88111e02} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!IWeightBtn\_mm\_Click@{IWeightBtn\_mm\_Click}}
 \index{IWeightBtn\_mm\_Click@{IWeightBtn\_mm\_Click}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{IWeightBtn\_mm\_Click()}{IWeightBtn\_mm\_Click()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+IWeight\+Btn\+\_\+mm\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the click event for a weight input unit selection button. Triggers panel expansion (dropdown), updates the input label, and recalculates for the new unit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The button object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_aea14868d40e27c48fda320e59ca4af15}\label{class_calculator_app_1_1_calculator_aea14868d40e27c48fda320e59ca4af15} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!Main\_Calculator\_panel\_Paint@{Main\_Calculator\_panel\_Paint}}
 \index{Main\_Calculator\_panel\_Paint@{Main\_Calculator\_panel\_Paint}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{Main\_Calculator\_panel\_Paint()}{Main\_Calculator\_panel\_Paint()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+Main\+\_\+\+Calculator\+\_\+panel\+\_\+\+Paint (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Paint\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the Paint event for the Main\+\_\+\+Calculator\+\_\+panel. This function is responsible for custom drawing or rendering visual elements within the panel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The object that raised the event.\\
+\hline
+{\em e} & The Paint\+Event\+Args object containing event data and graphics context.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_a4faa64fe40dc6c93ccacccf0d2228444}\label{class_calculator_app_1_1_calculator_a4faa64fe40dc6c93ccacccf0d2228444} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!numberButton\_Click@{numberButton\_Click}}
 \index{numberButton\_Click@{numberButton\_Click}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{numberButton\_Click()}{numberButton\_Click()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+number\+Button\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the click event for all number buttons. Calls the append\+Digit function to add the clicked number\textquotesingle{}s digit to the calculator display. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The button object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_ac98f09e80ecce8f7065bb704a66e1ce3}\label{class_calculator_app_1_1_calculator_ac98f09e80ecce8f7065bb704a66e1ce3} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!numberButtonConverter\_Click@{numberButtonConverter\_Click}}
 \index{numberButtonConverter\_Click@{numberButtonConverter\_Click}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{numberButtonConverter\_Click()}{numberButtonConverter\_Click()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+number\+Button\+Converter\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the click event of a converter number button. Extracts the button\textquotesingle{}s text (digit) and calls {\ttfamily append\+Digit\+Converter} to process the input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The button object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_a31d814d975eb79c50c81109f859d1b45}\label{class_calculator_app_1_1_calculator_a31d814d975eb79c50c81109f859d1b45} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!OLengthBtn\_mm\_Click@{OLengthBtn\_mm\_Click}}
 \index{OLengthBtn\_mm\_Click@{OLengthBtn\_mm\_Click}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{OLengthBtn\_mm\_Click()}{OLengthBtn\_mm\_Click()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+OLength\+Btn\+\_\+mm\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the click event for a length output unit selection button. Triggers panel expansion (dropdown), updates the output label, and recalculates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The button object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_a671f32c6b78d9acb4bc91a98f1bb9b09}\label{class_calculator_app_1_1_calculator_a671f32c6b78d9acb4bc91a98f1bb9b09} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!operatorButton\_Click@{operatorButton\_Click}}
 \index{operatorButton\_Click@{operatorButton\_Click}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{operatorButton\_Click()}{operatorButton\_Click()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+operator\+Button\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the click event for operator buttons. Handles the special case of a negative sign at the beginning of a number. Otherwise, delegates operator handling to the {\ttfamily append\+Operator} function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_a4d5ac810c450a6eaf0652196d4ec3e7a}\label{class_calculator_app_1_1_calculator_a4d5ac810c450a6eaf0652196d4ec3e7a} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!OTemperatureBtn\_C\_Click@{OTemperatureBtn\_C\_Click}}
 \index{OTemperatureBtn\_C\_Click@{OTemperatureBtn\_C\_Click}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{OTemperatureBtn\_C\_Click()}{OTemperatureBtn\_C\_Click()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+OTemperature\+Btn\+\_\+\+C\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the click event for a temperature output unit selection button. Triggers panel expansion (dropdown), updates the output label, and recalculates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The button object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_a7a8078ae8f3d1edd936e8d090bf53518}\label{class_calculator_app_1_1_calculator_a7a8078ae8f3d1edd936e8d090bf53518} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!OTimeBtn\_sec\_Click@{OTimeBtn\_sec\_Click}}
 \index{OTimeBtn\_sec\_Click@{OTimeBtn\_sec\_Click}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{OTimeBtn\_sec\_Click()}{OTimeBtn\_sec\_Click()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+OTime\+Btn\+\_\+sec\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the click event for an output time unit selection button (specifically for seconds). Triggers panel expansion (dropdown), updates the output label, and recalculates the output value for the new unit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The button object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_a4f1c7563d0ac17e1894b77ef0bd4b183}\label{class_calculator_app_1_1_calculator_a4f1c7563d0ac17e1894b77ef0bd4b183} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!OWeightBtn\_mm\_Click@{OWeightBtn\_mm\_Click}}
 \index{OWeightBtn\_mm\_Click@{OWeightBtn\_mm\_Click}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{OWeightBtn\_mm\_Click()}{OWeightBtn\_mm\_Click()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+OWeight\+Btn\+\_\+mm\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the click event for a weight output unit selection button. Triggers panel expansion (dropdown), updates the output label, and recalculates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The button object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_aac99bcba6dcdd7f5bc29bf5f42a59a73}\label{class_calculator_app_1_1_calculator_aac99bcba6dcdd7f5bc29bf5f42a59a73} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!PerformDegreeSetup@{PerformDegreeSetup}}
 \index{PerformDegreeSetup@{PerformDegreeSetup}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{PerformDegreeSetup()}{PerformDegreeSetup()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+Perform\+Degree\+Setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Performs setup actions specifically for degree unit conversions. Ensures input/output panels are visible, sets the conversion type, labels, and clears textboxes. 
 
 \Hypertarget{class_calculator_app_1_1_calculator_ab5c4efcb0bcea247a7246a62629a14ef}\label{class_calculator_app_1_1_calculator_ab5c4efcb0bcea247a7246a62629a14ef} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!performExponentiation@{performExponentiation}}
@@ -701,72 +1138,203 @@ Required method for Designer support -\/ do not modify the contents of this meth
 \doxysubsubsection{\texorpdfstring{performExponentiation()}{performExponentiation()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+perform\+Exponentiation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Performs exponentiation calculations based on whether an exponent and an optional second number are present. Handles potential exceptions and updates calculator state. 
+
 \Hypertarget{class_calculator_app_1_1_calculator_a414ecb2b7a682055defb652f66132078}\label{class_calculator_app_1_1_calculator_a414ecb2b7a682055defb652f66132078} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!Result\_Click@{Result\_Click}}
 \index{Result\_Click@{Result\_Click}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{Result\_Click()}{Result\_Click()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+Result\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the click event for the \textquotesingle{}Result\textquotesingle{} button. Performs calculations, handles potential exceptions, formats the result, and updates the calculator display. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_afa24e8597ba3c9d733483773a8dac933}\label{class_calculator_app_1_1_calculator_afa24e8597ba3c9d733483773a8dac933} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!ShowAndEnableInOutPanels@{ShowAndEnableInOutPanels}}
 \index{ShowAndEnableInOutPanels@{ShowAndEnableInOutPanels}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{ShowAndEnableInOutPanels()}{ShowAndEnableInOutPanels()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+Show\+And\+Enable\+In\+Out\+Panels (\begin{DoxyParamCaption}\item[{string}]{key1,  }\item[{string}]{key2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Hides all panels in the input\+Output\+Panels collection and then selectively displays and enables two panels specified by their keys. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key1} & The key of the first panel to show and enable.\\
+\hline
+{\em key2} & The key of the second panel to show and enable.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_aa8ed5f37681d58a05059869b38a40605}\label{class_calculator_app_1_1_calculator_aa8ed5f37681d58a05059869b38a40605} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!ShowAndEnablePanel@{ShowAndEnablePanel}}
 \index{ShowAndEnablePanel@{ShowAndEnablePanel}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{ShowAndEnablePanel()}{ShowAndEnablePanel()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+Show\+And\+Enable\+Panel (\begin{DoxyParamCaption}\item[{int}]{index\+To\+Show }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Hides all panels in the {\ttfamily list\+Panel} collection and then displays and enables the panel at the specified index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index\+To\+Show} & The index of the panel within {\ttfamily list\+Panel} to be shown.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_a00fbfa25e5f565a8ccd2cfb97eabb40e}\label{class_calculator_app_1_1_calculator_a00fbfa25e5f565a8ccd2cfb97eabb40e} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!SquareRoot\_Click@{SquareRoot\_Click}}
 \index{SquareRoot\_Click@{SquareRoot\_Click}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{SquareRoot\_Click()}{SquareRoot\_Click()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+Square\+Root\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the click event of the \textquotesingle{}Square Root\textquotesingle{} button. Calculates the square root of either the first or second number, updates the display, and manages potential exceptions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_ab11a7092ba037cae3683e4ac0ef30a38}\label{class_calculator_app_1_1_calculator_ab11a7092ba037cae3683e4ac0ef30a38} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!textBox1\_KeyPress@{textBox1\_KeyPress}}
 \index{textBox1\_KeyPress@{textBox1\_KeyPress}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{textBox1\_KeyPress()}{textBox1\_KeyPress()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+text\+Box1\+\_\+\+Key\+Press (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Key\+Press\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the Key\+Press event for the main calculator textbox (text\+Box1). Allows numbers, basic operators, decimals, factorial, exponentiation, Backspace, and Enter for calculations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The object that raised the event.\\
+\hline
+{\em e} & The Key\+Press\+Event\+Args object containing information about the pressed key.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_calculator_app_1_1_calculator_ae8e051f3b79d176b3a6aae7307231cd3}\label{class_calculator_app_1_1_calculator_ae8e051f3b79d176b3a6aae7307231cd3} 
+\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!textBoxConverter\_KeyPress@{textBoxConverter\_KeyPress}}
+\index{textBoxConverter\_KeyPress@{textBoxConverter\_KeyPress}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
+\doxysubsubsection{\texorpdfstring{textBoxConverter\_KeyPress()}{textBoxConverter\_KeyPress()}}
+{\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+text\+Box\+Converter\+\_\+\+Key\+Press (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Key\+Press\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Handles the Key\+Press event for the converter\textquotesingle{}s input textbox. Allows only numbers, a comma (decimal separator), and the Backspace key for editing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The object that raised the event.\\
+\hline
+{\em e} & The Key\+Press\+Event\+Args object containing information about the pressed key.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_a1f5e0555c3f9c2ac478f88f6fdc71370}\label{class_calculator_app_1_1_calculator_a1f5e0555c3f9c2ac478f88f6fdc71370} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!timer1\_Tick@{timer1\_Tick}}
 \index{timer1\_Tick@{timer1\_Tick}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{timer1\_Tick()}{timer1\_Tick()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+timer1\+\_\+\+Tick (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the timer tick event, responsible for smoothly expanding or collapsing a panel (animation). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_a3d418a748d0b0e9fb60eb59fc6b1800c}\label{class_calculator_app_1_1_calculator_a3d418a748d0b0e9fb60eb59fc6b1800c} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!toPowerOf2\_Click@{toPowerOf2\_Click}}
 \index{toPowerOf2\_Click@{toPowerOf2\_Click}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{toPowerOf2\_Click()}{toPowerOf2\_Click()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+to\+Power\+Of2\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the click event of the \textquotesingle{}Square\textquotesingle{} button (raises the current number to the power of 2). Updates the calculator display and handles potential exceptions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_a7f46da505fedb5462ce79cc010148080}\label{class_calculator_app_1_1_calculator_a7f46da505fedb5462ce79cc010148080} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!toPowerOfX\_Click@{toPowerOfX\_Click}}
 \index{toPowerOfX\_Click@{toPowerOfX\_Click}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{toPowerOfX\_Click()}{toPowerOfX\_Click()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+to\+Power\+Of\+X\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Handles the click event for the \textquotesingle{}\texorpdfstring{$^\wedge$}{\string^}\textquotesingle{} (exponentiation) button. Prepares the calculator state for entering an exponent if the input field is not empty and doesn\textquotesingle{}t end with an operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_a1a5b1acd9d5dac896a953388db658974}\label{class_calculator_app_1_1_calculator_a1a5b1acd9d5dac896a953388db658974} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!UpdateAfterEachSelection@{UpdateAfterEachSelection}}
 \index{UpdateAfterEachSelection@{UpdateAfterEachSelection}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{UpdateAfterEachSelection()}{UpdateAfterEachSelection()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+Update\+After\+Each\+Selection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-\Hypertarget{class_calculator_app_1_1_calculator_a2802adc8d5dee0ed65981f653157d4cb}\label{class_calculator_app_1_1_calculator_a2802adc8d5dee0ed65981f653157d4cb} 
+
+
+Updates the converter after a unit selection is made. Ensures that if the input textbox is not empty, the input value is recalculated based on the new units. 
+
+\Hypertarget{class_calculator_app_1_1_calculator_a049132840448c6762f9cd15678be6000}\label{class_calculator_app_1_1_calculator_a049132840448c6762f9cd15678be6000} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!UpdateInputTextBoxConverter@{UpdateInputTextBoxConverter}}
 \index{UpdateInputTextBoxConverter@{UpdateInputTextBoxConverter}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{UpdateInputTextBoxConverter()}{UpdateInputTextBoxConverter()}}
-{\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+Update\+Input\+Text\+Box\+Converter (\begin{DoxyParamCaption}\item[{string}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+Update\+Input\+Text\+Box\+Converter (\begin{DoxyParamCaption}\item[{string}]{value,  }\item[{bool}]{from\+Keyboard }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Updates the input textbox of the converter, optionally parsing the value for calculations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The updated value for the input textbox.\\
+\hline
+{\em from\+Keyboard} & Indicates whether the input originates from the keyboard (true) or another source (false).\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_a1aec7fa1e5cfd562c083f9c91216f4d9}\label{class_calculator_app_1_1_calculator_a1aec7fa1e5cfd562c083f9c91216f4d9} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!UpdateOutoutTextBoxConverter@{UpdateOutoutTextBoxConverter}}
 \index{UpdateOutoutTextBoxConverter@{UpdateOutoutTextBoxConverter}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{UpdateOutoutTextBoxConverter()}{UpdateOutoutTextBoxConverter()}}
 {\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+Update\+Outout\+Text\+Box\+Converter (\begin{DoxyParamCaption}\item[{string}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Updates the output textbox of the converter with the specified value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to be displayed in the output textbox.\\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Member Data Documentation}
@@ -866,12 +1434,6 @@ Required method for Designer support -\/ do not modify the contents of this meth
 \doxysubsubsection{\texorpdfstring{button16}{button16}}
 {\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+button16\hspace{0.3cm}{\ttfamily [private]}}
 
-\Hypertarget{class_calculator_app_1_1_calculator_a9cc517a4be4b4f0b3a9a12c05bef443f}\label{class_calculator_app_1_1_calculator_a9cc517a4be4b4f0b3a9a12c05bef443f} 
-\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!button17@{button17}}
-\index{button17@{button17}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
-\doxysubsubsection{\texorpdfstring{button17}{button17}}
-{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+button17\hspace{0.3cm}{\ttfamily [private]}}
-
 \Hypertarget{class_calculator_app_1_1_calculator_af377de0ab6edb01c78a7f0258a42efb2}\label{class_calculator_app_1_1_calculator_af377de0ab6edb01c78a7f0258a42efb2} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!button18@{button18}}
 \index{button18@{button18}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
@@ -968,29 +1530,23 @@ Required method for Designer support -\/ do not modify the contents of this meth
 \doxysubsubsection{\texorpdfstring{button9}{button9}}
 {\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+button9\hspace{0.3cm}{\ttfamily [private]}}
 
+\Hypertarget{class_calculator_app_1_1_calculator_aa5d7cddb4ff46991b008537899191b35}\label{class_calculator_app_1_1_calculator_aa5d7cddb4ff46991b008537899191b35} 
+\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!button\_Comma@{button\_Comma}}
+\index{button\_Comma@{button\_Comma}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
+\doxysubsubsection{\texorpdfstring{button\_Comma}{button\_Comma}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+button\+\_\+\+Comma\hspace{0.3cm}{\ttfamily [private]}}
+
 \Hypertarget{class_calculator_app_1_1_calculator_a81275e5f083cfa4eea1986dcb7f18a14}\label{class_calculator_app_1_1_calculator_a81275e5f083cfa4eea1986dcb7f18a14} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!button\_toDropDown@{button\_toDropDown}}
 \index{button\_toDropDown@{button\_toDropDown}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{button\_toDropDown}{button\_toDropDown}}
 {\footnotesize\ttfamily Button Calculator\+App.\+Calculator.\+button\+\_\+to\+Drop\+Down = new Button()\hspace{0.3cm}{\ttfamily [private]}}
 
-\Hypertarget{class_calculator_app_1_1_calculator_a53b4e09a402b56dca731fc18ff784104}\label{class_calculator_app_1_1_calculator_a53b4e09a402b56dca731fc18ff784104} 
-\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!Clear@{Clear}}
-\index{Clear@{Clear}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
-\doxysubsubsection{\texorpdfstring{Clear}{Clear}}
-{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+Clear\hspace{0.3cm}{\ttfamily [private]}}
-
-\Hypertarget{class_calculator_app_1_1_calculator_af96be79e230598a78defd5b85c22192d}\label{class_calculator_app_1_1_calculator_af96be79e230598a78defd5b85c22192d} 
-\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!ClearConverter@{ClearConverter}}
-\index{ClearConverter@{ClearConverter}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
-\doxysubsubsection{\texorpdfstring{ClearConverter}{ClearConverter}}
-{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+Clear\+Converter\hspace{0.3cm}{\ttfamily [private]}}
-
-\Hypertarget{class_calculator_app_1_1_calculator_a658e09a256183168f696961df2ec013b}\label{class_calculator_app_1_1_calculator_a658e09a256183168f696961df2ec013b} 
-\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!Comma@{Comma}}
-\index{Comma@{Comma}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
-\doxysubsubsection{\texorpdfstring{Comma}{Comma}}
-{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+Comma\hspace{0.3cm}{\ttfamily [private]}}
+\Hypertarget{class_calculator_app_1_1_calculator_a366f8f8f358a53ca58f417cc1fa58cef}\label{class_calculator_app_1_1_calculator_a366f8f8f358a53ca58f417cc1fa58cef} 
+\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!CommaConverter@{CommaConverter}}
+\index{CommaConverter@{CommaConverter}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
+\doxysubsubsection{\texorpdfstring{CommaConverter}{CommaConverter}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+Comma\+Converter\hspace{0.3cm}{\ttfamily [private]}}
 
 \Hypertarget{class_calculator_app_1_1_calculator_a5a118ff1eb42c9eb00b45574b482fb16}\label{class_calculator_app_1_1_calculator_a5a118ff1eb42c9eb00b45574b482fb16} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!components@{components}}
@@ -1038,35 +1594,35 @@ Required designer variable.
 \doxysubsubsection{\texorpdfstring{darkModeStartColor}{darkModeStartColor}}
 {\footnotesize\ttfamily Color Calculator\+App.\+Calculator.\+dark\+Mode\+Start\+Color = Color.\+From\+Argb(20, 55, 73)\hspace{0.3cm}{\ttfamily [private]}}
 
-\Hypertarget{class_calculator_app_1_1_calculator_aac4736f71ea29c290d2061c7af574220}\label{class_calculator_app_1_1_calculator_aac4736f71ea29c290d2061c7af574220} 
-\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!Delete@{Delete}}
-\index{Delete@{Delete}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
-\doxysubsubsection{\texorpdfstring{Delete}{Delete}}
-{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+Delete\hspace{0.3cm}{\ttfamily [private]}}
+\Hypertarget{class_calculator_app_1_1_calculator_abc4675b5a09025c03b4e19a55043e4c9}\label{class_calculator_app_1_1_calculator_abc4675b5a09025c03b4e19a55043e4c9} 
+\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!del\_Clear@{del\_Clear}}
+\index{del\_Clear@{del\_Clear}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
+\doxysubsubsection{\texorpdfstring{del\_Clear}{del\_Clear}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+del\+\_\+\+Clear\hspace{0.3cm}{\ttfamily [private]}}
 
-\Hypertarget{class_calculator_app_1_1_calculator_a86dd351f1ff4b7628f32755bfbc7ba72}\label{class_calculator_app_1_1_calculator_a86dd351f1ff4b7628f32755bfbc7ba72} 
-\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!DeleteConverter@{DeleteConverter}}
-\index{DeleteConverter@{DeleteConverter}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
-\doxysubsubsection{\texorpdfstring{DeleteConverter}{DeleteConverter}}
-{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+Delete\+Converter\hspace{0.3cm}{\ttfamily [private]}}
+\Hypertarget{class_calculator_app_1_1_calculator_ab23d9702a371188358daf0dc9b0e2214}\label{class_calculator_app_1_1_calculator_ab23d9702a371188358daf0dc9b0e2214} 
+\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!del\_ClearConverter@{del\_ClearConverter}}
+\index{del\_ClearConverter@{del\_ClearConverter}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
+\doxysubsubsection{\texorpdfstring{del\_ClearConverter}{del\_ClearConverter}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+del\+\_\+\+Clear\+Converter\hspace{0.3cm}{\ttfamily [private]}}
 
-\Hypertarget{class_calculator_app_1_1_calculator_a1f17149572734eb3b0e53b1c4d5ac750}\label{class_calculator_app_1_1_calculator_a1f17149572734eb3b0e53b1c4d5ac750} 
-\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!Division@{Division}}
-\index{Division@{Division}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
-\doxysubsubsection{\texorpdfstring{Division}{Division}}
-{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+Division\hspace{0.3cm}{\ttfamily [private]}}
+\Hypertarget{class_calculator_app_1_1_calculator_ab3991cea78cda1d6cc7dcd0fb95b57ae}\label{class_calculator_app_1_1_calculator_ab3991cea78cda1d6cc7dcd0fb95b57ae} 
+\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!del\_Delete@{del\_Delete}}
+\index{del\_Delete@{del\_Delete}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
+\doxysubsubsection{\texorpdfstring{del\_Delete}{del\_Delete}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+del\+\_\+\+Delete\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_calculator_app_1_1_calculator_ac9fb6a53a64d149ac9379f5aa9e1f42e}\label{class_calculator_app_1_1_calculator_ac9fb6a53a64d149ac9379f5aa9e1f42e} 
+\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!del\_DeleteConverter@{del\_DeleteConverter}}
+\index{del\_DeleteConverter@{del\_DeleteConverter}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
+\doxysubsubsection{\texorpdfstring{del\_DeleteConverter}{del\_DeleteConverter}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+del\+\_\+\+Delete\+Converter\hspace{0.3cm}{\ttfamily [private]}}
 
 \Hypertarget{class_calculator_app_1_1_calculator_a6b0590866ba607099c6c77d46e27b58f}\label{class_calculator_app_1_1_calculator_a6b0590866ba607099c6c77d46e27b58f} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!exponent@{exponent}}
 \index{exponent@{exponent}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{exponent}{exponent}}
 {\footnotesize\ttfamily string Calculator\+App.\+Calculator.\+exponent = "{}"{}\hspace{0.3cm}{\ttfamily [private]}}
-
-\Hypertarget{class_calculator_app_1_1_calculator_a055dddf68741c5b32d49bde0a41628f9}\label{class_calculator_app_1_1_calculator_a055dddf68741c5b32d49bde0a41628f9} 
-\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!Factorial@{Factorial}}
-\index{Factorial@{Factorial}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
-\doxysubsubsection{\texorpdfstring{Factorial}{Factorial}}
-{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+Factorial\hspace{0.3cm}{\ttfamily [private]}}
 
 \Hypertarget{class_calculator_app_1_1_calculator_ab69f4cef82fba5261c82471b8c2fc35c}\label{class_calculator_app_1_1_calculator_ab69f4cef82fba5261c82471b8c2fc35c} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!firstNumber\_str@{firstNumber\_str}}
@@ -1344,18 +1900,6 @@ Required designer variable.
 \doxysubsubsection{\texorpdfstring{mathLib}{mathLib}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_calculator_app_1_1_math__lib}{Math\+\_\+lib}} Calculator\+App.\+Calculator.\+math\+Lib = new \mbox{\hyperlink{class_calculator_app_1_1_math__lib}{Math\+\_\+lib}}()\hspace{0.3cm}{\ttfamily [private]}}
 
-\Hypertarget{class_calculator_app_1_1_calculator_a6b82ef7bd049522f370331801e49a610}\label{class_calculator_app_1_1_calculator_a6b82ef7bd049522f370331801e49a610} 
-\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!Modulo@{Modulo}}
-\index{Modulo@{Modulo}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
-\doxysubsubsection{\texorpdfstring{Modulo}{Modulo}}
-{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+Modulo\hspace{0.3cm}{\ttfamily [private]}}
-
-\Hypertarget{class_calculator_app_1_1_calculator_aa2133832fa08226b06aefca43ffb114d}\label{class_calculator_app_1_1_calculator_aa2133832fa08226b06aefca43ffb114d} 
-\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!Multiplication@{Multiplication}}
-\index{Multiplication@{Multiplication}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
-\doxysubsubsection{\texorpdfstring{Multiplication}{Multiplication}}
-{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+Multiplication\hspace{0.3cm}{\ttfamily [private]}}
-
 \Hypertarget{class_calculator_app_1_1_calculator_a364eb913e5cfd984b5e514da27d3fd5d}\label{class_calculator_app_1_1_calculator_a364eb913e5cfd984b5e514da27d3fd5d} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!newNumberMode@{newNumberMode}}
 \index{newNumberMode@{newNumberMode}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
@@ -1421,6 +1965,42 @@ Required designer variable.
 \index{OLengthBtn\_yard@{OLengthBtn\_yard}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{OLengthBtn\_yard}{OLengthBtn\_yard}}
 {\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+OLength\+Btn\+\_\+yard\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_calculator_app_1_1_calculator_a2f313412946ca245a924f18a4ed52807}\label{class_calculator_app_1_1_calculator_a2f313412946ca245a924f18a4ed52807} 
+\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!op\_Division@{op\_Division}}
+\index{op\_Division@{op\_Division}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
+\doxysubsubsection{\texorpdfstring{op\_Division}{op\_Division}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+op\+\_\+\+Division\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_calculator_app_1_1_calculator_aab87d5dd2a3e2ffa28036d6426b779a0}\label{class_calculator_app_1_1_calculator_aab87d5dd2a3e2ffa28036d6426b779a0} 
+\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!op\_Modulo@{op\_Modulo}}
+\index{op\_Modulo@{op\_Modulo}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
+\doxysubsubsection{\texorpdfstring{op\_Modulo}{op\_Modulo}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+op\+\_\+\+Modulo\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_calculator_app_1_1_calculator_a6511f6879571764b1f0e0dd27773c527}\label{class_calculator_app_1_1_calculator_a6511f6879571764b1f0e0dd27773c527} 
+\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!op\_Multiplication@{op\_Multiplication}}
+\index{op\_Multiplication@{op\_Multiplication}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
+\doxysubsubsection{\texorpdfstring{op\_Multiplication}{op\_Multiplication}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+op\+\_\+\+Multiplication\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_calculator_app_1_1_calculator_afd4daf55a6771d92d9ce9981f9d10c9e}\label{class_calculator_app_1_1_calculator_afd4daf55a6771d92d9ce9981f9d10c9e} 
+\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!op\_Plus@{op\_Plus}}
+\index{op\_Plus@{op\_Plus}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
+\doxysubsubsection{\texorpdfstring{op\_Plus}{op\_Plus}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+op\+\_\+\+Plus\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_calculator_app_1_1_calculator_a1ff3eaf04197cab053cda044e6370979}\label{class_calculator_app_1_1_calculator_a1ff3eaf04197cab053cda044e6370979} 
+\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!op\_Result@{op\_Result}}
+\index{op\_Result@{op\_Result}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
+\doxysubsubsection{\texorpdfstring{op\_Result}{op\_Result}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+op\+\_\+\+Result\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_calculator_app_1_1_calculator_a07d3a2ad1fb8e3cc9af3b8c18f6c6a4f}\label{class_calculator_app_1_1_calculator_a07d3a2ad1fb8e3cc9af3b8c18f6c6a4f} 
+\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!op\_Substitution@{op\_Substitution}}
+\index{op\_Substitution@{op\_Substitution}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
+\doxysubsubsection{\texorpdfstring{op\_Substitution}{op\_Substitution}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+op\+\_\+\+Substitution\hspace{0.3cm}{\ttfamily [private]}}
 
 \Hypertarget{class_calculator_app_1_1_calculator_aff166740c8633dc5c4196a456b721a6b}\label{class_calculator_app_1_1_calculator_aff166740c8633dc5c4196a456b721a6b} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!opt\_functions@{opt\_functions}}
@@ -1578,35 +2158,35 @@ Required designer variable.
 \doxysubsubsection{\texorpdfstring{PanelDown\_UnitConverter}{PanelDown\_UnitConverter}}
 {\footnotesize\ttfamily System.\+Windows.\+Forms.\+Panel Calculator\+App.\+Calculator.\+Panel\+Down\+\_\+\+Unit\+Converter\hspace{0.3cm}{\ttfamily [private]}}
 
-\Hypertarget{class_calculator_app_1_1_calculator_ac8103e628fff4cb30d1e72756a40faa9}\label{class_calculator_app_1_1_calculator_ac8103e628fff4cb30d1e72756a40faa9} 
-\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!Plus@{Plus}}
-\index{Plus@{Plus}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
-\doxysubsubsection{\texorpdfstring{Plus}{Plus}}
-{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+Plus\hspace{0.3cm}{\ttfamily [private]}}
-
-\Hypertarget{class_calculator_app_1_1_calculator_a80168f73e197cb382341c456b53eca02}\label{class_calculator_app_1_1_calculator_a80168f73e197cb382341c456b53eca02} 
-\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!Result@{Result}}
-\index{Result@{Result}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
-\doxysubsubsection{\texorpdfstring{Result}{Result}}
-{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+Result\hspace{0.3cm}{\ttfamily [private]}}
-
 \Hypertarget{class_calculator_app_1_1_calculator_a48f25c1d71b792916d7c6cad9495233c}\label{class_calculator_app_1_1_calculator_a48f25c1d71b792916d7c6cad9495233c} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!secondNumber\_str@{secondNumber\_str}}
 \index{secondNumber\_str@{secondNumber\_str}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{secondNumber\_str}{secondNumber\_str}}
 {\footnotesize\ttfamily string Calculator\+App.\+Calculator.\+second\+Number\+\_\+str = "{}"{}\hspace{0.3cm}{\ttfamily [private]}}
 
-\Hypertarget{class_calculator_app_1_1_calculator_aa68a8dff53fba10886078f557d2316ea}\label{class_calculator_app_1_1_calculator_aa68a8dff53fba10886078f557d2316ea} 
-\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!SquareRoot@{SquareRoot}}
-\index{SquareRoot@{SquareRoot}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
-\doxysubsubsection{\texorpdfstring{SquareRoot}{SquareRoot}}
-{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+Square\+Root\hspace{0.3cm}{\ttfamily [private]}}
+\Hypertarget{class_calculator_app_1_1_calculator_a1ff0ddfbb1bcc5f7d18e8803d55798aa}\label{class_calculator_app_1_1_calculator_a1ff0ddfbb1bcc5f7d18e8803d55798aa} 
+\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!sp\_Factorial@{sp\_Factorial}}
+\index{sp\_Factorial@{sp\_Factorial}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
+\doxysubsubsection{\texorpdfstring{sp\_Factorial}{sp\_Factorial}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+sp\+\_\+\+Factorial\hspace{0.3cm}{\ttfamily [private]}}
 
-\Hypertarget{class_calculator_app_1_1_calculator_afb8c1ac76c05d9336bbc39aadec1a7f5}\label{class_calculator_app_1_1_calculator_afb8c1ac76c05d9336bbc39aadec1a7f5} 
-\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!Substitution@{Substitution}}
-\index{Substitution@{Substitution}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
-\doxysubsubsection{\texorpdfstring{Substitution}{Substitution}}
-{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+Substitution\hspace{0.3cm}{\ttfamily [private]}}
+\Hypertarget{class_calculator_app_1_1_calculator_adf77571f352e52b553e9dea6a7f3bbd5}\label{class_calculator_app_1_1_calculator_adf77571f352e52b553e9dea6a7f3bbd5} 
+\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!sp\_SquareRoot@{sp\_SquareRoot}}
+\index{sp\_SquareRoot@{sp\_SquareRoot}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
+\doxysubsubsection{\texorpdfstring{sp\_SquareRoot}{sp\_SquareRoot}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+sp\+\_\+\+Square\+Root\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_calculator_app_1_1_calculator_a9c04c89277abb7f76ef32a603da19479}\label{class_calculator_app_1_1_calculator_a9c04c89277abb7f76ef32a603da19479} 
+\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!sp\_toPowerOf2@{sp\_toPowerOf2}}
+\index{sp\_toPowerOf2@{sp\_toPowerOf2}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
+\doxysubsubsection{\texorpdfstring{sp\_toPowerOf2}{sp\_toPowerOf2}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+sp\+\_\+to\+Power\+Of2\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_calculator_app_1_1_calculator_a32d9c56b10093422e358ee94bd250afe}\label{class_calculator_app_1_1_calculator_a32d9c56b10093422e358ee94bd250afe} 
+\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!sp\_toPowerOfX@{sp\_toPowerOfX}}
+\index{sp\_toPowerOfX@{sp\_toPowerOfX}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
+\doxysubsubsection{\texorpdfstring{sp\_toPowerOfX}{sp\_toPowerOfX}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+sp\+\_\+to\+Power\+OfX\hspace{0.3cm}{\ttfamily [private]}}
 
 \Hypertarget{class_calculator_app_1_1_calculator_addb7f3a6deb63ca4200a30f732cfee24}\label{class_calculator_app_1_1_calculator_addb7f3a6deb63ca4200a30f732cfee24} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!textBox1@{textBox1}}
@@ -1631,18 +2211,6 @@ Required designer variable.
 \index{timer1@{timer1}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{timer1}{timer1}}
 {\footnotesize\ttfamily System.\+Windows.\+Forms.\+Timer Calculator\+App.\+Calculator.\+timer1\hspace{0.3cm}{\ttfamily [private]}}
-
-\Hypertarget{class_calculator_app_1_1_calculator_aed3bb0edc06ef4cc021bc5e5f0cd9f17}\label{class_calculator_app_1_1_calculator_aed3bb0edc06ef4cc021bc5e5f0cd9f17} 
-\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!toPowerOf2@{toPowerOf2}}
-\index{toPowerOf2@{toPowerOf2}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
-\doxysubsubsection{\texorpdfstring{toPowerOf2}{toPowerOf2}}
-{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+to\+Power\+Of2\hspace{0.3cm}{\ttfamily [private]}}
-
-\Hypertarget{class_calculator_app_1_1_calculator_a05e2167cbd16036d85fa2c409023f7c0}\label{class_calculator_app_1_1_calculator_a05e2167cbd16036d85fa2c409023f7c0} 
-\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!toPowerOfX@{toPowerOfX}}
-\index{toPowerOfX@{toPowerOfX}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
-\doxysubsubsection{\texorpdfstring{toPowerOfX}{toPowerOfX}}
-{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+to\+Power\+OfX\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

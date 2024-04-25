@@ -97,6 +97,7 @@ Inheritance diagram for CalculatorApp.Calculator:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2defddf671a06bb01d2ab76c803e4609" id="r_a2defddf671a06bb01d2ab76c803e4609"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2defddf671a06bb01d2ab76c803e4609">Calculator</a> ()</td></tr>
+<tr class="memdesc:a2defddf671a06bb01d2ab76c803e4609"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for the Calculator class. Initializes UI components and attaches the Form1_Paint event handler.  <br /></td></tr>
 <tr class="separator:a2defddf671a06bb01d2ab76c803e4609"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
@@ -108,106 +109,164 @@ Protected Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a2b3df3f6d1d935f118d29d4733825106" id="r_a2b3df3f6d1d935f118d29d4733825106"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b3df3f6d1d935f118d29d4733825106">Form1_Load</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:a2b3df3f6d1d935f118d29d4733825106"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the Load event for Form1. Sets initial focus, configures UI elements, and initializes internal data structures for managing panels and converter options.  <br /></td></tr>
 <tr class="separator:a2b3df3f6d1d935f118d29d4733825106"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09269dad78fc66b2c0292eb019507d17" id="r_a09269dad78fc66b2c0292eb019507d17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09269dad78fc66b2c0292eb019507d17">Form1_Paint</a> (object sender, PaintEventArgs e)</td></tr>
+<tr class="memdesc:a09269dad78fc66b2c0292eb019507d17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a gradient background to the form based on the current mode (light or dark).  <br /></td></tr>
 <tr class="separator:a09269dad78fc66b2c0292eb019507d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a371f3da09e7b7db799070bb23e84fc1d" id="r_a371f3da09e7b7db799070bb23e84fc1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a371f3da09e7b7db799070bb23e84fc1d">customControl1_CheckedChanged</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:a371f3da09e7b7db799070bb23e84fc1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the CheckedChanged event of the customControl1 (presumably a dark mode toggle control). Updates the visual theme of the form and its controls accordingly.  <br /></td></tr>
 <tr class="separator:a371f3da09e7b7db799070bb23e84fc1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af262294286fc9aaac41cdd3927e4c8fb" id="r_af262294286fc9aaac41cdd3927e4c8fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af262294286fc9aaac41cdd3927e4c8fb">ApplyColorThemeToButtons</a> (Control parentControl, bool <a class="el" href="#ac75681b6e401b58b54a78ae49d5feb26">isDarkMode</a>)</td></tr>
+<tr class="memdesc:af262294286fc9aaac41cdd3927e4c8fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a dark or light mode color theme to a collection of Button controls within a specified parent container.  <br /></td></tr>
+<tr class="separator:af262294286fc9aaac41cdd3927e4c8fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0cc337ed4bdf3cd3903eaded0cfbb9d" id="r_ae0cc337ed4bdf3cd3903eaded0cfbb9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0cc337ed4bdf3cd3903eaded0cfbb9d">btn_Calculator_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:ae0cc337ed4bdf3cd3903eaded0cfbb9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the click event for the calculator button, showing the calculator panel and hiding others.  <br /></td></tr>
 <tr class="separator:ae0cc337ed4bdf3cd3903eaded0cfbb9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23bd34d42e4a04d907602eba88056633" id="r_a23bd34d42e4a04d907602eba88056633"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23bd34d42e4a04d907602eba88056633">btn_Settings_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:a23bd34d42e4a04d907602eba88056633"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the click event for the settings button, showing the settings panel and hiding others.  <br /></td></tr>
 <tr class="separator:a23bd34d42e4a04d907602eba88056633"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8ed5f37681d58a05059869b38a40605" id="r_aa8ed5f37681d58a05059869b38a40605"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8ed5f37681d58a05059869b38a40605">ShowAndEnablePanel</a> (int indexToShow)</td></tr>
+<tr class="memdesc:aa8ed5f37681d58a05059869b38a40605"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hides all panels in the <code>listPanel</code> collection and then displays and enables the panel at the specified index.  <br /></td></tr>
 <tr class="separator:aa8ed5f37681d58a05059869b38a40605"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa24e8597ba3c9d733483773a8dac933" id="r_afa24e8597ba3c9d733483773a8dac933"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa24e8597ba3c9d733483773a8dac933">ShowAndEnableInOutPanels</a> (string key1, string key2)</td></tr>
+<tr class="memdesc:afa24e8597ba3c9d733483773a8dac933"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hides all panels in the inputOutputPanels collection and then selectively displays and enables two panels specified by their keys.  <br /></td></tr>
 <tr class="separator:afa24e8597ba3c9d733483773a8dac933"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a0e3d6bab126f836d359bff3bacff4c" id="r_a3a0e3d6bab126f836d359bff3bacff4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a0e3d6bab126f836d359bff3bacff4c">Clear_all</a> ()</td></tr>
+<tr class="memdesc:a3a0e3d6bab126f836d359bff3bacff4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the content of textBox1 and resets calculator-related internal variables.  <br /></td></tr>
 <tr class="separator:a3a0e3d6bab126f836d359bff3bacff4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63e0cdb14bd1bbeb218710073b7df466" id="r_a63e0cdb14bd1bbeb218710073b7df466"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a63e0cdb14bd1bbeb218710073b7df466">Delete_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:a63e0cdb14bd1bbeb218710073b7df466"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the click event for the 'Delete' button. Implements logic for deleting characters based on calculator state (exponent mode, operators, numbers).  <br /></td></tr>
 <tr class="separator:a63e0cdb14bd1bbeb218710073b7df466"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4faa64fe40dc6c93ccacccf0d2228444" id="r_a4faa64fe40dc6c93ccacccf0d2228444"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4faa64fe40dc6c93ccacccf0d2228444">numberButton_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:a4faa64fe40dc6c93ccacccf0d2228444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the click event for all number buttons. Calls the appendDigit function to add the clicked number's digit to the calculator display.  <br /></td></tr>
 <tr class="separator:a4faa64fe40dc6c93ccacccf0d2228444"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bff94d58a1b7cfa4770422d5f4b304b" id="r_a3bff94d58a1b7cfa4770422d5f4b304b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3bff94d58a1b7cfa4770422d5f4b304b">appendDigit</a> (string digit, bool FromKeyBoard)</td></tr>
+<tr class="memdesc:a3bff94d58a1b7cfa4770422d5f4b304b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a digit to the calculator's internal representation, handling cases for exponent entry, starting a new number, and continuing an existing number. Also manages comma placement.  <br /></td></tr>
 <tr class="separator:a3bff94d58a1b7cfa4770422d5f4b304b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b8136e1021f79ba628a04c9fb41955d" id="r_a5b8136e1021f79ba628a04c9fb41955d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b8136e1021f79ba628a04c9fb41955d">appendDigitConverter</a> (string digit, bool FromKeyBoard)</td></tr>
+<tr class="memdesc:a5b8136e1021f79ba628a04c9fb41955d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a digit to the number being converted, handling comma (decimal separator) placement and updating the display.  <br /></td></tr>
 <tr class="separator:a5b8136e1021f79ba628a04c9fb41955d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac98f09e80ecce8f7065bb704a66e1ce3" id="r_ac98f09e80ecce8f7065bb704a66e1ce3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac98f09e80ecce8f7065bb704a66e1ce3">numberButtonConverter_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:ac98f09e80ecce8f7065bb704a66e1ce3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the click event of a converter number button. Extracts the button's text (digit) and calls <code>appendDigitConverter</code> to process the input.  <br /></td></tr>
 <tr class="separator:ac98f09e80ecce8f7065bb704a66e1ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2802adc8d5dee0ed65981f653157d4cb" id="r_a2802adc8d5dee0ed65981f653157d4cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2802adc8d5dee0ed65981f653157d4cb">UpdateInputTextBoxConverter</a> (string value)</td></tr>
-<tr class="separator:a2802adc8d5dee0ed65981f653157d4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a049132840448c6762f9cd15678be6000" id="r_a049132840448c6762f9cd15678be6000"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a049132840448c6762f9cd15678be6000">UpdateInputTextBoxConverter</a> (string value, bool fromKeyboard)</td></tr>
+<tr class="memdesc:a049132840448c6762f9cd15678be6000"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the input textbox of the converter, optionally parsing the value for calculations.  <br /></td></tr>
+<tr class="separator:a049132840448c6762f9cd15678be6000"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1aec7fa1e5cfd562c083f9c91216f4d9" id="r_a1aec7fa1e5cfd562c083f9c91216f4d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1aec7fa1e5cfd562c083f9c91216f4d9">UpdateOutoutTextBoxConverter</a> (string value)</td></tr>
+<tr class="memdesc:a1aec7fa1e5cfd562c083f9c91216f4d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the output textbox of the converter with the specified value.  <br /></td></tr>
 <tr class="separator:a1aec7fa1e5cfd562c083f9c91216f4d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd39293e6e5a9e9ce22b7e72e0c52e04" id="r_afd39293e6e5a9e9ce22b7e72e0c52e04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd39293e6e5a9e9ce22b7e72e0c52e04">DeleteConverter_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:afd39293e6e5a9e9ce22b7e72e0c52e04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the click event for the converter's 'Delete' button. Removes the last character from the input and updates the display.  <br /></td></tr>
 <tr class="separator:afd39293e6e5a9e9ce22b7e72e0c52e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa49a89d08791fe71c1a7d764c84d1fb9" id="r_aa49a89d08791fe71c1a7d764c84d1fb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa49a89d08791fe71c1a7d764c84d1fb9">ClearConverter_Text</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:aa49a89d08791fe71c1a7d764c84d1fb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the click event for the converter's 'Clear' button. Resets the internal number representation and clears the input and output textboxes.  <br /></td></tr>
 <tr class="separator:aa49a89d08791fe71c1a7d764c84d1fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3aad5ce161267a669b998915f9008364" id="r_a3aad5ce161267a669b998915f9008364"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3aad5ce161267a669b998915f9008364">ClearConverter_TextAll</a> ()</td></tr>
+<tr class="memdesc:a3aad5ce161267a669b998915f9008364"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all internal data related to the converter and empties its textboxes.  <br /></td></tr>
 <tr class="separator:a3aad5ce161267a669b998915f9008364"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff488bc38fdb7f4fc3fc89660bdb2d1e" id="r_aff488bc38fdb7f4fc3fc89660bdb2d1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff488bc38fdb7f4fc3fc89660bdb2d1e">CalculateResultConvert</a> (decimal value, string from, string to)</td></tr>
+<tr class="memdesc:aff488bc38fdb7f4fc3fc89660bdb2d1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the conversion result based on the current conversion type, input value, and unit conversion options. Updates the output textbox with the formatted result. <br  />
+  <br /></td></tr>
 <tr class="separator:aff488bc38fdb7f4fc3fc89660bdb2d1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8e051f3b79d176b3a6aae7307231cd3" id="r_ae8e051f3b79d176b3a6aae7307231cd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8e051f3b79d176b3a6aae7307231cd3">textBoxConverter_KeyPress</a> (object sender, KeyPressEventArgs e)</td></tr>
+<tr class="memdesc:ae8e051f3b79d176b3a6aae7307231cd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the KeyPress event for the converter's input textbox. Allows only numbers, a comma (decimal separator), and the Backspace key for editing.  <br /></td></tr>
+<tr class="separator:ae8e051f3b79d176b3a6aae7307231cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab11a7092ba037cae3683e4ac0ef30a38" id="r_ab11a7092ba037cae3683e4ac0ef30a38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab11a7092ba037cae3683e4ac0ef30a38">textBox1_KeyPress</a> (object sender, KeyPressEventArgs e)</td></tr>
+<tr class="memdesc:ab11a7092ba037cae3683e4ac0ef30a38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the KeyPress event for the main calculator textbox (textBox1). Allows numbers, basic operators, decimals, factorial, exponentiation, Backspace, and Enter for calculations.  <br /></td></tr>
 <tr class="separator:ab11a7092ba037cae3683e4ac0ef30a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a671f32c6b78d9acb4bc91a98f1bb9b09" id="r_a671f32c6b78d9acb4bc91a98f1bb9b09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a671f32c6b78d9acb4bc91a98f1bb9b09">operatorButton_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:a671f32c6b78d9acb4bc91a98f1bb9b09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the click event for operator buttons. Handles the special case of a negative sign at the beginning of a number. Otherwise, delegates operator handling to the <code>appendOperator</code> function.  <br /></td></tr>
 <tr class="separator:a671f32c6b78d9acb4bc91a98f1bb9b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ca89b065c0052df0841cc4221670b29" id="r_a5ca89b065c0052df0841cc4221670b29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ca89b065c0052df0841cc4221670b29">appendOperator</a> (string newOperator, bool FromKeyBoard)</td></tr>
+<tr class="memdesc:a5ca89b065c0052df0841cc4221670b29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends an operator to the calculator's internal representation and updates the display. Handles cases of replacing existing operators and performing exponentiation if necessary.  <br /></td></tr>
 <tr class="separator:a5ca89b065c0052df0841cc4221670b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a414ecb2b7a682055defb652f66132078" id="r_a414ecb2b7a682055defb652f66132078"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a414ecb2b7a682055defb652f66132078">Result_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:a414ecb2b7a682055defb652f66132078"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the click event for the 'Result' button. Performs calculations, handles potential exceptions, formats the result, and updates the calculator display.  <br /></td></tr>
 <tr class="separator:a414ecb2b7a682055defb652f66132078"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5c4efcb0bcea247a7246a62629a14ef" id="r_ab5c4efcb0bcea247a7246a62629a14ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5c4efcb0bcea247a7246a62629a14ef">performExponentiation</a> ()</td></tr>
+<tr class="memdesc:ab5c4efcb0bcea247a7246a62629a14ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs exponentiation calculations based on whether an exponent and an optional second number are present. Handles potential exceptions and updates calculator state.  <br /></td></tr>
 <tr class="separator:ab5c4efcb0bcea247a7246a62629a14ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0e4d91dd84a39f94bc7ca7e35828e18" id="r_ad0e4d91dd84a39f94bc7ca7e35828e18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0e4d91dd84a39f94bc7ca7e35828e18">Factorial_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:ad0e4d91dd84a39f94bc7ca7e35828e18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the click event of the 'Factorial' button. Calculates the factorial of the current number (first or second) and updates the calculator display. Manages potential exceptions.  <br /></td></tr>
 <tr class="separator:ad0e4d91dd84a39f94bc7ca7e35828e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d418a748d0b0e9fb60eb59fc6b1800c" id="r_a3d418a748d0b0e9fb60eb59fc6b1800c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d418a748d0b0e9fb60eb59fc6b1800c">toPowerOf2_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:a3d418a748d0b0e9fb60eb59fc6b1800c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the click event of the 'Square' button (raises the current number to the power of 2). Updates the calculator display and handles potential exceptions.  <br /></td></tr>
 <tr class="separator:a3d418a748d0b0e9fb60eb59fc6b1800c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f46da505fedb5462ce79cc010148080" id="r_a7f46da505fedb5462ce79cc010148080"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f46da505fedb5462ce79cc010148080">toPowerOfX_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:a7f46da505fedb5462ce79cc010148080"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the click event for the '^' (exponentiation) button. Prepares the calculator state for entering an exponent if the input field is not empty and doesn't end with an operator.  <br /></td></tr>
 <tr class="separator:a7f46da505fedb5462ce79cc010148080"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00fbfa25e5f565a8ccd2cfb97eabb40e" id="r_a00fbfa25e5f565a8ccd2cfb97eabb40e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00fbfa25e5f565a8ccd2cfb97eabb40e">SquareRoot_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:a00fbfa25e5f565a8ccd2cfb97eabb40e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the click event of the 'Square Root' button. Calculates the square root of either the first or second number, updates the display, and manages potential exceptions.  <br /></td></tr>
 <tr class="separator:a00fbfa25e5f565a8ccd2cfb97eabb40e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a846ae1b57432d89681c5c9fe1fd41f1f" id="r_a846ae1b57432d89681c5c9fe1fd41f1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a846ae1b57432d89681c5c9fe1fd41f1f">Clear_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:a846ae1b57432d89681c5c9fe1fd41f1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the click event for the 'Clear' button (labeled "C"). Calls the Clear_all function to reset the calculator.  <br /></td></tr>
 <tr class="separator:a846ae1b57432d89681c5c9fe1fd41f1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f5e0555c3f9c2ac478f88f6fdc71370" id="r_a1f5e0555c3f9c2ac478f88f6fdc71370"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f5e0555c3f9c2ac478f88f6fdc71370">timer1_Tick</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:a1f5e0555c3f9c2ac478f88f6fdc71370"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the timer tick event, responsible for smoothly expanding or collapsing a panel (animation).  <br /></td></tr>
 <tr class="separator:a1f5e0555c3f9c2ac478f88f6fdc71370"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dc2a917af65ec956a9369d4d7b7daf5" id="r_a0dc2a917af65ec956a9369d4d7b7daf5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0dc2a917af65ec956a9369d4d7b7daf5">Btn_UnitConverter_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:a0dc2a917af65ec956a9369d4d7b7daf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the click event for the Unit Converter button. Manages the expansion of the panel and configuration of the degrees unit conversion.  <br /></td></tr>
 <tr class="separator:a0dc2a917af65ec956a9369d4d7b7daf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac99bcba6dcdd7f5bc29bf5f42a59a73" id="r_aac99bcba6dcdd7f5bc29bf5f42a59a73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac99bcba6dcdd7f5bc29bf5f42a59a73">PerformDegreeSetup</a> ()</td></tr>
+<tr class="memdesc:aac99bcba6dcdd7f5bc29bf5f42a59a73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs setup actions specifically for degree unit conversions. Ensures input/output panels are visible, sets the conversion type, labels, and clears textboxes.  <br /></td></tr>
 <tr class="separator:aac99bcba6dcdd7f5bc29bf5f42a59a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a5b1acd9d5dac896a953388db658974" id="r_a1a5b1acd9d5dac896a953388db658974"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a5b1acd9d5dac896a953388db658974">UpdateAfterEachSelection</a> ()</td></tr>
+<tr class="memdesc:a1a5b1acd9d5dac896a953388db658974"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the converter after a unit selection is made. Ensures that if the input textbox is not empty, the input value is recalculated based on the new units.  <br /></td></tr>
 <tr class="separator:a1a5b1acd9d5dac896a953388db658974"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90cfae763f7795862df5e4a584f3fab1" id="r_a90cfae763f7795862df5e4a584f3fab1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90cfae763f7795862df5e4a584f3fab1">dropdownInputButton_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:a90cfae763f7795862df5e4a584f3fab1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the click event for an input unit dropdown button. Updates the input unit label and recalculates the input value based on the newly selected unit.  <br /></td></tr>
 <tr class="separator:a90cfae763f7795862df5e4a584f3fab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbf75b8b8f71e2f36f1736ef49178156" id="r_acbf75b8b8f71e2f36f1736ef49178156"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbf75b8b8f71e2f36f1736ef49178156">dropdownOutPutButton_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:acbf75b8b8f71e2f36f1736ef49178156"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the click event for an output unit dropdown button. Updates the output unit label and recalculates the output value based on the newly selected unit.  <br /></td></tr>
 <tr class="separator:acbf75b8b8f71e2f36f1736ef49178156"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae249cf9d1c13afc815b48f8a72ba1ef6" id="r_ae249cf9d1c13afc815b48f8a72ba1ef6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae249cf9d1c13afc815b48f8a72ba1ef6">btn_Degrees_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:ae249cf9d1c13afc815b48f8a72ba1ef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the click event for a 'Degrees' button (unit conversion). Prepares the converter UI for degree-specific conversions.  <br /></td></tr>
 <tr class="separator:ae249cf9d1c13afc815b48f8a72ba1ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa94024b18260df932f06597d8f699ed3" id="r_aa94024b18260df932f06597d8f699ed3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa94024b18260df932f06597d8f699ed3">btn_Degree_Input_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:aa94024b18260df932f06597d8f699ed3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the click event for a degree input unit selection button. Triggers panel expansion (dropdown), updates the input label, and recalculates for the new unit.  <br /></td></tr>
 <tr class="separator:aa94024b18260df932f06597d8f699ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a762071916c53a92c94a2502baa014739" id="r_a762071916c53a92c94a2502baa014739"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a762071916c53a92c94a2502baa014739">btn_Degree_Output_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:a762071916c53a92c94a2502baa014739"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the click event for a degree output unit selection button. Triggers panel expansion (dropdown), updates the output label, and recalculates.  <br /></td></tr>
 <tr class="separator:a762071916c53a92c94a2502baa014739"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1a0523f35961774ae7bbf87638482e4" id="r_ae1a0523f35961774ae7bbf87638482e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1a0523f35961774ae7bbf87638482e4">btn_Weight_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:ae1a0523f35961774ae7bbf87638482e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the click event for a 'Weight' button (weight unit conversion). Prepares the converter UI for weight-specific conversions.  <br /></td></tr>
 <tr class="separator:ae1a0523f35961774ae7bbf87638482e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1550c7269e6b39e73c4a8edd88111e02" id="r_a1550c7269e6b39e73c4a8edd88111e02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1550c7269e6b39e73c4a8edd88111e02">IWeightBtn_mm_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:a1550c7269e6b39e73c4a8edd88111e02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the click event for a weight input unit selection button. Triggers panel expansion (dropdown), updates the input label, and recalculates for the new unit.  <br /></td></tr>
 <tr class="separator:a1550c7269e6b39e73c4a8edd88111e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f1c7563d0ac17e1894b77ef0bd4b183" id="r_a4f1c7563d0ac17e1894b77ef0bd4b183"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f1c7563d0ac17e1894b77ef0bd4b183">OWeightBtn_mm_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:a4f1c7563d0ac17e1894b77ef0bd4b183"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the click event for a weight output unit selection button. Triggers panel expansion (dropdown), updates the output label, and recalculates.  <br /></td></tr>
 <tr class="separator:a4f1c7563d0ac17e1894b77ef0bd4b183"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ef2a183cb1bdb0ea65829aa857847e8" id="r_a3ef2a183cb1bdb0ea65829aa857847e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ef2a183cb1bdb0ea65829aa857847e8">btn_Temperature_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:a3ef2a183cb1bdb0ea65829aa857847e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the click event for the 'Temperature' button (temperature conversion). Prepares the UI for temperature-specific conversions.  <br /></td></tr>
 <tr class="separator:a3ef2a183cb1bdb0ea65829aa857847e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add75c73e66b7118f5ed3e62c53a43ac0" id="r_add75c73e66b7118f5ed3e62c53a43ac0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add75c73e66b7118f5ed3e62c53a43ac0">ITemperatureBtn_C_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:add75c73e66b7118f5ed3e62c53a43ac0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the click event for a temperature input unit selection button. Triggers panel expansion (dropdown), updates the input label, and recalculates for the new unit.  <br /></td></tr>
 <tr class="separator:add75c73e66b7118f5ed3e62c53a43ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d5ac810c450a6eaf0652196d4ec3e7a" id="r_a4d5ac810c450a6eaf0652196d4ec3e7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d5ac810c450a6eaf0652196d4ec3e7a">OTemperatureBtn_C_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:a4d5ac810c450a6eaf0652196d4ec3e7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the click event for a temperature output unit selection button. Triggers panel expansion (dropdown), updates the output label, and recalculates.  <br /></td></tr>
 <tr class="separator:a4d5ac810c450a6eaf0652196d4ec3e7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac599b9a3b4aab7989624e6d342f66c19" id="r_ac599b9a3b4aab7989624e6d342f66c19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac599b9a3b4aab7989624e6d342f66c19">btn_Length_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:ac599b9a3b4aab7989624e6d342f66c19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the click event for the 'Length' button (length unit conversion). Prepares the UI for length-specific conversions.  <br /></td></tr>
 <tr class="separator:ac599b9a3b4aab7989624e6d342f66c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac37d3d40980bf2d0f1cef7672a40d231" id="r_ac37d3d40980bf2d0f1cef7672a40d231"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac37d3d40980bf2d0f1cef7672a40d231">ILengthBtn_mm_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:ac37d3d40980bf2d0f1cef7672a40d231"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the click event for a length input unit selection button. Triggers panel expansion (dropdown), updates the input label, and recalculates for the new unit.  <br /></td></tr>
 <tr class="separator:ac37d3d40980bf2d0f1cef7672a40d231"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31d814d975eb79c50c81109f859d1b45" id="r_a31d814d975eb79c50c81109f859d1b45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31d814d975eb79c50c81109f859d1b45">OLengthBtn_mm_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:a31d814d975eb79c50c81109f859d1b45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the click event for a length output unit selection button. Triggers panel expansion (dropdown), updates the output label, and recalculates.  <br /></td></tr>
 <tr class="separator:a31d814d975eb79c50c81109f859d1b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16283242d953257b9fcd199cf4227812" id="r_a16283242d953257b9fcd199cf4227812"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16283242d953257b9fcd199cf4227812">btn_Time_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:a16283242d953257b9fcd199cf4227812"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the click event for the 'Time' button (time conversion). Prepares the UI for time-specific conversions.  <br /></td></tr>
 <tr class="separator:a16283242d953257b9fcd199cf4227812"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad557dd0ac182a1eadceb9d2d3d9cc143" id="r_ad557dd0ac182a1eadceb9d2d3d9cc143"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad557dd0ac182a1eadceb9d2d3d9cc143">ITimeBtn_sec_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:ad557dd0ac182a1eadceb9d2d3d9cc143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the click event for an input time unit selection button (specifically for seconds). Triggers panel expansion (dropdown), updates the input label, and recalculates the input value for the new unit.  <br /></td></tr>
 <tr class="separator:ad557dd0ac182a1eadceb9d2d3d9cc143"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a8078ae8f3d1edd936e8d090bf53518" id="r_a7a8078ae8f3d1edd936e8d090bf53518"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a8078ae8f3d1edd936e8d090bf53518">OTimeBtn_sec_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:a7a8078ae8f3d1edd936e8d090bf53518"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the click event for an output time unit selection button (specifically for seconds). Triggers panel expansion (dropdown), updates the output label, and recalculates the output value for the new unit.  <br /></td></tr>
 <tr class="separator:a7a8078ae8f3d1edd936e8d090bf53518"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea14868d40e27c48fda320e59ca4af15" id="r_aea14868d40e27c48fda320e59ca4af15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea14868d40e27c48fda320e59ca4af15">Main_Calculator_panel_Paint</a> (object sender, PaintEventArgs e)</td></tr>
+<tr class="memdesc:aea14868d40e27c48fda320e59ca4af15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the Paint event for the Main_Calculator_panel. This function is responsible for custom drawing or rendering visual elements within the panel.  <br /></td></tr>
 <tr class="separator:aea14868d40e27c48fda320e59ca4af15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac83fde4d8296ef729eb5c43fb4a29c3f" id="r_ac83fde4d8296ef729eb5c43fb4a29c3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac83fde4d8296ef729eb5c43fb4a29c3f">InitializeComponent</a> ()</td></tr>
 <tr class="memdesc:ac83fde4d8296ef729eb5c43fb4a29c3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Required method for Designer support - do not modify the contents of this method with the code editor.  <br /></td></tr>
@@ -215,8 +274,6 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ac6f0d4ec314bd785bc8a7b76ba69ebda" id="r_ac6f0d4ec314bd785bc8a7b76ba69ebda"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_calculator_app_1_1_math__lib.html">Math_lib</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6f0d4ec314bd785bc8a7b76ba69ebda">mathLib</a> = new <a class="el" href="class_calculator_app_1_1_math__lib.html">Math_lib</a>()</td></tr>
-<tr class="separator:ac6f0d4ec314bd785bc8a7b76ba69ebda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49a56be6c40ebbfbc3c80a8fdd0b46e7" id="r_a49a56be6c40ebbfbc3c80a8fdd0b46e7"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; string, Panel &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49a56be6c40ebbfbc3c80a8fdd0b46e7">inputOutputPanels</a> = new Dictionary&lt;string, Panel&gt;()</td></tr>
 <tr class="separator:a49a56be6c40ebbfbc3c80a8fdd0b46e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac75681b6e401b58b54a78ae49d5feb26" id="r_ac75681b6e401b58b54a78ae49d5feb26"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac75681b6e401b58b54a78ae49d5feb26">isDarkMode</a> = false</td></tr>
@@ -229,6 +286,22 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ab0ff05a9ef85987d1dd94be331fe6d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29a02b6c058b239b90ddf89a48d76300" id="r_a29a02b6c058b239b90ddf89a48d76300"><td class="memItemLeft" align="right" valign="top">Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29a02b6c058b239b90ddf89a48d76300">lightModeEndColor</a> = Color.LightGray</td></tr>
 <tr class="separator:a29a02b6c058b239b90ddf89a48d76300"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf1850d4cbb31fcb6774ab671c4d8963" id="r_aaf1850d4cbb31fcb6774ab671c4d8963"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf1850d4cbb31fcb6774ab671c4d8963">isCollapsed</a></td></tr>
+<tr class="separator:aaf1850d4cbb31fcb6774ab671c4d8963"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81275e5f083cfa4eea1986dcb7f18a14" id="r_a81275e5f083cfa4eea1986dcb7f18a14"><td class="memItemLeft" align="right" valign="top">Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81275e5f083cfa4eea1986dcb7f18a14">button_toDropDown</a> = new Button()</td></tr>
+<tr class="separator:a81275e5f083cfa4eea1986dcb7f18a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8dbaaa6d901e11345dbae4ddfcb9ee1" id="r_ad8dbaaa6d901e11345dbae4ddfcb9ee1"><td class="memItemLeft" align="right" valign="top">Panel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8dbaaa6d901e11345dbae4ddfcb9ee1">panel_toDropDown</a> = new Panel()</td></tr>
+<tr class="separator:ad8dbaaa6d901e11345dbae4ddfcb9ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d15fb1230dce0bcc1b5dd0dc7e8ef33" id="r_a0d15fb1230dce0bcc1b5dd0dc7e8ef33"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d15fb1230dce0bcc1b5dd0dc7e8ef33">InputUnit_str</a></td></tr>
+<tr class="separator:a0d15fb1230dce0bcc1b5dd0dc7e8ef33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18c4d87821b17108f0ecb5aca0a8f5c5" id="r_a18c4d87821b17108f0ecb5aca0a8f5c5"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18c4d87821b17108f0ecb5aca0a8f5c5">OutputUnit_str</a></td></tr>
+<tr class="separator:a18c4d87821b17108f0ecb5aca0a8f5c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eca76487c16a22ca5685835523b5524" id="r_a7eca76487c16a22ca5685835523b5524"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7eca76487c16a22ca5685835523b5524">ConvertNumber_str</a> = string.Empty</td></tr>
+<tr class="separator:a7eca76487c16a22ca5685835523b5524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a292327c4608641e46e9d6a74c7620bbc" id="r_a292327c4608641e46e9d6a74c7620bbc"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a292327c4608641e46e9d6a74c7620bbc">curr_ConversionType</a> = string.Empty</td></tr>
+<tr class="separator:a292327c4608641e46e9d6a74c7620bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff166740c8633dc5c4196a456b721a6b" id="r_aff166740c8633dc5c4196a456b721a6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_calculator_app_1_1_optional__functions.html">Optional_functions</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff166740c8633dc5c4196a456b721a6b">opt_functions</a> = new <a class="el" href="class_calculator_app_1_1_optional__functions.html">Optional_functions</a>()</td></tr>
+<tr class="separator:aff166740c8633dc5c4196a456b721a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab69f4cef82fba5261c82471b8c2fc35c" id="r_ab69f4cef82fba5261c82471b8c2fc35c"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab69f4cef82fba5261c82471b8c2fc35c">firstNumber_str</a> = &quot;&quot;</td></tr>
 <tr class="separator:ab69f4cef82fba5261c82471b8c2fc35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48f25c1d71b792916d7c6cad9495233c" id="r_a48f25c1d71b792916d7c6cad9495233c"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48f25c1d71b792916d7c6cad9495233c">secondNumber_str</a> = &quot;&quot;</td></tr>
@@ -243,28 +316,14 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a6b0590866ba607099c6c77d46e27b58f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a50ceb614dd3b2fef548385876f6eb8" id="r_a8a50ceb614dd3b2fef548385876f6eb8"><td class="memItemLeft" align="right" valign="top">List&lt; Panel &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a50ceb614dd3b2fef548385876f6eb8">listPanel</a> = new List&lt;Panel&gt;()</td></tr>
 <tr class="separator:a8a50ceb614dd3b2fef548385876f6eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6f0d4ec314bd785bc8a7b76ba69ebda" id="r_ac6f0d4ec314bd785bc8a7b76ba69ebda"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_calculator_app_1_1_math__lib.html">Math_lib</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6f0d4ec314bd785bc8a7b76ba69ebda">mathLib</a> = new <a class="el" href="class_calculator_app_1_1_math__lib.html">Math_lib</a>()</td></tr>
+<tr class="separator:ac6f0d4ec314bd785bc8a7b76ba69ebda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80aef1d3168351a942c6799b9e45f59f" id="r_a80aef1d3168351a942c6799b9e45f59f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80aef1d3168351a942c6799b9e45f59f">indexOfCalculator</a> = 0</td></tr>
 <tr class="separator:a80aef1d3168351a942c6799b9e45f59f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56e591fa50b64fa3b0ae6cf8402e60d6" id="r_a56e591fa50b64fa3b0ae6cf8402e60d6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56e591fa50b64fa3b0ae6cf8402e60d6">indexOfSettings</a> = 1</td></tr>
 <tr class="separator:a56e591fa50b64fa3b0ae6cf8402e60d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a092a8e426ee48e28508d80cf30b35645" id="r_a092a8e426ee48e28508d80cf30b35645"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a092a8e426ee48e28508d80cf30b35645">indexOfDegrees</a> = 2</td></tr>
 <tr class="separator:a092a8e426ee48e28508d80cf30b35645"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7eca76487c16a22ca5685835523b5524" id="r_a7eca76487c16a22ca5685835523b5524"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7eca76487c16a22ca5685835523b5524">ConvertNumber_str</a> = string.Empty</td></tr>
-<tr class="separator:a7eca76487c16a22ca5685835523b5524"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a292327c4608641e46e9d6a74c7620bbc" id="r_a292327c4608641e46e9d6a74c7620bbc"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a292327c4608641e46e9d6a74c7620bbc">curr_ConversionType</a> = string.Empty</td></tr>
-<tr class="separator:a292327c4608641e46e9d6a74c7620bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff166740c8633dc5c4196a456b721a6b" id="r_aff166740c8633dc5c4196a456b721a6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_calculator_app_1_1_optional__functions.html">Optional_functions</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff166740c8633dc5c4196a456b721a6b">opt_functions</a> = new <a class="el" href="class_calculator_app_1_1_optional__functions.html">Optional_functions</a>()</td></tr>
-<tr class="separator:aff166740c8633dc5c4196a456b721a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf1850d4cbb31fcb6774ab671c4d8963" id="r_aaf1850d4cbb31fcb6774ab671c4d8963"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf1850d4cbb31fcb6774ab671c4d8963">isCollapsed</a></td></tr>
-<tr class="separator:aaf1850d4cbb31fcb6774ab671c4d8963"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81275e5f083cfa4eea1986dcb7f18a14" id="r_a81275e5f083cfa4eea1986dcb7f18a14"><td class="memItemLeft" align="right" valign="top">Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81275e5f083cfa4eea1986dcb7f18a14">button_toDropDown</a> = new Button()</td></tr>
-<tr class="separator:a81275e5f083cfa4eea1986dcb7f18a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8dbaaa6d901e11345dbae4ddfcb9ee1" id="r_ad8dbaaa6d901e11345dbae4ddfcb9ee1"><td class="memItemLeft" align="right" valign="top">Panel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8dbaaa6d901e11345dbae4ddfcb9ee1">panel_toDropDown</a> = new Panel()</td></tr>
-<tr class="separator:ad8dbaaa6d901e11345dbae4ddfcb9ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d15fb1230dce0bcc1b5dd0dc7e8ef33" id="r_a0d15fb1230dce0bcc1b5dd0dc7e8ef33"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d15fb1230dce0bcc1b5dd0dc7e8ef33">InputUnit_str</a></td></tr>
-<tr class="separator:a0d15fb1230dce0bcc1b5dd0dc7e8ef33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18c4d87821b17108f0ecb5aca0a8f5c5" id="r_a18c4d87821b17108f0ecb5aca0a8f5c5"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18c4d87821b17108f0ecb5aca0a8f5c5">OutputUnit_str</a></td></tr>
-<tr class="separator:a18c4d87821b17108f0ecb5aca0a8f5c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a118ff1eb42c9eb00b45574b482fb16" id="r_a5a118ff1eb42c9eb00b45574b482fb16"><td class="memItemLeft" align="right" valign="top">System.ComponentModel.IContainer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a118ff1eb42c9eb00b45574b482fb16">components</a> = null</td></tr>
 <tr class="memdesc:a5a118ff1eb42c9eb00b45574b482fb16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Required designer variable.  <br /></td></tr>
 <tr class="separator:a5a118ff1eb42c9eb00b45574b482fb16"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -286,38 +345,38 @@ Private Attributes</h2></td></tr>
 <tr class="separator:addb7f3a6deb63ca4200a30f732cfee24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a034bcd9ae3dfe33d73b497c70ec50442" id="r_a034bcd9ae3dfe33d73b497c70ec50442"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a034bcd9ae3dfe33d73b497c70ec50442">button2</a></td></tr>
 <tr class="separator:a034bcd9ae3dfe33d73b497c70ec50442"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8103e628fff4cb30d1e72756a40faa9" id="r_ac8103e628fff4cb30d1e72756a40faa9"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8103e628fff4cb30d1e72756a40faa9">Plus</a></td></tr>
-<tr class="separator:ac8103e628fff4cb30d1e72756a40faa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb8c1ac76c05d9336bbc39aadec1a7f5" id="r_afb8c1ac76c05d9336bbc39aadec1a7f5"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb8c1ac76c05d9336bbc39aadec1a7f5">Substitution</a></td></tr>
-<tr class="separator:afb8c1ac76c05d9336bbc39aadec1a7f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2133832fa08226b06aefca43ffb114d" id="r_aa2133832fa08226b06aefca43ffb114d"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2133832fa08226b06aefca43ffb114d">Multiplication</a></td></tr>
-<tr class="separator:aa2133832fa08226b06aefca43ffb114d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f17149572734eb3b0e53b1c4d5ac750" id="r_a1f17149572734eb3b0e53b1c4d5ac750"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f17149572734eb3b0e53b1c4d5ac750">Division</a></td></tr>
-<tr class="separator:a1f17149572734eb3b0e53b1c4d5ac750"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b82ef7bd049522f370331801e49a610" id="r_a6b82ef7bd049522f370331801e49a610"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b82ef7bd049522f370331801e49a610">Modulo</a></td></tr>
-<tr class="separator:a6b82ef7bd049522f370331801e49a610"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53b4e09a402b56dca731fc18ff784104" id="r_a53b4e09a402b56dca731fc18ff784104"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53b4e09a402b56dca731fc18ff784104">Clear</a></td></tr>
-<tr class="separator:a53b4e09a402b56dca731fc18ff784104"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80168f73e197cb382341c456b53eca02" id="r_a80168f73e197cb382341c456b53eca02"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80168f73e197cb382341c456b53eca02">Result</a></td></tr>
-<tr class="separator:a80168f73e197cb382341c456b53eca02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a055dddf68741c5b32d49bde0a41628f9" id="r_a055dddf68741c5b32d49bde0a41628f9"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a055dddf68741c5b32d49bde0a41628f9">Factorial</a></td></tr>
-<tr class="separator:a055dddf68741c5b32d49bde0a41628f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed3bb0edc06ef4cc021bc5e5f0cd9f17" id="r_aed3bb0edc06ef4cc021bc5e5f0cd9f17"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed3bb0edc06ef4cc021bc5e5f0cd9f17">toPowerOf2</a></td></tr>
-<tr class="separator:aed3bb0edc06ef4cc021bc5e5f0cd9f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa68a8dff53fba10886078f557d2316ea" id="r_aa68a8dff53fba10886078f557d2316ea"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa68a8dff53fba10886078f557d2316ea">SquareRoot</a></td></tr>
-<tr class="separator:aa68a8dff53fba10886078f557d2316ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05e2167cbd16036d85fa2c409023f7c0" id="r_a05e2167cbd16036d85fa2c409023f7c0"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05e2167cbd16036d85fa2c409023f7c0">toPowerOfX</a></td></tr>
-<tr class="separator:a05e2167cbd16036d85fa2c409023f7c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd4daf55a6771d92d9ce9981f9d10c9e" id="r_afd4daf55a6771d92d9ce9981f9d10c9e"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd4daf55a6771d92d9ce9981f9d10c9e">op_Plus</a></td></tr>
+<tr class="separator:afd4daf55a6771d92d9ce9981f9d10c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07d3a2ad1fb8e3cc9af3b8c18f6c6a4f" id="r_a07d3a2ad1fb8e3cc9af3b8c18f6c6a4f"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07d3a2ad1fb8e3cc9af3b8c18f6c6a4f">op_Substitution</a></td></tr>
+<tr class="separator:a07d3a2ad1fb8e3cc9af3b8c18f6c6a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6511f6879571764b1f0e0dd27773c527" id="r_a6511f6879571764b1f0e0dd27773c527"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6511f6879571764b1f0e0dd27773c527">op_Multiplication</a></td></tr>
+<tr class="separator:a6511f6879571764b1f0e0dd27773c527"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f313412946ca245a924f18a4ed52807" id="r_a2f313412946ca245a924f18a4ed52807"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f313412946ca245a924f18a4ed52807">op_Division</a></td></tr>
+<tr class="separator:a2f313412946ca245a924f18a4ed52807"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab87d5dd2a3e2ffa28036d6426b779a0" id="r_aab87d5dd2a3e2ffa28036d6426b779a0"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab87d5dd2a3e2ffa28036d6426b779a0">op_Modulo</a></td></tr>
+<tr class="separator:aab87d5dd2a3e2ffa28036d6426b779a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc4675b5a09025c03b4e19a55043e4c9" id="r_abc4675b5a09025c03b4e19a55043e4c9"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc4675b5a09025c03b4e19a55043e4c9">del_Clear</a></td></tr>
+<tr class="separator:abc4675b5a09025c03b4e19a55043e4c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ff3eaf04197cab053cda044e6370979" id="r_a1ff3eaf04197cab053cda044e6370979"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ff3eaf04197cab053cda044e6370979">op_Result</a></td></tr>
+<tr class="separator:a1ff3eaf04197cab053cda044e6370979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ff0ddfbb1bcc5f7d18e8803d55798aa" id="r_a1ff0ddfbb1bcc5f7d18e8803d55798aa"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ff0ddfbb1bcc5f7d18e8803d55798aa">sp_Factorial</a></td></tr>
+<tr class="separator:a1ff0ddfbb1bcc5f7d18e8803d55798aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c04c89277abb7f76ef32a603da19479" id="r_a9c04c89277abb7f76ef32a603da19479"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c04c89277abb7f76ef32a603da19479">sp_toPowerOf2</a></td></tr>
+<tr class="separator:a9c04c89277abb7f76ef32a603da19479"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf77571f352e52b553e9dea6a7f3bbd5" id="r_adf77571f352e52b553e9dea6a7f3bbd5"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf77571f352e52b553e9dea6a7f3bbd5">sp_SquareRoot</a></td></tr>
+<tr class="separator:adf77571f352e52b553e9dea6a7f3bbd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32d9c56b10093422e358ee94bd250afe" id="r_a32d9c56b10093422e358ee94bd250afe"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32d9c56b10093422e358ee94bd250afe">sp_toPowerOfX</a></td></tr>
+<tr class="separator:a32d9c56b10093422e358ee94bd250afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8eb3e0595d4e983d515a0cbbae9918fc" id="r_a8eb3e0595d4e983d515a0cbbae9918fc"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8eb3e0595d4e983d515a0cbbae9918fc">button14</a></td></tr>
 <tr class="separator:a8eb3e0595d4e983d515a0cbbae9918fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05700a569443c33eabad924a4f433330" id="r_a05700a569443c33eabad924a4f433330"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05700a569443c33eabad924a4f433330">button1</a></td></tr>
 <tr class="separator:a05700a569443c33eabad924a4f433330"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7e2bf9babc460626ebdfea7e5d65e9c" id="r_ae7e2bf9babc460626ebdfea7e5d65e9c"><td class="memItemLeft" align="right" valign="top">CustomControls.CustomControl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7e2bf9babc460626ebdfea7e5d65e9c">customControl1</a></td></tr>
 <tr class="separator:ae7e2bf9babc460626ebdfea7e5d65e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a658e09a256183168f696961df2ec013b" id="r_a658e09a256183168f696961df2ec013b"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a658e09a256183168f696961df2ec013b">Comma</a></td></tr>
-<tr class="separator:a658e09a256183168f696961df2ec013b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac4736f71ea29c290d2061c7af574220" id="r_aac4736f71ea29c290d2061c7af574220"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac4736f71ea29c290d2061c7af574220">Delete</a></td></tr>
-<tr class="separator:aac4736f71ea29c290d2061c7af574220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5d7cddb4ff46991b008537899191b35" id="r_aa5d7cddb4ff46991b008537899191b35"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5d7cddb4ff46991b008537899191b35">button_Comma</a></td></tr>
+<tr class="separator:aa5d7cddb4ff46991b008537899191b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3991cea78cda1d6cc7dcd0fb95b57ae" id="r_ab3991cea78cda1d6cc7dcd0fb95b57ae"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3991cea78cda1d6cc7dcd0fb95b57ae">del_Delete</a></td></tr>
+<tr class="separator:ab3991cea78cda1d6cc7dcd0fb95b57ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11359021f4ccdeb7c0c238e70131a95d" id="r_a11359021f4ccdeb7c0c238e70131a95d"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Panel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11359021f4ccdeb7c0c238e70131a95d">Main_Calculator_panel</a></td></tr>
 <tr class="separator:a11359021f4ccdeb7c0c238e70131a95d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a880004890f214de8939d2acafa28ac32" id="r_a880004890f214de8939d2acafa28ac32"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Panel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a880004890f214de8939d2acafa28ac32">Main_Setting_panel</a></td></tr>
@@ -346,8 +405,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a50c897d31c13e6469adbe9c3190f9e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeed60116f8853c37c1c0f3b690213018" id="r_aeed60116f8853c37c1c0f3b690213018"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.TextBox&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeed60116f8853c37c1c0f3b690213018">textBox_Converter_Input</a></td></tr>
 <tr class="separator:aeed60116f8853c37c1c0f3b690213018"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af96be79e230598a78defd5b85c22192d" id="r_af96be79e230598a78defd5b85c22192d"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af96be79e230598a78defd5b85c22192d">ClearConverter</a></td></tr>
-<tr class="separator:af96be79e230598a78defd5b85c22192d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab23d9702a371188358daf0dc9b0e2214" id="r_ab23d9702a371188358daf0dc9b0e2214"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab23d9702a371188358daf0dc9b0e2214">del_ClearConverter</a></td></tr>
+<tr class="separator:ab23d9702a371188358daf0dc9b0e2214"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1a475b9834c6fea7ee58ce89f2793d1" id="r_af1a475b9834c6fea7ee58ce89f2793d1"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1a475b9834c6fea7ee58ce89f2793d1">button11</a></td></tr>
 <tr class="separator:af1a475b9834c6fea7ee58ce89f2793d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e247c17895d711ce7d1c7c96d19bcc8" id="r_a7e247c17895d711ce7d1c7c96d19bcc8"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e247c17895d711ce7d1c7c96d19bcc8">button12</a></td></tr>
@@ -358,16 +417,16 @@ Private Attributes</h2></td></tr>
 <tr class="separator:af7a62e1a735fcd1af64127f9a3ff7762"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc73ed9cd63ff76c01781eb9a9e8a9ac" id="r_acc73ed9cd63ff76c01781eb9a9e8a9ac"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc73ed9cd63ff76c01781eb9a9e8a9ac">button22</a></td></tr>
 <tr class="separator:acc73ed9cd63ff76c01781eb9a9e8a9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86dd351f1ff4b7628f32755bfbc7ba72" id="r_a86dd351f1ff4b7628f32755bfbc7ba72"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86dd351f1ff4b7628f32755bfbc7ba72">DeleteConverter</a></td></tr>
-<tr class="separator:a86dd351f1ff4b7628f32755bfbc7ba72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9fb6a53a64d149ac9379f5aa9e1f42e" id="r_ac9fb6a53a64d149ac9379f5aa9e1f42e"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9fb6a53a64d149ac9379f5aa9e1f42e">del_DeleteConverter</a></td></tr>
+<tr class="separator:ac9fb6a53a64d149ac9379f5aa9e1f42e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeae9e53b2c54218e7d47114265a3f320" id="r_aeae9e53b2c54218e7d47114265a3f320"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeae9e53b2c54218e7d47114265a3f320">button21</a></td></tr>
 <tr class="separator:aeae9e53b2c54218e7d47114265a3f320"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea5898c2343458bf608c3bb45916200c" id="r_aea5898c2343458bf608c3bb45916200c"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea5898c2343458bf608c3bb45916200c">button16</a></td></tr>
 <tr class="separator:aea5898c2343458bf608c3bb45916200c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b9a7958691ccaee4d77cc357d9d04f9" id="r_a7b9a7958691ccaee4d77cc357d9d04f9"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b9a7958691ccaee4d77cc357d9d04f9">button20</a></td></tr>
 <tr class="separator:a7b9a7958691ccaee4d77cc357d9d04f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cc517a4be4b4f0b3a9a12c05bef443f" id="r_a9cc517a4be4b4f0b3a9a12c05bef443f"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9cc517a4be4b4f0b3a9a12c05bef443f">button17</a></td></tr>
-<tr class="separator:a9cc517a4be4b4f0b3a9a12c05bef443f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a366f8f8f358a53ca58f417cc1fa58cef" id="r_a366f8f8f358a53ca58f417cc1fa58cef"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a366f8f8f358a53ca58f417cc1fa58cef">CommaConverter</a></td></tr>
+<tr class="separator:a366f8f8f358a53ca58f417cc1fa58cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7eacd0e4a9161e20a7498cfeb167a4c" id="r_ae7eacd0e4a9161e20a7498cfeb167a4c"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7eacd0e4a9161e20a7498cfeb167a4c">button19</a></td></tr>
 <tr class="separator:ae7eacd0e4a9161e20a7498cfeb167a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af377de0ab6edb01c78a7f0258a42efb2" id="r_af377de0ab6edb01c78a7f0258a42efb2"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af377de0ab6edb01c78a7f0258a42efb2">button18</a></td></tr>
@@ -525,6 +584,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructor for the Calculator class. Initializes UI components and attaches the Form1_Paint event handler. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -555,6 +616,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Appends a digit to the calculator's internal representation, handling cases for exponent entry, starting a new number, and continuing an existing number. Also manages comma placement. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">digit</td><td>The digit to be appended (as a string).</td></tr>
+    <tr><td class="paramname">fromKeyboard</td><td>Indicates whether the digit input originates from the keyboard (true) or another source (false).</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a5b8136e1021f79ba628a04c9fb41955d" name="a5b8136e1021f79ba628a04c9fb41955d"></a>
@@ -583,6 +653,15 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Appends a digit to the number being converted, handling comma (decimal separator) placement and updating the display. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">digit</td><td>The digit to be appended (as a string).</td></tr>
+    <tr><td class="paramname">fromKeyboard</td><td>Indicates whether the input originates from the keyboard (true) or another source (false).</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -613,6 +692,53 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Appends an operator to the calculator's internal representation and updates the display. Handles cases of replacing existing operators and performing exponentiation if necessary. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newOperator</td><td>The new operator to be appended.</td></tr>
+    <tr><td class="paramname">fromKeyboard</td><td>Indicates whether the input originates from the keyboard (true) or another source (false).</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af262294286fc9aaac41cdd3927e4c8fb" name="af262294286fc9aaac41cdd3927e4c8fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af262294286fc9aaac41cdd3927e4c8fb">&#9670;&#160;</a></span>ApplyColorThemeToButtons()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CalculatorApp.Calculator.ApplyColorThemeToButtons </td>
+          <td>(</td>
+          <td class="paramtype">Control</td>          <td class="paramname"><span class="paramname"><em>parentControl</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>isDarkMode</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Applies a dark or light mode color theme to a collection of Button controls within a specified parent container. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parentControl</td><td>The container control whose child buttons will be updated.</td></tr>
+    <tr><td class="paramname">isDarkMode</td><td>True if dark mode is enabled, false for light mode.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ae0cc337ed4bdf3cd3903eaded0cfbb9d" name="ae0cc337ed4bdf3cd3903eaded0cfbb9d"></a>
@@ -641,6 +767,15 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Handles the click event for the calculator button, showing the calculator panel and hiding others. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The EventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -671,6 +806,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Handles the click event for a degree input unit selection button. Triggers panel expansion (dropdown), updates the input label, and recalculates for the new unit. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The button object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The EventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a762071916c53a92c94a2502baa014739" name="a762071916c53a92c94a2502baa014739"></a>
@@ -699,6 +843,15 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Handles the click event for a degree output unit selection button. Triggers panel expansion (dropdown), updates the output label, and recalculates. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The button object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The EventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -729,6 +882,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Handles the click event for a 'Degrees' button (unit conversion). Prepares the converter UI for degree-specific conversions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The button object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The EventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ac599b9a3b4aab7989624e6d342f66c19" name="ac599b9a3b4aab7989624e6d342f66c19"></a>
@@ -757,6 +919,15 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Handles the click event for the 'Length' button (length unit conversion). Prepares the UI for length-specific conversions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The button object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The EventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -787,6 +958,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Handles the click event for the settings button, showing the settings panel and hiding others. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The EventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a3ef2a183cb1bdb0ea65829aa857847e8" name="a3ef2a183cb1bdb0ea65829aa857847e8"></a>
@@ -815,6 +995,15 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Handles the click event for the 'Temperature' button (temperature conversion). Prepares the UI for temperature-specific conversions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The button object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The EventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -845,6 +1034,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Handles the click event for the 'Time' button (time conversion). Prepares the UI for time-specific conversions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The button object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The EventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a0dc2a917af65ec956a9369d4d7b7daf5" name="a0dc2a917af65ec956a9369d4d7b7daf5"></a>
@@ -874,6 +1072,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Handles the click event for the Unit Converter button. Manages the expansion of the panel and configuration of the degrees unit conversion. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The EventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ae1a0523f35961774ae7bbf87638482e4" name="ae1a0523f35961774ae7bbf87638482e4"></a>
@@ -902,6 +1109,15 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Handles the click event for a 'Weight' button (weight unit conversion). Prepares the converter UI for weight-specific conversions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The button object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The EventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -937,6 +1153,17 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Calculates the conversion result based on the current conversion type, input value, and unit conversion options. Updates the output textbox with the formatted result. <br  />
+ </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>The decimal value to be converted.</td></tr>
+    <tr><td class="paramname">from</td><td>The original unit of the value.</td></tr>
+    <tr><td class="paramname">to</td><td>The target unit for conversion.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a3a0e3d6bab126f836d359bff3bacff4c" name="a3a0e3d6bab126f836d359bff3bacff4c"></a>
@@ -961,6 +1188,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Clears the content of textBox1 and resets calculator-related internal variables. </p>
 
 </div>
 </div>
@@ -991,6 +1220,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Handles the click event for the 'Clear' button (labeled "C"). Calls the Clear_all function to reset the calculator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The EventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="aa49a89d08791fe71c1a7d764c84d1fb9" name="aa49a89d08791fe71c1a7d764c84d1fb9"></a>
@@ -1020,6 +1258,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Handles the click event for the converter's 'Clear' button. Resets the internal number representation and clears the input and output textboxes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The EventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a3aad5ce161267a669b998915f9008364" name="a3aad5ce161267a669b998915f9008364"></a>
@@ -1044,6 +1291,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Clears all internal data related to the converter and empties its textboxes. </p>
 
 </div>
 </div>
@@ -1074,6 +1323,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Handles the CheckedChanged event of the customControl1 (presumably a dark mode toggle control). Updates the visual theme of the form and its controls accordingly. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The EventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a63e0cdb14bd1bbeb218710073b7df466" name="a63e0cdb14bd1bbeb218710073b7df466"></a>
@@ -1103,6 +1361,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Handles the click event for the 'Delete' button. Implements logic for deleting characters based on calculator state (exponent mode, operators, numbers). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The EventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="afd39293e6e5a9e9ce22b7e72e0c52e04" name="afd39293e6e5a9e9ce22b7e72e0c52e04"></a>
@@ -1131,6 +1398,15 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Handles the click event for the converter's 'Delete' button. Removes the last character from the input and updates the display. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The EventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1194,6 +1470,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Handles the click event for an input unit dropdown button. Updates the input unit label and recalculates the input value based on the newly selected unit. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The button object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The EventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="acbf75b8b8f71e2f36f1736ef49178156" name="acbf75b8b8f71e2f36f1736ef49178156"></a>
@@ -1222,6 +1507,15 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Handles the click event for an output unit dropdown button. Updates the output unit label and recalculates the output value based on the newly selected unit. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The button object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The EventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1252,6 +1546,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Handles the click event of the 'Factorial' button. Calculates the factorial of the current number (first or second) and updates the calculator display. Manages potential exceptions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The EventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a2b3df3f6d1d935f118d29d4733825106" name="a2b3df3f6d1d935f118d29d4733825106"></a>
@@ -1280,6 +1583,15 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Handles the Load event for Form1. Sets initial focus, configures UI elements, and initializes internal data structures for managing panels and converter options. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The EventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1310,6 +1622,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Applies a gradient background to the form based on the current mode (light or dark). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The object that raised the Paint event.</td></tr>
+    <tr><td class="paramname">e</td><td>The PaintEventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ac37d3d40980bf2d0f1cef7672a40d231" name="ac37d3d40980bf2d0f1cef7672a40d231"></a>
@@ -1338,6 +1659,15 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Handles the click event for a length input unit selection button. Triggers panel expansion (dropdown), updates the input label, and recalculates for the new unit. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The button object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The EventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1395,6 +1725,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Handles the click event for a temperature input unit selection button. Triggers panel expansion (dropdown), updates the input label, and recalculates for the new unit. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The button object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The EventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ad557dd0ac182a1eadceb9d2d3d9cc143" name="ad557dd0ac182a1eadceb9d2d3d9cc143"></a>
@@ -1423,6 +1762,15 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Handles the click event for an input time unit selection button (specifically for seconds). Triggers panel expansion (dropdown), updates the input label, and recalculates the input value for the new unit. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The button object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The EventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1453,6 +1801,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Handles the click event for a weight input unit selection button. Triggers panel expansion (dropdown), updates the input label, and recalculates for the new unit. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The button object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The EventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="aea14868d40e27c48fda320e59ca4af15" name="aea14868d40e27c48fda320e59ca4af15"></a>
@@ -1481,6 +1838,15 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Handles the Paint event for the Main_Calculator_panel. This function is responsible for custom drawing or rendering visual elements within the panel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The PaintEventArgs object containing event data and graphics context.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1511,6 +1877,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Handles the click event for all number buttons. Calls the appendDigit function to add the clicked number's digit to the calculator display. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The button object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The EventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ac98f09e80ecce8f7065bb704a66e1ce3" name="ac98f09e80ecce8f7065bb704a66e1ce3"></a>
@@ -1539,6 +1914,15 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Handles the click event of a converter number button. Extracts the button's text (digit) and calls <code>appendDigitConverter</code> to process the input. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The button object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The EventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1569,6 +1953,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Handles the click event for a length output unit selection button. Triggers panel expansion (dropdown), updates the output label, and recalculates. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The button object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The EventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a671f32c6b78d9acb4bc91a98f1bb9b09" name="a671f32c6b78d9acb4bc91a98f1bb9b09"></a>
@@ -1597,6 +1990,15 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Handles the click event for operator buttons. Handles the special case of a negative sign at the beginning of a number. Otherwise, delegates operator handling to the <code>appendOperator</code> function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The EventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1627,6 +2029,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Handles the click event for a temperature output unit selection button. Triggers panel expansion (dropdown), updates the output label, and recalculates. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The button object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The EventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a7a8078ae8f3d1edd936e8d090bf53518" name="a7a8078ae8f3d1edd936e8d090bf53518"></a>
@@ -1655,6 +2066,15 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Handles the click event for an output time unit selection button (specifically for seconds). Triggers panel expansion (dropdown), updates the output label, and recalculates the output value for the new unit. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The button object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The EventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1685,6 +2105,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Handles the click event for a weight output unit selection button. Triggers panel expansion (dropdown), updates the output label, and recalculates. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The button object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The EventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="aac99bcba6dcdd7f5bc29bf5f42a59a73" name="aac99bcba6dcdd7f5bc29bf5f42a59a73"></a>
@@ -1710,6 +2139,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Performs setup actions specifically for degree unit conversions. Ensures input/output panels are visible, sets the conversion type, labels, and clears textboxes. </p>
+
 </div>
 </div>
 <a id="ab5c4efcb0bcea247a7246a62629a14ef" name="ab5c4efcb0bcea247a7246a62629a14ef"></a>
@@ -1734,6 +2165,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Performs exponentiation calculations based on whether an exponent and an optional second number are present. Handles potential exceptions and updates calculator state. </p>
 
 </div>
 </div>
@@ -1764,6 +2197,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Handles the click event for the 'Result' button. Performs calculations, handles potential exceptions, formats the result, and updates the calculator display. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The EventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="afa24e8597ba3c9d733483773a8dac933" name="afa24e8597ba3c9d733483773a8dac933"></a>
@@ -1793,6 +2235,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Hides all panels in the inputOutputPanels collection and then selectively displays and enables two panels specified by their keys. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key1</td><td>The key of the first panel to show and enable.</td></tr>
+    <tr><td class="paramname">key2</td><td>The key of the second panel to show and enable.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="aa8ed5f37681d58a05059869b38a40605" name="aa8ed5f37681d58a05059869b38a40605"></a>
@@ -1817,6 +2268,14 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Hides all panels in the <code>listPanel</code> collection and then displays and enables the panel at the specified index. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">indexToShow</td><td>The index of the panel within <code>listPanel</code> to be shown.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1847,6 +2306,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Handles the click event of the 'Square Root' button. Calculates the square root of either the first or second number, updates the display, and manages potential exceptions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The EventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ab11a7092ba037cae3683e4ac0ef30a38" name="ab11a7092ba037cae3683e4ac0ef30a38"></a>
@@ -1875,6 +2343,53 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Handles the KeyPress event for the main calculator textbox (textBox1). Allows numbers, basic operators, decimals, factorial, exponentiation, Backspace, and Enter for calculations. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The KeyPressEventArgs object containing information about the pressed key.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae8e051f3b79d176b3a6aae7307231cd3" name="ae8e051f3b79d176b3a6aae7307231cd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8e051f3b79d176b3a6aae7307231cd3">&#9670;&#160;</a></span>textBoxConverter_KeyPress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CalculatorApp.Calculator.textBoxConverter_KeyPress </td>
+          <td>(</td>
+          <td class="paramtype">object</td>          <td class="paramname"><span class="paramname"><em>sender</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">KeyPressEventArgs</td>          <td class="paramname"><span class="paramname"><em>e</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handles the KeyPress event for the converter's input textbox. Allows only numbers, a comma (decimal separator), and the Backspace key for editing. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The KeyPressEventArgs object containing information about the pressed key.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1905,6 +2420,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Handles the timer tick event, responsible for smoothly expanding or collapsing a panel (animation). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The EventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a3d418a748d0b0e9fb60eb59fc6b1800c" name="a3d418a748d0b0e9fb60eb59fc6b1800c"></a>
@@ -1933,6 +2457,15 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Handles the click event of the 'Square' button (raises the current number to the power of 2). Updates the calculator display and handles potential exceptions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The EventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1963,6 +2496,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Handles the click event for the '^' (exponentiation) button. Prepares the calculator state for entering an exponent if the input field is not empty and doesn't end with an operator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>The object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>The EventArgs object containing event data.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a1a5b1acd9d5dac896a953388db658974" name="a1a5b1acd9d5dac896a953388db658974"></a>
@@ -1988,10 +2530,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Updates the converter after a unit selection is made. Ensures that if the input textbox is not empty, the input value is recalculated based on the new units. </p>
+
 </div>
 </div>
-<a id="a2802adc8d5dee0ed65981f653157d4cb" name="a2802adc8d5dee0ed65981f653157d4cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2802adc8d5dee0ed65981f653157d4cb">&#9670;&#160;</a></span>UpdateInputTextBoxConverter()</h2>
+<a id="a049132840448c6762f9cd15678be6000" name="a049132840448c6762f9cd15678be6000"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a049132840448c6762f9cd15678be6000">&#9670;&#160;</a></span>UpdateInputTextBoxConverter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2002,8 +2546,12 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void CalculatorApp.Calculator.UpdateInputTextBoxConverter </td>
           <td>(</td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>value</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>fromKeyboard</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -2012,6 +2560,15 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Updates the input textbox of the converter, optionally parsing the value for calculations. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>The updated value for the input textbox.</td></tr>
+    <tr><td class="paramname">fromKeyboard</td><td>Indicates whether the input originates from the keyboard (true) or another source (false).</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -2037,6 +2594,14 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Updates the output textbox of the converter with the specified value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>The value to be displayed in the output textbox.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -2382,28 +2947,6 @@ Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">System.Windows.Forms.Button CalculatorApp.Calculator.button16</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9cc517a4be4b4f0b3a9a12c05bef443f" name="a9cc517a4be4b4f0b3a9a12c05bef443f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9cc517a4be4b4f0b3a9a12c05bef443f">&#9670;&#160;</a></span>button17</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">System.Windows.Forms.Button CalculatorApp.Calculator.button17</td>
         </tr>
       </table>
   </td>
@@ -2767,6 +3310,28 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aa5d7cddb4ff46991b008537899191b35" name="aa5d7cddb4ff46991b008537899191b35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5d7cddb4ff46991b008537899191b35">&#9670;&#160;</a></span>button_Comma</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.Button CalculatorApp.Calculator.button_Comma</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a81275e5f083cfa4eea1986dcb7f18a14" name="a81275e5f083cfa4eea1986dcb7f18a14"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a81275e5f083cfa4eea1986dcb7f18a14">&#9670;&#160;</a></span>button_toDropDown</h2>
 
@@ -2789,8 +3354,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a53b4e09a402b56dca731fc18ff784104" name="a53b4e09a402b56dca731fc18ff784104"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53b4e09a402b56dca731fc18ff784104">&#9670;&#160;</a></span>Clear</h2>
+<a id="a366f8f8f358a53ca58f417cc1fa58cef" name="a366f8f8f358a53ca58f417cc1fa58cef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a366f8f8f358a53ca58f417cc1fa58cef">&#9670;&#160;</a></span>CommaConverter</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2799,51 +3364,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">System.Windows.Forms.Button CalculatorApp.Calculator.Clear</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af96be79e230598a78defd5b85c22192d" name="af96be79e230598a78defd5b85c22192d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af96be79e230598a78defd5b85c22192d">&#9670;&#160;</a></span>ClearConverter</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">System.Windows.Forms.Button CalculatorApp.Calculator.ClearConverter</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a658e09a256183168f696961df2ec013b" name="a658e09a256183168f696961df2ec013b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a658e09a256183168f696961df2ec013b">&#9670;&#160;</a></span>Comma</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">System.Windows.Forms.Button CalculatorApp.Calculator.Comma</td>
+          <td class="memname">System.Windows.Forms.Button CalculatorApp.Calculator.CommaConverter</td>
         </tr>
       </table>
   </td>
@@ -3011,8 +3532,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aac4736f71ea29c290d2061c7af574220" name="aac4736f71ea29c290d2061c7af574220"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac4736f71ea29c290d2061c7af574220">&#9670;&#160;</a></span>Delete</h2>
+<a id="abc4675b5a09025c03b4e19a55043e4c9" name="abc4675b5a09025c03b4e19a55043e4c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc4675b5a09025c03b4e19a55043e4c9">&#9670;&#160;</a></span>del_Clear</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3021,7 +3542,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">System.Windows.Forms.Button CalculatorApp.Calculator.Delete</td>
+          <td class="memname">System.Windows.Forms.Button CalculatorApp.Calculator.del_Clear</td>
         </tr>
       </table>
   </td>
@@ -3033,8 +3554,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a86dd351f1ff4b7628f32755bfbc7ba72" name="a86dd351f1ff4b7628f32755bfbc7ba72"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86dd351f1ff4b7628f32755bfbc7ba72">&#9670;&#160;</a></span>DeleteConverter</h2>
+<a id="ab23d9702a371188358daf0dc9b0e2214" name="ab23d9702a371188358daf0dc9b0e2214"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab23d9702a371188358daf0dc9b0e2214">&#9670;&#160;</a></span>del_ClearConverter</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3043,7 +3564,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">System.Windows.Forms.Button CalculatorApp.Calculator.DeleteConverter</td>
+          <td class="memname">System.Windows.Forms.Button CalculatorApp.Calculator.del_ClearConverter</td>
         </tr>
       </table>
   </td>
@@ -3055,8 +3576,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a1f17149572734eb3b0e53b1c4d5ac750" name="a1f17149572734eb3b0e53b1c4d5ac750"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f17149572734eb3b0e53b1c4d5ac750">&#9670;&#160;</a></span>Division</h2>
+<a id="ab3991cea78cda1d6cc7dcd0fb95b57ae" name="ab3991cea78cda1d6cc7dcd0fb95b57ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3991cea78cda1d6cc7dcd0fb95b57ae">&#9670;&#160;</a></span>del_Delete</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3065,7 +3586,29 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">System.Windows.Forms.Button CalculatorApp.Calculator.Division</td>
+          <td class="memname">System.Windows.Forms.Button CalculatorApp.Calculator.del_Delete</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac9fb6a53a64d149ac9379f5aa9e1f42e" name="ac9fb6a53a64d149ac9379f5aa9e1f42e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9fb6a53a64d149ac9379f5aa9e1f42e">&#9670;&#160;</a></span>del_DeleteConverter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.Button CalculatorApp.Calculator.del_DeleteConverter</td>
         </tr>
       </table>
   </td>
@@ -3088,28 +3631,6 @@ Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">string CalculatorApp.Calculator.exponent = &quot;&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a055dddf68741c5b32d49bde0a41628f9" name="a055dddf68741c5b32d49bde0a41628f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a055dddf68741c5b32d49bde0a41628f9">&#9670;&#160;</a></span>Factorial</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">System.Windows.Forms.Button CalculatorApp.Calculator.Factorial</td>
         </tr>
       </table>
   </td>
@@ -4133,50 +4654,6 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a6b82ef7bd049522f370331801e49a610" name="a6b82ef7bd049522f370331801e49a610"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b82ef7bd049522f370331801e49a610">&#9670;&#160;</a></span>Modulo</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">System.Windows.Forms.Button CalculatorApp.Calculator.Modulo</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa2133832fa08226b06aefca43ffb114d" name="aa2133832fa08226b06aefca43ffb114d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2133832fa08226b06aefca43ffb114d">&#9670;&#160;</a></span>Multiplication</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">System.Windows.Forms.Button CalculatorApp.Calculator.Multiplication</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a364eb913e5cfd984b5e514da27d3fd5d" name="a364eb913e5cfd984b5e514da27d3fd5d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a364eb913e5cfd984b5e514da27d3fd5d">&#9670;&#160;</a></span>newNumberMode</h2>
 
@@ -4408,6 +4885,138 @@ Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">System.Windows.Forms.Button CalculatorApp.Calculator.OLengthBtn_yard</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2f313412946ca245a924f18a4ed52807" name="a2f313412946ca245a924f18a4ed52807"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f313412946ca245a924f18a4ed52807">&#9670;&#160;</a></span>op_Division</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.Button CalculatorApp.Calculator.op_Division</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aab87d5dd2a3e2ffa28036d6426b779a0" name="aab87d5dd2a3e2ffa28036d6426b779a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab87d5dd2a3e2ffa28036d6426b779a0">&#9670;&#160;</a></span>op_Modulo</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.Button CalculatorApp.Calculator.op_Modulo</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6511f6879571764b1f0e0dd27773c527" name="a6511f6879571764b1f0e0dd27773c527"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6511f6879571764b1f0e0dd27773c527">&#9670;&#160;</a></span>op_Multiplication</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.Button CalculatorApp.Calculator.op_Multiplication</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afd4daf55a6771d92d9ce9981f9d10c9e" name="afd4daf55a6771d92d9ce9981f9d10c9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd4daf55a6771d92d9ce9981f9d10c9e">&#9670;&#160;</a></span>op_Plus</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.Button CalculatorApp.Calculator.op_Plus</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ff3eaf04197cab053cda044e6370979" name="a1ff3eaf04197cab053cda044e6370979"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ff3eaf04197cab053cda044e6370979">&#9670;&#160;</a></span>op_Result</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.Button CalculatorApp.Calculator.op_Result</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a07d3a2ad1fb8e3cc9af3b8c18f6c6a4f" name="a07d3a2ad1fb8e3cc9af3b8c18f6c6a4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07d3a2ad1fb8e3cc9af3b8c18f6c6a4f">&#9670;&#160;</a></span>op_Substitution</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.Button CalculatorApp.Calculator.op_Substitution</td>
         </tr>
       </table>
   </td>
@@ -4991,50 +5600,6 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ac8103e628fff4cb30d1e72756a40faa9" name="ac8103e628fff4cb30d1e72756a40faa9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8103e628fff4cb30d1e72756a40faa9">&#9670;&#160;</a></span>Plus</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">System.Windows.Forms.Button CalculatorApp.Calculator.Plus</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a80168f73e197cb382341c456b53eca02" name="a80168f73e197cb382341c456b53eca02"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80168f73e197cb382341c456b53eca02">&#9670;&#160;</a></span>Result</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">System.Windows.Forms.Button CalculatorApp.Calculator.Result</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a48f25c1d71b792916d7c6cad9495233c" name="a48f25c1d71b792916d7c6cad9495233c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a48f25c1d71b792916d7c6cad9495233c">&#9670;&#160;</a></span>secondNumber_str</h2>
 
@@ -5057,8 +5622,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aa68a8dff53fba10886078f557d2316ea" name="aa68a8dff53fba10886078f557d2316ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa68a8dff53fba10886078f557d2316ea">&#9670;&#160;</a></span>SquareRoot</h2>
+<a id="a1ff0ddfbb1bcc5f7d18e8803d55798aa" name="a1ff0ddfbb1bcc5f7d18e8803d55798aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ff0ddfbb1bcc5f7d18e8803d55798aa">&#9670;&#160;</a></span>sp_Factorial</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5067,7 +5632,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">System.Windows.Forms.Button CalculatorApp.Calculator.SquareRoot</td>
+          <td class="memname">System.Windows.Forms.Button CalculatorApp.Calculator.sp_Factorial</td>
         </tr>
       </table>
   </td>
@@ -5079,8 +5644,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="afb8c1ac76c05d9336bbc39aadec1a7f5" name="afb8c1ac76c05d9336bbc39aadec1a7f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb8c1ac76c05d9336bbc39aadec1a7f5">&#9670;&#160;</a></span>Substitution</h2>
+<a id="adf77571f352e52b553e9dea6a7f3bbd5" name="adf77571f352e52b553e9dea6a7f3bbd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf77571f352e52b553e9dea6a7f3bbd5">&#9670;&#160;</a></span>sp_SquareRoot</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5089,7 +5654,51 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">System.Windows.Forms.Button CalculatorApp.Calculator.Substitution</td>
+          <td class="memname">System.Windows.Forms.Button CalculatorApp.Calculator.sp_SquareRoot</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9c04c89277abb7f76ef32a603da19479" name="a9c04c89277abb7f76ef32a603da19479"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c04c89277abb7f76ef32a603da19479">&#9670;&#160;</a></span>sp_toPowerOf2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.Button CalculatorApp.Calculator.sp_toPowerOf2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a32d9c56b10093422e358ee94bd250afe" name="a32d9c56b10093422e358ee94bd250afe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32d9c56b10093422e358ee94bd250afe">&#9670;&#160;</a></span>sp_toPowerOfX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.Button CalculatorApp.Calculator.sp_toPowerOfX</td>
         </tr>
       </table>
   </td>
@@ -5178,50 +5787,6 @@ Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">System.Windows.Forms.Timer CalculatorApp.Calculator.timer1</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aed3bb0edc06ef4cc021bc5e5f0cd9f17" name="aed3bb0edc06ef4cc021bc5e5f0cd9f17"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed3bb0edc06ef4cc021bc5e5f0cd9f17">&#9670;&#160;</a></span>toPowerOf2</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">System.Windows.Forms.Button CalculatorApp.Calculator.toPowerOf2</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a05e2167cbd16036d85fa2c409023f7c0" name="a05e2167cbd16036d85fa2c409023f7c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05e2167cbd16036d85fa2c409023f7c0">&#9670;&#160;</a></span>toPowerOfX</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">System.Windows.Forms.Button CalculatorApp.Calculator.toPowerOfX</td>
         </tr>
       </table>
   </td>

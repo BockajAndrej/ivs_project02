@@ -5,5 +5,6 @@ var searchData=
   ['appenddigit_2',['appendDigit',['../class_calculator_app_1_1_calculator.html#a3bff94d58a1b7cfa4770422d5f4b304b',1,'CalculatorApp::Calculator']]],
   ['appenddigitconverter_3',['appendDigitConverter',['../class_calculator_app_1_1_calculator.html#a5b8136e1021f79ba628a04c9fb41955d',1,'CalculatorApp::Calculator']]],
   ['appendoperator_4',['appendOperator',['../class_calculator_app_1_1_calculator.html#a5ca89b065c0052df0841cc4221670b29',1,'CalculatorApp::Calculator']]],
-  ['autoři_5',['Autoři',['../index.html#autotoc_md2',1,'']]]
+  ['applycolorthemetobuttons_5',['ApplyColorThemeToButtons',['../class_calculator_app_1_1_calculator.html#af262294286fc9aaac41cdd3927e4c8fb',1,'CalculatorApp::Calculator']]],
+  ['autoři_6',['Autoři',['../index.html#autotoc_md2',1,'']]]
 ];

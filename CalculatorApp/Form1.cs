@@ -20,13 +20,22 @@ namespace CalculatorApp
     /// </summary>
     public partial class Calculator : Form
     {
-        private Math_lib mathLib = new Math_lib();
+        /// <summary>
+        /// Constructor for the Calculator class. Initializes UI components and attaches 
+        /// the Form1_Paint event handler.
+        /// </summary>
         public Calculator()
         {
             InitializeComponent();
             this.Paint += new PaintEventHandler(Form1_Paint); // Attach the handler
         }
 
+        /// <summary>
+        /// Handles the Load event for Form1. Sets initial focus, configures UI elements, 
+        /// and initializes internal data structures for managing panels and converter options.
+        /// </summary>
+        /// <param name="sender">The object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
         private void Form1_Load(object sender, EventArgs e)
         {
             this.ActiveControl = textBox1;
@@ -82,6 +91,7 @@ namespace CalculatorApp
         private string exponent = ""; // Store the exponent digits
 
         List<Panel> listPanel = new List<Panel>();
+        private Math_lib mathLib = new Math_lib();
         int indexOfCalculator = 0;
         int indexOfSettings = 1;
         int indexOfDegrees = 2;
@@ -89,7 +99,11 @@ namespace CalculatorApp
         #endregion // Variables
 
 
-
+        /// <summary>
+        /// Applies a gradient background to the form based on the current mode (light or dark).
+        /// </summary>
+        /// <param name="sender">The object that raised the Paint event.</param>
+        /// <param name="e">The PaintEventArgs object containing event data.</param>
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
             Graphics graphics = e.Graphics;
@@ -103,6 +117,12 @@ namespace CalculatorApp
             graphics.FillRectangle(brush, gradient_rectangle);
         }
 
+        /// <summary>
+        /// Handles the CheckedChanged event of the customControl1 (presumably a dark mode toggle control).
+        /// Updates the visual theme of the form and its controls accordingly.
+        /// </summary>
+        /// <param name="sender">The object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
         private void customControl1_CheckedChanged(object sender, EventArgs e)
         {
             isDarkMode = customControl1.Checked;
@@ -185,6 +205,12 @@ namespace CalculatorApp
 
         }
 
+        /// <summary>
+        /// Applies a dark or light mode color theme to a collection of Button controls 
+        /// within a specified parent container.
+        /// </summary>
+        /// <param name="parentControl">The container control whose child buttons will be updated.</param>
+        /// <param name="isDarkMode">True if dark mode is enabled, false for light mode.</param>
         private void ApplyColorThemeToButtons(Control parentControl, bool isDarkMode)
         {
             foreach (Control control in parentControl.Controls)
@@ -211,16 +237,31 @@ namespace CalculatorApp
                 }
             }
         }
-       
+
+        /// <summary>
+        /// Handles the click event for the calculator button, showing the calculator panel and hiding others.
+        /// </summary>
+        /// <param name="sender">The object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
         private void btn_Calculator_Click(object sender, EventArgs e)
         {
             ShowAndEnablePanel(indexOfCalculator); //clean po kazdej zmene
         }
 
+        /// <summary>
+        /// Handles the click event for the settings button, showing the settings panel and hiding others.
+        /// </summary>
+        /// <param name="sender">The object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
         private void btn_Settings_Click(object sender, EventArgs e)
         {
             ShowAndEnablePanel(indexOfSettings);
         }
+
+        /// <summary>
+        /// Hides all panels in the `listPanel` collection and then displays and enables the panel at the specified index.
+        /// </summary>
+        /// <param name="indexToShow">The index of the panel within `listPanel` to be shown.</param>
         private void ShowAndEnablePanel(int indexToShow)
         {
             // Hide all panels 
@@ -237,6 +278,11 @@ namespace CalculatorApp
 
         }
 
+        /// <summary>
+        /// Hides all panels in the inputOutputPanels collection and then selectively displays and enables two panels specified by their keys.
+        /// </summary>
+        /// <param name="key1">The key of the first panel to show and enable.</param>
+        /// <param name="key2">The key of the second panel to show and enable.</param>
         private void ShowAndEnableInOutPanels(string key1, string key2)
         {
             // Hide all panels
@@ -257,6 +303,9 @@ namespace CalculatorApp
             inputOutputPanels[key2].BringToFront();
         }
 
+        /// <summary>
+        /// Clears the content of textBox1 and resets calculator-related internal variables.
+        /// </summary>
         private void Clear_all()
         {
             textBox1.Text = string.Empty;
@@ -266,6 +315,13 @@ namespace CalculatorApp
             currentOperator_str = string.Empty;
 
         }
+
+        /// <summary>
+        /// Handles the click event for the 'Delete' button. Implements logic for deleting characters 
+        /// based on calculator state (exponent mode, operators, numbers).
+        /// </summary>
+        /// <param name="sender">The object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
         private void Delete_Click(object sender, EventArgs e)
         {
             if (!textBox1.Text.EndsWith("^") && isEnteringExponent) //Exponent mode deleting numbers
@@ -295,12 +351,25 @@ namespace CalculatorApp
                 textBox1.Text = textBox1.Text.Substring(0, textBox1.Text.Length - 1);
             }
         }
+
+        /// <summary>
+        /// Handles the click event for all number buttons. Calls the appendDigit function to add the 
+        /// clicked number's digit to the calculator display.
+        /// </summary>
+        /// <param name="sender">The button object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
         private void numberButton_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender; // Get the button that was clicked
             appendDigit(button.Text, false);
         }
 
+        /// <summary>
+        /// Appends a digit to the calculator's internal representation, handling cases for exponent entry, 
+        /// starting a new number, and continuing an existing number. Also manages comma placement.
+        /// </summary>
+        /// <param name="digit">The digit to be appended (as a string).</param>
+        /// <param name="fromKeyboard">Indicates whether the digit input originates from the keyboard (true) or another source (false).</param>
         private void appendDigit(string digit, bool FromKeyBoard)
         {
             if (isEnteringExponent)
@@ -343,6 +412,13 @@ namespace CalculatorApp
 
         #region Converter Buttons/Keyboard Input Logic
 
+        /// <summary>
+        /// Appends a digit to the number being converted, handling comma (decimal separator) placement 
+        /// and updating the display.
+        /// </summary>
+        /// <param name="digit">The digit to be appended (as a string).</param>
+        /// <param name="fromKeyboard">Indicates whether the input originates from the keyboard (true) 
+        /// or another source (false).</param>
         private void appendDigitConverter(string digit, bool FromKeyBoard)
         {
             bool passKeyboardCheck = FromKeyBoard;
@@ -364,12 +440,24 @@ namespace CalculatorApp
 
         }
 
+        /// <summary>
+        /// Handles the click event of a converter number button. Extracts the button's text (digit) 
+        /// and calls `appendDigitConverter` to process the input.
+        /// </summary>
+        /// <param name="sender">The button object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
         private void numberButtonConverter_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender; // Get the button that was clicked
             appendDigitConverter(button.Text, false);
         }
 
+        /// <summary>
+        /// Updates the input textbox of the converter, optionally parsing the value for calculations. 
+        /// </summary>
+        /// <param name="value">The updated value for the input textbox.</param>
+        /// <param name="fromKeyboard">Indicates whether the input originates from the keyboard (true) 
+        /// or another source (false).</param>
         private void UpdateInputTextBoxConverter(string value,bool fromKeyboard)
         {
             if(!fromKeyboard) textBox_Converter_Input.Text = value;
@@ -377,11 +465,22 @@ namespace CalculatorApp
             CalculateResultConvert(result, Input_LabelConvert.Text, Output_LabelConvert.Text);
         }
 
+
+        /// <summary>
+        /// Updates the output textbox of the converter with the specified value.
+        /// </summary>
+        /// <param name="value">The value to be displayed in the output textbox.</param>
         private void UpdateOutoutTextBoxConverter(string value)
         {
             textBox_Converter_Output.Text = value;
         }
 
+        /// <summary>
+        /// Handles the click event for the converter's 'Delete' button. Removes the last character from 
+        /// the input and updates the display.
+        /// </summary>
+        /// <param name="sender">The object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
         private void DeleteConverter_Click(object sender, EventArgs e)
         {
             if (ConvertNumber_str.Length != 0)
@@ -390,10 +489,20 @@ namespace CalculatorApp
                 UpdateInputTextBoxConverter(ConvertNumber_str,false);
             }
         }
+        /// <summary>
+        /// Handles the click event for the converter's 'Clear' button. Resets the internal number
+        /// representation and clears the input and output textboxes.
+        /// </summary>
+        /// <param name="sender">The object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
         private void ClearConverter_Text(object sender, EventArgs e)
         {
             ClearConverter_TextAll();
         }
+
+        /// <summary>
+        /// Clears all internal data related to the converter and empties its textboxes.
+        /// </summary>
         private void ClearConverter_TextAll()
         {
             ConvertNumber_str = string.Empty;
@@ -401,6 +510,13 @@ namespace CalculatorApp
             textBox_Converter_Output.Text = string.Empty;
         }
 
+        /// <summary>
+        /// Calculates the conversion result based on the current conversion type, input value, and 
+        /// unit conversion options. Updates the output textbox with the formatted result.  
+        /// </summary>
+        /// <param name="value">The decimal value to be converted.</param>
+        /// <param name="from">The original unit of the value.</param>
+        /// <param name="to">The target unit for conversion.</param>
         private void CalculateResultConvert(decimal value, string from, string to)
         {
             decimal result = decimal.Zero;
@@ -430,6 +546,13 @@ namespace CalculatorApp
             UpdateOutoutTextBoxConverter(formatedConverResult);
 
         }
+
+        /// <summary>
+        /// Handles the KeyPress event for the converter's input textbox. Allows only numbers,
+        /// a comma (decimal separator), and the Backspace key for editing.
+        /// </summary>
+        /// <param name="sender">The object that raised the event.</param>
+        /// <param name="e">The KeyPressEventArgs object containing information about the pressed key.</param>
         private void textBoxConverter_KeyPress(object sender, KeyPressEventArgs e)
         {
             // Allow numbers, comma, and Backspace
@@ -451,6 +574,12 @@ namespace CalculatorApp
 
         #endregion
 
+        /// <summary>
+        /// Handles the KeyPress event for the main calculator textbox (textBox1). Allows numbers, basic 
+        /// operators, decimals, factorial, exponentiation, Backspace, and Enter for calculations.
+        /// </summary>
+        /// <param name="sender">The object that raised the event.</param>
+        /// <param name="e">The KeyPressEventArgs object containing information about the pressed key.</param>
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) &&
@@ -505,6 +634,12 @@ namespace CalculatorApp
             }
         }
 
+        /// <summary>
+        /// Handles the click event for operator buttons. Handles the special case of a negative sign at the 
+        /// beginning of a number. Otherwise, delegates operator handling to the `appendOperator` function.
+        /// </summary>
+        /// <param name="sender">The object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
         private void operatorButton_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
@@ -517,6 +652,14 @@ namespace CalculatorApp
                 appendOperator(button.Text, false);
 
         }
+
+        /// <summary>
+        /// Appends an operator to the calculator's internal representation and updates the display.
+        /// Handles cases of replacing existing operators and performing exponentiation if necessary.
+        /// </summary>
+        /// <param name="newOperator">The new operator to be appended.</param>
+        /// <param name="fromKeyboard">Indicates whether the input originates from the keyboard (true) 
+        /// or another source (false).</param>
         private void appendOperator(string newOperator, bool FromKeyBoard)
         {
 
@@ -548,6 +691,12 @@ namespace CalculatorApp
             }
         }
 
+        /// <summary>
+        /// Handles the click event for the 'Result' button. Performs calculations, handles potential 
+        /// exceptions, formats the result, and updates the calculator display.
+        /// </summary>
+        /// <param name="sender">The object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
         private void Result_Click(object sender, EventArgs e)
         {
             if (isEnteringExponent)
@@ -668,6 +817,10 @@ namespace CalculatorApp
             newNumberMode = false;
         }
 
+        /// <summary>
+        /// Performs exponentiation calculations based on whether an exponent and an optional second 
+        /// number are present. Handles potential exceptions and updates calculator state.
+        /// </summary>
         private void performExponentiation()
         {
             decimal num1, num2, exponentNum;
@@ -714,6 +867,13 @@ namespace CalculatorApp
             }
         }
 
+        /// <summary>
+        /// Handles the click event of the 'Factorial' button. Calculates the factorial of the 
+        /// current number (first or second) and updates the calculator display. Manages potential 
+        /// exceptions.
+        /// </summary>
+        /// <param name="sender">The object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
         private void Factorial_Click(object sender, EventArgs e)
         {
             decimal num1, num2;
@@ -760,6 +920,12 @@ namespace CalculatorApp
             }
         }
 
+        /// <summary>
+        /// Handles the click event of the 'Square' button (raises the current number to the power of 2). 
+        /// Updates the calculator display and handles potential exceptions.
+        /// </summary>
+        /// <param name="sender">The object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
         private void toPowerOf2_Click(object sender, EventArgs e)
         {
             decimal num1, num2;
@@ -808,6 +974,12 @@ namespace CalculatorApp
 
         }
 
+        /// <summary>
+        /// Handles the click event for the '^' (exponentiation) button. Prepares the calculator state 
+        /// for entering an exponent if the input field is not empty and doesn't end with an operator.
+        /// </summary>
+        /// <param name="sender">The object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
         private void toPowerOfX_Click(object sender, EventArgs e)
         {
             if (textBox1.Text.Length > 0 && !"+-X÷%".Contains(textBox1.Text.Last()))
@@ -817,6 +989,12 @@ namespace CalculatorApp
             }
         }
 
+        /// <summary>
+        /// Handles the click event of the 'Square Root' button. Calculates the square root of either 
+        /// the first or second number, updates the display, and manages potential exceptions.
+        /// </summary>
+        /// <param name="sender">The object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
         private void SquareRoot_Click(object sender, EventArgs e)
         {
             decimal num1, num2;
@@ -867,11 +1045,22 @@ namespace CalculatorApp
             }
         }
 
+        /// <summary>
+        /// Handles the click event for the 'Clear' button (labeled "C"). 
+        /// Calls the Clear_all function to reset the calculator.
+        /// </summary>
+        /// <param name="sender">The object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
         private void Clear_Click(object sender, EventArgs e) // button "C"
         {
             Clear_all();
         }
-        
+
+        /// <summary>
+        /// Handles the timer tick event, responsible for smoothly expanding or collapsing a panel (animation).
+        /// </summary>
+        /// <param name="sender">The object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (isCollapsed)
@@ -897,6 +1086,12 @@ namespace CalculatorApp
             }
         }
 
+        /// <summary>
+        /// Handles the click event for the Unit Converter button. Manages the expansion of the panel 
+        /// and configuration of the degrees unit conversion.
+        /// </summary>
+        /// <param name="sender">The object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
         private void Btn_UnitConverter_Click(object sender, EventArgs e)
         {
             timer1.Start();
@@ -909,6 +1104,10 @@ namespace CalculatorApp
             PerformDegreeSetup();
         }
 
+        /// <summary>
+        /// Performs setup actions specifically for degree unit conversions. Ensures input/output 
+        /// panels are visible, sets the conversion type, labels, and clears textboxes.
+        /// </summary>
         private void PerformDegreeSetup()
         {
             ShowAndEnableInOutPanels("IDegree", "ODegree");
@@ -920,6 +1119,10 @@ namespace CalculatorApp
         }
 
         #region Input/Output text for Convert Textboxes
+        /// <summary>
+        /// Updates the converter after a unit selection is made. Ensures that if the input textbox 
+        /// is not empty, the input value is recalculated based on the new units.
+        /// </summary>
         private void UpdateAfterEachSelection()
         {
             if (textBox_Converter_Input.Text != string.Empty)
@@ -929,6 +1132,12 @@ namespace CalculatorApp
         }
 
         // reset values to default when chaning units
+        /// <summary>
+        /// Handles the click event for an input unit dropdown button. Updates the input unit label
+        /// and recalculates the input value based on the newly selected unit.
+        /// </summary>
+        /// <param name="sender">The button object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
         private void dropdownInputButton_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender; // Get the button that was clicked
@@ -937,6 +1146,12 @@ namespace CalculatorApp
             UpdateAfterEachSelection();
         }
 
+        /// <summary>
+        /// Handles the click event for an output unit dropdown button. Updates the output unit label 
+        /// and recalculates the output value based on the newly selected unit.
+        /// </summary>
+        /// <param name="sender">The button object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
         private void dropdownOutPutButton_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender; // Get the button that was clicked
@@ -948,6 +1163,12 @@ namespace CalculatorApp
         #endregion
 
         #region Degrees-Related Functions
+        /// <summary>
+        /// Handles the click event for a 'Degrees' button (unit conversion). 
+        /// Prepares the converter UI for degree-specific conversions.
+        /// </summary>
+        /// <param name="sender">The button object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
         private void btn_Degrees_Click(object sender, EventArgs e)
         {
             ShowAndEnableInOutPanels("IDegree", "ODegree");
@@ -956,6 +1177,13 @@ namespace CalculatorApp
             Output_LabelConvert.Text = "deg";
             ClearConverter_TextAll();
         }
+
+        /// <summary>
+        /// Handles the click event for a degree input unit selection button. Triggers panel 
+        /// expansion (dropdown), updates the input label, and recalculates for the new unit.
+        /// </summary>
+        /// <param name="sender">The button object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
         private void btn_Degree_Input_Click(object sender, EventArgs e)
         {
             timer1.Start();
@@ -965,6 +1193,12 @@ namespace CalculatorApp
             UpdateAfterEachSelection();
         }
 
+        /// <summary>
+        /// Handles the click event for a degree output unit selection button. Triggers panel 
+        /// expansion (dropdown), updates the output label, and recalculates.
+        /// </summary>
+        /// <param name="sender">The button object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
         private void btn_Degree_Output_Click(object sender, EventArgs e)
         {
             timer1.Start();
@@ -976,6 +1210,12 @@ namespace CalculatorApp
         #endregion
 
         #region Weight-Related Functions
+        /// <summary>
+        /// Handles the click event for a 'Weight' button (weight unit conversion).
+        /// Prepares the converter UI for weight-specific conversions.
+        /// </summary>
+        /// <param name="sender">The button object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
         private void btn_Weight_Click(object sender, EventArgs e)
         {
             ShowAndEnableInOutPanels("IWeight", "OWeight");
@@ -984,6 +1224,12 @@ namespace CalculatorApp
             Output_LabelConvert.Text = "mg";
             ClearConverter_TextAll();
         }
+        /// <summary>
+        /// Handles the click event for a weight input unit selection button. Triggers panel 
+        /// expansion (dropdown), updates the input label, and recalculates for the new unit.
+        /// </summary>
+        /// <param name="sender">The button object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
         private void IWeightBtn_mm_Click(object sender, EventArgs e)
         {
             timer1.Start();
@@ -992,6 +1238,12 @@ namespace CalculatorApp
             Input_LabelConvert.Text = ((Button)sender).Text;
             UpdateAfterEachSelection();
         }
+        /// <summary>
+        /// Handles the click event for a weight output unit selection button. Triggers panel 
+        /// expansion (dropdown), updates the output label, and recalculates.
+        /// </summary>
+        /// <param name="sender">The button object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
         private void OWeightBtn_mm_Click(object sender, EventArgs e)
         {
             timer1.Start();
@@ -1003,6 +1255,12 @@ namespace CalculatorApp
         #endregion
 
         #region Temperature-Related Functions
+        /// <summary>
+        /// Handles the click event for the 'Temperature' button (temperature conversion).
+        /// Prepares the UI for temperature-specific conversions.
+        /// </summary>
+        /// <param name="sender">The button object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
         private void btn_Temperature_Click(object sender, EventArgs e)
         {
             ShowAndEnableInOutPanels("ITemperature", "OTemperature");
@@ -1012,6 +1270,12 @@ namespace CalculatorApp
             ClearConverter_TextAll();
 
         }
+        /// <summary>
+        /// Handles the click event for a temperature input unit selection button. Triggers panel 
+        /// expansion (dropdown), updates the input label, and recalculates for the new unit.
+        /// </summary>
+        /// <param name="sender">The button object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
         private void ITemperatureBtn_C_Click(object sender, EventArgs e)
         {
             timer1.Start();
@@ -1020,7 +1284,12 @@ namespace CalculatorApp
             Input_LabelConvert.Text = ((Button)sender).Text;
             UpdateAfterEachSelection();
         }
-
+        /// <summary>
+        /// Handles the click event for a temperature output unit selection button. Triggers panel 
+        /// expansion (dropdown), updates the output label, and recalculates.
+        /// </summary>
+        /// <param name="sender">The button object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
         private void OTemperatureBtn_C_Click(object sender, EventArgs e)
         {
             timer1.Start();
@@ -1032,6 +1301,12 @@ namespace CalculatorApp
         #endregion
 
         #region Length-Related Functions
+        /// <summary>
+        /// Handles the click event for the 'Length' button (length unit conversion).
+        /// Prepares the UI for length-specific conversions.
+        /// </summary>
+        /// <param name="sender">The button object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
         private void btn_Length_Click(object sender, EventArgs e)
         {
 
@@ -1041,6 +1316,12 @@ namespace CalculatorApp
             Output_LabelConvert.Text = "mm";
             ClearConverter_TextAll();
         }
+        /// <summary>
+        /// Handles the click event for a length input unit selection button. Triggers panel 
+        /// expansion (dropdown), updates the input label, and recalculates for the new unit.
+        /// </summary>
+        /// <param name="sender">The button object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
         private void ILengthBtn_mm_Click(object sender, EventArgs e)
         {
             timer1.Start();
@@ -1049,7 +1330,12 @@ namespace CalculatorApp
             Input_LabelConvert.Text = ((Button)sender).Text;
             UpdateAfterEachSelection();
         }
-
+        /// <summary>
+        /// Handles the click event for a length output unit selection button. Triggers panel 
+        /// expansion (dropdown), updates the output label, and recalculates.
+        /// </summary>
+        /// <param name="sender">The button object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
         private void OLengthBtn_mm_Click(object sender, EventArgs e)
         {
             timer1.Start();
@@ -1061,6 +1347,12 @@ namespace CalculatorApp
         #endregion
 
         #region Time-Related Functions
+        /// <summary>
+        /// Handles the click event for the 'Time' button (time conversion).
+        /// Prepares the UI for time-specific conversions.
+        /// </summary>
+        /// <param name="sender">The button object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
         private void btn_Time_Click(object sender, EventArgs e)
         {
             ShowAndEnableInOutPanels("ITime", "OTime");
@@ -1069,6 +1361,13 @@ namespace CalculatorApp
             Output_LabelConvert.Text = "sec";
             ClearConverter_TextAll();
         }
+        /// <summary>
+        /// Handles the click event for an input time unit selection button (specifically for seconds).
+        /// Triggers panel expansion (dropdown), updates the input label, and recalculates 
+        /// the input value for the new unit.
+        /// </summary>
+        /// <param name="sender">The button object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
         private void ITimeBtn_sec_Click(object sender, EventArgs e)
         {
             timer1.Start();
@@ -1077,7 +1376,13 @@ namespace CalculatorApp
             Input_LabelConvert.Text = ((Button)sender).Text;
             UpdateAfterEachSelection();
         }
-
+        /// <summary>
+        /// Handles the click event for an output time unit selection button (specifically for seconds).
+        /// Triggers panel expansion (dropdown), updates the output label, and recalculates 
+        /// the output value for the new unit.
+        /// </summary>
+        /// <param name="sender">The button object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
         private void OTimeBtn_sec_Click(object sender, EventArgs e)
         {
             timer1.Start();
@@ -1088,7 +1393,12 @@ namespace CalculatorApp
         }
 
         #endregion
-
+        /// <summary>
+        /// Handles the Paint event for the Main_Calculator_panel. This function is 
+        /// responsible for custom drawing or rendering visual elements within the panel.
+        /// </summary>
+        /// <param name="sender">The object that raised the event.</param>
+        /// <param name="e">The PaintEventArgs object containing event data and graphics context.</param>
         private void Main_Calculator_panel_Paint(object sender, PaintEventArgs e)
         {
 

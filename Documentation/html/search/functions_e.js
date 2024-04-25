@@ -19,8 +19,9 @@ var searchData=
   ['test_5ftime_16',['Test_time',['../class_unit_test_calculator_1_1_unit_test2.html#ab0f3e44f51ffac2fcc3cbe2c986eb728',1,'UnitTestCalculator::UnitTest2']]],
   ['test_5fweight_17',['Test_weight',['../class_unit_test_calculator_1_1_unit_test2.html#a90e5914dcf91531f7350bfce8a163328',1,'UnitTestCalculator::UnitTest2']]],
   ['textbox1_5fkeypress_18',['textBox1_KeyPress',['../class_calculator_app_1_1_calculator.html#ab11a7092ba037cae3683e4ac0ef30a38',1,'CalculatorApp::Calculator']]],
-  ['time_19',['Time',['../class_calculator_app_1_1_optional__functions.html#a75b9c1cffb1fcbf0efcaa876fd26437b',1,'CalculatorApp::Optional_functions']]],
-  ['timer1_5ftick_20',['timer1_Tick',['../class_calculator_app_1_1_calculator.html#a1f5e0555c3f9c2ac478f88f6fdc71370',1,'CalculatorApp::Calculator']]],
-  ['topowerof2_5fclick_21',['toPowerOf2_Click',['../class_calculator_app_1_1_calculator.html#a3d418a748d0b0e9fb60eb59fc6b1800c',1,'CalculatorApp::Calculator']]],
-  ['topowerofx_5fclick_22',['toPowerOfX_Click',['../class_calculator_app_1_1_calculator.html#a7f46da505fedb5462ce79cc010148080',1,'CalculatorApp::Calculator']]]
+  ['textboxconverter_5fkeypress_19',['textBoxConverter_KeyPress',['../class_calculator_app_1_1_calculator.html#ae8e051f3b79d176b3a6aae7307231cd3',1,'CalculatorApp::Calculator']]],
+  ['time_20',['Time',['../class_calculator_app_1_1_optional__functions.html#a75b9c1cffb1fcbf0efcaa876fd26437b',1,'CalculatorApp::Optional_functions']]],
+  ['timer1_5ftick_21',['timer1_Tick',['../class_calculator_app_1_1_calculator.html#a1f5e0555c3f9c2ac478f88f6fdc71370',1,'CalculatorApp::Calculator']]],
+  ['topowerof2_5fclick_22',['toPowerOf2_Click',['../class_calculator_app_1_1_calculator.html#a3d418a748d0b0e9fb60eb59fc6b1800c',1,'CalculatorApp::Calculator']]],
+  ['topowerofx_5fclick_23',['toPowerOfX_Click',['../class_calculator_app_1_1_calculator.html#a7f46da505fedb5462ce79cc010148080',1,'CalculatorApp::Calculator']]]
 ];
