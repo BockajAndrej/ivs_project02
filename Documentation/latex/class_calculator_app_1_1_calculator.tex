@@ -129,6 +129,8 @@ void \mbox{\hyperlink{class_calculator_app_1_1_calculator_ad557dd0ac182a1eadceb9
 \begin{DoxyCompactList}\small\item\em Handles the click event for an input time unit selection button (specifically for seconds). Triggers panel expansion (dropdown), updates the input label, and recalculates the input value for the new unit. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_a7a8078ae8f3d1edd936e8d090bf53518}{OTime\+Btn\+\_\+sec\+\_\+\+Click}} (object sender, Event\+Args e)
 \begin{DoxyCompactList}\small\item\em Handles the click event for an output time unit selection button (specifically for seconds). Triggers panel expansion (dropdown), updates the output label, and recalculates the output value for the new unit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_calculator_app_1_1_calculator_a5d6f8f8911a2f3ee31dc84f529f24386}{help\+\_\+button\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Handles the click event of the help button. Displays a message box containing instructions on how to use the calculator. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_aea14868d40e27c48fda320e59ca4af15}{Main\+\_\+\+Calculator\+\_\+panel\+\_\+\+Paint}} (object sender, Paint\+Event\+Args e)
 \begin{DoxyCompactList}\small\item\em Handles the Paint event for the Main\+\_\+\+Calculator\+\_\+panel. This function is responsible for custom drawing or rendering visual elements within the panel. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_calculator_app_1_1_calculator_ac83fde4d8296ef729eb5c43fb4a29c3f}{Initialize\+Component}} ()
@@ -425,6 +427,8 @@ System.\+Windows.\+Forms.\+Panel \mbox{\hyperlink{class_calculator_app_1_1_calcu
 System.\+Windows.\+Forms.\+Label \mbox{\hyperlink{class_calculator_app_1_1_calculator_a68ba91fdc86c6eae9f89884fc72454da}{Output\+\_\+\+Label\+Convert}}
 \item 
 System.\+Windows.\+Forms.\+Label \mbox{\hyperlink{class_calculator_app_1_1_calculator_a3ab8436da8d33b9c12f443861a4f1362}{Input\+\_\+\+Label\+Convert}}
+\item 
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_calculator_app_1_1_calculator_a8080ee56130b70157cb77581786a9aee}{help\+\_\+button}}
 \end{DoxyCompactItemize}
 
 
@@ -906,6 +910,23 @@ Applies a gradient background to the form based on the current mode (light or da
 {\em sender} & The object that raised the Paint event.\\
 \hline
 {\em e} & The Paint\+Event\+Args object containing event data.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_calculator_app_1_1_calculator_a5d6f8f8911a2f3ee31dc84f529f24386}\label{class_calculator_app_1_1_calculator_a5d6f8f8911a2f3ee31dc84f529f24386} 
+\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!help\_button\_Click@{help\_button\_Click}}
+\index{help\_button\_Click@{help\_button\_Click}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
+\doxysubsubsection{\texorpdfstring{help\_button\_Click()}{help\_button\_Click()}}
+{\footnotesize\ttfamily void Calculator\+App.\+Calculator.\+help\+\_\+button\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Handles the click event of the help button. Displays a message box containing instructions on how to use the calculator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The object that raised the event.\\
+\hline
+{\em e} & The Event\+Args object containing event data.\\
 \hline
 \end{DoxyParams}
 \Hypertarget{class_calculator_app_1_1_calculator_ac37d3d40980bf2d0f1cef7672a40d231}\label{class_calculator_app_1_1_calculator_ac37d3d40980bf2d0f1cef7672a40d231} 
@@ -1629,6 +1650,12 @@ Required designer variable.
 \index{firstNumber\_str@{firstNumber\_str}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
 \doxysubsubsection{\texorpdfstring{firstNumber\_str}{firstNumber\_str}}
 {\footnotesize\ttfamily string Calculator\+App.\+Calculator.\+first\+Number\+\_\+str = "{}"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_calculator_app_1_1_calculator_a8080ee56130b70157cb77581786a9aee}\label{class_calculator_app_1_1_calculator_a8080ee56130b70157cb77581786a9aee} 
+\index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!help\_button@{help\_button}}
+\index{help\_button@{help\_button}!CalculatorApp.Calculator@{CalculatorApp.Calculator}}
+\doxysubsubsection{\texorpdfstring{help\_button}{help\_button}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Calculator\+App.\+Calculator.\+help\+\_\+button\hspace{0.3cm}{\ttfamily [private]}}
 
 \Hypertarget{class_calculator_app_1_1_calculator_adfd239229182fb95e34461797ddbf907}\label{class_calculator_app_1_1_calculator_adfd239229182fb95e34461797ddbf907} 
 \index{CalculatorApp.Calculator@{CalculatorApp.Calculator}!IDegree\_panel@{IDegree\_panel}}

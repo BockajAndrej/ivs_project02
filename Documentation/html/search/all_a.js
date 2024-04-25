@@ -1,11 +1,8 @@
 var searchData=
 [
-  ['main_5fcalculator_5fpanel_0',['Main_Calculator_panel',['../class_calculator_app_1_1_calculator.html#a11359021f4ccdeb7c0c238e70131a95d',1,'CalculatorApp::Calculator']]],
-  ['main_5fcalculator_5fpanel_5fpaint_1',['Main_Calculator_panel_Paint',['../class_calculator_app_1_1_calculator.html#aea14868d40e27c48fda320e59ca4af15',1,'CalculatorApp::Calculator']]],
-  ['main_5fsetting_5fpanel_2',['Main_Setting_panel',['../class_calculator_app_1_1_calculator.html#a880004890f214de8939d2acafa28ac32',1,'CalculatorApp::Calculator']]],
-  ['math_5flib_3',['Math_lib',['../class_calculator_app_1_1_math__lib.html',1,'CalculatorApp']]],
-  ['math_5flib_2ecs_4',['Math_lib.cs',['../_math__lib_8cs.html',1,'']]],
-  ['mathlib_5',['mathLib',['../class_calculator_app_1_1_calculator.html#ac6f0d4ec314bd785bc8a7b76ba69ebda',1,'CalculatorApp::Calculator']]],
-  ['modulo_6',['Modulo',['../class_calculator_app_1_1_math__lib.html#afb066d510aec0b30bc4e56095e2dc164',1,'CalculatorApp::Math_lib']]],
-  ['multiplication_7',['Multiplication',['../class_calculator_app_1_1_math__lib.html#a95bb23671bc46acdeec43dce33a670ef',1,'CalculatorApp::Math_lib']]]
+  ['length_0',['Length',['../class_calculator_app_1_1_optional__functions.html#abbe89ca6648de68edbd5d54efc9342a6',1,'CalculatorApp::Optional_functions']]],
+  ['licence_1',['Licence',['../index.html#autotoc_md4',1,'']]],
+  ['lightmodeendcolor_2',['lightModeEndColor',['../class_calculator_app_1_1_calculator.html#a29a02b6c058b239b90ddf89a48d76300',1,'CalculatorApp::Calculator']]],
+  ['lightmodestartcolor_3',['lightModeStartColor',['../class_calculator_app_1_1_calculator.html#ab0ff05a9ef85987d1dd94be331fe6d3e',1,'CalculatorApp::Calculator']]],
+  ['listpanel_4',['listPanel',['../class_calculator_app_1_1_calculator.html#a8a50ceb614dd3b2fef548385876f6eb8',1,'CalculatorApp::Calculator']]]
 ];

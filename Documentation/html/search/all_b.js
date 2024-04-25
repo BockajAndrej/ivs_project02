@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['negativefactorialexception_0',['NegativeFactorialException',['../class_calculator_app_1_1_negative_factorial_exception.html',1,'CalculatorApp.NegativeFactorialException'],['../class_calculator_app_1_1_negative_factorial_exception.html#af3dccadfea43ebc8cd7cb42a91f16589',1,'CalculatorApp.NegativeFactorialException.NegativeFactorialException()']]],
-  ['negativenumberexception_1',['NegativeNumberException',['../class_calculator_app_1_1_negative_number_exception.html',1,'CalculatorApp.NegativeNumberException'],['../class_calculator_app_1_1_negative_number_exception.html#ae8b45d6637db79defe47b8cf7f8eca95',1,'CalculatorApp.NegativeNumberException.NegativeNumberException()']]],
-  ['negativerootexception_2',['NegativeRootException',['../class_calculator_app_1_1_negative_root_exception.html',1,'CalculatorApp.NegativeRootException'],['../class_calculator_app_1_1_negative_root_exception.html#a7ba14a651fb23b121671899ff41270b2',1,'CalculatorApp.NegativeRootException.NegativeRootException()']]],
-  ['newnumbermode_3',['newNumberMode',['../class_calculator_app_1_1_calculator.html#a364eb913e5cfd984b5e514da27d3fd5d',1,'CalculatorApp::Calculator']]],
-  ['nonnaturalexponentexception_4',['NonNaturalExponentException',['../class_calculator_app_1_1_non_natural_exponent_exception.html',1,'CalculatorApp.NonNaturalExponentException'],['../class_calculator_app_1_1_non_natural_exponent_exception.html#a8431d6d106ee859a1d2cb9005237963d',1,'CalculatorApp.NonNaturalExponentException.NonNaturalExponentException()']]],
-  ['numberbutton_5fclick_5',['numberButton_Click',['../class_calculator_app_1_1_calculator.html#a4faa64fe40dc6c93ccacccf0d2228444',1,'CalculatorApp::Calculator']]],
-  ['numberbuttonconverter_5fclick_6',['numberButtonConverter_Click',['../class_calculator_app_1_1_calculator.html#ac98f09e80ecce8f7065bb704a66e1ce3',1,'CalculatorApp::Calculator']]]
+  ['main_5fcalculator_5fpanel_0',['Main_Calculator_panel',['../class_calculator_app_1_1_calculator.html#a11359021f4ccdeb7c0c238e70131a95d',1,'CalculatorApp::Calculator']]],
+  ['main_5fcalculator_5fpanel_5fpaint_1',['Main_Calculator_panel_Paint',['../class_calculator_app_1_1_calculator.html#aea14868d40e27c48fda320e59ca4af15',1,'CalculatorApp::Calculator']]],
+  ['main_5fsetting_5fpanel_2',['Main_Setting_panel',['../class_calculator_app_1_1_calculator.html#a880004890f214de8939d2acafa28ac32',1,'CalculatorApp::Calculator']]],
+  ['math_5flib_3',['Math_lib',['../class_calculator_app_1_1_math__lib.html',1,'CalculatorApp']]],
+  ['math_5flib_2ecs_4',['Math_lib.cs',['../_math__lib_8cs.html',1,'']]],
+  ['mathlib_5',['mathLib',['../class_calculator_app_1_1_calculator.html#ac6f0d4ec314bd785bc8a7b76ba69ebda',1,'CalculatorApp::Calculator']]],
+  ['modulo_6',['Modulo',['../class_calculator_app_1_1_math__lib.html#afb066d510aec0b30bc4e56095e2dc164',1,'CalculatorApp::Math_lib']]],
+  ['multiplication_7',['Multiplication',['../class_calculator_app_1_1_math__lib.html#a95bb23671bc46acdeec43dce33a670ef',1,'CalculatorApp::Math_lib']]]
 ];

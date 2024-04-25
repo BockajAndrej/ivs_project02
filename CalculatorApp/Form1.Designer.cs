@@ -148,6 +148,7 @@
             this.button19 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.customControl1 = new CalculatorApp.CustomControls.CustomControl();
+            this.help_button = new System.Windows.Forms.Button();
             this.PanelDown_UnitConverter.SuspendLayout();
             this.Main_Calculator_panel.SuspendLayout();
             this.panel_Converter.SuspendLayout();
@@ -2027,7 +2028,7 @@
             // customControl1
             // 
             this.customControl1.AutoSize = true;
-            this.customControl1.Location = new System.Drawing.Point(9, 407);
+            this.customControl1.Location = new System.Drawing.Point(47, 411);
             this.customControl1.MinimumSize = new System.Drawing.Size(45, 22);
             this.customControl1.Name = "customControl1";
             this.customControl1.OffBackColor = System.Drawing.Color.Gray;
@@ -2039,19 +2040,35 @@
             this.customControl1.UseVisualStyleBackColor = true;
             this.customControl1.CheckedChanged += new System.EventHandler(this.customControl1_CheckedChanged);
             // 
+            // help_button
+            // 
+            this.help_button.BackColor = System.Drawing.Color.Transparent;
+            this.help_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.help_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.help_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.help_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.help_button.Location = new System.Drawing.Point(9, 401);
+            this.help_button.Name = "help_button";
+            this.help_button.Size = new System.Drawing.Size(32, 32);
+            this.help_button.TabIndex = 39;
+            this.help_button.Text = "?";
+            this.help_button.UseVisualStyleBackColor = false;
+            this.help_button.Click += new System.EventHandler(this.help_button_Click);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(662, 443);
-            this.Controls.Add(this.panel_Converter);
+            this.Controls.Add(this.help_button);
             this.Controls.Add(this.btn_Settings);
             this.Controls.Add(this.btn_Calculator);
             this.Controls.Add(this.PanelDown_UnitConverter);
             this.Controls.Add(this.customControl1);
             this.Controls.Add(this.Main_Calculator_panel);
             this.Controls.Add(this.Main_Setting_panel);
+            this.Controls.Add(this.panel_Converter);
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Calculator";
@@ -2197,6 +2214,7 @@
         private System.Windows.Forms.Panel ITemperature_panel;
         private System.Windows.Forms.Label Output_LabelConvert;
         private System.Windows.Forms.Label Input_LabelConvert;
+        private System.Windows.Forms.Button help_button;
     }
 }
 

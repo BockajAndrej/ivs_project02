@@ -138,6 +138,7 @@ namespace CalculatorApp
 
 
             Main_Calculator_panel.BackColor = isDarkMode ? Color.FromArgb(35, 45, 54) : Color.Silver;
+            Main_Setting_panel.BackColor = isDarkMode ? Color.FromArgb(35, 45, 54) : Color.Silver;
             Btn_UnitConverter.ForeColor = isDarkMode ? Color.YellowGreen : Color.Black;
             Btn_UnitConverter.BackColor = isDarkMode ? Color.FromArgb(35, 45, 54) : Color.Silver;
 
@@ -1391,8 +1392,30 @@ namespace CalculatorApp
             Output_LabelConvert.Text = ((Button)sender).Text;
             UpdateAfterEachSelection();
         }
+        /// <summary>
+        /// Handles the click event of the help button. Displays a message box containing 
+        /// instructions on how to use the calculator.
+        /// </summary>
+        /// <param name="sender">The object that raised the event.</param>
+        /// <param name="e">The EventArgs object containing event data.</param>
+        private void help_button_Click(object sender, EventArgs e)
+        {
+            string messageText = "**Calculator Instructions**\n\n" +
+                         "There are three main sections:\n\n" +
+                         "1. **Calculator:** Perform basic calculations using buttons or the keyboard. Supported operations include: +, -, *, /, %, square root, square, power (^) , factorial, clearing numbers, and deleting input.\n\n" +
+                         "2. **Converter:** Convert between units of length, weight, temperature, time, and degrees. Calculations happen in real-time. Use the dropdown menus to select specific units for each conversion type.\n\n" +
+                         "3. **Settings:** (For future implementation)\n\n" +
+                         "**Other Features**\n\n" +
+                         "* **Help Button:** (This button!) Displays these instructions.\n" +
+                         "* **Dark/Light Mode:** Switch between display themes.\n\n";
+
+            string title = "Calculator Help";
+
+            MessageBox.Show(messageText, title);
+        }
 
         #endregion
+
         /// <summary>
         /// Handles the Paint event for the Main_Calculator_panel. This function is 
         /// responsible for custom drawing or rendering visual elements within the panel.

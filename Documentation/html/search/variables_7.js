@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['main_5fcalculator_5fpanel_0',['Main_Calculator_panel',['../class_calculator_app_1_1_calculator.html#a11359021f4ccdeb7c0c238e70131a95d',1,'CalculatorApp::Calculator']]],
-  ['main_5fsetting_5fpanel_1',['Main_Setting_panel',['../class_calculator_app_1_1_calculator.html#a880004890f214de8939d2acafa28ac32',1,'CalculatorApp::Calculator']]],
-  ['mathlib_2',['mathLib',['../class_calculator_app_1_1_calculator.html#ac6f0d4ec314bd785bc8a7b76ba69ebda',1,'CalculatorApp::Calculator']]]
+  ['lightmodeendcolor_0',['lightModeEndColor',['../class_calculator_app_1_1_calculator.html#a29a02b6c058b239b90ddf89a48d76300',1,'CalculatorApp::Calculator']]],
+  ['lightmodestartcolor_1',['lightModeStartColor',['../class_calculator_app_1_1_calculator.html#ab0ff05a9ef85987d1dd94be331fe6d3e',1,'CalculatorApp::Calculator']]],
+  ['listpanel_2',['listPanel',['../class_calculator_app_1_1_calculator.html#a8a50ceb614dd3b2fef548385876f6eb8',1,'CalculatorApp::Calculator']]]
 ];
