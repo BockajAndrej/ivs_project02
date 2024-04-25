@@ -55,11 +55,41 @@ namespace CalculatorApp
         }
         Dictionary<string, Panel> inputOutputPanels = new Dictionary<string, Panel>();
 
+        #region Variables
+
+        // Mode Variables
         private bool isDarkMode = false;
         private Color darkModeStartColor = Color.FromArgb(20, 55, 73);
         private Color darkModeEndColor = Color.FromArgb(37, 49, 61);
         private Color lightModeStartColor = Color.White;
-        private Color lightModeEndColor = Color.LightGray; // Or your desired light mode color
+        private Color lightModeEndColor = Color.LightGray;
+
+        // Converter Variables
+        private bool isCollapsed;
+        Button button_toDropDown = new Button();
+        Panel panel_toDropDown = new Panel();
+        string InputUnit_str, OutputUnit_str;
+        string ConvertNumber_str = string.Empty;
+        string curr_ConversionType = string.Empty;
+        Optional_functions opt_functions = new Optional_functions();
+
+        // Calculator Variables
+        private string firstNumber_str = "";
+        private string secondNumber_str = "";
+        private string currentOperator_str = "";
+        private bool newNumberMode = true; // Flag to signal if we're starting a new number
+        private bool isEnteringExponent = false;
+        private string exponent = ""; // Store the exponent digits
+
+        List<Panel> listPanel = new List<Panel>();
+        int indexOfCalculator = 0;
+        int indexOfSettings = 1;
+        int indexOfDegrees = 2;
+
+        #endregion // Variables
+
+
+
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
             Graphics graphics = e.Graphics;
@@ -72,16 +102,6 @@ namespace CalculatorApp
                                                   45f);
             graphics.FillRectangle(brush, gradient_rectangle);
         }
-
-
-        //Buttons
-        private string firstNumber_str = "";
-        private string secondNumber_str = "";
-        private string currentOperator_str = "";
-        private bool newNumberMode = true; // Flag to signal if we're starting a new number
-
-        private bool isEnteringExponent = false;
-        private string exponent = ""; // Store the exponent digits
 
         private void customControl1_CheckedChanged(object sender, EventArgs e)
         {
@@ -191,13 +211,7 @@ namespace CalculatorApp
                 }
             }
         }
-
-
-        List<Panel> listPanel = new List<Panel>();
-        int indexOfCalculator = 0;
-        int indexOfSettings = 1;
-        int indexOfDegrees = 2;
-
+       
         private void btn_Calculator_Click(object sender, EventArgs e)
         {
             ShowAndEnablePanel(indexOfCalculator); //clean po kazdej zmene
@@ -242,7 +256,6 @@ namespace CalculatorApp
             inputOutputPanels[key1].BringToFront();
             inputOutputPanels[key2].BringToFront();
         }
-
 
         private void Clear_all()
         {
@@ -328,13 +341,8 @@ namespace CalculatorApp
             }
         }
 
-
-
         #region Converter Buttons/Keyboard Input Logic
 
-        string ConvertNumber_str = string.Empty;
-        string curr_ConversionType = string.Empty;
-        Optional_functions opt_functions = new Optional_functions();
         private void appendDigitConverter(string digit, bool FromKeyBoard)
         {
             bool passKeyboardCheck = FromKeyBoard;
@@ -859,15 +867,11 @@ namespace CalculatorApp
             }
         }
 
-
         private void Clear_Click(object sender, EventArgs e) // button "C"
         {
             Clear_all();
         }
-
-        private bool isCollapsed;
-        Button button_toDropDown = new Button();
-        Panel panel_toDropDown = new Panel();
+        
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (isCollapsed)
@@ -916,8 +920,6 @@ namespace CalculatorApp
         }
 
         #region Input/Output text for Convert Textboxes
-        string InputUnit_str, OutputUnit_str;
-
         private void UpdateAfterEachSelection()
         {
             if (textBox_Converter_Input.Text != string.Empty)
