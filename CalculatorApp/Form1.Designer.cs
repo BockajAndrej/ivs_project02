@@ -681,7 +681,7 @@
             this.panel_Converter.Controls.Add(this.button18);
             this.panel_Converter.Location = new System.Drawing.Point(144, 12);
             this.panel_Converter.Name = "panel_Converter";
-            this.panel_Converter.Size = new System.Drawing.Size(506, 406);
+            this.panel_Converter.Size = new System.Drawing.Size(516, 406);
             this.panel_Converter.TabIndex = 38;
             // 
             // Output_LabelConvert
@@ -715,11 +715,11 @@
             this.OLength_panel.Controls.Add(this.OLengthBtn_dm);
             this.OLength_panel.Controls.Add(this.OLengthBtn_cm);
             this.OLength_panel.Controls.Add(this.OLengthBtn_mm);
-            this.OLength_panel.Location = new System.Drawing.Point(397, 64);
-            this.OLength_panel.MaximumSize = new System.Drawing.Size(77, 288);
-            this.OLength_panel.MinimumSize = new System.Drawing.Size(77, 42);
+            this.OLength_panel.Location = new System.Drawing.Point(401, 81);
+            this.OLength_panel.MaximumSize = new System.Drawing.Size(79, 288);
+            this.OLength_panel.MinimumSize = new System.Drawing.Size(79, 42);
             this.OLength_panel.Name = "OLength_panel";
-            this.OLength_panel.Size = new System.Drawing.Size(77, 42);
+            this.OLength_panel.Size = new System.Drawing.Size(79, 42);
             this.OLength_panel.TabIndex = 43;
             // 
             // OLengthBtn_yard
@@ -733,7 +733,7 @@
             this.OLengthBtn_yard.ForeColor = System.Drawing.Color.OrangeRed;
             this.OLengthBtn_yard.Location = new System.Drawing.Point(0, 252);
             this.OLengthBtn_yard.Name = "OLengthBtn_yard";
-            this.OLengthBtn_yard.Size = new System.Drawing.Size(77, 35);
+            this.OLengthBtn_yard.Size = new System.Drawing.Size(79, 35);
             this.OLengthBtn_yard.TabIndex = 42;
             this.OLengthBtn_yard.Text = "yard";
             this.OLengthBtn_yard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -751,7 +751,7 @@
             this.OLengthBtn_inch.ForeColor = System.Drawing.Color.OrangeRed;
             this.OLengthBtn_inch.Location = new System.Drawing.Point(0, 217);
             this.OLengthBtn_inch.Name = "OLengthBtn_inch";
-            this.OLengthBtn_inch.Size = new System.Drawing.Size(77, 35);
+            this.OLengthBtn_inch.Size = new System.Drawing.Size(79, 35);
             this.OLengthBtn_inch.TabIndex = 41;
             this.OLengthBtn_inch.Text = "inch";
             this.OLengthBtn_inch.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -769,7 +769,7 @@
             this.OLengthBtn_miles.ForeColor = System.Drawing.Color.OrangeRed;
             this.OLengthBtn_miles.Location = new System.Drawing.Point(0, 182);
             this.OLengthBtn_miles.Name = "OLengthBtn_miles";
-            this.OLengthBtn_miles.Size = new System.Drawing.Size(77, 35);
+            this.OLengthBtn_miles.Size = new System.Drawing.Size(79, 35);
             this.OLengthBtn_miles.TabIndex = 40;
             this.OLengthBtn_miles.Text = "miles";
             this.OLengthBtn_miles.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -787,7 +787,7 @@
             this.OLengthBtn_km.ForeColor = System.Drawing.Color.OrangeRed;
             this.OLengthBtn_km.Location = new System.Drawing.Point(0, 147);
             this.OLengthBtn_km.Name = "OLengthBtn_km";
-            this.OLengthBtn_km.Size = new System.Drawing.Size(77, 35);
+            this.OLengthBtn_km.Size = new System.Drawing.Size(79, 35);
             this.OLengthBtn_km.TabIndex = 39;
             this.OLengthBtn_km.Text = "km";
             this.OLengthBtn_km.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -805,7 +805,7 @@
             this.OLengthBtn_m.ForeColor = System.Drawing.Color.OrangeRed;
             this.OLengthBtn_m.Location = new System.Drawing.Point(0, 112);
             this.OLengthBtn_m.Name = "OLengthBtn_m";
-            this.OLengthBtn_m.Size = new System.Drawing.Size(77, 35);
+            this.OLengthBtn_m.Size = new System.Drawing.Size(79, 35);
             this.OLengthBtn_m.TabIndex = 38;
             this.OLengthBtn_m.Text = "m";
             this.OLengthBtn_m.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -823,7 +823,7 @@
             this.OLengthBtn_dm.ForeColor = System.Drawing.Color.OrangeRed;
             this.OLengthBtn_dm.Location = new System.Drawing.Point(0, 77);
             this.OLengthBtn_dm.Name = "OLengthBtn_dm";
-            this.OLengthBtn_dm.Size = new System.Drawing.Size(77, 35);
+            this.OLengthBtn_dm.Size = new System.Drawing.Size(79, 35);
             this.OLengthBtn_dm.TabIndex = 37;
             this.OLengthBtn_dm.Text = "dm";
             this.OLengthBtn_dm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -841,7 +841,7 @@
             this.OLengthBtn_cm.ForeColor = System.Drawing.Color.OrangeRed;
             this.OLengthBtn_cm.Location = new System.Drawing.Point(0, 42);
             this.OLengthBtn_cm.Name = "OLengthBtn_cm";
-            this.OLengthBtn_cm.Size = new System.Drawing.Size(77, 35);
+            this.OLengthBtn_cm.Size = new System.Drawing.Size(79, 35);
             this.OLengthBtn_cm.TabIndex = 36;
             this.OLengthBtn_cm.Text = "cm";
             this.OLengthBtn_cm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -855,13 +855,13 @@
             this.OLengthBtn_mm.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.OLengthBtn_mm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.OLengthBtn_mm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.OLengthBtn_mm.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OLengthBtn_mm.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OLengthBtn_mm.ForeColor = System.Drawing.Color.OrangeRed;
             this.OLengthBtn_mm.Image = global::CalculatorApp.Properties.Resources.dropdoiwn2;
             this.OLengthBtn_mm.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.OLengthBtn_mm.Location = new System.Drawing.Point(0, 0);
             this.OLengthBtn_mm.Name = "OLengthBtn_mm";
-            this.OLengthBtn_mm.Size = new System.Drawing.Size(77, 42);
+            this.OLengthBtn_mm.Size = new System.Drawing.Size(79, 42);
             this.OLengthBtn_mm.TabIndex = 35;
             this.OLengthBtn_mm.Text = "mm";
             this.OLengthBtn_mm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -878,11 +878,11 @@
             this.OWeight_panel.Controls.Add(this.OWeightBtn_dag);
             this.OWeight_panel.Controls.Add(this.OWeightBtn_g);
             this.OWeight_panel.Controls.Add(this.OWeightBtn_mg);
-            this.OWeight_panel.Location = new System.Drawing.Point(397, 70);
-            this.OWeight_panel.MaximumSize = new System.Drawing.Size(75, 252);
-            this.OWeight_panel.MinimumSize = new System.Drawing.Size(75, 42);
+            this.OWeight_panel.Location = new System.Drawing.Point(401, 78);
+            this.OWeight_panel.MaximumSize = new System.Drawing.Size(83, 252);
+            this.OWeight_panel.MinimumSize = new System.Drawing.Size(83, 42);
             this.OWeight_panel.Name = "OWeight_panel";
-            this.OWeight_panel.Size = new System.Drawing.Size(75, 42);
+            this.OWeight_panel.Size = new System.Drawing.Size(83, 42);
             this.OWeight_panel.TabIndex = 43;
             // 
             // OWeightBtn_oz
@@ -896,7 +896,7 @@
             this.OWeightBtn_oz.ForeColor = System.Drawing.Color.OrangeRed;
             this.OWeightBtn_oz.Location = new System.Drawing.Point(0, 217);
             this.OWeightBtn_oz.Name = "OWeightBtn_oz";
-            this.OWeightBtn_oz.Size = new System.Drawing.Size(75, 35);
+            this.OWeightBtn_oz.Size = new System.Drawing.Size(83, 35);
             this.OWeightBtn_oz.TabIndex = 41;
             this.OWeightBtn_oz.Text = "oz";
             this.OWeightBtn_oz.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -914,7 +914,7 @@
             this.OWeightBtn_lb.ForeColor = System.Drawing.Color.OrangeRed;
             this.OWeightBtn_lb.Location = new System.Drawing.Point(0, 182);
             this.OWeightBtn_lb.Name = "OWeightBtn_lb";
-            this.OWeightBtn_lb.Size = new System.Drawing.Size(75, 35);
+            this.OWeightBtn_lb.Size = new System.Drawing.Size(83, 35);
             this.OWeightBtn_lb.TabIndex = 40;
             this.OWeightBtn_lb.Text = "lb";
             this.OWeightBtn_lb.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -932,7 +932,7 @@
             this.OWeightBtn_t.ForeColor = System.Drawing.Color.OrangeRed;
             this.OWeightBtn_t.Location = new System.Drawing.Point(0, 147);
             this.OWeightBtn_t.Name = "OWeightBtn_t";
-            this.OWeightBtn_t.Size = new System.Drawing.Size(75, 35);
+            this.OWeightBtn_t.Size = new System.Drawing.Size(83, 35);
             this.OWeightBtn_t.TabIndex = 39;
             this.OWeightBtn_t.Text = "t";
             this.OWeightBtn_t.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -950,7 +950,7 @@
             this.OWeightBtn_kg.ForeColor = System.Drawing.Color.OrangeRed;
             this.OWeightBtn_kg.Location = new System.Drawing.Point(0, 112);
             this.OWeightBtn_kg.Name = "OWeightBtn_kg";
-            this.OWeightBtn_kg.Size = new System.Drawing.Size(75, 35);
+            this.OWeightBtn_kg.Size = new System.Drawing.Size(83, 35);
             this.OWeightBtn_kg.TabIndex = 38;
             this.OWeightBtn_kg.Text = "kg";
             this.OWeightBtn_kg.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -968,7 +968,7 @@
             this.OWeightBtn_dag.ForeColor = System.Drawing.Color.OrangeRed;
             this.OWeightBtn_dag.Location = new System.Drawing.Point(0, 77);
             this.OWeightBtn_dag.Name = "OWeightBtn_dag";
-            this.OWeightBtn_dag.Size = new System.Drawing.Size(75, 35);
+            this.OWeightBtn_dag.Size = new System.Drawing.Size(83, 35);
             this.OWeightBtn_dag.TabIndex = 37;
             this.OWeightBtn_dag.Text = "dag";
             this.OWeightBtn_dag.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -986,7 +986,7 @@
             this.OWeightBtn_g.ForeColor = System.Drawing.Color.OrangeRed;
             this.OWeightBtn_g.Location = new System.Drawing.Point(0, 42);
             this.OWeightBtn_g.Name = "OWeightBtn_g";
-            this.OWeightBtn_g.Size = new System.Drawing.Size(75, 35);
+            this.OWeightBtn_g.Size = new System.Drawing.Size(83, 35);
             this.OWeightBtn_g.TabIndex = 36;
             this.OWeightBtn_g.Text = "g";
             this.OWeightBtn_g.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1006,7 +1006,7 @@
             this.OWeightBtn_mg.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.OWeightBtn_mg.Location = new System.Drawing.Point(0, 0);
             this.OWeightBtn_mg.Name = "OWeightBtn_mg";
-            this.OWeightBtn_mg.Size = new System.Drawing.Size(75, 42);
+            this.OWeightBtn_mg.Size = new System.Drawing.Size(83, 42);
             this.OWeightBtn_mg.TabIndex = 35;
             this.OWeightBtn_mg.Text = "mg";
             this.OWeightBtn_mg.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1025,11 +1025,11 @@
             this.ILength_panel.Controls.Add(this.ILengthBtn_cm);
             this.ILength_panel.Controls.Add(this.ILengthBtn_mm);
             this.ILength_panel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ILength_panel.Location = new System.Drawing.Point(19, 66);
-            this.ILength_panel.MaximumSize = new System.Drawing.Size(77, 288);
-            this.ILength_panel.MinimumSize = new System.Drawing.Size(77, 42);
+            this.ILength_panel.Location = new System.Drawing.Point(24, 82);
+            this.ILength_panel.MaximumSize = new System.Drawing.Size(79, 288);
+            this.ILength_panel.MinimumSize = new System.Drawing.Size(79, 42);
             this.ILength_panel.Name = "ILength_panel";
-            this.ILength_panel.Size = new System.Drawing.Size(77, 42);
+            this.ILength_panel.Size = new System.Drawing.Size(79, 42);
             this.ILength_panel.TabIndex = 40;
             // 
             // ILengthBtn_yard
@@ -1042,7 +1042,7 @@
             this.ILengthBtn_yard.ForeColor = System.Drawing.Color.OrangeRed;
             this.ILengthBtn_yard.Location = new System.Drawing.Point(0, 252);
             this.ILengthBtn_yard.Name = "ILengthBtn_yard";
-            this.ILengthBtn_yard.Size = new System.Drawing.Size(77, 35);
+            this.ILengthBtn_yard.Size = new System.Drawing.Size(79, 35);
             this.ILengthBtn_yard.TabIndex = 42;
             this.ILengthBtn_yard.Text = "yard";
             this.ILengthBtn_yard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1059,7 +1059,7 @@
             this.ILengthBtn_inch.ForeColor = System.Drawing.Color.OrangeRed;
             this.ILengthBtn_inch.Location = new System.Drawing.Point(0, 217);
             this.ILengthBtn_inch.Name = "ILengthBtn_inch";
-            this.ILengthBtn_inch.Size = new System.Drawing.Size(77, 35);
+            this.ILengthBtn_inch.Size = new System.Drawing.Size(79, 35);
             this.ILengthBtn_inch.TabIndex = 41;
             this.ILengthBtn_inch.Text = "inch";
             this.ILengthBtn_inch.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1076,7 +1076,7 @@
             this.ILengthBtn_miles.ForeColor = System.Drawing.Color.OrangeRed;
             this.ILengthBtn_miles.Location = new System.Drawing.Point(0, 182);
             this.ILengthBtn_miles.Name = "ILengthBtn_miles";
-            this.ILengthBtn_miles.Size = new System.Drawing.Size(77, 35);
+            this.ILengthBtn_miles.Size = new System.Drawing.Size(79, 35);
             this.ILengthBtn_miles.TabIndex = 40;
             this.ILengthBtn_miles.Text = "miles";
             this.ILengthBtn_miles.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1093,7 +1093,7 @@
             this.ILengthBtn_km.ForeColor = System.Drawing.Color.OrangeRed;
             this.ILengthBtn_km.Location = new System.Drawing.Point(0, 147);
             this.ILengthBtn_km.Name = "ILengthBtn_km";
-            this.ILengthBtn_km.Size = new System.Drawing.Size(77, 35);
+            this.ILengthBtn_km.Size = new System.Drawing.Size(79, 35);
             this.ILengthBtn_km.TabIndex = 39;
             this.ILengthBtn_km.Text = "km";
             this.ILengthBtn_km.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1110,7 +1110,7 @@
             this.ILengthBtn_m.ForeColor = System.Drawing.Color.OrangeRed;
             this.ILengthBtn_m.Location = new System.Drawing.Point(0, 112);
             this.ILengthBtn_m.Name = "ILengthBtn_m";
-            this.ILengthBtn_m.Size = new System.Drawing.Size(77, 35);
+            this.ILengthBtn_m.Size = new System.Drawing.Size(79, 35);
             this.ILengthBtn_m.TabIndex = 38;
             this.ILengthBtn_m.Text = "m";
             this.ILengthBtn_m.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1127,7 +1127,7 @@
             this.ILengthBtn_dm.ForeColor = System.Drawing.Color.OrangeRed;
             this.ILengthBtn_dm.Location = new System.Drawing.Point(0, 77);
             this.ILengthBtn_dm.Name = "ILengthBtn_dm";
-            this.ILengthBtn_dm.Size = new System.Drawing.Size(77, 35);
+            this.ILengthBtn_dm.Size = new System.Drawing.Size(79, 35);
             this.ILengthBtn_dm.TabIndex = 37;
             this.ILengthBtn_dm.Text = "dm";
             this.ILengthBtn_dm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1144,7 +1144,7 @@
             this.ILengthBtn_cm.ForeColor = System.Drawing.Color.OrangeRed;
             this.ILengthBtn_cm.Location = new System.Drawing.Point(0, 42);
             this.ILengthBtn_cm.Name = "ILengthBtn_cm";
-            this.ILengthBtn_cm.Size = new System.Drawing.Size(77, 35);
+            this.ILengthBtn_cm.Size = new System.Drawing.Size(79, 35);
             this.ILengthBtn_cm.TabIndex = 36;
             this.ILengthBtn_cm.Text = "cm";
             this.ILengthBtn_cm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1158,12 +1158,13 @@
             this.ILengthBtn_mm.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.ILengthBtn_mm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ILengthBtn_mm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ILengthBtn_mm.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ILengthBtn_mm.ForeColor = System.Drawing.Color.OrangeRed;
             this.ILengthBtn_mm.Image = global::CalculatorApp.Properties.Resources.dropdoiwn2;
             this.ILengthBtn_mm.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.ILengthBtn_mm.Location = new System.Drawing.Point(0, 0);
             this.ILengthBtn_mm.Name = "ILengthBtn_mm";
-            this.ILengthBtn_mm.Size = new System.Drawing.Size(77, 42);
+            this.ILengthBtn_mm.Size = new System.Drawing.Size(79, 42);
             this.ILengthBtn_mm.TabIndex = 35;
             this.ILengthBtn_mm.Text = "mm";
             this.ILengthBtn_mm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1180,11 +1181,11 @@
             this.OTime_panel.Controls.Add(this.OTimeBtn_hour);
             this.OTime_panel.Controls.Add(this.OTimeBtn_min);
             this.OTime_panel.Controls.Add(this.OTimeBtn_sec);
-            this.OTime_panel.Location = new System.Drawing.Point(397, 78);
-            this.OTime_panel.MaximumSize = new System.Drawing.Size(80, 252);
-            this.OTime_panel.MinimumSize = new System.Drawing.Size(80, 42);
+            this.OTime_panel.Location = new System.Drawing.Point(401, 72);
+            this.OTime_panel.MaximumSize = new System.Drawing.Size(83, 252);
+            this.OTime_panel.MinimumSize = new System.Drawing.Size(83, 42);
             this.OTime_panel.Name = "OTime_panel";
-            this.OTime_panel.Size = new System.Drawing.Size(80, 42);
+            this.OTime_panel.Size = new System.Drawing.Size(83, 42);
             this.OTime_panel.TabIndex = 42;
             // 
             // OTimeBtn_years
@@ -1198,7 +1199,7 @@
             this.OTimeBtn_years.ForeColor = System.Drawing.Color.OrangeRed;
             this.OTimeBtn_years.Location = new System.Drawing.Point(0, 217);
             this.OTimeBtn_years.Name = "OTimeBtn_years";
-            this.OTimeBtn_years.Size = new System.Drawing.Size(80, 35);
+            this.OTimeBtn_years.Size = new System.Drawing.Size(83, 35);
             this.OTimeBtn_years.TabIndex = 41;
             this.OTimeBtn_years.Text = "years";
             this.OTimeBtn_years.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1216,7 +1217,7 @@
             this.OTimeBtn_months.ForeColor = System.Drawing.Color.OrangeRed;
             this.OTimeBtn_months.Location = new System.Drawing.Point(0, 182);
             this.OTimeBtn_months.Name = "OTimeBtn_months";
-            this.OTimeBtn_months.Size = new System.Drawing.Size(80, 35);
+            this.OTimeBtn_months.Size = new System.Drawing.Size(83, 35);
             this.OTimeBtn_months.TabIndex = 40;
             this.OTimeBtn_months.Text = "months";
             this.OTimeBtn_months.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1234,7 +1235,7 @@
             this.OTimeBtn_weeks.ForeColor = System.Drawing.Color.OrangeRed;
             this.OTimeBtn_weeks.Location = new System.Drawing.Point(0, 147);
             this.OTimeBtn_weeks.Name = "OTimeBtn_weeks";
-            this.OTimeBtn_weeks.Size = new System.Drawing.Size(80, 35);
+            this.OTimeBtn_weeks.Size = new System.Drawing.Size(83, 35);
             this.OTimeBtn_weeks.TabIndex = 39;
             this.OTimeBtn_weeks.Text = "weeks";
             this.OTimeBtn_weeks.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1252,7 +1253,7 @@
             this.OTimeBtn_days.ForeColor = System.Drawing.Color.OrangeRed;
             this.OTimeBtn_days.Location = new System.Drawing.Point(0, 112);
             this.OTimeBtn_days.Name = "OTimeBtn_days";
-            this.OTimeBtn_days.Size = new System.Drawing.Size(80, 35);
+            this.OTimeBtn_days.Size = new System.Drawing.Size(83, 35);
             this.OTimeBtn_days.TabIndex = 38;
             this.OTimeBtn_days.Text = "days";
             this.OTimeBtn_days.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1270,7 +1271,7 @@
             this.OTimeBtn_hour.ForeColor = System.Drawing.Color.OrangeRed;
             this.OTimeBtn_hour.Location = new System.Drawing.Point(0, 77);
             this.OTimeBtn_hour.Name = "OTimeBtn_hour";
-            this.OTimeBtn_hour.Size = new System.Drawing.Size(80, 35);
+            this.OTimeBtn_hour.Size = new System.Drawing.Size(83, 35);
             this.OTimeBtn_hour.TabIndex = 37;
             this.OTimeBtn_hour.Text = "hour";
             this.OTimeBtn_hour.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1288,7 +1289,7 @@
             this.OTimeBtn_min.ForeColor = System.Drawing.Color.OrangeRed;
             this.OTimeBtn_min.Location = new System.Drawing.Point(0, 42);
             this.OTimeBtn_min.Name = "OTimeBtn_min";
-            this.OTimeBtn_min.Size = new System.Drawing.Size(80, 35);
+            this.OTimeBtn_min.Size = new System.Drawing.Size(83, 35);
             this.OTimeBtn_min.TabIndex = 36;
             this.OTimeBtn_min.Text = "min";
             this.OTimeBtn_min.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1302,13 +1303,13 @@
             this.OTimeBtn_sec.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.OTimeBtn_sec.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.OTimeBtn_sec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.OTimeBtn_sec.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OTimeBtn_sec.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.3F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OTimeBtn_sec.ForeColor = System.Drawing.Color.OrangeRed;
             this.OTimeBtn_sec.Image = global::CalculatorApp.Properties.Resources.dropdoiwn2;
             this.OTimeBtn_sec.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.OTimeBtn_sec.Location = new System.Drawing.Point(0, 0);
             this.OTimeBtn_sec.Name = "OTimeBtn_sec";
-            this.OTimeBtn_sec.Size = new System.Drawing.Size(80, 42);
+            this.OTimeBtn_sec.Size = new System.Drawing.Size(83, 42);
             this.OTimeBtn_sec.TabIndex = 35;
             this.OTimeBtn_sec.Text = "sec";
             this.OTimeBtn_sec.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1325,11 +1326,11 @@
             this.IWeight_panel.Controls.Add(this.IWeightBtn_dag);
             this.IWeight_panel.Controls.Add(this.IWeightBtn_g);
             this.IWeight_panel.Controls.Add(this.IWeightBtn_mg);
-            this.IWeight_panel.Location = new System.Drawing.Point(19, 72);
-            this.IWeight_panel.MaximumSize = new System.Drawing.Size(75, 252);
-            this.IWeight_panel.MinimumSize = new System.Drawing.Size(75, 42);
+            this.IWeight_panel.Location = new System.Drawing.Point(24, 79);
+            this.IWeight_panel.MaximumSize = new System.Drawing.Size(83, 252);
+            this.IWeight_panel.MinimumSize = new System.Drawing.Size(83, 42);
             this.IWeight_panel.Name = "IWeight_panel";
-            this.IWeight_panel.Size = new System.Drawing.Size(75, 42);
+            this.IWeight_panel.Size = new System.Drawing.Size(83, 42);
             this.IWeight_panel.TabIndex = 40;
             // 
             // IWeightBtn_oz
@@ -1343,7 +1344,7 @@
             this.IWeightBtn_oz.ForeColor = System.Drawing.Color.OrangeRed;
             this.IWeightBtn_oz.Location = new System.Drawing.Point(0, 217);
             this.IWeightBtn_oz.Name = "IWeightBtn_oz";
-            this.IWeightBtn_oz.Size = new System.Drawing.Size(75, 35);
+            this.IWeightBtn_oz.Size = new System.Drawing.Size(83, 35);
             this.IWeightBtn_oz.TabIndex = 41;
             this.IWeightBtn_oz.Text = "oz";
             this.IWeightBtn_oz.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1361,7 +1362,7 @@
             this.IWeightBtn_lb.ForeColor = System.Drawing.Color.OrangeRed;
             this.IWeightBtn_lb.Location = new System.Drawing.Point(0, 182);
             this.IWeightBtn_lb.Name = "IWeightBtn_lb";
-            this.IWeightBtn_lb.Size = new System.Drawing.Size(75, 35);
+            this.IWeightBtn_lb.Size = new System.Drawing.Size(83, 35);
             this.IWeightBtn_lb.TabIndex = 40;
             this.IWeightBtn_lb.Text = "lb";
             this.IWeightBtn_lb.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1379,7 +1380,7 @@
             this.IWeightBtn_t.ForeColor = System.Drawing.Color.OrangeRed;
             this.IWeightBtn_t.Location = new System.Drawing.Point(0, 147);
             this.IWeightBtn_t.Name = "IWeightBtn_t";
-            this.IWeightBtn_t.Size = new System.Drawing.Size(75, 35);
+            this.IWeightBtn_t.Size = new System.Drawing.Size(83, 35);
             this.IWeightBtn_t.TabIndex = 39;
             this.IWeightBtn_t.Text = "t";
             this.IWeightBtn_t.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1397,7 +1398,7 @@
             this.IWeightBtn_kg.ForeColor = System.Drawing.Color.OrangeRed;
             this.IWeightBtn_kg.Location = new System.Drawing.Point(0, 112);
             this.IWeightBtn_kg.Name = "IWeightBtn_kg";
-            this.IWeightBtn_kg.Size = new System.Drawing.Size(75, 35);
+            this.IWeightBtn_kg.Size = new System.Drawing.Size(83, 35);
             this.IWeightBtn_kg.TabIndex = 38;
             this.IWeightBtn_kg.Text = "kg";
             this.IWeightBtn_kg.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1415,7 +1416,7 @@
             this.IWeightBtn_dag.ForeColor = System.Drawing.Color.OrangeRed;
             this.IWeightBtn_dag.Location = new System.Drawing.Point(0, 77);
             this.IWeightBtn_dag.Name = "IWeightBtn_dag";
-            this.IWeightBtn_dag.Size = new System.Drawing.Size(75, 35);
+            this.IWeightBtn_dag.Size = new System.Drawing.Size(83, 35);
             this.IWeightBtn_dag.TabIndex = 37;
             this.IWeightBtn_dag.Text = "dag";
             this.IWeightBtn_dag.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1433,7 +1434,7 @@
             this.IWeightBtn_g.ForeColor = System.Drawing.Color.OrangeRed;
             this.IWeightBtn_g.Location = new System.Drawing.Point(0, 42);
             this.IWeightBtn_g.Name = "IWeightBtn_g";
-            this.IWeightBtn_g.Size = new System.Drawing.Size(75, 35);
+            this.IWeightBtn_g.Size = new System.Drawing.Size(83, 35);
             this.IWeightBtn_g.TabIndex = 36;
             this.IWeightBtn_g.Text = "g";
             this.IWeightBtn_g.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1453,7 +1454,7 @@
             this.IWeightBtn_mg.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.IWeightBtn_mg.Location = new System.Drawing.Point(0, 0);
             this.IWeightBtn_mg.Name = "IWeightBtn_mg";
-            this.IWeightBtn_mg.Size = new System.Drawing.Size(75, 42);
+            this.IWeightBtn_mg.Size = new System.Drawing.Size(83, 42);
             this.IWeightBtn_mg.TabIndex = 35;
             this.IWeightBtn_mg.Text = "mg";
             this.IWeightBtn_mg.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1466,7 +1467,7 @@
             this.OTemperature_panel.Controls.Add(this.OTemperatureBtn_K);
             this.OTemperature_panel.Controls.Add(this.OTemperatureBtn_F);
             this.OTemperature_panel.Controls.Add(this.OTemperatureBtn_C);
-            this.OTemperature_panel.Location = new System.Drawing.Point(399, 84);
+            this.OTemperature_panel.Location = new System.Drawing.Point(401, 84);
             this.OTemperature_panel.MaximumSize = new System.Drawing.Size(60, 113);
             this.OTemperature_panel.MinimumSize = new System.Drawing.Size(60, 42);
             this.OTemperature_panel.Name = "OTemperature_panel";
@@ -1539,11 +1540,11 @@
             this.ITime_panel.Controls.Add(this.ITimeBtn_hour);
             this.ITime_panel.Controls.Add(this.ITimeBtn_min);
             this.ITime_panel.Controls.Add(this.ITimeBtn_sec);
-            this.ITime_panel.Location = new System.Drawing.Point(19, 76);
-            this.ITime_panel.MaximumSize = new System.Drawing.Size(80, 252);
-            this.ITime_panel.MinimumSize = new System.Drawing.Size(80, 44);
+            this.ITime_panel.Location = new System.Drawing.Point(24, 76);
+            this.ITime_panel.MaximumSize = new System.Drawing.Size(83, 252);
+            this.ITime_panel.MinimumSize = new System.Drawing.Size(83, 44);
             this.ITime_panel.Name = "ITime_panel";
-            this.ITime_panel.Size = new System.Drawing.Size(80, 44);
+            this.ITime_panel.Size = new System.Drawing.Size(83, 44);
             this.ITime_panel.TabIndex = 40;
             // 
             // ITimeBtn_years
@@ -1556,7 +1557,7 @@
             this.ITimeBtn_years.ForeColor = System.Drawing.Color.OrangeRed;
             this.ITimeBtn_years.Location = new System.Drawing.Point(0, 219);
             this.ITimeBtn_years.Name = "ITimeBtn_years";
-            this.ITimeBtn_years.Size = new System.Drawing.Size(80, 35);
+            this.ITimeBtn_years.Size = new System.Drawing.Size(83, 35);
             this.ITimeBtn_years.TabIndex = 41;
             this.ITimeBtn_years.Text = "years";
             this.ITimeBtn_years.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1573,7 +1574,7 @@
             this.ITimeBtn_months.ForeColor = System.Drawing.Color.OrangeRed;
             this.ITimeBtn_months.Location = new System.Drawing.Point(0, 184);
             this.ITimeBtn_months.Name = "ITimeBtn_months";
-            this.ITimeBtn_months.Size = new System.Drawing.Size(80, 35);
+            this.ITimeBtn_months.Size = new System.Drawing.Size(83, 35);
             this.ITimeBtn_months.TabIndex = 40;
             this.ITimeBtn_months.Text = "months";
             this.ITimeBtn_months.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1590,7 +1591,7 @@
             this.ITimeBtn_weeks.ForeColor = System.Drawing.Color.OrangeRed;
             this.ITimeBtn_weeks.Location = new System.Drawing.Point(0, 149);
             this.ITimeBtn_weeks.Name = "ITimeBtn_weeks";
-            this.ITimeBtn_weeks.Size = new System.Drawing.Size(80, 35);
+            this.ITimeBtn_weeks.Size = new System.Drawing.Size(83, 35);
             this.ITimeBtn_weeks.TabIndex = 39;
             this.ITimeBtn_weeks.Text = "weeks";
             this.ITimeBtn_weeks.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1607,7 +1608,7 @@
             this.ITimeBtn_days.ForeColor = System.Drawing.Color.OrangeRed;
             this.ITimeBtn_days.Location = new System.Drawing.Point(0, 114);
             this.ITimeBtn_days.Name = "ITimeBtn_days";
-            this.ITimeBtn_days.Size = new System.Drawing.Size(80, 35);
+            this.ITimeBtn_days.Size = new System.Drawing.Size(83, 35);
             this.ITimeBtn_days.TabIndex = 38;
             this.ITimeBtn_days.Text = "days";
             this.ITimeBtn_days.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1624,7 +1625,7 @@
             this.ITimeBtn_hour.ForeColor = System.Drawing.Color.OrangeRed;
             this.ITimeBtn_hour.Location = new System.Drawing.Point(0, 79);
             this.ITimeBtn_hour.Name = "ITimeBtn_hour";
-            this.ITimeBtn_hour.Size = new System.Drawing.Size(80, 35);
+            this.ITimeBtn_hour.Size = new System.Drawing.Size(83, 35);
             this.ITimeBtn_hour.TabIndex = 37;
             this.ITimeBtn_hour.Text = "hour";
             this.ITimeBtn_hour.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1641,7 +1642,7 @@
             this.ITimeBtn_min.ForeColor = System.Drawing.Color.OrangeRed;
             this.ITimeBtn_min.Location = new System.Drawing.Point(0, 44);
             this.ITimeBtn_min.Name = "ITimeBtn_min";
-            this.ITimeBtn_min.Size = new System.Drawing.Size(80, 35);
+            this.ITimeBtn_min.Size = new System.Drawing.Size(83, 35);
             this.ITimeBtn_min.TabIndex = 36;
             this.ITimeBtn_min.Text = "min";
             this.ITimeBtn_min.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1655,12 +1656,13 @@
             this.ITimeBtn_sec.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.ITimeBtn_sec.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ITimeBtn_sec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ITimeBtn_sec.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.3F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ITimeBtn_sec.ForeColor = System.Drawing.Color.OrangeRed;
             this.ITimeBtn_sec.Image = global::CalculatorApp.Properties.Resources.dropdoiwn2;
             this.ITimeBtn_sec.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.ITimeBtn_sec.Location = new System.Drawing.Point(0, 0);
             this.ITimeBtn_sec.Name = "ITimeBtn_sec";
-            this.ITimeBtn_sec.Size = new System.Drawing.Size(80, 44);
+            this.ITimeBtn_sec.Size = new System.Drawing.Size(83, 44);
             this.ITimeBtn_sec.TabIndex = 35;
             this.ITimeBtn_sec.Text = "sec";
             this.ITimeBtn_sec.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1672,11 +1674,12 @@
             // 
             this.ODegree_panel.Controls.Add(this.button25);
             this.ODegree_panel.Controls.Add(this.but_Degree_Output);
-            this.ODegree_panel.Location = new System.Drawing.Point(399, 90);
-            this.ODegree_panel.MaximumSize = new System.Drawing.Size(81, 76);
-            this.ODegree_panel.MinimumSize = new System.Drawing.Size(81, 42);
+            this.ODegree_panel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.3F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ODegree_panel.Location = new System.Drawing.Point(401, 87);
+            this.ODegree_panel.MaximumSize = new System.Drawing.Size(83, 76);
+            this.ODegree_panel.MinimumSize = new System.Drawing.Size(83, 42);
             this.ODegree_panel.Name = "ODegree_panel";
-            this.ODegree_panel.Size = new System.Drawing.Size(81, 42);
+            this.ODegree_panel.Size = new System.Drawing.Size(83, 42);
             this.ODegree_panel.TabIndex = 41;
             // 
             // button25
@@ -1690,7 +1693,7 @@
             this.button25.ForeColor = System.Drawing.Color.OrangeRed;
             this.button25.Location = new System.Drawing.Point(0, 42);
             this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(81, 35);
+            this.button25.Size = new System.Drawing.Size(83, 35);
             this.button25.TabIndex = 36;
             this.button25.Text = "rad";
             this.button25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1704,13 +1707,13 @@
             this.but_Degree_Output.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.but_Degree_Output.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.but_Degree_Output.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_Degree_Output.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.but_Degree_Output.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.but_Degree_Output.ForeColor = System.Drawing.Color.OrangeRed;
             this.but_Degree_Output.Image = global::CalculatorApp.Properties.Resources.dropdoiwn2;
             this.but_Degree_Output.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.but_Degree_Output.Location = new System.Drawing.Point(0, 0);
             this.but_Degree_Output.Name = "but_Degree_Output";
-            this.but_Degree_Output.Size = new System.Drawing.Size(81, 42);
+            this.but_Degree_Output.Size = new System.Drawing.Size(83, 42);
             this.but_Degree_Output.TabIndex = 35;
             this.but_Degree_Output.Text = "deg";
             this.but_Degree_Output.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1724,7 +1727,7 @@
             this.ITemperature_panel.Controls.Add(this.ITemperatureBtn_F);
             this.ITemperature_panel.Controls.Add(this.ITemperatureBtn_C);
             this.ITemperature_panel.ForeColor = System.Drawing.Color.OrangeRed;
-            this.ITemperature_panel.Location = new System.Drawing.Point(21, 84);
+            this.ITemperature_panel.Location = new System.Drawing.Point(23, 85);
             this.ITemperature_panel.MaximumSize = new System.Drawing.Size(60, 113);
             this.ITemperature_panel.MinimumSize = new System.Drawing.Size(60, 42);
             this.ITemperature_panel.Name = "ITemperature_panel";
@@ -1790,11 +1793,11 @@
             this.IDegree_panel.BackColor = System.Drawing.Color.Transparent;
             this.IDegree_panel.Controls.Add(this.button28);
             this.IDegree_panel.Controls.Add(this.but_Degree_Input);
-            this.IDegree_panel.Location = new System.Drawing.Point(21, 90);
-            this.IDegree_panel.MaximumSize = new System.Drawing.Size(81, 76);
-            this.IDegree_panel.MinimumSize = new System.Drawing.Size(81, 42);
+            this.IDegree_panel.Location = new System.Drawing.Point(23, 88);
+            this.IDegree_panel.MaximumSize = new System.Drawing.Size(83, 76);
+            this.IDegree_panel.MinimumSize = new System.Drawing.Size(83, 42);
             this.IDegree_panel.Name = "IDegree_panel";
-            this.IDegree_panel.Size = new System.Drawing.Size(81, 42);
+            this.IDegree_panel.Size = new System.Drawing.Size(83, 42);
             this.IDegree_panel.TabIndex = 40;
             // 
             // button28
@@ -1808,7 +1811,7 @@
             this.button28.ForeColor = System.Drawing.Color.OrangeRed;
             this.button28.Location = new System.Drawing.Point(0, 42);
             this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(81, 35);
+            this.button28.Size = new System.Drawing.Size(83, 35);
             this.button28.TabIndex = 36;
             this.button28.Text = "rad";
             this.button28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1822,13 +1825,13 @@
             this.but_Degree_Input.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.but_Degree_Input.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.but_Degree_Input.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_Degree_Input.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.but_Degree_Input.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.but_Degree_Input.ForeColor = System.Drawing.Color.OrangeRed;
             this.but_Degree_Input.Image = global::CalculatorApp.Properties.Resources.dropdoiwn2;
             this.but_Degree_Input.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.but_Degree_Input.Location = new System.Drawing.Point(0, 0);
             this.but_Degree_Input.Name = "but_Degree_Input";
-            this.but_Degree_Input.Size = new System.Drawing.Size(81, 42);
+            this.but_Degree_Input.Size = new System.Drawing.Size(83, 42);
             this.but_Degree_Input.TabIndex = 35;
             this.but_Degree_Input.Text = "deg";
             this.but_Degree_Input.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2060,7 +2063,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(662, 443);
+            this.ClientSize = new System.Drawing.Size(672, 444);
+            this.Controls.Add(this.panel_Converter);
             this.Controls.Add(this.help_button);
             this.Controls.Add(this.btn_Settings);
             this.Controls.Add(this.btn_Calculator);
@@ -2068,7 +2072,6 @@
             this.Controls.Add(this.customControl1);
             this.Controls.Add(this.Main_Calculator_panel);
             this.Controls.Add(this.Main_Setting_panel);
-            this.Controls.Add(this.panel_Converter);
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Calculator";
