@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['result_0',['Result',['../class_calculator_app_1_1_calculator.html#a80168f73e197cb382341c456b53eca02',1,'CalculatorApp::Calculator']]],
-  ['root_1',['root',['../class_calculator_app_1_1_optional__functions.html#a1f0a875652a40964feafd4a7b3e72f04',1,'CalculatorApp.Optional_functions.root'],['../class_unit_test_calculator_1_1_unit_test1.html#a974f65893e8a90a64d528e915f80e283',1,'UnitTestCalculator.UnitTest1.root'],['../class_unit_test_calculator_1_1_unit_test2.html#a9b44ed0df5c48ba5e66c1c30ebe7c27c',1,'UnitTestCalculator.UnitTest2.root']]]
+  ['panel_5fconverter_0',['panel_Converter',['../class_calculator_app_1_1_calculator.html#ab7794a5349449bbf6810f39e16af2759',1,'CalculatorApp::Calculator']]],
+  ['panel_5ftodropdown_1',['panel_toDropDown',['../class_calculator_app_1_1_calculator.html#ad8dbaaa6d901e11345dbae4ddfcb9ee1',1,'CalculatorApp::Calculator']]],
+  ['paneldown_5funitconverter_2',['PanelDown_UnitConverter',['../class_calculator_app_1_1_calculator.html#ab6a17af745509f096229e084d9333e49',1,'CalculatorApp::Calculator']]],
+  ['plus_3',['Plus',['../class_calculator_app_1_1_calculator.html#ac8103e628fff4cb30d1e72756a40faa9',1,'CalculatorApp::Calculator']]]
 ];

@@ -4,8 +4,8 @@ var indexSectionsWithContent =
   1: "cmnou",
   2: "cu",
   3: "fmopru",
-  4: "acdefilmnoprstuw",
-  5: "bcdefilmnprst",
+  4: "abcdefilmnoprstuw",
+  5: "bcdefilmnoprst",
   6: "c"
 };
 

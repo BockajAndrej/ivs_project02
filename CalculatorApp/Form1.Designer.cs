@@ -38,21 +38,21 @@
             this.button9 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.Plus = new System.Windows.Forms.Button();
-            this.Substitution = new System.Windows.Forms.Button();
-            this.Multiplication = new System.Windows.Forms.Button();
-            this.Division = new System.Windows.Forms.Button();
-            this.Modulo = new System.Windows.Forms.Button();
-            this.Clear = new System.Windows.Forms.Button();
-            this.Result = new System.Windows.Forms.Button();
-            this.Factorial = new System.Windows.Forms.Button();
-            this.toPowerOf2 = new System.Windows.Forms.Button();
-            this.SquareRoot = new System.Windows.Forms.Button();
-            this.toPowerOfX = new System.Windows.Forms.Button();
+            this.op_Plus = new System.Windows.Forms.Button();
+            this.op_Substitution = new System.Windows.Forms.Button();
+            this.op_Multiplication = new System.Windows.Forms.Button();
+            this.op_Division = new System.Windows.Forms.Button();
+            this.op_Modulo = new System.Windows.Forms.Button();
+            this.del_Clear = new System.Windows.Forms.Button();
+            this.op_Result = new System.Windows.Forms.Button();
+            this.sp_Factorial = new System.Windows.Forms.Button();
+            this.sp_toPowerOf2 = new System.Windows.Forms.Button();
+            this.sp_SquareRoot = new System.Windows.Forms.Button();
+            this.sp_toPowerOfX = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.Comma = new System.Windows.Forms.Button();
-            this.Delete = new System.Windows.Forms.Button();
+            this.button_Comma = new System.Windows.Forms.Button();
+            this.del_Delete = new System.Windows.Forms.Button();
             this.PanelDown_UnitConverter = new System.Windows.Forms.Panel();
             this.btn_Length = new System.Windows.Forms.Button();
             this.btn_Time = new System.Windows.Forms.Button();
@@ -134,17 +134,17 @@
             this.but_Degree_Input = new System.Windows.Forms.Button();
             this.textBox_Converter_Output = new System.Windows.Forms.TextBox();
             this.textBox_Converter_Input = new System.Windows.Forms.TextBox();
-            this.ClearConverter = new System.Windows.Forms.Button();
+            this.del_ClearConverter = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
-            this.DeleteConverter = new System.Windows.Forms.Button();
+            this.del_DeleteConverter = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
+            this.CommaConverter = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.customControl1 = new CalculatorApp.CustomControls.CustomControl();
@@ -277,148 +277,148 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.numberButton_Click);
             // 
-            // Plus
+            // op_Plus
             // 
-            this.Plus.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Plus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Plus.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Plus.Location = new System.Drawing.Point(225, 276);
-            this.Plus.Name = "Plus";
-            this.Plus.Size = new System.Drawing.Size(50, 50);
-            this.Plus.TabIndex = 11;
-            this.Plus.Text = "+";
-            this.Plus.UseVisualStyleBackColor = true;
-            this.Plus.Click += new System.EventHandler(this.operatorButton_Click);
+            this.op_Plus.Cursor = System.Windows.Forms.Cursors.Default;
+            this.op_Plus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.op_Plus.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.op_Plus.Location = new System.Drawing.Point(225, 276);
+            this.op_Plus.Name = "op_Plus";
+            this.op_Plus.Size = new System.Drawing.Size(50, 50);
+            this.op_Plus.TabIndex = 11;
+            this.op_Plus.Text = "+";
+            this.op_Plus.UseVisualStyleBackColor = true;
+            this.op_Plus.Click += new System.EventHandler(this.operatorButton_Click);
             // 
-            // Substitution
+            // op_Substitution
             // 
-            this.Substitution.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Substitution.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Substitution.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Substitution.Location = new System.Drawing.Point(225, 202);
-            this.Substitution.Name = "Substitution";
-            this.Substitution.Size = new System.Drawing.Size(50, 50);
-            this.Substitution.TabIndex = 12;
-            this.Substitution.Text = "-";
-            this.Substitution.UseVisualStyleBackColor = true;
-            this.Substitution.Click += new System.EventHandler(this.operatorButton_Click);
+            this.op_Substitution.Cursor = System.Windows.Forms.Cursors.Default;
+            this.op_Substitution.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.op_Substitution.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.op_Substitution.Location = new System.Drawing.Point(225, 202);
+            this.op_Substitution.Name = "op_Substitution";
+            this.op_Substitution.Size = new System.Drawing.Size(50, 50);
+            this.op_Substitution.TabIndex = 12;
+            this.op_Substitution.Text = "-";
+            this.op_Substitution.UseVisualStyleBackColor = true;
+            this.op_Substitution.Click += new System.EventHandler(this.operatorButton_Click);
             // 
-            // Multiplication
+            // op_Multiplication
             // 
-            this.Multiplication.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Multiplication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Multiplication.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Multiplication.Location = new System.Drawing.Point(225, 128);
-            this.Multiplication.Name = "Multiplication";
-            this.Multiplication.Size = new System.Drawing.Size(50, 50);
-            this.Multiplication.TabIndex = 13;
-            this.Multiplication.Text = "X";
-            this.Multiplication.UseVisualStyleBackColor = true;
-            this.Multiplication.Click += new System.EventHandler(this.operatorButton_Click);
+            this.op_Multiplication.Cursor = System.Windows.Forms.Cursors.Default;
+            this.op_Multiplication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.op_Multiplication.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.op_Multiplication.Location = new System.Drawing.Point(225, 128);
+            this.op_Multiplication.Name = "op_Multiplication";
+            this.op_Multiplication.Size = new System.Drawing.Size(50, 50);
+            this.op_Multiplication.TabIndex = 13;
+            this.op_Multiplication.Text = "X";
+            this.op_Multiplication.UseVisualStyleBackColor = true;
+            this.op_Multiplication.Click += new System.EventHandler(this.operatorButton_Click);
             // 
-            // Division
+            // op_Division
             // 
-            this.Division.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Division.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Division.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Division.Location = new System.Drawing.Point(154, 60);
-            this.Division.Name = "Division";
-            this.Division.Size = new System.Drawing.Size(50, 50);
-            this.Division.TabIndex = 15;
-            this.Division.Text = "÷";
-            this.Division.UseVisualStyleBackColor = true;
-            this.Division.Click += new System.EventHandler(this.operatorButton_Click);
+            this.op_Division.Cursor = System.Windows.Forms.Cursors.Default;
+            this.op_Division.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.op_Division.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.op_Division.Location = new System.Drawing.Point(154, 60);
+            this.op_Division.Name = "op_Division";
+            this.op_Division.Size = new System.Drawing.Size(50, 50);
+            this.op_Division.TabIndex = 15;
+            this.op_Division.Text = "÷";
+            this.op_Division.UseVisualStyleBackColor = true;
+            this.op_Division.Click += new System.EventHandler(this.operatorButton_Click);
             // 
-            // Modulo
+            // op_Modulo
             // 
-            this.Modulo.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Modulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Modulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Modulo.Location = new System.Drawing.Point(83, 62);
-            this.Modulo.Name = "Modulo";
-            this.Modulo.Size = new System.Drawing.Size(50, 50);
-            this.Modulo.TabIndex = 16;
-            this.Modulo.Text = "%";
-            this.Modulo.UseVisualStyleBackColor = true;
-            this.Modulo.Click += new System.EventHandler(this.operatorButton_Click);
+            this.op_Modulo.Cursor = System.Windows.Forms.Cursors.Default;
+            this.op_Modulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.op_Modulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.op_Modulo.Location = new System.Drawing.Point(83, 62);
+            this.op_Modulo.Name = "op_Modulo";
+            this.op_Modulo.Size = new System.Drawing.Size(50, 50);
+            this.op_Modulo.TabIndex = 16;
+            this.op_Modulo.Text = "%";
+            this.op_Modulo.UseVisualStyleBackColor = true;
+            this.op_Modulo.Click += new System.EventHandler(this.operatorButton_Click);
             // 
-            // Clear
+            // del_Clear
             // 
-            this.Clear.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Clear.Location = new System.Drawing.Point(12, 62);
-            this.Clear.Name = "Clear";
-            this.Clear.Size = new System.Drawing.Size(50, 50);
-            this.Clear.TabIndex = 17;
-            this.Clear.Text = "C";
-            this.Clear.UseVisualStyleBackColor = true;
-            this.Clear.Click += new System.EventHandler(this.Clear_Click);
+            this.del_Clear.Cursor = System.Windows.Forms.Cursors.Default;
+            this.del_Clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.del_Clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.del_Clear.Location = new System.Drawing.Point(12, 62);
+            this.del_Clear.Name = "del_Clear";
+            this.del_Clear.Size = new System.Drawing.Size(50, 50);
+            this.del_Clear.TabIndex = 17;
+            this.del_Clear.Text = "C";
+            this.del_Clear.UseVisualStyleBackColor = true;
+            this.del_Clear.Click += new System.EventHandler(this.Clear_Click);
             // 
-            // Result
+            // op_Result
             // 
-            this.Result.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Result.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Result.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Result.Location = new System.Drawing.Point(154, 349);
-            this.Result.Name = "Result";
-            this.Result.Size = new System.Drawing.Size(191, 50);
-            this.Result.TabIndex = 18;
-            this.Result.Text = "=";
-            this.Result.UseVisualStyleBackColor = true;
-            this.Result.Click += new System.EventHandler(this.Result_Click);
+            this.op_Result.Cursor = System.Windows.Forms.Cursors.Default;
+            this.op_Result.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.op_Result.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.op_Result.Location = new System.Drawing.Point(154, 349);
+            this.op_Result.Name = "op_Result";
+            this.op_Result.Size = new System.Drawing.Size(191, 50);
+            this.op_Result.TabIndex = 18;
+            this.op_Result.Text = "=";
+            this.op_Result.UseVisualStyleBackColor = true;
+            this.op_Result.Click += new System.EventHandler(this.Result_Click);
             // 
-            // Factorial
+            // sp_Factorial
             // 
-            this.Factorial.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Factorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Factorial.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Factorial.Location = new System.Drawing.Point(295, 202);
-            this.Factorial.Name = "Factorial";
-            this.Factorial.Size = new System.Drawing.Size(50, 50);
-            this.Factorial.TabIndex = 19;
-            this.Factorial.Text = "n!";
-            this.Factorial.UseVisualStyleBackColor = true;
-            this.Factorial.Click += new System.EventHandler(this.Factorial_Click);
+            this.sp_Factorial.Cursor = System.Windows.Forms.Cursors.Default;
+            this.sp_Factorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sp_Factorial.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sp_Factorial.Location = new System.Drawing.Point(295, 202);
+            this.sp_Factorial.Name = "sp_Factorial";
+            this.sp_Factorial.Size = new System.Drawing.Size(50, 50);
+            this.sp_Factorial.TabIndex = 19;
+            this.sp_Factorial.Text = "n!";
+            this.sp_Factorial.UseVisualStyleBackColor = true;
+            this.sp_Factorial.Click += new System.EventHandler(this.Factorial_Click);
             // 
-            // toPowerOf2
+            // sp_toPowerOf2
             // 
-            this.toPowerOf2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.toPowerOf2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.toPowerOf2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toPowerOf2.Location = new System.Drawing.Point(295, 128);
-            this.toPowerOf2.Name = "toPowerOf2";
-            this.toPowerOf2.Size = new System.Drawing.Size(50, 50);
-            this.toPowerOf2.TabIndex = 20;
-            this.toPowerOf2.Text = "n²";
-            this.toPowerOf2.UseVisualStyleBackColor = true;
-            this.toPowerOf2.Click += new System.EventHandler(this.toPowerOf2_Click);
+            this.sp_toPowerOf2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.sp_toPowerOf2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sp_toPowerOf2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sp_toPowerOf2.Location = new System.Drawing.Point(295, 128);
+            this.sp_toPowerOf2.Name = "sp_toPowerOf2";
+            this.sp_toPowerOf2.Size = new System.Drawing.Size(50, 50);
+            this.sp_toPowerOf2.TabIndex = 20;
+            this.sp_toPowerOf2.Text = "n²";
+            this.sp_toPowerOf2.UseVisualStyleBackColor = true;
+            this.sp_toPowerOf2.Click += new System.EventHandler(this.toPowerOf2_Click);
             // 
-            // SquareRoot
+            // sp_SquareRoot
             // 
-            this.SquareRoot.Cursor = System.Windows.Forms.Cursors.Default;
-            this.SquareRoot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SquareRoot.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SquareRoot.Location = new System.Drawing.Point(295, 62);
-            this.SquareRoot.Name = "SquareRoot";
-            this.SquareRoot.Size = new System.Drawing.Size(50, 50);
-            this.SquareRoot.TabIndex = 21;
-            this.SquareRoot.Text = "√ ";
-            this.SquareRoot.UseVisualStyleBackColor = true;
-            this.SquareRoot.Click += new System.EventHandler(this.SquareRoot_Click);
+            this.sp_SquareRoot.Cursor = System.Windows.Forms.Cursors.Default;
+            this.sp_SquareRoot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sp_SquareRoot.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sp_SquareRoot.Location = new System.Drawing.Point(295, 62);
+            this.sp_SquareRoot.Name = "sp_SquareRoot";
+            this.sp_SquareRoot.Size = new System.Drawing.Size(50, 50);
+            this.sp_SquareRoot.TabIndex = 21;
+            this.sp_SquareRoot.Text = "√ ";
+            this.sp_SquareRoot.UseVisualStyleBackColor = true;
+            this.sp_SquareRoot.Click += new System.EventHandler(this.SquareRoot_Click);
             // 
-            // toPowerOfX
+            // sp_toPowerOfX
             // 
-            this.toPowerOfX.Cursor = System.Windows.Forms.Cursors.Default;
-            this.toPowerOfX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.toPowerOfX.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toPowerOfX.Location = new System.Drawing.Point(295, 276);
-            this.toPowerOfX.Name = "toPowerOfX";
-            this.toPowerOfX.Size = new System.Drawing.Size(50, 50);
-            this.toPowerOfX.TabIndex = 22;
-            this.toPowerOfX.Text = "nˣ";
-            this.toPowerOfX.UseVisualStyleBackColor = true;
-            this.toPowerOfX.Click += new System.EventHandler(this.toPowerOfX_Click);
+            this.sp_toPowerOfX.Cursor = System.Windows.Forms.Cursors.Default;
+            this.sp_toPowerOfX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sp_toPowerOfX.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sp_toPowerOfX.Location = new System.Drawing.Point(295, 276);
+            this.sp_toPowerOfX.Name = "sp_toPowerOfX";
+            this.sp_toPowerOfX.Size = new System.Drawing.Size(50, 50);
+            this.sp_toPowerOfX.TabIndex = 22;
+            this.sp_toPowerOfX.Text = "nˣ";
+            this.sp_toPowerOfX.UseVisualStyleBackColor = true;
+            this.sp_toPowerOfX.Click += new System.EventHandler(this.toPowerOfX_Click);
             // 
             // button14
             // 
@@ -446,32 +446,32 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.numberButton_Click);
             // 
-            // Comma
+            // button_Comma
             // 
-            this.Comma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Comma.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Comma.Location = new System.Drawing.Point(12, 348);
-            this.Comma.Margin = new System.Windows.Forms.Padding(2);
-            this.Comma.Name = "Comma";
-            this.Comma.Size = new System.Drawing.Size(50, 50);
-            this.Comma.TabIndex = 26;
-            this.Comma.Text = ",";
-            this.Comma.UseVisualStyleBackColor = true;
-            this.Comma.Click += new System.EventHandler(this.numberButton_Click);
+            this.button_Comma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Comma.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Comma.Location = new System.Drawing.Point(12, 348);
+            this.button_Comma.Margin = new System.Windows.Forms.Padding(2);
+            this.button_Comma.Name = "button_Comma";
+            this.button_Comma.Size = new System.Drawing.Size(50, 50);
+            this.button_Comma.TabIndex = 26;
+            this.button_Comma.Text = ",";
+            this.button_Comma.UseVisualStyleBackColor = true;
+            this.button_Comma.Click += new System.EventHandler(this.numberButton_Click);
             // 
-            // Delete
+            // del_Delete
             // 
-            this.Delete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.Delete.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Delete.Location = new System.Drawing.Point(225, 60);
-            this.Delete.Name = "Delete";
-            this.Delete.Size = new System.Drawing.Size(50, 50);
-            this.Delete.TabIndex = 27;
-            this.Delete.Text = "DEL";
-            this.Delete.UseVisualStyleBackColor = true;
-            this.Delete.Click += new System.EventHandler(this.Delete_Click);
+            this.del_Delete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.del_Delete.Cursor = System.Windows.Forms.Cursors.Default;
+            this.del_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.del_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.del_Delete.Location = new System.Drawing.Point(225, 60);
+            this.del_Delete.Name = "del_Delete";
+            this.del_Delete.Size = new System.Drawing.Size(50, 50);
+            this.del_Delete.TabIndex = 27;
+            this.del_Delete.Text = "DEL";
+            this.del_Delete.UseVisualStyleBackColor = true;
+            this.del_Delete.Click += new System.EventHandler(this.Delete_Click);
             // 
             // PanelDown_UnitConverter
             // 
@@ -483,7 +483,7 @@
             this.PanelDown_UnitConverter.Controls.Add(this.btn_Degrees);
             this.PanelDown_UnitConverter.Controls.Add(this.Btn_UnitConverter);
             this.PanelDown_UnitConverter.Location = new System.Drawing.Point(9, 135);
-            this.PanelDown_UnitConverter.MaximumSize = new System.Drawing.Size(119, 224);
+            this.PanelDown_UnitConverter.MaximumSize = new System.Drawing.Size(119, 220);
             this.PanelDown_UnitConverter.MinimumSize = new System.Drawing.Size(119, 48);
             this.PanelDown_UnitConverter.Name = "PanelDown_UnitConverter";
             this.PanelDown_UnitConverter.Size = new System.Drawing.Size(119, 48);
@@ -491,7 +491,7 @@
             // 
             // btn_Length
             // 
-            this.btn_Length.BackColor = System.Drawing.Color.Honeydew;
+            this.btn_Length.BackColor = System.Drawing.Color.Transparent;
             this.btn_Length.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_Length.FlatAppearance.BorderSize = 0;
             this.btn_Length.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -505,7 +505,7 @@
             // 
             // btn_Time
             // 
-            this.btn_Time.BackColor = System.Drawing.Color.Honeydew;
+            this.btn_Time.BackColor = System.Drawing.Color.Transparent;
             this.btn_Time.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_Time.FlatAppearance.BorderSize = 0;
             this.btn_Time.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -519,7 +519,7 @@
             // 
             // btn_Temperature
             // 
-            this.btn_Temperature.BackColor = System.Drawing.Color.Honeydew;
+            this.btn_Temperature.BackColor = System.Drawing.Color.Transparent;
             this.btn_Temperature.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_Temperature.FlatAppearance.BorderSize = 0;
             this.btn_Temperature.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -533,7 +533,7 @@
             // 
             // btn_Weight
             // 
-            this.btn_Weight.BackColor = System.Drawing.Color.Honeydew;
+            this.btn_Weight.BackColor = System.Drawing.Color.Transparent;
             this.btn_Weight.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_Weight.FlatAppearance.BorderSize = 0;
             this.btn_Weight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -547,7 +547,7 @@
             // 
             // btn_Degrees
             // 
-            this.btn_Degrees.BackColor = System.Drawing.Color.Honeydew;
+            this.btn_Degrees.BackColor = System.Drawing.Color.Transparent;
             this.btn_Degrees.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_Degrees.FlatAppearance.BorderSize = 0;
             this.btn_Degrees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -563,8 +563,8 @@
             // 
             this.Btn_UnitConverter.BackColor = System.Drawing.Color.Transparent;
             this.Btn_UnitConverter.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Btn_UnitConverter.FlatAppearance.BorderSize = 0;
             this.Btn_UnitConverter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_UnitConverter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_UnitConverter.Image = global::CalculatorApp.Properties.Resources.dropdoiwn2;
             this.Btn_UnitConverter.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_UnitConverter.Location = new System.Drawing.Point(0, 0);
@@ -580,31 +580,31 @@
             // Main_Calculator_panel
             // 
             this.Main_Calculator_panel.BackColor = System.Drawing.Color.Silver;
-            this.Main_Calculator_panel.Controls.Add(this.Clear);
+            this.Main_Calculator_panel.Controls.Add(this.del_Clear);
             this.Main_Calculator_panel.Controls.Add(this.button3);
             this.Main_Calculator_panel.Controls.Add(this.button6);
             this.Main_Calculator_panel.Controls.Add(this.button5);
-            this.Main_Calculator_panel.Controls.Add(this.Delete);
+            this.Main_Calculator_panel.Controls.Add(this.del_Delete);
             this.Main_Calculator_panel.Controls.Add(this.button4);
-            this.Main_Calculator_panel.Controls.Add(this.Comma);
+            this.Main_Calculator_panel.Controls.Add(this.button_Comma);
             this.Main_Calculator_panel.Controls.Add(this.button9);
             this.Main_Calculator_panel.Controls.Add(this.button8);
             this.Main_Calculator_panel.Controls.Add(this.button1);
             this.Main_Calculator_panel.Controls.Add(this.button7);
             this.Main_Calculator_panel.Controls.Add(this.button14);
             this.Main_Calculator_panel.Controls.Add(this.textBox1);
-            this.Main_Calculator_panel.Controls.Add(this.toPowerOfX);
+            this.Main_Calculator_panel.Controls.Add(this.sp_toPowerOfX);
             this.Main_Calculator_panel.Controls.Add(this.button2);
-            this.Main_Calculator_panel.Controls.Add(this.SquareRoot);
-            this.Main_Calculator_panel.Controls.Add(this.Plus);
-            this.Main_Calculator_panel.Controls.Add(this.toPowerOf2);
-            this.Main_Calculator_panel.Controls.Add(this.Substitution);
-            this.Main_Calculator_panel.Controls.Add(this.Factorial);
-            this.Main_Calculator_panel.Controls.Add(this.Multiplication);
-            this.Main_Calculator_panel.Controls.Add(this.Result);
-            this.Main_Calculator_panel.Controls.Add(this.Division);
-            this.Main_Calculator_panel.Controls.Add(this.Modulo);
-            this.Main_Calculator_panel.Location = new System.Drawing.Point(137, 12);
+            this.Main_Calculator_panel.Controls.Add(this.sp_SquareRoot);
+            this.Main_Calculator_panel.Controls.Add(this.op_Plus);
+            this.Main_Calculator_panel.Controls.Add(this.sp_toPowerOf2);
+            this.Main_Calculator_panel.Controls.Add(this.op_Substitution);
+            this.Main_Calculator_panel.Controls.Add(this.sp_Factorial);
+            this.Main_Calculator_panel.Controls.Add(this.op_Multiplication);
+            this.Main_Calculator_panel.Controls.Add(this.op_Result);
+            this.Main_Calculator_panel.Controls.Add(this.op_Division);
+            this.Main_Calculator_panel.Controls.Add(this.op_Modulo);
+            this.Main_Calculator_panel.Location = new System.Drawing.Point(144, 12);
             this.Main_Calculator_panel.Name = "Main_Calculator_panel";
             this.Main_Calculator_panel.Size = new System.Drawing.Size(368, 418);
             this.Main_Calculator_panel.TabIndex = 31;
@@ -612,7 +612,7 @@
             // 
             // Main_Setting_panel
             // 
-            this.Main_Setting_panel.Location = new System.Drawing.Point(138, 12);
+            this.Main_Setting_panel.Location = new System.Drawing.Point(145, 12);
             this.Main_Setting_panel.Name = "Main_Setting_panel";
             this.Main_Setting_panel.Size = new System.Drawing.Size(370, 418);
             this.Main_Setting_panel.TabIndex = 33;
@@ -625,8 +625,8 @@
             // btn_Calculator
             // 
             this.btn_Calculator.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btn_Calculator.FlatAppearance.BorderSize = 0;
             this.btn_Calculator.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Calculator.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Calculator.Location = new System.Drawing.Point(9, 75);
             this.btn_Calculator.Name = "btn_Calculator";
             this.btn_Calculator.Size = new System.Drawing.Size(119, 43);
@@ -638,8 +638,8 @@
             // btn_Settings
             // 
             this.btn_Settings.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btn_Settings.FlatAppearance.BorderSize = 0;
             this.btn_Settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Settings.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Settings.Location = new System.Drawing.Point(9, 15);
             this.btn_Settings.Name = "btn_Settings";
             this.btn_Settings.Size = new System.Drawing.Size(119, 43);
@@ -665,20 +665,20 @@
             this.panel_Converter.Controls.Add(this.IDegree_panel);
             this.panel_Converter.Controls.Add(this.textBox_Converter_Output);
             this.panel_Converter.Controls.Add(this.textBox_Converter_Input);
-            this.panel_Converter.Controls.Add(this.ClearConverter);
+            this.panel_Converter.Controls.Add(this.del_ClearConverter);
             this.panel_Converter.Controls.Add(this.button11);
             this.panel_Converter.Controls.Add(this.button12);
             this.panel_Converter.Controls.Add(this.button23);
             this.panel_Converter.Controls.Add(this.button13);
             this.panel_Converter.Controls.Add(this.button22);
-            this.panel_Converter.Controls.Add(this.DeleteConverter);
+            this.panel_Converter.Controls.Add(this.del_DeleteConverter);
             this.panel_Converter.Controls.Add(this.button21);
             this.panel_Converter.Controls.Add(this.button16);
             this.panel_Converter.Controls.Add(this.button20);
-            this.panel_Converter.Controls.Add(this.button17);
+            this.panel_Converter.Controls.Add(this.CommaConverter);
             this.panel_Converter.Controls.Add(this.button19);
             this.panel_Converter.Controls.Add(this.button18);
-            this.panel_Converter.Location = new System.Drawing.Point(137, 12);
+            this.panel_Converter.Location = new System.Drawing.Point(144, 12);
             this.panel_Converter.Name = "panel_Converter";
             this.panel_Converter.Size = new System.Drawing.Size(506, 406);
             this.panel_Converter.TabIndex = 38;
@@ -697,7 +697,7 @@
             // 
             this.Input_LabelConvert.AutoSize = true;
             this.Input_LabelConvert.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Input_LabelConvert.Location = new System.Drawing.Point(171, 58);
+            this.Input_LabelConvert.Location = new System.Drawing.Point(160, 58);
             this.Input_LabelConvert.Name = "Input_LabelConvert";
             this.Input_LabelConvert.Size = new System.Drawing.Size(20, 20);
             this.Input_LabelConvert.TabIndex = 44;
@@ -714,7 +714,7 @@
             this.OLength_panel.Controls.Add(this.OLengthBtn_dm);
             this.OLength_panel.Controls.Add(this.OLengthBtn_cm);
             this.OLength_panel.Controls.Add(this.OLengthBtn_mm);
-            this.OLength_panel.Location = new System.Drawing.Point(411, 270);
+            this.OLength_panel.Location = new System.Drawing.Point(408, 291);
             this.OLength_panel.MaximumSize = new System.Drawing.Size(77, 288);
             this.OLength_panel.MinimumSize = new System.Drawing.Size(77, 42);
             this.OLength_panel.Name = "OLength_panel";
@@ -723,10 +723,13 @@
             // 
             // OLengthBtn_yard
             // 
-            this.OLengthBtn_yard.BackColor = System.Drawing.Color.Honeydew;
+            this.OLengthBtn_yard.BackColor = System.Drawing.Color.Transparent;
             this.OLengthBtn_yard.Dock = System.Windows.Forms.DockStyle.Top;
-            this.OLengthBtn_yard.FlatAppearance.BorderSize = 0;
+            this.OLengthBtn_yard.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.OLengthBtn_yard.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.OLengthBtn_yard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OLengthBtn_yard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OLengthBtn_yard.ForeColor = System.Drawing.Color.OrangeRed;
             this.OLengthBtn_yard.Location = new System.Drawing.Point(0, 252);
             this.OLengthBtn_yard.Name = "OLengthBtn_yard";
             this.OLengthBtn_yard.Size = new System.Drawing.Size(77, 35);
@@ -738,10 +741,13 @@
             // 
             // OLengthBtn_inch
             // 
-            this.OLengthBtn_inch.BackColor = System.Drawing.Color.Honeydew;
+            this.OLengthBtn_inch.BackColor = System.Drawing.Color.Transparent;
             this.OLengthBtn_inch.Dock = System.Windows.Forms.DockStyle.Top;
-            this.OLengthBtn_inch.FlatAppearance.BorderSize = 0;
+            this.OLengthBtn_inch.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.OLengthBtn_inch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.OLengthBtn_inch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OLengthBtn_inch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OLengthBtn_inch.ForeColor = System.Drawing.Color.OrangeRed;
             this.OLengthBtn_inch.Location = new System.Drawing.Point(0, 217);
             this.OLengthBtn_inch.Name = "OLengthBtn_inch";
             this.OLengthBtn_inch.Size = new System.Drawing.Size(77, 35);
@@ -753,10 +759,13 @@
             // 
             // OLengthBtn_miles
             // 
-            this.OLengthBtn_miles.BackColor = System.Drawing.Color.Honeydew;
+            this.OLengthBtn_miles.BackColor = System.Drawing.Color.Transparent;
             this.OLengthBtn_miles.Dock = System.Windows.Forms.DockStyle.Top;
-            this.OLengthBtn_miles.FlatAppearance.BorderSize = 0;
+            this.OLengthBtn_miles.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.OLengthBtn_miles.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.OLengthBtn_miles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OLengthBtn_miles.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OLengthBtn_miles.ForeColor = System.Drawing.Color.OrangeRed;
             this.OLengthBtn_miles.Location = new System.Drawing.Point(0, 182);
             this.OLengthBtn_miles.Name = "OLengthBtn_miles";
             this.OLengthBtn_miles.Size = new System.Drawing.Size(77, 35);
@@ -768,10 +777,13 @@
             // 
             // OLengthBtn_km
             // 
-            this.OLengthBtn_km.BackColor = System.Drawing.Color.Honeydew;
+            this.OLengthBtn_km.BackColor = System.Drawing.Color.Transparent;
             this.OLengthBtn_km.Dock = System.Windows.Forms.DockStyle.Top;
-            this.OLengthBtn_km.FlatAppearance.BorderSize = 0;
+            this.OLengthBtn_km.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.OLengthBtn_km.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.OLengthBtn_km.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OLengthBtn_km.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OLengthBtn_km.ForeColor = System.Drawing.Color.OrangeRed;
             this.OLengthBtn_km.Location = new System.Drawing.Point(0, 147);
             this.OLengthBtn_km.Name = "OLengthBtn_km";
             this.OLengthBtn_km.Size = new System.Drawing.Size(77, 35);
@@ -783,10 +795,13 @@
             // 
             // OLengthBtn_m
             // 
-            this.OLengthBtn_m.BackColor = System.Drawing.Color.Honeydew;
+            this.OLengthBtn_m.BackColor = System.Drawing.Color.Transparent;
             this.OLengthBtn_m.Dock = System.Windows.Forms.DockStyle.Top;
-            this.OLengthBtn_m.FlatAppearance.BorderSize = 0;
+            this.OLengthBtn_m.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.OLengthBtn_m.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.OLengthBtn_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OLengthBtn_m.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OLengthBtn_m.ForeColor = System.Drawing.Color.OrangeRed;
             this.OLengthBtn_m.Location = new System.Drawing.Point(0, 112);
             this.OLengthBtn_m.Name = "OLengthBtn_m";
             this.OLengthBtn_m.Size = new System.Drawing.Size(77, 35);
@@ -798,10 +813,13 @@
             // 
             // OLengthBtn_dm
             // 
-            this.OLengthBtn_dm.BackColor = System.Drawing.Color.Honeydew;
+            this.OLengthBtn_dm.BackColor = System.Drawing.Color.Transparent;
             this.OLengthBtn_dm.Dock = System.Windows.Forms.DockStyle.Top;
-            this.OLengthBtn_dm.FlatAppearance.BorderSize = 0;
+            this.OLengthBtn_dm.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.OLengthBtn_dm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.OLengthBtn_dm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OLengthBtn_dm.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OLengthBtn_dm.ForeColor = System.Drawing.Color.OrangeRed;
             this.OLengthBtn_dm.Location = new System.Drawing.Point(0, 77);
             this.OLengthBtn_dm.Name = "OLengthBtn_dm";
             this.OLengthBtn_dm.Size = new System.Drawing.Size(77, 35);
@@ -813,10 +831,13 @@
             // 
             // OLengthBtn_cm
             // 
-            this.OLengthBtn_cm.BackColor = System.Drawing.Color.Honeydew;
+            this.OLengthBtn_cm.BackColor = System.Drawing.Color.Transparent;
             this.OLengthBtn_cm.Dock = System.Windows.Forms.DockStyle.Top;
-            this.OLengthBtn_cm.FlatAppearance.BorderSize = 0;
+            this.OLengthBtn_cm.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.OLengthBtn_cm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.OLengthBtn_cm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OLengthBtn_cm.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OLengthBtn_cm.ForeColor = System.Drawing.Color.OrangeRed;
             this.OLengthBtn_cm.Location = new System.Drawing.Point(0, 42);
             this.OLengthBtn_cm.Name = "OLengthBtn_cm";
             this.OLengthBtn_cm.Size = new System.Drawing.Size(77, 35);
@@ -830,8 +851,11 @@
             // 
             this.OLengthBtn_mm.BackColor = System.Drawing.Color.Transparent;
             this.OLengthBtn_mm.Dock = System.Windows.Forms.DockStyle.Top;
-            this.OLengthBtn_mm.FlatAppearance.BorderSize = 0;
+            this.OLengthBtn_mm.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.OLengthBtn_mm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.OLengthBtn_mm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OLengthBtn_mm.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OLengthBtn_mm.ForeColor = System.Drawing.Color.OrangeRed;
             this.OLengthBtn_mm.Image = global::CalculatorApp.Properties.Resources.dropdoiwn2;
             this.OLengthBtn_mm.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.OLengthBtn_mm.Location = new System.Drawing.Point(0, 0);
@@ -853,7 +877,7 @@
             this.OWeight_panel.Controls.Add(this.OWeightBtn_dag);
             this.OWeight_panel.Controls.Add(this.OWeightBtn_g);
             this.OWeight_panel.Controls.Add(this.OWeightBtn_mg);
-            this.OWeight_panel.Location = new System.Drawing.Point(411, 227);
+            this.OWeight_panel.Location = new System.Drawing.Point(405, 234);
             this.OWeight_panel.MaximumSize = new System.Drawing.Size(75, 252);
             this.OWeight_panel.MinimumSize = new System.Drawing.Size(75, 42);
             this.OWeight_panel.Name = "OWeight_panel";
@@ -862,10 +886,13 @@
             // 
             // OWeightBtn_oz
             // 
-            this.OWeightBtn_oz.BackColor = System.Drawing.Color.Honeydew;
+            this.OWeightBtn_oz.BackColor = System.Drawing.Color.Transparent;
             this.OWeightBtn_oz.Dock = System.Windows.Forms.DockStyle.Top;
-            this.OWeightBtn_oz.FlatAppearance.BorderSize = 0;
+            this.OWeightBtn_oz.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.OWeightBtn_oz.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.OWeightBtn_oz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OWeightBtn_oz.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OWeightBtn_oz.ForeColor = System.Drawing.Color.OrangeRed;
             this.OWeightBtn_oz.Location = new System.Drawing.Point(0, 217);
             this.OWeightBtn_oz.Name = "OWeightBtn_oz";
             this.OWeightBtn_oz.Size = new System.Drawing.Size(75, 35);
@@ -877,10 +904,13 @@
             // 
             // OWeightBtn_lb
             // 
-            this.OWeightBtn_lb.BackColor = System.Drawing.Color.Honeydew;
+            this.OWeightBtn_lb.BackColor = System.Drawing.Color.Transparent;
             this.OWeightBtn_lb.Dock = System.Windows.Forms.DockStyle.Top;
-            this.OWeightBtn_lb.FlatAppearance.BorderSize = 0;
+            this.OWeightBtn_lb.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.OWeightBtn_lb.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.OWeightBtn_lb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OWeightBtn_lb.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OWeightBtn_lb.ForeColor = System.Drawing.Color.OrangeRed;
             this.OWeightBtn_lb.Location = new System.Drawing.Point(0, 182);
             this.OWeightBtn_lb.Name = "OWeightBtn_lb";
             this.OWeightBtn_lb.Size = new System.Drawing.Size(75, 35);
@@ -892,10 +922,13 @@
             // 
             // OWeightBtn_t
             // 
-            this.OWeightBtn_t.BackColor = System.Drawing.Color.Honeydew;
+            this.OWeightBtn_t.BackColor = System.Drawing.Color.Transparent;
             this.OWeightBtn_t.Dock = System.Windows.Forms.DockStyle.Top;
-            this.OWeightBtn_t.FlatAppearance.BorderSize = 0;
+            this.OWeightBtn_t.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.OWeightBtn_t.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.OWeightBtn_t.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OWeightBtn_t.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OWeightBtn_t.ForeColor = System.Drawing.Color.OrangeRed;
             this.OWeightBtn_t.Location = new System.Drawing.Point(0, 147);
             this.OWeightBtn_t.Name = "OWeightBtn_t";
             this.OWeightBtn_t.Size = new System.Drawing.Size(75, 35);
@@ -907,10 +940,13 @@
             // 
             // OWeightBtn_kg
             // 
-            this.OWeightBtn_kg.BackColor = System.Drawing.Color.Honeydew;
+            this.OWeightBtn_kg.BackColor = System.Drawing.Color.Transparent;
             this.OWeightBtn_kg.Dock = System.Windows.Forms.DockStyle.Top;
-            this.OWeightBtn_kg.FlatAppearance.BorderSize = 0;
+            this.OWeightBtn_kg.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.OWeightBtn_kg.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.OWeightBtn_kg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OWeightBtn_kg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OWeightBtn_kg.ForeColor = System.Drawing.Color.OrangeRed;
             this.OWeightBtn_kg.Location = new System.Drawing.Point(0, 112);
             this.OWeightBtn_kg.Name = "OWeightBtn_kg";
             this.OWeightBtn_kg.Size = new System.Drawing.Size(75, 35);
@@ -922,10 +958,13 @@
             // 
             // OWeightBtn_dag
             // 
-            this.OWeightBtn_dag.BackColor = System.Drawing.Color.Honeydew;
+            this.OWeightBtn_dag.BackColor = System.Drawing.Color.Transparent;
             this.OWeightBtn_dag.Dock = System.Windows.Forms.DockStyle.Top;
-            this.OWeightBtn_dag.FlatAppearance.BorderSize = 0;
+            this.OWeightBtn_dag.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.OWeightBtn_dag.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.OWeightBtn_dag.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OWeightBtn_dag.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OWeightBtn_dag.ForeColor = System.Drawing.Color.OrangeRed;
             this.OWeightBtn_dag.Location = new System.Drawing.Point(0, 77);
             this.OWeightBtn_dag.Name = "OWeightBtn_dag";
             this.OWeightBtn_dag.Size = new System.Drawing.Size(75, 35);
@@ -937,10 +976,13 @@
             // 
             // OWeightBtn_g
             // 
-            this.OWeightBtn_g.BackColor = System.Drawing.Color.Honeydew;
+            this.OWeightBtn_g.BackColor = System.Drawing.Color.Transparent;
             this.OWeightBtn_g.Dock = System.Windows.Forms.DockStyle.Top;
-            this.OWeightBtn_g.FlatAppearance.BorderSize = 0;
+            this.OWeightBtn_g.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.OWeightBtn_g.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.OWeightBtn_g.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OWeightBtn_g.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OWeightBtn_g.ForeColor = System.Drawing.Color.OrangeRed;
             this.OWeightBtn_g.Location = new System.Drawing.Point(0, 42);
             this.OWeightBtn_g.Name = "OWeightBtn_g";
             this.OWeightBtn_g.Size = new System.Drawing.Size(75, 35);
@@ -954,8 +996,11 @@
             // 
             this.OWeightBtn_mg.BackColor = System.Drawing.Color.Transparent;
             this.OWeightBtn_mg.Dock = System.Windows.Forms.DockStyle.Top;
-            this.OWeightBtn_mg.FlatAppearance.BorderSize = 0;
+            this.OWeightBtn_mg.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.OWeightBtn_mg.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.OWeightBtn_mg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OWeightBtn_mg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OWeightBtn_mg.ForeColor = System.Drawing.Color.OrangeRed;
             this.OWeightBtn_mg.Image = global::CalculatorApp.Properties.Resources.dropdoiwn2;
             this.OWeightBtn_mg.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.OWeightBtn_mg.Location = new System.Drawing.Point(0, 0);
@@ -978,7 +1023,8 @@
             this.ILength_panel.Controls.Add(this.ILengthBtn_dm);
             this.ILength_panel.Controls.Add(this.ILengthBtn_cm);
             this.ILength_panel.Controls.Add(this.ILengthBtn_mm);
-            this.ILength_panel.Location = new System.Drawing.Point(23, 281);
+            this.ILength_panel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ILength_panel.Location = new System.Drawing.Point(28, 307);
             this.ILength_panel.MaximumSize = new System.Drawing.Size(77, 288);
             this.ILength_panel.MinimumSize = new System.Drawing.Size(77, 42);
             this.ILength_panel.Name = "ILength_panel";
@@ -987,10 +1033,12 @@
             // 
             // ILengthBtn_yard
             // 
-            this.ILengthBtn_yard.BackColor = System.Drawing.Color.Honeydew;
+            this.ILengthBtn_yard.BackColor = System.Drawing.Color.Transparent;
             this.ILengthBtn_yard.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ILengthBtn_yard.FlatAppearance.BorderSize = 0;
+            this.ILengthBtn_yard.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.ILengthBtn_yard.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ILengthBtn_yard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ILengthBtn_yard.ForeColor = System.Drawing.Color.OrangeRed;
             this.ILengthBtn_yard.Location = new System.Drawing.Point(0, 252);
             this.ILengthBtn_yard.Name = "ILengthBtn_yard";
             this.ILengthBtn_yard.Size = new System.Drawing.Size(77, 35);
@@ -1002,10 +1050,12 @@
             // 
             // ILengthBtn_inch
             // 
-            this.ILengthBtn_inch.BackColor = System.Drawing.Color.Honeydew;
+            this.ILengthBtn_inch.BackColor = System.Drawing.Color.Transparent;
             this.ILengthBtn_inch.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ILengthBtn_inch.FlatAppearance.BorderSize = 0;
+            this.ILengthBtn_inch.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.ILengthBtn_inch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ILengthBtn_inch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ILengthBtn_inch.ForeColor = System.Drawing.Color.OrangeRed;
             this.ILengthBtn_inch.Location = new System.Drawing.Point(0, 217);
             this.ILengthBtn_inch.Name = "ILengthBtn_inch";
             this.ILengthBtn_inch.Size = new System.Drawing.Size(77, 35);
@@ -1017,10 +1067,12 @@
             // 
             // ILengthBtn_miles
             // 
-            this.ILengthBtn_miles.BackColor = System.Drawing.Color.Honeydew;
+            this.ILengthBtn_miles.BackColor = System.Drawing.Color.Transparent;
             this.ILengthBtn_miles.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ILengthBtn_miles.FlatAppearance.BorderSize = 0;
+            this.ILengthBtn_miles.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.ILengthBtn_miles.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ILengthBtn_miles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ILengthBtn_miles.ForeColor = System.Drawing.Color.OrangeRed;
             this.ILengthBtn_miles.Location = new System.Drawing.Point(0, 182);
             this.ILengthBtn_miles.Name = "ILengthBtn_miles";
             this.ILengthBtn_miles.Size = new System.Drawing.Size(77, 35);
@@ -1032,10 +1084,12 @@
             // 
             // ILengthBtn_km
             // 
-            this.ILengthBtn_km.BackColor = System.Drawing.Color.Honeydew;
+            this.ILengthBtn_km.BackColor = System.Drawing.Color.Transparent;
             this.ILengthBtn_km.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ILengthBtn_km.FlatAppearance.BorderSize = 0;
+            this.ILengthBtn_km.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.ILengthBtn_km.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ILengthBtn_km.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ILengthBtn_km.ForeColor = System.Drawing.Color.OrangeRed;
             this.ILengthBtn_km.Location = new System.Drawing.Point(0, 147);
             this.ILengthBtn_km.Name = "ILengthBtn_km";
             this.ILengthBtn_km.Size = new System.Drawing.Size(77, 35);
@@ -1047,10 +1101,12 @@
             // 
             // ILengthBtn_m
             // 
-            this.ILengthBtn_m.BackColor = System.Drawing.Color.Honeydew;
+            this.ILengthBtn_m.BackColor = System.Drawing.Color.Transparent;
             this.ILengthBtn_m.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ILengthBtn_m.FlatAppearance.BorderSize = 0;
+            this.ILengthBtn_m.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.ILengthBtn_m.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ILengthBtn_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ILengthBtn_m.ForeColor = System.Drawing.Color.OrangeRed;
             this.ILengthBtn_m.Location = new System.Drawing.Point(0, 112);
             this.ILengthBtn_m.Name = "ILengthBtn_m";
             this.ILengthBtn_m.Size = new System.Drawing.Size(77, 35);
@@ -1062,10 +1118,12 @@
             // 
             // ILengthBtn_dm
             // 
-            this.ILengthBtn_dm.BackColor = System.Drawing.Color.Honeydew;
+            this.ILengthBtn_dm.BackColor = System.Drawing.Color.Transparent;
             this.ILengthBtn_dm.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ILengthBtn_dm.FlatAppearance.BorderSize = 0;
+            this.ILengthBtn_dm.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.ILengthBtn_dm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ILengthBtn_dm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ILengthBtn_dm.ForeColor = System.Drawing.Color.OrangeRed;
             this.ILengthBtn_dm.Location = new System.Drawing.Point(0, 77);
             this.ILengthBtn_dm.Name = "ILengthBtn_dm";
             this.ILengthBtn_dm.Size = new System.Drawing.Size(77, 35);
@@ -1077,10 +1135,12 @@
             // 
             // ILengthBtn_cm
             // 
-            this.ILengthBtn_cm.BackColor = System.Drawing.Color.Honeydew;
+            this.ILengthBtn_cm.BackColor = System.Drawing.Color.Transparent;
             this.ILengthBtn_cm.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ILengthBtn_cm.FlatAppearance.BorderSize = 0;
+            this.ILengthBtn_cm.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.ILengthBtn_cm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ILengthBtn_cm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ILengthBtn_cm.ForeColor = System.Drawing.Color.OrangeRed;
             this.ILengthBtn_cm.Location = new System.Drawing.Point(0, 42);
             this.ILengthBtn_cm.Name = "ILengthBtn_cm";
             this.ILengthBtn_cm.Size = new System.Drawing.Size(77, 35);
@@ -1094,8 +1154,10 @@
             // 
             this.ILengthBtn_mm.BackColor = System.Drawing.Color.Transparent;
             this.ILengthBtn_mm.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ILengthBtn_mm.FlatAppearance.BorderSize = 0;
+            this.ILengthBtn_mm.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.ILengthBtn_mm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ILengthBtn_mm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ILengthBtn_mm.ForeColor = System.Drawing.Color.OrangeRed;
             this.ILengthBtn_mm.Image = global::CalculatorApp.Properties.Resources.dropdoiwn2;
             this.ILengthBtn_mm.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.ILengthBtn_mm.Location = new System.Drawing.Point(0, 0);
@@ -1117,7 +1179,7 @@
             this.OTime_panel.Controls.Add(this.OTimeBtn_hour);
             this.OTime_panel.Controls.Add(this.OTimeBtn_min);
             this.OTime_panel.Controls.Add(this.OTimeBtn_sec);
-            this.OTime_panel.Location = new System.Drawing.Point(408, 179);
+            this.OTime_panel.Location = new System.Drawing.Point(405, 186);
             this.OTime_panel.MaximumSize = new System.Drawing.Size(80, 252);
             this.OTime_panel.MinimumSize = new System.Drawing.Size(80, 42);
             this.OTime_panel.Name = "OTime_panel";
@@ -1126,10 +1188,13 @@
             // 
             // OTimeBtn_years
             // 
-            this.OTimeBtn_years.BackColor = System.Drawing.Color.Honeydew;
+            this.OTimeBtn_years.BackColor = System.Drawing.Color.Transparent;
             this.OTimeBtn_years.Dock = System.Windows.Forms.DockStyle.Top;
-            this.OTimeBtn_years.FlatAppearance.BorderSize = 0;
+            this.OTimeBtn_years.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.OTimeBtn_years.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.OTimeBtn_years.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OTimeBtn_years.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OTimeBtn_years.ForeColor = System.Drawing.Color.OrangeRed;
             this.OTimeBtn_years.Location = new System.Drawing.Point(0, 217);
             this.OTimeBtn_years.Name = "OTimeBtn_years";
             this.OTimeBtn_years.Size = new System.Drawing.Size(80, 35);
@@ -1141,10 +1206,13 @@
             // 
             // OTimeBtn_months
             // 
-            this.OTimeBtn_months.BackColor = System.Drawing.Color.Honeydew;
+            this.OTimeBtn_months.BackColor = System.Drawing.Color.Transparent;
             this.OTimeBtn_months.Dock = System.Windows.Forms.DockStyle.Top;
-            this.OTimeBtn_months.FlatAppearance.BorderSize = 0;
+            this.OTimeBtn_months.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.OTimeBtn_months.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.OTimeBtn_months.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OTimeBtn_months.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OTimeBtn_months.ForeColor = System.Drawing.Color.OrangeRed;
             this.OTimeBtn_months.Location = new System.Drawing.Point(0, 182);
             this.OTimeBtn_months.Name = "OTimeBtn_months";
             this.OTimeBtn_months.Size = new System.Drawing.Size(80, 35);
@@ -1156,10 +1224,13 @@
             // 
             // OTimeBtn_weeks
             // 
-            this.OTimeBtn_weeks.BackColor = System.Drawing.Color.Honeydew;
+            this.OTimeBtn_weeks.BackColor = System.Drawing.Color.Transparent;
             this.OTimeBtn_weeks.Dock = System.Windows.Forms.DockStyle.Top;
-            this.OTimeBtn_weeks.FlatAppearance.BorderSize = 0;
+            this.OTimeBtn_weeks.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.OTimeBtn_weeks.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.OTimeBtn_weeks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OTimeBtn_weeks.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OTimeBtn_weeks.ForeColor = System.Drawing.Color.OrangeRed;
             this.OTimeBtn_weeks.Location = new System.Drawing.Point(0, 147);
             this.OTimeBtn_weeks.Name = "OTimeBtn_weeks";
             this.OTimeBtn_weeks.Size = new System.Drawing.Size(80, 35);
@@ -1171,10 +1242,13 @@
             // 
             // OTimeBtn_days
             // 
-            this.OTimeBtn_days.BackColor = System.Drawing.Color.Honeydew;
+            this.OTimeBtn_days.BackColor = System.Drawing.Color.Transparent;
             this.OTimeBtn_days.Dock = System.Windows.Forms.DockStyle.Top;
-            this.OTimeBtn_days.FlatAppearance.BorderSize = 0;
+            this.OTimeBtn_days.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.OTimeBtn_days.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.OTimeBtn_days.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OTimeBtn_days.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OTimeBtn_days.ForeColor = System.Drawing.Color.OrangeRed;
             this.OTimeBtn_days.Location = new System.Drawing.Point(0, 112);
             this.OTimeBtn_days.Name = "OTimeBtn_days";
             this.OTimeBtn_days.Size = new System.Drawing.Size(80, 35);
@@ -1186,10 +1260,13 @@
             // 
             // OTimeBtn_hour
             // 
-            this.OTimeBtn_hour.BackColor = System.Drawing.Color.Honeydew;
+            this.OTimeBtn_hour.BackColor = System.Drawing.Color.Transparent;
             this.OTimeBtn_hour.Dock = System.Windows.Forms.DockStyle.Top;
-            this.OTimeBtn_hour.FlatAppearance.BorderSize = 0;
+            this.OTimeBtn_hour.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.OTimeBtn_hour.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.OTimeBtn_hour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OTimeBtn_hour.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OTimeBtn_hour.ForeColor = System.Drawing.Color.OrangeRed;
             this.OTimeBtn_hour.Location = new System.Drawing.Point(0, 77);
             this.OTimeBtn_hour.Name = "OTimeBtn_hour";
             this.OTimeBtn_hour.Size = new System.Drawing.Size(80, 35);
@@ -1201,10 +1278,13 @@
             // 
             // OTimeBtn_min
             // 
-            this.OTimeBtn_min.BackColor = System.Drawing.Color.Honeydew;
+            this.OTimeBtn_min.BackColor = System.Drawing.Color.Transparent;
             this.OTimeBtn_min.Dock = System.Windows.Forms.DockStyle.Top;
-            this.OTimeBtn_min.FlatAppearance.BorderSize = 0;
+            this.OTimeBtn_min.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.OTimeBtn_min.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.OTimeBtn_min.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OTimeBtn_min.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OTimeBtn_min.ForeColor = System.Drawing.Color.OrangeRed;
             this.OTimeBtn_min.Location = new System.Drawing.Point(0, 42);
             this.OTimeBtn_min.Name = "OTimeBtn_min";
             this.OTimeBtn_min.Size = new System.Drawing.Size(80, 35);
@@ -1218,8 +1298,11 @@
             // 
             this.OTimeBtn_sec.BackColor = System.Drawing.Color.Transparent;
             this.OTimeBtn_sec.Dock = System.Windows.Forms.DockStyle.Top;
-            this.OTimeBtn_sec.FlatAppearance.BorderSize = 0;
+            this.OTimeBtn_sec.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.OTimeBtn_sec.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.OTimeBtn_sec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OTimeBtn_sec.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OTimeBtn_sec.ForeColor = System.Drawing.Color.OrangeRed;
             this.OTimeBtn_sec.Image = global::CalculatorApp.Properties.Resources.dropdoiwn2;
             this.OTimeBtn_sec.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.OTimeBtn_sec.Location = new System.Drawing.Point(0, 0);
@@ -1241,7 +1324,7 @@
             this.IWeight_panel.Controls.Add(this.IWeightBtn_dag);
             this.IWeight_panel.Controls.Add(this.IWeightBtn_g);
             this.IWeight_panel.Controls.Add(this.IWeightBtn_mg);
-            this.IWeight_panel.Location = new System.Drawing.Point(23, 236);
+            this.IWeight_panel.Location = new System.Drawing.Point(31, 241);
             this.IWeight_panel.MaximumSize = new System.Drawing.Size(75, 252);
             this.IWeight_panel.MinimumSize = new System.Drawing.Size(75, 42);
             this.IWeight_panel.Name = "IWeight_panel";
@@ -1250,10 +1333,13 @@
             // 
             // IWeightBtn_oz
             // 
-            this.IWeightBtn_oz.BackColor = System.Drawing.Color.Honeydew;
+            this.IWeightBtn_oz.BackColor = System.Drawing.Color.Transparent;
             this.IWeightBtn_oz.Dock = System.Windows.Forms.DockStyle.Top;
-            this.IWeightBtn_oz.FlatAppearance.BorderSize = 0;
+            this.IWeightBtn_oz.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.IWeightBtn_oz.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.IWeightBtn_oz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.IWeightBtn_oz.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IWeightBtn_oz.ForeColor = System.Drawing.Color.OrangeRed;
             this.IWeightBtn_oz.Location = new System.Drawing.Point(0, 217);
             this.IWeightBtn_oz.Name = "IWeightBtn_oz";
             this.IWeightBtn_oz.Size = new System.Drawing.Size(75, 35);
@@ -1265,10 +1351,13 @@
             // 
             // IWeightBtn_lb
             // 
-            this.IWeightBtn_lb.BackColor = System.Drawing.Color.Honeydew;
+            this.IWeightBtn_lb.BackColor = System.Drawing.Color.Transparent;
             this.IWeightBtn_lb.Dock = System.Windows.Forms.DockStyle.Top;
-            this.IWeightBtn_lb.FlatAppearance.BorderSize = 0;
+            this.IWeightBtn_lb.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.IWeightBtn_lb.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.IWeightBtn_lb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.IWeightBtn_lb.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IWeightBtn_lb.ForeColor = System.Drawing.Color.OrangeRed;
             this.IWeightBtn_lb.Location = new System.Drawing.Point(0, 182);
             this.IWeightBtn_lb.Name = "IWeightBtn_lb";
             this.IWeightBtn_lb.Size = new System.Drawing.Size(75, 35);
@@ -1280,10 +1369,13 @@
             // 
             // IWeightBtn_t
             // 
-            this.IWeightBtn_t.BackColor = System.Drawing.Color.Honeydew;
+            this.IWeightBtn_t.BackColor = System.Drawing.Color.Transparent;
             this.IWeightBtn_t.Dock = System.Windows.Forms.DockStyle.Top;
-            this.IWeightBtn_t.FlatAppearance.BorderSize = 0;
+            this.IWeightBtn_t.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.IWeightBtn_t.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.IWeightBtn_t.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.IWeightBtn_t.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IWeightBtn_t.ForeColor = System.Drawing.Color.OrangeRed;
             this.IWeightBtn_t.Location = new System.Drawing.Point(0, 147);
             this.IWeightBtn_t.Name = "IWeightBtn_t";
             this.IWeightBtn_t.Size = new System.Drawing.Size(75, 35);
@@ -1295,10 +1387,13 @@
             // 
             // IWeightBtn_kg
             // 
-            this.IWeightBtn_kg.BackColor = System.Drawing.Color.Honeydew;
+            this.IWeightBtn_kg.BackColor = System.Drawing.Color.Transparent;
             this.IWeightBtn_kg.Dock = System.Windows.Forms.DockStyle.Top;
-            this.IWeightBtn_kg.FlatAppearance.BorderSize = 0;
+            this.IWeightBtn_kg.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.IWeightBtn_kg.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.IWeightBtn_kg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.IWeightBtn_kg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IWeightBtn_kg.ForeColor = System.Drawing.Color.OrangeRed;
             this.IWeightBtn_kg.Location = new System.Drawing.Point(0, 112);
             this.IWeightBtn_kg.Name = "IWeightBtn_kg";
             this.IWeightBtn_kg.Size = new System.Drawing.Size(75, 35);
@@ -1310,10 +1405,13 @@
             // 
             // IWeightBtn_dag
             // 
-            this.IWeightBtn_dag.BackColor = System.Drawing.Color.Honeydew;
+            this.IWeightBtn_dag.BackColor = System.Drawing.Color.Transparent;
             this.IWeightBtn_dag.Dock = System.Windows.Forms.DockStyle.Top;
-            this.IWeightBtn_dag.FlatAppearance.BorderSize = 0;
+            this.IWeightBtn_dag.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.IWeightBtn_dag.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.IWeightBtn_dag.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.IWeightBtn_dag.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IWeightBtn_dag.ForeColor = System.Drawing.Color.OrangeRed;
             this.IWeightBtn_dag.Location = new System.Drawing.Point(0, 77);
             this.IWeightBtn_dag.Name = "IWeightBtn_dag";
             this.IWeightBtn_dag.Size = new System.Drawing.Size(75, 35);
@@ -1325,10 +1423,13 @@
             // 
             // IWeightBtn_g
             // 
-            this.IWeightBtn_g.BackColor = System.Drawing.Color.Honeydew;
+            this.IWeightBtn_g.BackColor = System.Drawing.Color.Transparent;
             this.IWeightBtn_g.Dock = System.Windows.Forms.DockStyle.Top;
-            this.IWeightBtn_g.FlatAppearance.BorderSize = 0;
+            this.IWeightBtn_g.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.IWeightBtn_g.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.IWeightBtn_g.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.IWeightBtn_g.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IWeightBtn_g.ForeColor = System.Drawing.Color.OrangeRed;
             this.IWeightBtn_g.Location = new System.Drawing.Point(0, 42);
             this.IWeightBtn_g.Name = "IWeightBtn_g";
             this.IWeightBtn_g.Size = new System.Drawing.Size(75, 35);
@@ -1342,8 +1443,11 @@
             // 
             this.IWeightBtn_mg.BackColor = System.Drawing.Color.Transparent;
             this.IWeightBtn_mg.Dock = System.Windows.Forms.DockStyle.Top;
-            this.IWeightBtn_mg.FlatAppearance.BorderSize = 0;
+            this.IWeightBtn_mg.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.IWeightBtn_mg.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.IWeightBtn_mg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.IWeightBtn_mg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IWeightBtn_mg.ForeColor = System.Drawing.Color.OrangeRed;
             this.IWeightBtn_mg.Image = global::CalculatorApp.Properties.Resources.dropdoiwn2;
             this.IWeightBtn_mg.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.IWeightBtn_mg.Location = new System.Drawing.Point(0, 0);
@@ -1361,7 +1465,7 @@
             this.OTemperature_panel.Controls.Add(this.OTemperatureBtn_K);
             this.OTemperature_panel.Controls.Add(this.OTemperatureBtn_F);
             this.OTemperature_panel.Controls.Add(this.OTemperatureBtn_C);
-            this.OTemperature_panel.Location = new System.Drawing.Point(415, 127);
+            this.OTemperature_panel.Location = new System.Drawing.Point(399, 128);
             this.OTemperature_panel.MaximumSize = new System.Drawing.Size(60, 113);
             this.OTemperature_panel.MinimumSize = new System.Drawing.Size(60, 42);
             this.OTemperature_panel.Name = "OTemperature_panel";
@@ -1370,10 +1474,13 @@
             // 
             // OTemperatureBtn_K
             // 
-            this.OTemperatureBtn_K.BackColor = System.Drawing.Color.Honeydew;
+            this.OTemperatureBtn_K.BackColor = System.Drawing.Color.Transparent;
             this.OTemperatureBtn_K.Dock = System.Windows.Forms.DockStyle.Top;
-            this.OTemperatureBtn_K.FlatAppearance.BorderSize = 0;
+            this.OTemperatureBtn_K.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.OTemperatureBtn_K.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.OTemperatureBtn_K.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OTemperatureBtn_K.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OTemperatureBtn_K.ForeColor = System.Drawing.Color.OrangeRed;
             this.OTemperatureBtn_K.Location = new System.Drawing.Point(0, 77);
             this.OTemperatureBtn_K.Name = "OTemperatureBtn_K";
             this.OTemperatureBtn_K.Size = new System.Drawing.Size(60, 35);
@@ -1385,10 +1492,13 @@
             // 
             // OTemperatureBtn_F
             // 
-            this.OTemperatureBtn_F.BackColor = System.Drawing.Color.Honeydew;
+            this.OTemperatureBtn_F.BackColor = System.Drawing.Color.Transparent;
             this.OTemperatureBtn_F.Dock = System.Windows.Forms.DockStyle.Top;
-            this.OTemperatureBtn_F.FlatAppearance.BorderSize = 0;
+            this.OTemperatureBtn_F.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.OTemperatureBtn_F.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.OTemperatureBtn_F.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OTemperatureBtn_F.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OTemperatureBtn_F.ForeColor = System.Drawing.Color.OrangeRed;
             this.OTemperatureBtn_F.Location = new System.Drawing.Point(0, 42);
             this.OTemperatureBtn_F.Name = "OTemperatureBtn_F";
             this.OTemperatureBtn_F.Size = new System.Drawing.Size(60, 35);
@@ -1402,8 +1512,11 @@
             // 
             this.OTemperatureBtn_C.BackColor = System.Drawing.Color.Transparent;
             this.OTemperatureBtn_C.Dock = System.Windows.Forms.DockStyle.Top;
-            this.OTemperatureBtn_C.FlatAppearance.BorderSize = 0;
+            this.OTemperatureBtn_C.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.OTemperatureBtn_C.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.OTemperatureBtn_C.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OTemperatureBtn_C.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OTemperatureBtn_C.ForeColor = System.Drawing.Color.OrangeRed;
             this.OTemperatureBtn_C.Image = global::CalculatorApp.Properties.Resources.dropdoiwn2;
             this.OTemperatureBtn_C.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.OTemperatureBtn_C.Location = new System.Drawing.Point(0, 0);
@@ -1425,7 +1538,7 @@
             this.ITime_panel.Controls.Add(this.ITimeBtn_hour);
             this.ITime_panel.Controls.Add(this.ITimeBtn_min);
             this.ITime_panel.Controls.Add(this.ITimeBtn_sec);
-            this.ITime_panel.Location = new System.Drawing.Point(23, 175);
+            this.ITime_panel.Location = new System.Drawing.Point(29, 171);
             this.ITime_panel.MaximumSize = new System.Drawing.Size(80, 252);
             this.ITime_panel.MinimumSize = new System.Drawing.Size(80, 44);
             this.ITime_panel.Name = "ITime_panel";
@@ -1434,10 +1547,12 @@
             // 
             // ITimeBtn_years
             // 
-            this.ITimeBtn_years.BackColor = System.Drawing.Color.Honeydew;
+            this.ITimeBtn_years.BackColor = System.Drawing.Color.Transparent;
             this.ITimeBtn_years.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ITimeBtn_years.FlatAppearance.BorderSize = 0;
+            this.ITimeBtn_years.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.ITimeBtn_years.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ITimeBtn_years.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ITimeBtn_years.ForeColor = System.Drawing.Color.OrangeRed;
             this.ITimeBtn_years.Location = new System.Drawing.Point(0, 219);
             this.ITimeBtn_years.Name = "ITimeBtn_years";
             this.ITimeBtn_years.Size = new System.Drawing.Size(80, 35);
@@ -1449,10 +1564,12 @@
             // 
             // ITimeBtn_months
             // 
-            this.ITimeBtn_months.BackColor = System.Drawing.Color.Honeydew;
+            this.ITimeBtn_months.BackColor = System.Drawing.Color.Transparent;
             this.ITimeBtn_months.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ITimeBtn_months.FlatAppearance.BorderSize = 0;
+            this.ITimeBtn_months.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.ITimeBtn_months.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ITimeBtn_months.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ITimeBtn_months.ForeColor = System.Drawing.Color.OrangeRed;
             this.ITimeBtn_months.Location = new System.Drawing.Point(0, 184);
             this.ITimeBtn_months.Name = "ITimeBtn_months";
             this.ITimeBtn_months.Size = new System.Drawing.Size(80, 35);
@@ -1464,10 +1581,12 @@
             // 
             // ITimeBtn_weeks
             // 
-            this.ITimeBtn_weeks.BackColor = System.Drawing.Color.Honeydew;
+            this.ITimeBtn_weeks.BackColor = System.Drawing.Color.Transparent;
             this.ITimeBtn_weeks.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ITimeBtn_weeks.FlatAppearance.BorderSize = 0;
+            this.ITimeBtn_weeks.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.ITimeBtn_weeks.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ITimeBtn_weeks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ITimeBtn_weeks.ForeColor = System.Drawing.Color.OrangeRed;
             this.ITimeBtn_weeks.Location = new System.Drawing.Point(0, 149);
             this.ITimeBtn_weeks.Name = "ITimeBtn_weeks";
             this.ITimeBtn_weeks.Size = new System.Drawing.Size(80, 35);
@@ -1479,10 +1598,12 @@
             // 
             // ITimeBtn_days
             // 
-            this.ITimeBtn_days.BackColor = System.Drawing.Color.Honeydew;
+            this.ITimeBtn_days.BackColor = System.Drawing.Color.Transparent;
             this.ITimeBtn_days.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ITimeBtn_days.FlatAppearance.BorderSize = 0;
+            this.ITimeBtn_days.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.ITimeBtn_days.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ITimeBtn_days.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ITimeBtn_days.ForeColor = System.Drawing.Color.OrangeRed;
             this.ITimeBtn_days.Location = new System.Drawing.Point(0, 114);
             this.ITimeBtn_days.Name = "ITimeBtn_days";
             this.ITimeBtn_days.Size = new System.Drawing.Size(80, 35);
@@ -1494,10 +1615,12 @@
             // 
             // ITimeBtn_hour
             // 
-            this.ITimeBtn_hour.BackColor = System.Drawing.Color.Honeydew;
+            this.ITimeBtn_hour.BackColor = System.Drawing.Color.Transparent;
             this.ITimeBtn_hour.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ITimeBtn_hour.FlatAppearance.BorderSize = 0;
+            this.ITimeBtn_hour.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.ITimeBtn_hour.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ITimeBtn_hour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ITimeBtn_hour.ForeColor = System.Drawing.Color.OrangeRed;
             this.ITimeBtn_hour.Location = new System.Drawing.Point(0, 79);
             this.ITimeBtn_hour.Name = "ITimeBtn_hour";
             this.ITimeBtn_hour.Size = new System.Drawing.Size(80, 35);
@@ -1509,10 +1632,12 @@
             // 
             // ITimeBtn_min
             // 
-            this.ITimeBtn_min.BackColor = System.Drawing.Color.Honeydew;
+            this.ITimeBtn_min.BackColor = System.Drawing.Color.Transparent;
             this.ITimeBtn_min.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ITimeBtn_min.FlatAppearance.BorderSize = 0;
+            this.ITimeBtn_min.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.ITimeBtn_min.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ITimeBtn_min.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ITimeBtn_min.ForeColor = System.Drawing.Color.OrangeRed;
             this.ITimeBtn_min.Location = new System.Drawing.Point(0, 44);
             this.ITimeBtn_min.Name = "ITimeBtn_min";
             this.ITimeBtn_min.Size = new System.Drawing.Size(80, 35);
@@ -1526,8 +1651,10 @@
             // 
             this.ITimeBtn_sec.BackColor = System.Drawing.Color.Transparent;
             this.ITimeBtn_sec.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ITimeBtn_sec.FlatAppearance.BorderSize = 0;
+            this.ITimeBtn_sec.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.ITimeBtn_sec.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ITimeBtn_sec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ITimeBtn_sec.ForeColor = System.Drawing.Color.OrangeRed;
             this.ITimeBtn_sec.Image = global::CalculatorApp.Properties.Resources.dropdoiwn2;
             this.ITimeBtn_sec.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.ITimeBtn_sec.Location = new System.Drawing.Point(0, 0);
@@ -1544,7 +1671,7 @@
             // 
             this.ODegree_panel.Controls.Add(this.button25);
             this.ODegree_panel.Controls.Add(this.but_Degree_Output);
-            this.ODegree_panel.Location = new System.Drawing.Point(413, 62);
+            this.ODegree_panel.Location = new System.Drawing.Point(399, 68);
             this.ODegree_panel.MaximumSize = new System.Drawing.Size(81, 76);
             this.ODegree_panel.MinimumSize = new System.Drawing.Size(81, 42);
             this.ODegree_panel.Name = "ODegree_panel";
@@ -1553,10 +1680,13 @@
             // 
             // button25
             // 
-            this.button25.BackColor = System.Drawing.Color.Honeydew;
+            this.button25.BackColor = System.Drawing.Color.Transparent;
             this.button25.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button25.FlatAppearance.BorderSize = 0;
+            this.button25.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button25.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button25.ForeColor = System.Drawing.Color.OrangeRed;
             this.button25.Location = new System.Drawing.Point(0, 42);
             this.button25.Name = "button25";
             this.button25.Size = new System.Drawing.Size(81, 35);
@@ -1570,8 +1700,11 @@
             // 
             this.but_Degree_Output.BackColor = System.Drawing.Color.Transparent;
             this.but_Degree_Output.Dock = System.Windows.Forms.DockStyle.Top;
-            this.but_Degree_Output.FlatAppearance.BorderSize = 0;
+            this.but_Degree_Output.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.but_Degree_Output.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.but_Degree_Output.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_Degree_Output.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.but_Degree_Output.ForeColor = System.Drawing.Color.OrangeRed;
             this.but_Degree_Output.Image = global::CalculatorApp.Properties.Resources.dropdoiwn2;
             this.but_Degree_Output.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.but_Degree_Output.Location = new System.Drawing.Point(0, 0);
@@ -1589,7 +1722,8 @@
             this.ITemperature_panel.Controls.Add(this.ITemperatureBtn_K);
             this.ITemperature_panel.Controls.Add(this.ITemperatureBtn_F);
             this.ITemperature_panel.Controls.Add(this.ITemperatureBtn_C);
-            this.ITemperature_panel.Location = new System.Drawing.Point(26, 127);
+            this.ITemperature_panel.ForeColor = System.Drawing.Color.OrangeRed;
+            this.ITemperature_panel.Location = new System.Drawing.Point(28, 118);
             this.ITemperature_panel.MaximumSize = new System.Drawing.Size(60, 113);
             this.ITemperature_panel.MinimumSize = new System.Drawing.Size(60, 42);
             this.ITemperature_panel.Name = "ITemperature_panel";
@@ -1598,10 +1732,12 @@
             // 
             // ITemperatureBtn_K
             // 
-            this.ITemperatureBtn_K.BackColor = System.Drawing.Color.Honeydew;
+            this.ITemperatureBtn_K.BackColor = System.Drawing.Color.Transparent;
             this.ITemperatureBtn_K.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ITemperatureBtn_K.FlatAppearance.BorderSize = 0;
+            this.ITemperatureBtn_K.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.ITemperatureBtn_K.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ITemperatureBtn_K.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ITemperatureBtn_K.ForeColor = System.Drawing.Color.OrangeRed;
             this.ITemperatureBtn_K.Location = new System.Drawing.Point(0, 77);
             this.ITemperatureBtn_K.Name = "ITemperatureBtn_K";
             this.ITemperatureBtn_K.Size = new System.Drawing.Size(60, 35);
@@ -1613,10 +1749,12 @@
             // 
             // ITemperatureBtn_F
             // 
-            this.ITemperatureBtn_F.BackColor = System.Drawing.Color.Honeydew;
+            this.ITemperatureBtn_F.BackColor = System.Drawing.Color.Transparent;
             this.ITemperatureBtn_F.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ITemperatureBtn_F.FlatAppearance.BorderSize = 0;
+            this.ITemperatureBtn_F.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.ITemperatureBtn_F.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ITemperatureBtn_F.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ITemperatureBtn_F.ForeColor = System.Drawing.Color.OrangeRed;
             this.ITemperatureBtn_F.Location = new System.Drawing.Point(0, 42);
             this.ITemperatureBtn_F.Name = "ITemperatureBtn_F";
             this.ITemperatureBtn_F.Size = new System.Drawing.Size(60, 35);
@@ -1630,8 +1768,10 @@
             // 
             this.ITemperatureBtn_C.BackColor = System.Drawing.Color.Transparent;
             this.ITemperatureBtn_C.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ITemperatureBtn_C.FlatAppearance.BorderSize = 0;
+            this.ITemperatureBtn_C.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.ITemperatureBtn_C.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ITemperatureBtn_C.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ITemperatureBtn_C.ForeColor = System.Drawing.Color.OrangeRed;
             this.ITemperatureBtn_C.Image = global::CalculatorApp.Properties.Resources.dropdoiwn2;
             this.ITemperatureBtn_C.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.ITemperatureBtn_C.Location = new System.Drawing.Point(0, 0);
@@ -1649,7 +1789,7 @@
             this.IDegree_panel.BackColor = System.Drawing.Color.Transparent;
             this.IDegree_panel.Controls.Add(this.button28);
             this.IDegree_panel.Controls.Add(this.but_Degree_Input);
-            this.IDegree_panel.Location = new System.Drawing.Point(26, 69);
+            this.IDegree_panel.Location = new System.Drawing.Point(31, 68);
             this.IDegree_panel.MaximumSize = new System.Drawing.Size(81, 76);
             this.IDegree_panel.MinimumSize = new System.Drawing.Size(81, 42);
             this.IDegree_panel.Name = "IDegree_panel";
@@ -1658,10 +1798,13 @@
             // 
             // button28
             // 
-            this.button28.BackColor = System.Drawing.Color.Honeydew;
+            this.button28.BackColor = System.Drawing.Color.Transparent;
             this.button28.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button28.FlatAppearance.BorderSize = 0;
+            this.button28.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button28.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button28.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button28.ForeColor = System.Drawing.Color.OrangeRed;
             this.button28.Location = new System.Drawing.Point(0, 42);
             this.button28.Name = "button28";
             this.button28.Size = new System.Drawing.Size(81, 35);
@@ -1675,8 +1818,11 @@
             // 
             this.but_Degree_Input.BackColor = System.Drawing.Color.Transparent;
             this.but_Degree_Input.Dock = System.Windows.Forms.DockStyle.Top;
-            this.but_Degree_Input.FlatAppearance.BorderSize = 0;
+            this.but_Degree_Input.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.but_Degree_Input.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.but_Degree_Input.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_Degree_Input.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.but_Degree_Input.ForeColor = System.Drawing.Color.OrangeRed;
             this.but_Degree_Input.Image = global::CalculatorApp.Properties.Resources.dropdoiwn2;
             this.but_Degree_Input.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.but_Degree_Input.Location = new System.Drawing.Point(0, 0);
@@ -1707,18 +1853,18 @@
             this.textBox_Converter_Input.TabIndex = 42;
             this.textBox_Converter_Input.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // ClearConverter
+            // del_ClearConverter
             // 
-            this.ClearConverter.Cursor = System.Windows.Forms.Cursors.Default;
-            this.ClearConverter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ClearConverter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ClearConverter.Location = new System.Drawing.Point(334, 193);
-            this.ClearConverter.Name = "ClearConverter";
-            this.ClearConverter.Size = new System.Drawing.Size(50, 125);
-            this.ClearConverter.TabIndex = 36;
-            this.ClearConverter.Text = "C";
-            this.ClearConverter.UseVisualStyleBackColor = true;
-            this.ClearConverter.Click += new System.EventHandler(this.ClearConverter_Text);
+            this.del_ClearConverter.Cursor = System.Windows.Forms.Cursors.Default;
+            this.del_ClearConverter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.del_ClearConverter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.del_ClearConverter.Location = new System.Drawing.Point(334, 193);
+            this.del_ClearConverter.Name = "del_ClearConverter";
+            this.del_ClearConverter.Size = new System.Drawing.Size(50, 125);
+            this.del_ClearConverter.TabIndex = 36;
+            this.del_ClearConverter.Text = "C";
+            this.del_ClearConverter.UseVisualStyleBackColor = true;
+            this.del_ClearConverter.Click += new System.EventHandler(this.ClearConverter_Text);
             // 
             // button11
             // 
@@ -1785,19 +1931,19 @@
             this.button22.UseVisualStyleBackColor = true;
             this.button22.Click += new System.EventHandler(this.numberButtonConverter_Click);
             // 
-            // DeleteConverter
+            // del_DeleteConverter
             // 
-            this.DeleteConverter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.DeleteConverter.Cursor = System.Windows.Forms.Cursors.Default;
-            this.DeleteConverter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DeleteConverter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeleteConverter.Location = new System.Drawing.Point(334, 119);
-            this.DeleteConverter.Name = "DeleteConverter";
-            this.DeleteConverter.Size = new System.Drawing.Size(50, 50);
-            this.DeleteConverter.TabIndex = 41;
-            this.DeleteConverter.Text = "DEL";
-            this.DeleteConverter.UseVisualStyleBackColor = true;
-            this.DeleteConverter.Click += new System.EventHandler(this.DeleteConverter_Click);
+            this.del_DeleteConverter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.del_DeleteConverter.Cursor = System.Windows.Forms.Cursors.Default;
+            this.del_DeleteConverter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.del_DeleteConverter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.del_DeleteConverter.Location = new System.Drawing.Point(334, 119);
+            this.del_DeleteConverter.Name = "del_DeleteConverter";
+            this.del_DeleteConverter.Size = new System.Drawing.Size(50, 50);
+            this.del_DeleteConverter.TabIndex = 41;
+            this.del_DeleteConverter.Text = "DEL";
+            this.del_DeleteConverter.UseVisualStyleBackColor = true;
+            this.del_DeleteConverter.Click += new System.EventHandler(this.DeleteConverter_Click);
             // 
             // button21
             // 
@@ -1838,18 +1984,18 @@
             this.button20.UseVisualStyleBackColor = true;
             this.button20.Click += new System.EventHandler(this.numberButtonConverter_Click);
             // 
-            // button17
+            // CommaConverter
             // 
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.Location = new System.Drawing.Point(334, 340);
-            this.button17.Margin = new System.Windows.Forms.Padding(2);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(50, 50);
-            this.button17.TabIndex = 40;
-            this.button17.Text = ",";
-            this.button17.UseVisualStyleBackColor = true;
-            this.button17.Click += new System.EventHandler(this.numberButtonConverter_Click);
+            this.CommaConverter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CommaConverter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CommaConverter.Location = new System.Drawing.Point(334, 340);
+            this.CommaConverter.Margin = new System.Windows.Forms.Padding(2);
+            this.CommaConverter.Name = "CommaConverter";
+            this.CommaConverter.Size = new System.Drawing.Size(50, 50);
+            this.CommaConverter.TabIndex = 40;
+            this.CommaConverter.Text = ",";
+            this.CommaConverter.UseVisualStyleBackColor = true;
+            this.CommaConverter.Click += new System.EventHandler(this.numberButtonConverter_Click);
             // 
             // button19
             // 
@@ -1940,22 +2086,22 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button Plus;
-        private System.Windows.Forms.Button Substitution;
-        private System.Windows.Forms.Button Multiplication;
-        private System.Windows.Forms.Button Division;
-        private System.Windows.Forms.Button Modulo;
-        private System.Windows.Forms.Button Clear;
-        private System.Windows.Forms.Button Result;
-        private System.Windows.Forms.Button Factorial;
-        private System.Windows.Forms.Button toPowerOf2;
-        private System.Windows.Forms.Button SquareRoot;
-        private System.Windows.Forms.Button toPowerOfX;
+        private System.Windows.Forms.Button op_Plus;
+        private System.Windows.Forms.Button op_Substitution;
+        private System.Windows.Forms.Button op_Multiplication;
+        private System.Windows.Forms.Button op_Division;
+        private System.Windows.Forms.Button op_Modulo;
+        private System.Windows.Forms.Button del_Clear;
+        private System.Windows.Forms.Button op_Result;
+        private System.Windows.Forms.Button sp_Factorial;
+        private System.Windows.Forms.Button sp_toPowerOf2;
+        private System.Windows.Forms.Button sp_SquareRoot;
+        private System.Windows.Forms.Button sp_toPowerOfX;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button1;
         private CustomControls.CustomControl customControl1;
-        private System.Windows.Forms.Button Comma;
-        private System.Windows.Forms.Button Delete;
+        private System.Windows.Forms.Button button_Comma;
+        private System.Windows.Forms.Button del_Delete;
         private System.Windows.Forms.Panel Main_Calculator_panel;
         private System.Windows.Forms.Panel Main_Setting_panel;
         private System.Windows.Forms.Button Btn_UnitConverter;
@@ -1970,17 +2116,17 @@
         private System.Windows.Forms.Panel panel_Converter;
         private System.Windows.Forms.TextBox textBox_Converter_Output;
         private System.Windows.Forms.TextBox textBox_Converter_Input;
-        private System.Windows.Forms.Button ClearConverter;
+        private System.Windows.Forms.Button del_ClearConverter;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button DeleteConverter;
+        private System.Windows.Forms.Button del_DeleteConverter;
         private System.Windows.Forms.Button button21;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button CommaConverter;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Panel IDegree_panel;

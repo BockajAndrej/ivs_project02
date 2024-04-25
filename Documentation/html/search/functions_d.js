@@ -1,25 +1,9 @@
 var searchData=
 [
-  ['temp_0',['Temp',['../class_calculator_app_1_1_optional__functions.html#af3969fd3d04efb874e3d46c4af585cb9',1,'CalculatorApp::Optional_functions']]],
-  ['test_5fcount_1',['Test_Count',['../class_unit_test_calculator_1_1_unit_test1.html#ac651e7e334a8ac0d2e1b2b85685b73e6',1,'UnitTestCalculator::UnitTest1']]],
-  ['test_5fdegrees_2',['Test_degrees',['../class_unit_test_calculator_1_1_unit_test2.html#af5e21ac963717fa2eead3e575b921dd5',1,'UnitTestCalculator::UnitTest2']]],
-  ['test_5fdensity_3',['Test_density',['../class_unit_test_calculator_1_1_unit_test2.html#a92a9ea688ba74a0e95f53878e4c94179',1,'UnitTestCalculator::UnitTest2']]],
-  ['test_5fdivision_4',['Test_Division',['../class_unit_test_calculator_1_1_unit_test1.html#a4142e1dea1879f51807000717dcef4d9',1,'UnitTestCalculator::UnitTest1']]],
-  ['test_5fenergy_5',['Test_energy',['../class_unit_test_calculator_1_1_unit_test2.html#a50d1311b9cf7659a6f52d6e967273620',1,'UnitTestCalculator::UnitTest2']]],
-  ['test_5fexp_6',['Test_EXP',['../class_unit_test_calculator_1_1_unit_test1.html#a002fcf70ee995f85d596c3f244d427b3',1,'UnitTestCalculator::UnitTest1']]],
-  ['test_5ffaktorial_7',['Test_Faktorial',['../class_unit_test_calculator_1_1_unit_test1.html#ae8c77b854d167a044ff8ae320321612c',1,'UnitTestCalculator::UnitTest1']]],
-  ['test_5flength_8',['Test_length',['../class_unit_test_calculator_1_1_unit_test2.html#a5496887a3e119029e1a92fdb43194215',1,'UnitTestCalculator::UnitTest2']]],
-  ['test_5fmodulo_9',['Test_Modulo',['../class_unit_test_calculator_1_1_unit_test1.html#a56c3fcd08c30865663ec77c93a2339ae',1,'UnitTestCalculator::UnitTest1']]],
-  ['test_5fmultiplication_10',['Test_Multiplication',['../class_unit_test_calculator_1_1_unit_test1.html#a67ce245845ee1cbf01a323499ed73010',1,'UnitTestCalculator::UnitTest1']]],
-  ['test_5fpower_11',['Test_power',['../class_unit_test_calculator_1_1_unit_test2.html#a0f31a2ce3243c0b520665168131a0aad',1,'UnitTestCalculator::UnitTest2']]],
-  ['test_5fspeed_12',['Test_speed',['../class_unit_test_calculator_1_1_unit_test2.html#aba18542589183081a8ccca093ca2963f',1,'UnitTestCalculator::UnitTest2']]],
-  ['test_5fsqrt_13',['Test_SQRT',['../class_unit_test_calculator_1_1_unit_test1.html#a636560f2a6ee82454c6b60ed99b32d01',1,'UnitTestCalculator::UnitTest1']]],
-  ['test_5fsubtraction_14',['Test_Subtraction',['../class_unit_test_calculator_1_1_unit_test1.html#a15f0629c631d165b11831d3f925fc9e5',1,'UnitTestCalculator::UnitTest1']]],
-  ['test_5ftemp_15',['Test_temp',['../class_unit_test_calculator_1_1_unit_test2.html#ae0ab05758add26016037b7dd52a8bd49',1,'UnitTestCalculator::UnitTest2']]],
-  ['test_5ftime_16',['Test_time',['../class_unit_test_calculator_1_1_unit_test2.html#ab0f3e44f51ffac2fcc3cbe2c986eb728',1,'UnitTestCalculator::UnitTest2']]],
-  ['test_5fweight_17',['Test_weight',['../class_unit_test_calculator_1_1_unit_test2.html#a90e5914dcf91531f7350bfce8a163328',1,'UnitTestCalculator::UnitTest2']]],
-  ['textbox1_5fkeypress_18',['textBox1_KeyPress',['../class_calculator_app_1_1_calculator.html#ab11a7092ba037cae3683e4ac0ef30a38',1,'CalculatorApp::Calculator']]],
-  ['time_19',['Time',['../class_calculator_app_1_1_optional__functions.html#a75b9c1cffb1fcbf0efcaa876fd26437b',1,'CalculatorApp::Optional_functions']]],
-  ['topowerof2_5fclick_20',['toPowerOf2_Click',['../class_calculator_app_1_1_calculator.html#a3d418a748d0b0e9fb60eb59fc6b1800c',1,'CalculatorApp::Calculator']]],
-  ['topowerofx_5fclick_21',['toPowerOfX_Click',['../class_calculator_app_1_1_calculator.html#a7f46da505fedb5462ce79cc010148080',1,'CalculatorApp::Calculator']]]
+  ['showandenableinoutpanels_0',['ShowAndEnableInOutPanels',['../class_calculator_app_1_1_calculator.html#afa24e8597ba3c9d733483773a8dac933',1,'CalculatorApp::Calculator']]],
+  ['showandenablepanel_1',['ShowAndEnablePanel',['../class_calculator_app_1_1_calculator.html#aa8ed5f37681d58a05059869b38a40605',1,'CalculatorApp::Calculator']]],
+  ['speed_2',['Speed',['../class_calculator_app_1_1_optional__functions.html#a83d7d67c0633a4b552585329db7966da',1,'CalculatorApp::Optional_functions']]],
+  ['squareroot_3',['SquareRoot',['../class_calculator_app_1_1_math__lib.html#a72e717da2d152ed6dfa65cb074a4b38f',1,'CalculatorApp::Math_lib']]],
+  ['squareroot_5fclick_4',['SquareRoot_Click',['../class_calculator_app_1_1_calculator.html#a00fbfa25e5f565a8ccd2cfb97eabb40e',1,'CalculatorApp::Calculator']]],
+  ['substraction_5',['Substraction',['../class_calculator_app_1_1_math__lib.html#aa71c200ce3c21ee26ca509587fbfd382',1,'CalculatorApp::Math_lib']]]
 ];

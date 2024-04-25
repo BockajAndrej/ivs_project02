@@ -10,7 +10,7 @@ Windows 64bit
 | --- | --- | --- |
 | xbockaa00 | Andrej Bočkaj | Trello, Github, Testovanie, Install/Uninstall tool, Kontrola funkcnosti |
 | xfiloja00 | Jakub Fiľo | Vzhlad, Ovladacie prvky, Povinne/Nepovinne funkcie | 
-| xtokusr00 | Richard Tokušev | Premeny jednotiek, Dokumentacia |
+| xtokusr00 | Richard Tokušev | Dokumentacia, Trieda premeny jednotiek |
 
 ## Licence
 Tento program je poskytován [GNU](https://www.gnu.org/licenses/)

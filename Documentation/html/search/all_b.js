@@ -5,5 +5,6 @@ var searchData=
   ['negativerootexception_2',['NegativeRootException',['../class_calculator_app_1_1_negative_root_exception.html',1,'CalculatorApp.NegativeRootException'],['../class_calculator_app_1_1_negative_root_exception.html#a7ba14a651fb23b121671899ff41270b2',1,'CalculatorApp.NegativeRootException.NegativeRootException()']]],
   ['newnumbermode_3',['newNumberMode',['../class_calculator_app_1_1_calculator.html#a364eb913e5cfd984b5e514da27d3fd5d',1,'CalculatorApp::Calculator']]],
   ['nonnaturalexponentexception_4',['NonNaturalExponentException',['../class_calculator_app_1_1_non_natural_exponent_exception.html',1,'CalculatorApp.NonNaturalExponentException'],['../class_calculator_app_1_1_non_natural_exponent_exception.html#a8431d6d106ee859a1d2cb9005237963d',1,'CalculatorApp.NonNaturalExponentException.NonNaturalExponentException()']]],
-  ['numberbutton_5fclick_5',['numberButton_Click',['../class_calculator_app_1_1_calculator.html#a4faa64fe40dc6c93ccacccf0d2228444',1,'CalculatorApp::Calculator']]]
+  ['numberbutton_5fclick_5',['numberButton_Click',['../class_calculator_app_1_1_calculator.html#a4faa64fe40dc6c93ccacccf0d2228444',1,'CalculatorApp::Calculator']]],
+  ['numberbuttonconverter_5fclick_6',['numberButtonConverter_Click',['../class_calculator_app_1_1_calculator.html#ac98f09e80ecce8f7065bb704a66e1ce3',1,'CalculatorApp::Calculator']]]
 ];

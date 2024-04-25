@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['textbox1_0',['textBox1',['../class_calculator_app_1_1_calculator.html#addb7f3a6deb63ca4200a30f732cfee24',1,'CalculatorApp::Calculator']]],
-  ['topowerof2_1',['toPowerOf2',['../class_calculator_app_1_1_calculator.html#aed3bb0edc06ef4cc021bc5e5f0cd9f17',1,'CalculatorApp::Calculator']]],
-  ['topowerofx_2',['toPowerOfX',['../class_calculator_app_1_1_calculator.html#a05e2167cbd16036d85fa2c409023f7c0',1,'CalculatorApp::Calculator']]]
+  ['secondnumber_5fstr_0',['secondNumber_str',['../class_calculator_app_1_1_calculator.html#a48f25c1d71b792916d7c6cad9495233c',1,'CalculatorApp::Calculator']]],
+  ['squareroot_1',['SquareRoot',['../class_calculator_app_1_1_calculator.html#aa68a8dff53fba10886078f557d2316ea',1,'CalculatorApp::Calculator']]],
+  ['substitution_2',['Substitution',['../class_calculator_app_1_1_calculator.html#afb8c1ac76c05d9336bbc39aadec1a7f5',1,'CalculatorApp::Calculator']]]
 ];

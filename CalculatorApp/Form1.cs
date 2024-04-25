@@ -92,24 +92,106 @@ namespace CalculatorApp
                 {
                     Button button = (Button)control;
                     button.ForeColor = isDarkMode ? Color.YellowGreen : Color.Black;
-                    button.BackColor = isDarkMode ? Color.FromArgb(35, 45, 54) : Color.Transparent;
+                    button.BackColor = isDarkMode ? Color.FromArgb(35, 45, 54) : Color.Silver;
                 }
             }
 
-            if (customControl1.Checked)
+
+            Main_Calculator_panel.BackColor = isDarkMode ? Color.FromArgb(35, 45, 54) : Color.Silver;
+            Btn_UnitConverter.ForeColor = isDarkMode ? Color.YellowGreen : Color.Black;
+            Btn_UnitConverter.BackColor = isDarkMode ? Color.FromArgb(35, 45, 54) : Color.Silver;
+
+            textBox1.BackColor = isDarkMode ? Color.FromArgb(20, 55, 73) : Color.White;
+            textBox1.ForeColor = isDarkMode ? Color.LimeGreen : Color.Black;
+
+            foreach (Control control in Main_Calculator_panel.Controls) //Calculator main
             {
-                textBox1.BackColor = Color.FromArgb(20, 55, 73);
-                textBox1.ForeColor = Color.LimeGreen;
+                if (control is Button button)
+                {
+                    string btnName = button.Name;
+                    if (btnName.StartsWith("button"))
+                    {
+                        button.ForeColor = isDarkMode ? Color.YellowGreen : Color.Black;
+                        button.BackColor = isDarkMode ? Color.FromArgb(35, 45, 54) : Color.Silver;
+                    }
+                    if (btnName.StartsWith("op"))
+                    {
+                        button.ForeColor = isDarkMode ? Color.DarkOrange : Color.Black;
+                        button.BackColor = isDarkMode ? Color.FromArgb(35, 45, 54) : Color.Silver;
+                    }
+                    if (btnName.StartsWith("del"))
+                    {
+                        button.ForeColor = isDarkMode ? Color.DarkOrange : Color.Black;
+                        button.BackColor = isDarkMode ? Color.FromArgb(35, 45, 54) : Color.Silver;
+                    }
+                    if (btnName.StartsWith("sp"))
+                    {
+                        button.ForeColor = isDarkMode ? Color.DarkCyan : Color.Black;
+                        button.BackColor = isDarkMode ? Color.FromArgb(35, 45, 54) : Color.Silver;
+                    }
+                }
             }
-            else
+
+            foreach (Control control in PanelDown_UnitConverter.Controls) //Calculator main
             {
-                textBox1.BackColor = Color.White;
-                textBox1.ForeColor = Color.Black;
+                if (control is Button button)
+                {
+                    button.ForeColor = isDarkMode ? Color.YellowGreen : Color.Black;
+                    button.BackColor = isDarkMode ? Color.FromArgb(35, 45, 54) : Color.Silver;
+                }
             }
+            //panel
+            ApplyColorThemeToButtons(panel_Converter, isDarkMode);
+
+
+            panel_Converter.BackColor = isDarkMode ? Color.FromArgb(35, 45, 54) : Color.Silver;
+
+            //textboxes
+            textBox_Converter_Input.BorderStyle = BorderStyle.FixedSingle;
+            textBox_Converter_Input.BackColor = isDarkMode ? Color.FromArgb(20, 55, 73) : Color.White;
+            textBox_Converter_Input.ForeColor = isDarkMode ? Color.LimeGreen : Color.Black;
+
+            textBox_Converter_Output.BorderStyle = BorderStyle.FixedSingle;
+            textBox_Converter_Output.BackColor = isDarkMode ? Color.FromArgb(20, 55, 73) : Color.White;
+            textBox_Converter_Output.ForeColor = isDarkMode ? Color.LimeGreen : Color.Black;
+
+            //labels
+            Input_LabelConvert.ForeColor = isDarkMode ? Color.YellowGreen : Color.Black;
+            Output_LabelConvert.ForeColor = isDarkMode ? Color.YellowGreen : Color.Black;
+
+
 
             this.Invalidate(); // Force the form to repaint
 
         }
+
+        private void ApplyColorThemeToButtons(Control parentControl, bool isDarkMode)
+        {
+            foreach (Control control in parentControl.Controls)
+            {
+                if (control is Button button)
+                {
+                    string btnName = button.Name;
+
+                    if (btnName.StartsWith("del"))
+                    {
+                        button.ForeColor = isDarkMode ? Color.DarkOrange : Color.Black;
+                        button.BackColor = isDarkMode ? Color.FromArgb(35, 45, 54) : Color.Silver;
+                    }
+                    else if (btnName == "CommaConverter")
+                    {
+                        button.ForeColor = isDarkMode ? Color.DarkCyan : Color.Black;
+                        button.BackColor = isDarkMode ? Color.FromArgb(35, 45, 54) : Color.Silver;
+                    }
+                    else if (btnName.StartsWith("button"))
+                    {
+                        button.ForeColor = isDarkMode ? Color.YellowGreen : Color.Black;
+                        button.BackColor = isDarkMode ? Color.FromArgb(35, 45, 54) : Color.Silver;
+                    }
+                }
+            }
+        }
+
 
         List<Panel> listPanel = new List<Panel>();
         int indexOfCalculator = 0;
@@ -271,7 +353,7 @@ namespace CalculatorApp
             Button button = (Button)sender; // Get the button that was clicked
             appendDigitConverter(button.Text, false);
         }
-        
+
         private void UpdateInputTextBoxConverter(string value)
         {
             textBox_Converter_Input.Text = value;
@@ -328,11 +410,11 @@ namespace CalculatorApp
                     result = 0;
                     break;
             }
-            string formatedConverResult= mathLib.FormatDecimal(result, 5);
+            string formatedConverResult = mathLib.FormatDecimal(result, 5);
             UpdateOutoutTextBoxConverter(formatedConverResult);
 
         }
-        
+
         #endregion
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
