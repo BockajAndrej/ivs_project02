@@ -296,7 +296,7 @@ namespace CalculatorApp
             }
             else if (newNumberMode)
             {
-                firstNumber_str = digit;
+                firstNumber_str += digit;
                 newNumberMode = false;
             }
             else //continuing the same number
@@ -474,6 +474,12 @@ namespace CalculatorApp
         private void operatorButton_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
+            if (newNumberMode && button.Text == "-")
+            {
+                firstNumber_str = "-";
+                textBox1.Text = firstNumber_str;
+            }
+            else
             appendOperator(button.Text, false);
 
         }
@@ -514,10 +520,16 @@ namespace CalculatorApp
             {
                 performExponentiation();
             }
-
+            bool negativeFirst = false;
+            if (firstNumber_str.StartsWith("-"))
+            {
+                negativeFirst = true;
+                firstNumber_str = firstNumber_str.Substring(1);
+            }
             decimal num1 = 0.0M, num2 = 0.0M, result = 0.0M;
             decimal.TryParse(firstNumber_str, out num1);
             decimal.TryParse(secondNumber_str, out num2);
+            if (negativeFirst) num1 = num1 * -1;
             //Added variable where is stored pointer to exception
             Exception ex = null;
 
