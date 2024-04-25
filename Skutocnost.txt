@@ -1,0 +1,13 @@
+5663 037108 - xbockaa00, xfiloja00, xtokusr00
+
+ROZDIEL MEDZI SKUTOČNOSŤOU A PLÁNOM
+
+1. Profiling sa nepodaril.
+
+2. Rozdelenie úloh sa počas vývoja zmenilo aspoň raz, nebolo logické aby jeden človek robil front-end a druhý čakal na neho kým vytvorí button aby ho mohol naprogramovať.
+
+3. Makefile nebol vytvorený
+
+4. Nedodržanie termínov, vačšina boli splnené/nesplenené až v deň odovdzdania.
+
+5. Nepodarilo sa nám úplne dodržať TDD, testy sa menili poďla našich schopností a výmyslov pred začiatkom projektu.

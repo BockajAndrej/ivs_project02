@@ -1,0 +1,3 @@
+xbockaa00 100 (Trello, Github, Testovanie, Install/Uninstall tool, Kontrola funkcnosti)
+xfiloja00 115 (Vzhlad, Ovladacie prvky, Povinne/Nepovinne funkcie)
+xtokusr00 70  (Dokumentacia, Trieda premeny jednotiek)
