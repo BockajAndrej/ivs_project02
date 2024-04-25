@@ -337,14 +337,22 @@ namespace CalculatorApp
         Optional_functions opt_functions = new Optional_functions();
         private void appendDigitConverter(string digit, bool FromKeyBoard)
         {
-            if (digit == ",")
+            bool passKeyboardCheck = FromKeyBoard;
+            if (!FromKeyBoard)
             {
-                if (!ConvertNumber_str.Contains(","))
+                if (digit == "," && !ConvertNumber_str.Contains(","))
+                {
+                    if (!FromKeyBoard)
+                    {
+                        ConvertNumber_str += digit;
+                    }
+                }
+                else
+                {
                     ConvertNumber_str += digit;
+                }
             }
-            else
-                ConvertNumber_str += digit;
-            UpdateInputTextBoxConverter(ConvertNumber_str);
+            UpdateInputTextBoxConverter(ConvertNumber_str, passKeyboardCheck);
 
         }
 
@@ -354,9 +362,9 @@ namespace CalculatorApp
             appendDigitConverter(button.Text, false);
         }
 
-        private void UpdateInputTextBoxConverter(string value)
+        private void UpdateInputTextBoxConverter(string value,bool fromKeyboard)
         {
-            textBox_Converter_Input.Text = value;
+            if(!fromKeyboard) textBox_Converter_Input.Text = value;
             decimal.TryParse(value, out decimal result);
             CalculateResultConvert(result, Input_LabelConvert.Text, Output_LabelConvert.Text);
         }
@@ -371,7 +379,7 @@ namespace CalculatorApp
             if (ConvertNumber_str.Length != 0)
             {
                 ConvertNumber_str = ConvertNumber_str.Substring(0, ConvertNumber_str.Length - 1);
-                UpdateInputTextBoxConverter(ConvertNumber_str);
+                UpdateInputTextBoxConverter(ConvertNumber_str,false);
             }
         }
         private void ClearConverter_Text(object sender, EventArgs e)
@@ -413,6 +421,24 @@ namespace CalculatorApp
             string formatedConverResult = mathLib.FormatDecimal(result, 5);
             UpdateOutoutTextBoxConverter(formatedConverResult);
 
+        }
+        private void textBoxConverter_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Allow numbers, comma, and Backspace
+            if (e.KeyChar == (char)Keys.Back)
+            {
+                DeleteConverter_Click(this, EventArgs.Empty);
+            }
+            else if (char.IsDigit(e.KeyChar) || e.KeyChar == ',')
+            {
+                ConvertNumber_str += e.KeyChar.ToString();
+                appendDigitConverter(string.Empty, true);
+
+            }
+            else
+            {
+                e.Handled = true; // Prevent any other characters
+            }
         }
 
         #endregion
@@ -480,7 +506,7 @@ namespace CalculatorApp
                 textBox1.Text = firstNumber_str;
             }
             else
-            appendOperator(button.Text, false);
+                appendOperator(button.Text, false);
 
         }
         private void appendOperator(string newOperator, bool FromKeyBoard)
@@ -896,7 +922,7 @@ namespace CalculatorApp
         {
             if (textBox_Converter_Input.Text != string.Empty)
             {
-                UpdateInputTextBoxConverter(textBox_Converter_Input.Text);
+                UpdateInputTextBoxConverter(textBox_Converter_Input.Text,false);
             }
         }
 

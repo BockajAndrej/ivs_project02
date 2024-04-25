@@ -1852,6 +1852,7 @@
             this.textBox_Converter_Input.Size = new System.Drawing.Size(170, 30);
             this.textBox_Converter_Input.TabIndex = 42;
             this.textBox_Converter_Input.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox_Converter_Input.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxConverter_KeyPress);
             // 
             // del_ClearConverter
             // 
@@ -2044,13 +2045,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(662, 443);
+            this.Controls.Add(this.panel_Converter);
             this.Controls.Add(this.btn_Settings);
             this.Controls.Add(this.btn_Calculator);
             this.Controls.Add(this.PanelDown_UnitConverter);
             this.Controls.Add(this.customControl1);
             this.Controls.Add(this.Main_Calculator_panel);
             this.Controls.Add(this.Main_Setting_panel);
-            this.Controls.Add(this.panel_Converter);
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Calculator";
