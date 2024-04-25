@@ -714,7 +714,7 @@
             this.OLength_panel.Controls.Add(this.OLengthBtn_dm);
             this.OLength_panel.Controls.Add(this.OLengthBtn_cm);
             this.OLength_panel.Controls.Add(this.OLengthBtn_mm);
-            this.OLength_panel.Location = new System.Drawing.Point(408, 291);
+            this.OLength_panel.Location = new System.Drawing.Point(397, 64);
             this.OLength_panel.MaximumSize = new System.Drawing.Size(77, 288);
             this.OLength_panel.MinimumSize = new System.Drawing.Size(77, 42);
             this.OLength_panel.Name = "OLength_panel";
@@ -877,7 +877,7 @@
             this.OWeight_panel.Controls.Add(this.OWeightBtn_dag);
             this.OWeight_panel.Controls.Add(this.OWeightBtn_g);
             this.OWeight_panel.Controls.Add(this.OWeightBtn_mg);
-            this.OWeight_panel.Location = new System.Drawing.Point(405, 234);
+            this.OWeight_panel.Location = new System.Drawing.Point(397, 70);
             this.OWeight_panel.MaximumSize = new System.Drawing.Size(75, 252);
             this.OWeight_panel.MinimumSize = new System.Drawing.Size(75, 42);
             this.OWeight_panel.Name = "OWeight_panel";
@@ -1024,7 +1024,7 @@
             this.ILength_panel.Controls.Add(this.ILengthBtn_cm);
             this.ILength_panel.Controls.Add(this.ILengthBtn_mm);
             this.ILength_panel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ILength_panel.Location = new System.Drawing.Point(28, 307);
+            this.ILength_panel.Location = new System.Drawing.Point(19, 66);
             this.ILength_panel.MaximumSize = new System.Drawing.Size(77, 288);
             this.ILength_panel.MinimumSize = new System.Drawing.Size(77, 42);
             this.ILength_panel.Name = "ILength_panel";
@@ -1179,7 +1179,7 @@
             this.OTime_panel.Controls.Add(this.OTimeBtn_hour);
             this.OTime_panel.Controls.Add(this.OTimeBtn_min);
             this.OTime_panel.Controls.Add(this.OTimeBtn_sec);
-            this.OTime_panel.Location = new System.Drawing.Point(405, 186);
+            this.OTime_panel.Location = new System.Drawing.Point(397, 78);
             this.OTime_panel.MaximumSize = new System.Drawing.Size(80, 252);
             this.OTime_panel.MinimumSize = new System.Drawing.Size(80, 42);
             this.OTime_panel.Name = "OTime_panel";
@@ -1324,7 +1324,7 @@
             this.IWeight_panel.Controls.Add(this.IWeightBtn_dag);
             this.IWeight_panel.Controls.Add(this.IWeightBtn_g);
             this.IWeight_panel.Controls.Add(this.IWeightBtn_mg);
-            this.IWeight_panel.Location = new System.Drawing.Point(31, 241);
+            this.IWeight_panel.Location = new System.Drawing.Point(19, 72);
             this.IWeight_panel.MaximumSize = new System.Drawing.Size(75, 252);
             this.IWeight_panel.MinimumSize = new System.Drawing.Size(75, 42);
             this.IWeight_panel.Name = "IWeight_panel";
@@ -1465,7 +1465,7 @@
             this.OTemperature_panel.Controls.Add(this.OTemperatureBtn_K);
             this.OTemperature_panel.Controls.Add(this.OTemperatureBtn_F);
             this.OTemperature_panel.Controls.Add(this.OTemperatureBtn_C);
-            this.OTemperature_panel.Location = new System.Drawing.Point(399, 128);
+            this.OTemperature_panel.Location = new System.Drawing.Point(399, 84);
             this.OTemperature_panel.MaximumSize = new System.Drawing.Size(60, 113);
             this.OTemperature_panel.MinimumSize = new System.Drawing.Size(60, 42);
             this.OTemperature_panel.Name = "OTemperature_panel";
@@ -1538,7 +1538,7 @@
             this.ITime_panel.Controls.Add(this.ITimeBtn_hour);
             this.ITime_panel.Controls.Add(this.ITimeBtn_min);
             this.ITime_panel.Controls.Add(this.ITimeBtn_sec);
-            this.ITime_panel.Location = new System.Drawing.Point(29, 171);
+            this.ITime_panel.Location = new System.Drawing.Point(19, 76);
             this.ITime_panel.MaximumSize = new System.Drawing.Size(80, 252);
             this.ITime_panel.MinimumSize = new System.Drawing.Size(80, 44);
             this.ITime_panel.Name = "ITime_panel";
@@ -1671,7 +1671,7 @@
             // 
             this.ODegree_panel.Controls.Add(this.button25);
             this.ODegree_panel.Controls.Add(this.but_Degree_Output);
-            this.ODegree_panel.Location = new System.Drawing.Point(399, 68);
+            this.ODegree_panel.Location = new System.Drawing.Point(399, 90);
             this.ODegree_panel.MaximumSize = new System.Drawing.Size(81, 76);
             this.ODegree_panel.MinimumSize = new System.Drawing.Size(81, 42);
             this.ODegree_panel.Name = "ODegree_panel";
@@ -1723,7 +1723,7 @@
             this.ITemperature_panel.Controls.Add(this.ITemperatureBtn_F);
             this.ITemperature_panel.Controls.Add(this.ITemperatureBtn_C);
             this.ITemperature_panel.ForeColor = System.Drawing.Color.OrangeRed;
-            this.ITemperature_panel.Location = new System.Drawing.Point(28, 118);
+            this.ITemperature_panel.Location = new System.Drawing.Point(21, 84);
             this.ITemperature_panel.MaximumSize = new System.Drawing.Size(60, 113);
             this.ITemperature_panel.MinimumSize = new System.Drawing.Size(60, 42);
             this.ITemperature_panel.Name = "ITemperature_panel";
@@ -1789,7 +1789,7 @@
             this.IDegree_panel.BackColor = System.Drawing.Color.Transparent;
             this.IDegree_panel.Controls.Add(this.button28);
             this.IDegree_panel.Controls.Add(this.but_Degree_Input);
-            this.IDegree_panel.Location = new System.Drawing.Point(31, 68);
+            this.IDegree_panel.Location = new System.Drawing.Point(21, 90);
             this.IDegree_panel.MaximumSize = new System.Drawing.Size(81, 76);
             this.IDegree_panel.MinimumSize = new System.Drawing.Size(81, 42);
             this.IDegree_panel.Name = "IDegree_panel";
