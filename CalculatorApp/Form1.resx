@@ -117,16 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Delete.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
-        MAAA6mAAADqYAAAXcJy6UTwAAAAJcEhZcwAACwwAAAsMAT9AIsgAAAAHdElNRQfoBBAQDw+YW2A+AAAB
-        AUlEQVQ4T9XUvY4BURjG8RHZhNIluAJCQhRbKChYpRvQKVyARAQXsJeh4x623K0kWglZDRIRUbHZ5f9g
-        honJ+shIeJJfxnmPeSczc+YYT5sAiqijdoEK3uDHSVR8xy9+sLqA/jdHFbZ4UcYSbbwifkYMKXQwgy0F
-        LPCBoApXpIn17ucuOUzQRViFfTyIILodHaKx6ppXbA0T6OEbSRWO8oIWNJdVYX/UWHXNK1bDEL4wRV4F
-        h2SgBgM00McQ5gUUq+En9BJKGvwTnTyCThpDj+g492vo+i0rrr4UM64uGzOuLmzl1k8vDcdPTzE3hz9c
-        szmomXYdx9yyfWkl+PDQMYwNETV0cGQQVQkAAAAASUVORK5CYII=
-</value>
-  </data>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

@@ -6,7 +6,7 @@ using static CalculatorApp.Optional_functions;
 namespace UnitTestCalculator
 {
     /// <summary>
-    /// Tests for Optional_functions.cs class
+    /// Tests for Optional_functions.cs
     /// </summary>
     [TestClass]
     public class UnitTest2
@@ -16,7 +16,11 @@ namespace UnitTestCalculator
         /// <summary>
         /// Testing Weight() function for weight conversions 
         /// </summary>
+        /// <description>
         /// mg, dag, g, kg, t, lb, oz
+        /// </description>
+        /// <exception cref="OverflowException"></exception>
+        /// <exception cref="UndefinedUnitException"></exception>
         [TestMethod]
         public void Test_weight()
         {
@@ -50,9 +54,14 @@ namespace UnitTestCalculator
         /// <summary>
         /// Testing Length() function for length conversions
         /// </summary>
+        /// <description>
         /// mm, cm, dm, m, km, miles, inch, yard
+        /// </description>
+        /// <exception cref="OverflowException"></exception>
+        /// <exception cref="UndefinedUnitException"></exception>
+        /// <exception cref="NegativeNumberException"></exception>
         [TestMethod]
-        public void Test_length() 
+        public void Test_length()
         {
             Assert.ThrowsException<OverflowException>(() => root.Length(79228162514264337593543950334m, "km", "m"));
             Assert.ThrowsException<NegativeNumberException>(() => root.Length(-5m, "km", "m"));
@@ -83,9 +92,15 @@ namespace UnitTestCalculator
         /// <summary>
         /// Testing Time() function for time conversions
         /// </summary>
+        /// <description>
         /// sec, min, hour, days, weeks, months, years
+        /// </description>
+        /// <exception cref="OverflowException"></exception>
+        /// <exception cref="UndefinedUnitException"></exception>
+        /// <exception cref="NegativeNumberException"></exception>
+        /// 
         [TestMethod]
-        public void Test_time() 
+        public void Test_time()
         {
             Assert.ThrowsException<OverflowException>(() => root.Time(79228162514264337593543950334m, "min", "sec"));
             Assert.ThrowsException<NegativeNumberException>(() => root.Time(-5m, "min", "sec"));
@@ -114,13 +129,18 @@ namespace UnitTestCalculator
         /// <summary>
         /// Testing Temp() function for temperature conversions
         /// </summary>
+        /// <description>
         /// celsius(C), fahrenheit(F), kelvin(K)
+        /// </description>
+        /// <exception cref="OverflowException"></exception>
+        /// <exception cref="UndefinedUnitException"></exception>
+        /// 
         [TestMethod]
-        public void Test_temp() 
+        public void Test_temp()
         {
             Assert.ThrowsException<OverflowException>(() => root.Temp(79228162514264337593543950334m, "C", "K"));
             Assert.ThrowsException<UndefinedUnitException>(() => root.Temp(1m, "L", "K"));
-            Assert.ThrowsException<UndefinedUnitException>(() => root.Temp(1m, "C", "S"));            
+            Assert.ThrowsException<UndefinedUnitException>(() => root.Temp(1m, "C", "S"));
 
             /// From C
             Assert.AreEqual(123.4567m, root.Temp(123.4567m, "C", "C"), delta: 0);
@@ -139,8 +159,13 @@ namespace UnitTestCalculator
         /// <summary>
         /// Testing Degrees() function for plane angle conversions
         /// </summary>
+        /// <description>
+        /// degrees(deg), rad
+        /// </description>
+        /// <exception cref="OverflowException"></exception>
+        /// <exception cref="UndefinedUnitException"></exception>
         [TestMethod]
-        public void Test_degrees() 
+        public void Test_degrees()
         {
             Assert.ThrowsException<OverflowException>(() => root.Degrees(79228162514264337593543950334m, "rad", "deg"));
             Assert.ThrowsException<UndefinedUnitException>(() => root.Degrees(1m, "rsd", "deg"));
