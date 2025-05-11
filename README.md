@@ -1,8 +1,19 @@
 # Calculator - ivs_project02
-\mainpage
+
 ## Prostředí
-Windows 64bit
 > Podporované operační systémy
+
+Windows 64bit
+
+## Aplikace
+
+### LightMode
+
+![Kal1](Documentation/images/Kal1.png)
+
+### DarkMode
+
+![Kal2](Documentation/images/Kal2.png)
 
 ## Autoři
 ### Tým: 5663 037108
